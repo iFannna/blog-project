@@ -128,9 +128,9 @@ public class AuthServiceImpl implements AuthService {
             Map<String, Object> newClaims = new HashMap<>();
             newClaims.put(JwtConstants.USER_ID, userId);
             newClaims.put(JwtConstants.USERNAME, username);
-            String newAccessToken = JwtUtils.generateToken(newClaims, JwtConstants.LONG_TOKEN_EXPIRATION);
+            String newAccessToken = JwtUtils.generateToken(newClaims, JwtConstants.TEMP_TOKEN_EXPIRATION);
             // 存储新的accessToken
-            redisTokenUtils.saveAccessToken(userId, newAccessToken, JwtConstants.LONG_TOKEN_EXPIRATION/1000);
+            redisTokenUtils.saveAccessToken(userId, newAccessToken, JwtConstants.TEMP_TOKEN_EXPIRATION/1000);
             log.info("生成新的accessToken：{}", newAccessToken);
             return newAccessToken;
 

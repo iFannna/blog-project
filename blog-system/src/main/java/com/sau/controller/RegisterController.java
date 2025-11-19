@@ -41,15 +41,17 @@ public class RegisterController {
     public Result sendRegisterCode(@RequestBody RegisterDTO request) {
 
         // 1. 安全校验
-        CaptchaVerifyVO captchaResult = captchaService.verifyCaptchaWithDetail(request.getCaptchaParams());
+        CaptchaVerifyVO captchaResult = captchaService.verifyCaptcha(request.getCaptchaParams());
         if (!captchaResult.isSuccess()) {
-            return Result.error("安全验证失败，请重试");
+            return Result.error(captchaResult.getMessage());
         }
 
-        boolean success = emailService.sendRegisterCode(request.getEmail());
-        return success ?
-                Result.success() :
-                Result.error("验证码发送失败，请稍后重试");
+        boolean result = emailService.sendRegisterCode(request);
+        if (!result){
+            return Result.error("验证码发送失败，请稍后重试");
+        }
+        return Result.success();
+
     }
 
     /**
@@ -59,7 +61,10 @@ public class RegisterController {
     @PostMapping("/register")
     public Result register(@Valid @RequestBody RegisterDTO request) {
         log.info("用户注册请求：{}", request);
-        // 2. 执行注册逻辑
+        // 判断邮箱验证码是否正确
+        if (!emailService.verifyCode(request.getEmail(), request.getEmailVerificationCode())){
+            return Result.error("验证码错误");
+        }
         userService.register(request);
         return Result.success();
     }

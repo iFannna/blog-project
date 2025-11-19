@@ -5,6 +5,8 @@ import com.sau.mapper.UserMapper;
 import com.sau.pojo.DTO.RegisterDTO;
 import com.sau.pojo.entity.User;
 import com.sau.service.UserService;
+import com.sau.service.third.EmailService;
+import com.sau.utils.RedisUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
@@ -23,11 +25,18 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
+    @Autowired
+    private EmailService emailService;
+
+    @Autowired
+    private RedisUtils redisUtils;
+
     /**
      * 注册功能
      */
     @Override
     public void register(RegisterDTO request) {
+
         User newUser = new User();
         newUser.setName(request.getUsername());
         newUser.setUsername(request.getUsername());
@@ -46,6 +55,8 @@ public class UserServiceImpl implements UserService {
             throw e;
         }
         log.info("用户注册成功，账号：{}", request.getUsername());
+        // 注册成功删除Redis中的captchaVerifyParam
+        redisUtils.delete(request.getCaptchaParams());
     }
 
     /**

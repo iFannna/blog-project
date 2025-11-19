@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sau.mapper.ArticleMapper">
+
+    <!-- 结果映射：显式映射主键 + 关联分类/标签列表 -->
+    <resultMap id="ArticleResultMap" type="com.sau.pojo.entity.Article">
+        <id property="id" column="id"/>
+        <collection property="categories" ofType="java.lang.String"
+                    select="selectCategoryNamesByArticleId" column="id"/>
+        <collection property="tags" ofType="java.lang.String"
+                    select="selectTagNamesByArticleId" column="id"/>
+    </resultMap>
+
+    <!-- 分页查询文章（多条件过滤） -->
+    <select id="list" resultMap="ArticleResultMap">
+        <![CDATA[
+        SELECT
+            a.id, a.title, a.summary, a.cover_image, a.author_id, a.author_name, a.author_avatar,
+            a.publish_at, a.update_at, a.view_count, a.like_count, a.comment_count,
+            a.type, a.quote_content, a.create_time, a.update_time
+        FROM article a
+        ]]>
+        <!-- 分类多ID全包含：子查询过滤（避免XML解析错误，单独写标签） -->
+        <if test="categoryId != null and categoryId.size() > 0">
+            <![CDATA[
+            INNER JOIN (
+                SELECT article_id
+                FROM article_category
+                WHERE category_id IN
+            ]]>
+            <foreach collection="categoryId" item="id" open="(" close=")" separator=",">
+                #{id}
+            </foreach>
+            <![CDATA[
+                GROUP BY article_id
+                HAVING COUNT(DISTINCT category_id) = #{categoryIdSize}
+            ) ac_filter ON a.id = ac_filter.article_id
+            ]]>
+        </if>
+        <!-- 标签多ID全包含：子查询过滤 -->
+        <if test="tagId != null and tagId.size() > 0">
+            <![CDATA[
+            INNER JOIN (
+                SELECT article_id
+                FROM article_tag
+                WHERE tag_id IN
+            ]]>
+            <foreach collection="tagId" item="id" open="(" close=")" separator=",">
+                #{id}
+            </foreach>
+            <![CDATA[
+                GROUP BY article_id
+                HAVING COUNT(DISTINCT tag_id) = #{tagIdSize}
+            ) tag_filter ON a.id = tag_filter.article_id
+            ]]>
+        </if>
+        <!-- 动态条件过滤 -->
+        <where>
+            <if test="type != null">
+                <![CDATA[a.type = #{type}]]>
+            </if>
+            <if test="authorName != null and authorName != ''">
+                <![CDATA[AND a.author_name LIKE CONCAT('%', #{authorName}, '%')]]>
+            </if>
+            <if test="title != null and title != ''">
+                <![CDATA[AND a.title LIKE CONCAT('%', #{title}, '%')]]>
+            </if>
+            <if test="begin != null">
+                <![CDATA[AND DATE(a.publish_at) >= #{begin}]]>
+            </if>
+            <if test="end != null">
+                <![CDATA[AND DATE(a.publish_at) <= #{end}]]>
+            </if>
+        </where>
+        <![CDATA[
+        ORDER BY a.publish_at DESC
+        ]]>
+    </select>
+
+    <!-- 子查询：查询文章关联的分类名称 -->
+    <select id="selectCategoryNamesByArticleId" resultType="java.lang.String">
+        <![CDATA[
+        SELECT c.name
+        FROM article_category ac
+                 INNER JOIN category c ON ac.category_id = c.id
+        WHERE ac.article_id = #{id}
+        ]]>
+    </select>
+
+    <!-- 子查询：查询文章关联的标签名称 -->
+    <select id="selectTagNamesByArticleId" resultType="java.lang.String">
+        <![CDATA[
+        SELECT t.name
+        FROM article_tag atag
+                 INNER JOIN tag t ON atag.tag_id = t.id
+        WHERE atag.article_id = #{id}
+        ]]>
+    </select>
+
+</mapper>

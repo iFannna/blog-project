@@ -5,6 +5,7 @@ import com.aliyun.captcha20230305.models.VerifyIntelligentCaptchaRequest;
 import com.aliyun.captcha20230305.models.VerifyIntelligentCaptchaResponse;
 import com.aliyun.teautil.models.RuntimeOptions;
 import com.sau.pojo.VO.CaptchaVerifyVO;
+import com.sau.utils.RedisUtils;
 import com.sau.utils.clients.AliyunCaptchaClient;
 import com.sau.utils.properties.AliyunCaptchaProperties;
 import lombok.extern.slf4j.Slf4j;
@@ -21,46 +22,18 @@ public class CaptchaService {
     @Autowired
     private AliyunCaptchaProperties aliyunCaptchaProperties;
 
+    @Autowired
+    private RedisUtils redisUtils;
+
     /**
-     * 验证智能验证码
-     * @param captchaVerifyParam 前端传回的验证参数
-     * @return 验证结果
+     * 验证captchaVerifyParam
      */
-    public boolean verifyCaptcha(String captchaVerifyParam) {
-        try {
-            Client client = aliyunCaptchaClient.createClient();
-
-            VerifyIntelligentCaptchaRequest request = new VerifyIntelligentCaptchaRequest()
-                    .setCaptchaVerifyParam(captchaVerifyParam)
-                    .setSceneId(aliyunCaptchaProperties.getSceneId());
-
-            RuntimeOptions runtime = new RuntimeOptions();
-            VerifyIntelligentCaptchaResponse response = client.verifyIntelligentCaptchaWithOptions(request, runtime);
-
-            // 返回结果中Result字段的VerifyResult为true表示验证成功
-            if (response.getBody() != null &&
-                    response.getBody().getResult() != null &&
-                    Boolean.TRUE.equals(response.getBody().getResult().getVerifyResult())) {
-                log.info("验证码验证成功，VerifyCode: {}", response.getBody().getResult().getVerifyCode());
-                return true;
-            } else {
-                log.warn("验证码验证失败，VerifyCode: {}",
-                        response.getBody() != null && response.getBody().getResult() != null ?
-                                response.getBody().getResult().getVerifyCode() : "未知错误");
-                return false;
-            }
-        } catch (Exception e) {
-            log.error("验证码验证服务异常", e);
-            return false;
+    public CaptchaVerifyVO verifyCaptcha(String captchaVerifyParam) {
+        // 判断是否已经完成安全校验
+        if (redisUtils.exists(captchaVerifyParam)) {
+            log.info("{}已完成安全验证", captchaVerifyParam);
+            return new CaptchaVerifyVO(true, null, "已完成安全验证");
         }
-    }
-
-    /**
-     * 验证智能验证码（带详细错误信息）
-     * @param captchaVerifyParam 前端传回的验证参数
-     * @return 验证结果对象
-     */
-    public CaptchaVerifyVO verifyCaptchaWithDetail(String captchaVerifyParam) {
         try {
             Client client = aliyunCaptchaClient.createClient();
 
@@ -70,17 +43,15 @@ public class CaptchaService {
 
             RuntimeOptions runtime = new RuntimeOptions();
             VerifyIntelligentCaptchaResponse response = client.verifyIntelligentCaptchaWithOptions(request, runtime);
-
-            if (response.getBody() != null && response.getBody().getResult() != null) {
-                boolean success = Boolean.TRUE.equals(response.getBody().getResult().getVerifyResult());
-                String verifyCode = response.getBody().getResult().getVerifyCode();
-
-                log.info("验证码验证结果: {}, VerifyCode: {}", success ? "成功" : "失败", verifyCode);
-
-                return new CaptchaVerifyVO(success, verifyCode, "验证完成");
+            String verifyCode = response.getBody().getResult().getVerifyCode();
+            if (Boolean.TRUE.equals(response.getBody().getResult().getVerifyResult())) {
+                log.info("阿里云安全验证成功,VerifyCode: {}", verifyCode);
+                // 验证成功，将captchaVerifyParam保存到Redis中
+                redisUtils.set(captchaVerifyParam, "captchaVerifyParam");
+                return new CaptchaVerifyVO(true, verifyCode, "安全验证成功");
             } else {
-                log.warn("验证码验证返回结果为空");
-                return new CaptchaVerifyVO(false, "EMPTY_RESPONSE", "验证服务返回结果为空");
+                log.warn("阿里云安全验证失败,VerifyCode: {}", verifyCode);
+                return new CaptchaVerifyVO(false, verifyCode, "安全校验失败");
             }
         } catch (Exception e) {
             log.error("验证码验证服务异常", e);
