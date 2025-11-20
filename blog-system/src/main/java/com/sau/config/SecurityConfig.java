@@ -61,7 +61,7 @@ public class SecurityConfig {
                 // 3. 配置URL授权规则
                 .authorizeHttpRequests(auth -> auth
                         // 放行登录、注册接口
-                        .requestMatchers("/login", "/register", "/send-register-code","/refresh-token").permitAll()
+                        .requestMatchers("/login", "/register", "/send-register-code","/refresh-token","/articles").permitAll()
 
                         // 其他所有请求需要认证
                         .anyRequest().authenticated()

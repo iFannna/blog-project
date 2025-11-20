@@ -12,7 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ArticleQueryParam {
-    // 页码
+    // 页码 默认为 1
     private Integer page = 1;
     // 每页展示记录数 默认为 10
     private Integer pageSize = 10;

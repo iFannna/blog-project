@@ -47,15 +47,13 @@ public class JwtTokenFilter extends OncePerRequestFilter {
             log.info("JWT认证过滤器开始执行");
             // 1. 跳过不需要认证的接口
             List<String> publicPaths = Arrays.asList(
-                    "/login", "/register", "/send-register-code", "/refresh-token",
-                    "/wxCheck", "/wxLogin", "/wxCallback"
+                    "/login", "/register", "/send-register-code", "/refresh-token", "/articles"
             );
 
             // 获取请求路径
             String uri = request.getRequestURI();
             log.info("请求路径：{}", uri);
             AntPathMatcher antPathMatcher = new AntPathMatcher();
-            // 判断当前请求路径是否在白名单中 可用uri.contains("/login")判断是否包含字符串
             boolean isPublic = publicPaths.stream().anyMatch(path -> antPathMatcher.match(path, uri));
             if (isPublic) {
                 filterChain.doFilter(request, response);

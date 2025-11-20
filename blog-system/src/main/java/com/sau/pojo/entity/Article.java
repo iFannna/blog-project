@@ -26,9 +26,9 @@ public class Article {
     // 封面图片URL
     private String coverImage;
     // 分类
-    private List<String> categories;
+    private List<ArticleCatecory> categories;
     // 标签
-    private List<String> tags;
+    private List<ArticleTag> tags;
     // 作者ID
     private Integer authorId;
     // 作者名称
@@ -47,7 +47,7 @@ public class Article {
     private Integer likeCount;
     // 评论数
     private Integer commentCount;
-    // 文章类型（1：普通文章；2：引用类型文章）
+    // 文章类型（1：普通文章；2：引用类型文章 ......）
     private Integer type;
     // 引用内容（仅quote类型文章有值）
     private String quoteContent;
