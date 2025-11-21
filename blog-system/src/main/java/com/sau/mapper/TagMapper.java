@@ -16,7 +16,7 @@ public interface TagMapper {
     /**
      * 新增标签
      */
-    @Insert("insert into tag(name, create_time, update_time) values(#{name}, #{createTime}, #{updateTime})")
+    @Insert("insert into tag(name) values(#{name})")
     void add(Tag tag);
 
     /**

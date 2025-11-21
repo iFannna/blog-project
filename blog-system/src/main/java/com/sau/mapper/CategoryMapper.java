@@ -19,7 +19,7 @@ public interface CategoryMapper {
     /**
      * 新增分类
      */
-    @Insert("insert into category(name, create_time, update_time) values(#{name}, #{createTime}, #{updateTime})")
+    @Insert("insert into category(name) values(#{name})")
     void add(Category category);
 
     /**

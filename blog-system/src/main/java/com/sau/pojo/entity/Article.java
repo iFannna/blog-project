@@ -26,19 +26,19 @@ public class Article {
     // 封面图片URL
     private String coverImage;
     // 分类
-    private List<ArticleCatecory> categories;
+    private List<Category> categories;
     // 标签
-    private List<ArticleTag> tags;
+    private List<Tag> tags;
     // 作者ID
     private Integer authorId;
     // 作者名称
     private String authorName;
     // 作者头像URL
     private String authorAvatar;
-    // 发布时间
+    // 文章发布时间
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime publishAt;
-    // 修改时间
+    // 文章修改时间
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime updateAt;
     // 浏览量
@@ -51,10 +51,10 @@ public class Article {
     private Integer type;
     // 引用内容（仅quote类型文章有值）
     private String quoteContent;
-    // 创建时间
+    // 数据创建时间
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime createTime;
-    // 更新时间
+    // 数据更新时间
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime updateTime;
 }

@@ -1,13 +1,15 @@
 package com.sau.controller;
 
 import com.sau.pojo.entity.Article;
-import com.sau.pojo.entity.ArticleQueryParam;
+import com.sau.pojo.DTO.ArticleQueryDTO;
 import com.sau.pojo.entity.PageResult;
 import com.sau.pojo.entity.Result;
 import com.sau.service.ArticleService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * 文章相关接口
@@ -24,9 +26,9 @@ public class ArticleController {
      * 分页查询文章信息
      */
     @GetMapping
-    public Result<PageResult<Article>> page(ArticleQueryParam articleQueryParam) {
-        log.info("分页查询,参数:{}", articleQueryParam);
-        PageResult<Article> pageResult = articleService.page(articleQueryParam);
+    public Result<PageResult<Article>> page(ArticleQueryDTO articleQueryDTO) {
+        log.info("分页查询,参数:{}", articleQueryDTO);
+        PageResult<Article> pageResult = articleService.page(articleQueryDTO);
         return Result.success(pageResult);
     }
 
@@ -50,5 +52,14 @@ public class ArticleController {
         return Result.success();
     }
 
+    /**
+     * 批量删除文章信息
+     */
+    @DeleteMapping
+    public Result delete(@RequestParam("ids") List<Integer> ids) {
+        log.info("批量删除文章,参数:{}", ids);
+        articleService.delete(ids);
+        return Result.success();
+    }
 
 }

@@ -18,10 +18,6 @@ public class TagServiceImpl implements TagService {
      */
     @Override
     public void add(Tag tag) {
-        // 设置标签创建时间和修改时间
-        tag.setCreateTime(LocalDateTime.now());
-        tag.setUpdateTime(LocalDateTime.now());
-        // 插入标签
         tagMapper.add(tag);
     }
 

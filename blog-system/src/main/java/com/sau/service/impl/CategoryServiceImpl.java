@@ -28,10 +28,6 @@ public class CategoryServiceImpl implements CategoryService {
      */
     @Override
     public void add(Category category) {
-        // 设置创建时间和修改时间
-        category.setCreateTime(LocalDateTime.now());
-        category.setUpdateTime(LocalDateTime.now());
-        // 插入分类
         categoryMapper.add(category);
     }
 

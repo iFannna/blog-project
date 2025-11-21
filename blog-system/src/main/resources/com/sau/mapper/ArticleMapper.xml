@@ -7,11 +7,27 @@
     <!-- 结果映射：显式映射主键 + 关联分类/标签列表 -->
     <resultMap id="ArticleResultMap" type="com.sau.pojo.entity.Article">
         <id property="id" column="id"/>
-        <collection property="categories" ofType="java.lang.String"
-                    select="selectCategoryNamesByArticleId" column="id"/>
-        <collection property="tags" ofType="java.lang.String"
-                    select="selectTagNamesByArticleId" column="id"/>
+        <collection property="categories" ofType="com.sau.pojo.entity.Category"
+                    select="selectCategoriesByArticleId" column="id"/>
+        <collection property="tags" ofType="com.sau.pojo.entity.Tag"
+                    select="selectTagsByArticleId" column="id"/>
     </resultMap>
+
+    <!-- 子查询：根据文章ID查询关联的分类 -->
+    <select id="selectCategoriesByArticleId" resultType="com.sau.pojo.entity.Category">
+        SELECT c.id, c.name
+        FROM article_category ac
+                 INNER JOIN category c ON ac.category_id = c.id
+        WHERE ac.article_id = #{id}
+    </select>
+
+    <!-- 子查询：根据文章ID查询关联的标签 -->
+    <select id="selectTagsByArticleId" resultType="com.sau.pojo.entity.Tag">
+        SELECT t.id, t.name
+        FROM article_tag atag
+                 INNER JOIN tag t ON atag.tag_id = t.id
+        WHERE atag.article_id = #{id}
+    </select>
 
     <!--新增文章信息-->
     <insert id="add" parameterType="com.sau.pojo.entity.Article" useGeneratedKeys="true" keyProperty="id">
@@ -20,7 +36,6 @@
         VALUES (#{title}, #{summary}, #{url}, #{coverImage}, #{authorId}, #{authorName}, #{authorAvatar}, #{publishAt},
                 #{updateAt}, #{viewCount}, #{likeCount}, #{commentCount}, #{type}, #{quoteContent}, #{createTime}, #{updateTime})
     </insert>
-
 
     <!-- 分页查询文章（多条件过滤） -->
     <select id="list" resultMap="ArticleResultMap">
@@ -31,7 +46,7 @@
             a.type, a.quote_content, a.create_time, a.update_time
         FROM article a
         ]]>
-        <!-- 分类多ID全包含：子查询过滤（避免XML解析错误，单独写标签） -->
+        <!-- 分类多ID全包含：子查询过滤 -->
         <if test="categoryId != null and categoryId.size() > 0">
             <![CDATA[
             INNER JOIN (
@@ -88,36 +103,22 @@
         ]]>
     </select>
 
-    <!-- 子查询：查询文章关联的分类名称 -->
-    <select id="selectCategoryNamesByArticleId" resultType="java.lang.String">
-        <![CDATA[
-        SELECT c.name
-        FROM article_category ac
-                 INNER JOIN category c ON ac.category_id = c.id
-        WHERE ac.article_id = #{id}
-        ]]>
-    </select>
-
-    <!-- 子查询：查询文章关联的标签名称 -->
-    <select id="selectTagNamesByArticleId" resultType="java.lang.String">
-        <![CDATA[
-        SELECT t.name
-        FROM article_tag atag
-                 INNER JOIN tag t ON atag.tag_id = t.id
-        WHERE atag.article_id = #{id}
-        ]]>
-    </select>
-
     <!-- 根据ID查询文章-->
-    <select id="getById" resultType="com.sau.pojo.entity.Article">
-        <![CDATA[
+    <select id="getById" resultMap="ArticleResultMap">
         SELECT
             id, title, summary, url, cover_image, author_id, author_name, author_avatar,
             publish_at, update_at, view_count, like_count, comment_count,
             type, quote_content, create_time, update_time
         FROM article
         WHERE id = #{id}
-        ]]>
     </select>
+
+    <!-- 批量删除文章信息 -->
+    <delete id="delete">
+        DELETE FROM article WHERE id IN
+        <foreach collection="ids" item="id" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </delete>
 
 </mapper>

@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ArticleCatecory {
+public class ArticleCategory {
     // 文章ID
     private Integer articleId;
     // 分类ID
