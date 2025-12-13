@@ -1,6 +1,6 @@
 package com.sau.utils;
 
-import com.sau.anno.PasswordStrength;
+import com.sau.annotation.PasswordStrength;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 

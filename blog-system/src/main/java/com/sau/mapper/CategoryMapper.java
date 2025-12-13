@@ -20,7 +20,7 @@ public interface CategoryMapper {
      * 新增分类
      */
     @Insert("insert into category(name) values(#{name})")
-    void add(Category category);
+    void save(Category category);
 
     /**
      * 根据ID删除分类

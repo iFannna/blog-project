@@ -20,10 +20,30 @@ public interface ArticleService {
     /**
      * 新增文章信息
      */
-    void add(Article article);
+    void save(Article article);
 
     /**
      * 批量删除文章信息
      */
     void delete(List<Integer> ids);
+
+    /**
+     * 查询热门的文章列表
+     */
+    List<Article> listHot();
+
+    /**
+     * 查询最赞的文章列表
+     */
+    List<Article> listMostLike();
+
+    /**
+     * 查询最Star的文章列表
+     */
+    List<Article> listMostStar();
+
+    /**
+     * 获取最分享的文章列表
+     */
+    List<Article> listMostShare();
 }

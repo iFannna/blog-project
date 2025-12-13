@@ -1,6 +1,6 @@
 package com.sau.controller;
 
-import com.sau.anno.Log;
+import com.sau.annotation.Log;
 import com.sau.pojo.DTO.LoginDTO;
 import com.sau.pojo.VO.LoginVO;
 import com.sau.pojo.entity.AuthResult;

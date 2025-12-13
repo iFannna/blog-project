@@ -24,7 +24,7 @@ public class OperationLogAspect {
     @Autowired
     private OperateLogMapper operateLogMapper;
 
-    @Around("@annotation(com.sau.anno.Log)")
+    @Around("@annotation(com.sau.annotation.Log)")
     public Object logOperation(ProceedingJoinPoint joinPoint) throws Throwable {
         long startTime = System.currentTimeMillis();
 

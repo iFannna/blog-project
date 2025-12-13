@@ -13,7 +13,7 @@ public interface CategoryService {
     /**
      * 新增分类
      */
-    void add(Category category);
+    void save(Category category);
 
     /**
      * 根据ID删除分类

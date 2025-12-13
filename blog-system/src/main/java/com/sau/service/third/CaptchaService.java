@@ -29,10 +29,9 @@ public class CaptchaService {
      * 验证captchaVerifyParam
      */
     public CaptchaVerifyVO verifyCaptcha(String captchaVerifyParam) {
-        // 判断是否已经完成安全校验
-        if (redisUtils.exists(captchaVerifyParam)) {
-            log.info("{}已完成安全验证", captchaVerifyParam);
-            return new CaptchaVerifyVO(true, null, "已完成安全验证");
+        // 判断Redis中已存在验证码
+        if (redisUtils.exists("captchaVerifyParam:" + captchaVerifyParam)) {
+            return new CaptchaVerifyVO(true, null, "验证码已存在");
         }
         try {
             Client client = aliyunCaptchaClient.createClient();
@@ -46,8 +45,8 @@ public class CaptchaService {
             String verifyCode = response.getBody().getResult().getVerifyCode();
             if (Boolean.TRUE.equals(response.getBody().getResult().getVerifyResult())) {
                 log.info("阿里云安全验证成功,VerifyCode: {}", verifyCode);
-                // 验证成功，将captchaVerifyParam保存到Redis中
-                redisUtils.set(captchaVerifyParam, "captchaVerifyParam");
+                // 将验证码保存到Redis中有效期5分钟
+                redisUtils.set("captcha:" + captchaVerifyParam, captchaVerifyParam, 5 * 60);
                 return new CaptchaVerifyVO(true, verifyCode, "安全验证成功");
             } else {
                 log.warn("阿里云安全验证失败,VerifyCode: {}", verifyCode);

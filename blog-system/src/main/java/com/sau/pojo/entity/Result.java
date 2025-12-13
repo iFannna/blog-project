@@ -10,7 +10,7 @@ import java.io.Serializable;
  * @param <T>
  */
 @Data
-public class Result<T> implements Serializable {
+public class Result<T> {
 
     /**
      * 状态码

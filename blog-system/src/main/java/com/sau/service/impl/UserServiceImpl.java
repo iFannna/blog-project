@@ -55,8 +55,8 @@ public class UserServiceImpl implements UserService {
             throw e;
         }
         log.info("用户注册成功，账号：{}", request.getUsername());
-        // 注册成功删除Redis中的captchaVerifyParam
-        redisUtils.delete(request.getCaptchaParams());
+        // 注册成功删除Redis中的邮箱注册码
+        redisUtils.delete("register:code:" + request.getEmail());
     }
 
     /**

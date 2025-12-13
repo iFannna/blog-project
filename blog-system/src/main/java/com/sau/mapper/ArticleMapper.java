@@ -25,10 +25,30 @@ public interface ArticleMapper {
      * 新增文章信息
      */
     @Options(useGeneratedKeys = true, keyProperty = "id")
-    void add(Article article);
+    void save(Article article);
 
     /**
      * 批量删除文章信息
      */
     void delete(@Param("ids") List<Integer> ids);
+
+    /**
+     * 查询最热门的文章
+     */
+    List<Article> listHot();
+
+    /**
+     * 查询最赞的文章
+     */
+    List<Article> listMostLike();
+
+    /**
+     * 查询最Star的文章
+     */
+    List<Article> listMostStar();
+
+    /**
+     * 获取最分享的文章
+     */
+    List<Article> listMostShare();
 }

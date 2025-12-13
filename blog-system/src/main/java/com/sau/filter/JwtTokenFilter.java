@@ -44,10 +44,12 @@ public class JwtTokenFilter extends OncePerRequestFilter {
             , IOException {
 
         try {
-            log.info("JWT认证过滤器开始执行");
+
             // 1. 跳过不需要认证的接口
             List<String> publicPaths = Arrays.asList(
-                    "/login", "/register", "/send-register-code", "/refresh-token", "/articles"
+                    "/login", "/register", "/send-register-code", "/refresh-token",
+                    "/articles", "/tags", "/categories",
+                    "/articles/hot", "/articles/mostLike", "/articles/mostShare", "/articles/mostStar"
             );
 
             // 获取请求路径

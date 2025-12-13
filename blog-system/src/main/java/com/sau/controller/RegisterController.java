@@ -1,18 +1,16 @@
 package com.sau.controller;
 
-import com.sau.anno.Log;
-import com.sau.pojo.DTO.RegisterDTO;
+import com.sau.annotation.Log;
 import com.sau.pojo.VO.CaptchaVerifyVO;
+import com.sau.pojo.DTO.RegisterDTO;
 import com.sau.pojo.entity.Result;
-import com.sau.service.UserService;
 import com.sau.service.third.CaptchaService;
 import com.sau.service.third.EmailService;
+import com.sau.service.UserService;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 /**
@@ -37,21 +35,19 @@ public class RegisterController {
      * 发送邮件验证码
      */
     @Log
-    @PostMapping("/send-register-code")
-    public Result sendRegisterCode(@RequestBody RegisterDTO request) {
+    @GetMapping("/send-register-code")
+    public Result sendRegisterCode(String email, String captchaParams ) {
 
         // 1. 安全校验
-        CaptchaVerifyVO captchaResult = captchaService.verifyCaptcha(request.getCaptchaParams());
+        CaptchaVerifyVO captchaResult = captchaService.verifyCaptcha(captchaParams);
         if (!captchaResult.isSuccess()) {
-            return Result.error(captchaResult.getMessage());
+            return Result.error("安全验证失败，请重试");
         }
 
-        boolean result = emailService.sendRegisterCode(request);
-        if (!result){
-            return Result.error("验证码发送失败，请稍后重试");
-        }
-        return Result.success();
-
+        boolean success = emailService.sendRegisterCode(email);
+        return success ?
+                Result.success() :
+                Result.error("验证码发送失败，请稍后重试");
     }
 
     /**
@@ -59,13 +55,13 @@ public class RegisterController {
      */
     @Log
     @PostMapping("/register")
-    public Result register(@Valid @RequestBody RegisterDTO request) {
-        log.info("用户注册请求：{}", request);
+    public Result register(@Valid @RequestBody RegisterDTO registerDTO) {
+        log.info("用户注册请求：{}", registerDTO);
         // 判断邮箱验证码是否正确
-        if (!emailService.verifyCode(request.getEmail(), request.getEmailVerificationCode())){
+        if (!emailService.verifyCode(registerDTO.getEmail(), registerDTO.getEmailVerificationCode())){
             return Result.error("验证码错误");
         }
-        userService.register(request);
+        userService.register(registerDTO);
         return Result.success();
     }
 }

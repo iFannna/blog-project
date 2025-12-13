@@ -17,7 +17,7 @@ public interface TagMapper {
      * 新增标签
      */
     @Insert("insert into tag(name) values(#{name})")
-    void add(Tag tag);
+    void save(Tag tag);
 
     /**
      * 根据ID删除标签

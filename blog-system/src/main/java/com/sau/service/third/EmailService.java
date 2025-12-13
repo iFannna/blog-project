@@ -4,7 +4,6 @@ import com.aliyun.dm20151123.Client;
 import com.aliyun.dm20151123.models.SingleSendMailRequest;
 import com.aliyun.teautil.models.RuntimeOptions;
 import com.sau.constants.EmailConstants;
-import com.sau.pojo.DTO.RegisterDTO;
 import com.sau.utils.RedisUtils;
 import com.sau.utils.clients.AliyunEmailClient;
 import com.sau.utils.properties.AliyunEmailProperties;
@@ -12,6 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.FileCopyUtils;
 
@@ -33,6 +33,7 @@ public class EmailService {
     @Autowired
     private RedisUtils redisUtils;
 
+    // 注入资源加载器，用于读取HTML模板文件
     @Autowired
     private ResourceLoader resourceLoader;
 
@@ -45,32 +46,23 @@ public class EmailService {
     }
 
     /**
-     * 发送注册验证码邮件（增加防刷机制）
+     * 发送注册验证码邮件
      */
-    public boolean sendRegisterCode(RegisterDTO registerDTO) {
-        String email = registerDTO.getEmail();
-        // 定义Redis Key：验证码Key + 发送冷却Key
-        String codeKey = "register:code:" + email;
-        String cooldownKey = "register:cooldown:" + email;
-
+    public boolean sendRegisterCode(String email) {
+        // 判断redis中是否存在该邮箱验证码冷却
+        if (redisUtils.exists("register:code:" + email + ":cooling")) {
+            log.warn("邮箱验证码冷却中，请稍后再试");
+            return false;
+        }
         try {
-            // 1. 防刷校验：检查是否在60秒冷却期内
-            if (redisUtils.exists(cooldownKey)) {
-                // 冷却期内发起二次请求，直接失效旧验证码
-                redisUtils.delete(codeKey);
-                log.warn("邮箱{}处于60秒发送冷却期，已失效旧验证码，请勿重复发送", email);
-                return false;
-            }
-
-            // 2. 生成新验证码（覆盖旧验证码，自然使其失效）
+            // 生成验证码并存储到Redis
             String code = generateCode();
-            redisUtils.set(codeKey, code, EmailConstants.CODE_EXPIRE);
-            log.info("邮箱{}的验证码已更新为：{}，有效期5分钟", email, code);
+            String redisKey = "register:code:" + email;
+            redisUtils.set(redisKey, code, EmailConstants.CODE_EXPIRE);
+            // 设置该邮件验证码的冷却时间
+            redisUtils.set(redisKey + ":cooling", email, EmailConstants.SEND_COOLDOWN);
 
-            // 3. 设置发送冷却Key（60秒过期，核心防刷）
-            redisUtils.set(cooldownKey, "lock", EmailConstants.SEND_COOLDOWN);
-
-            // 4. 构建邮件请求并发送
+            // 构建邮件请求
             Client client = emailClient.createClient();
             SingleSendMailRequest request = new SingleSendMailRequest()
                     .setAccountName(emailProperties.getAccountName())
@@ -78,16 +70,19 @@ public class EmailService {
                     .setToAddress(email)
                     .setSubject("注册验证码（5分钟内有效）")
                     .setFromAlias(emailProperties.getFromAlias())
+                    // 邮件内容
                     .setHtmlBody(buildEmailContent(code))
                     .setReplyToAddress(false);
 
             // 发送邮件
             client.singleSendMailWithOptions(request, new RuntimeOptions());
 
-            log.info("邮箱{}的注册验证码邮件发送成功", email);
+            log.info("邮件验证码发送成功，邮箱：{}", email);
             return true;
+
         } catch (Exception e) {
-            log.error("邮箱{}的验证码邮件发送失败", email, e);
+
+            log.error("邮件发送失败，邮箱：{}", email, e);
             return false;
         }
     }
@@ -100,24 +95,25 @@ public class EmailService {
             return false;
         }
 
-        String codeKey = "register:code:" + email;
-        String storedCode = (String) redisUtils.get(codeKey);
+        String redisKey = "register:code:" + email;
+        String storedCode = (String) redisUtils.get(redisKey);
 
-        // 验证通过后删除验证码（防止重复使用）
+        // 验证通过后删除验证码
         if (code.equals(storedCode)) {
-            redisUtils.delete(codeKey);
-            log.info("邮箱{}验证成功，已删除验证码缓存", email);
+            redisUtils.delete(redisKey);
             return true;
         }
-        log.warn("邮箱{}验证码错误", email);
         return false;
     }
+
 
     /**
      * 从模板加载并构建邮件HTML内容
      */
     private String buildEmailContent(String code) throws IOException {
+        // 读取HTML模板文件
         String templateContent = loadHtmlTemplate(EmailConstants.REGISTER_CODE_TEMPLATE_PATH);
+        // 替换模板中的验证码占位符
         return templateContent.replace("${code}", code);
     }
 
@@ -125,7 +121,9 @@ public class EmailService {
      * 加载HTML模板文件内容
      */
     private String loadHtmlTemplate(String templatePath) throws IOException {
+        // 加载资源文件
         Resource resource = resourceLoader.getResource(templatePath);
+        // 读取文件内容
         byte[] contentBytes = FileCopyUtils.copyToByteArray(resource.getInputStream());
         return new String(contentBytes, StandardCharsets.UTF_8);
     }

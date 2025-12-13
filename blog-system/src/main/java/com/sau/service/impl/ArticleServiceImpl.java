@@ -56,11 +56,11 @@ public class ArticleServiceImpl implements ArticleService {
      */
     @Transactional(rollbackFor = {Exception.class})
     @Override
-    public void add(Article article) {
+    public void save(Article article) {
         // 插入文章基本信息
         article.setCreateTime(LocalDateTime.now());
         article.setUpdateTime(LocalDateTime.now());
-        articleMapper.add(article);
+        articleMapper.save(article);
 
         // 2. 处理文章标签关联表
         List<Tag> tags = article.getTags();
@@ -78,7 +78,7 @@ public class ArticleServiceImpl implements ArticleService {
         }
         // 批量插入标签关联数据
         if (!CollectionUtils.isEmpty(articleTags)) {
-            articleTagMapper.add(articleTags);
+            articleTagMapper.save(articleTags);
         }
 
         // 3. 处理文章分类关联表
@@ -97,7 +97,7 @@ public class ArticleServiceImpl implements ArticleService {
         }
         // 批量插入分类关联数据
         if (!CollectionUtils.isEmpty(articleCategories)) {
-            articleCategoryMapper.add(articleCategories);
+            articleCategoryMapper.save(articleCategories);
         }
 
     }
@@ -111,9 +111,41 @@ public class ArticleServiceImpl implements ArticleService {
         // 批量删除文章基本信息
         articleMapper.delete(ids);
         // 批量删除文章标签关联表
-        articleTagMapper.delete(ids);
+        articleTagMapper.deleteByArticleIds(ids);
         // 批量删除文章分类关联表
-        articleCategoryMapper.delete(ids);
+        articleCategoryMapper.deleteByArticleIds(ids);
+    }
+
+    /**
+     * 获取热门文章信息
+     */
+    @Override
+    public List<Article> listHot() {
+        return articleMapper.listHot();
+    }
+
+    /**
+     * 获取最赞的文章信息
+     */
+    @Override
+    public List<Article> listMostLike() {
+        return articleMapper.listMostLike();
+    }
+
+    /**
+     * 获取最Star的文章信息
+     */
+    @Override
+    public List<Article> listMostStar() {
+        return articleMapper.listMostStar();
+    }
+
+    /**
+     * 获取最分享的文章信息
+     */
+    @Override
+    public List<Article> listMostShare() {
+        return articleMapper.listMostShare();
     }
 
 }

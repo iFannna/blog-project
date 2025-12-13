@@ -15,10 +15,15 @@ public interface ArticleTagMapper {
     /**
      * 新增文章标签关联
      */
-    void add(List<ArticleTag> tags);
+    void save(List<ArticleTag> tags);
 
     /**
-     * 批量删除文章标签关联
+     * 根据文章ID批量删除文章标签关联
      */
-    void delete(@Param("ids") List<Integer> ids);
+    void deleteByArticleIds(@Param("ids") List<Integer> ids);
+
+    /**
+     * 根据标签ID批量删除文章标签关联
+     */
+    void deleteByTagIds(@Param("ids") List<Integer> ids);
 }

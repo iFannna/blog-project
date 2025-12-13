@@ -45,6 +45,10 @@ public class Article {
     private Integer viewCount;
     // 点赞数
     private Integer likeCount;
+    // 收藏数
+    private Integer starCount;
+    // 转发数
+    private Integer shareCount;
     // 评论数
     private Integer commentCount;
     // 文章类型（1：普通文章；2：引用类型文章 ......）

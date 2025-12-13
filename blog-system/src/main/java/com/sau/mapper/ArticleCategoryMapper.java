@@ -14,10 +14,15 @@ public interface ArticleCategoryMapper {
     /**
      * 新增文章分类关联
      */
-    void add(List<ArticleCategory> categories);
+    void save(List<ArticleCategory> categories);
 
     /**
-     * 批量删除文章分类关联
+     * 根据文章ID批量删除文章分类关联
      */
-    void delete(@Param("ids") List<Integer> ids);
+    void deleteByArticleIds(@Param("ids") List<Integer> ids);
+
+    /**
+     * 根据分类ID批量删除文章分类关联
+     */
+    void deleteByCategoryIds(@Param("ids") List<Integer> ids);
 }

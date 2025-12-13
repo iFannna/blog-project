@@ -8,7 +8,7 @@ public interface TagService {
     /**
      * 新增标签
      */
-    void add(Tag tag);
+    void save(Tag tag);
 
     /**
      * 根据id删除标签

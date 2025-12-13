@@ -1,4 +1,4 @@
-package com.sau.anno;
+package com.sau.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

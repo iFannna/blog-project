@@ -1,6 +1,6 @@
 package com.sau.pojo.DTO;
 
-import com.sau.anno.PasswordStrength;
+import com.sau.annotation.PasswordStrength;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
@@ -8,7 +8,6 @@ import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 /**
  * 注册请求参数
  */
@@ -40,16 +39,10 @@ public class RegisterDTO {
     @NotBlank
     @Email(regexp = "^[^\s@]+@[^\s@]+\\.[^\s@]+$")
     private String email;
-    /**
-     * 验证码参数
-     */
-    @NotBlank
-    private String captchaParams;
+
     /**
      * 邮箱验证码
      */
     @NotBlank
     private String emailVerificationCode;
-
-
 }

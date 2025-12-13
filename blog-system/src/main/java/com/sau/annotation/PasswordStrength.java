@@ -1,4 +1,4 @@
-package com.sau.anno;
+package com.sau.annotation;
 
 import com.sau.utils.PasswordValidatorUtils;
 import jakarta.validation.Constraint;
