@@ -8,16 +8,6 @@ import java.util.List;
 
 public interface ArticleService {
     /**
-     * 分页查询文章信息列表
-     */
-    PageResult<Article> page(ArticleQueryDTO articleQueryDTO);
-
-    /**
-     * 根据ID查询文章信息
-     */
-    Article getById(Integer id);
-
-    /**
      * 新增文章信息
      */
     void save(Article article);
@@ -26,6 +16,16 @@ public interface ArticleService {
      * 批量删除文章信息
      */
     void delete(List<Integer> ids);
+
+    /**
+     * 分页查询文章信息列表
+     */
+    PageResult<Article> page(ArticleQueryDTO articleQueryDTO);
+
+    /**
+     * 根据ID查询文章信息
+     */
+    Article getById(Integer id);
 
     /**
      * 查询热门的文章列表

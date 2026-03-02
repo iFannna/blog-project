@@ -90,9 +90,9 @@ public class AuthServiceImpl implements AuthService {
 
         return new AuthResult(
                 dbUser.getId(),
-                dbUser.getName(),
+                dbUser.getNickname(),
                 dbUser.getUsername(),
-                dbUser.getImage(),
+                dbUser.getAvatar(),
                 accessToken,
                 refreshToken,
                 tokenExpiration);

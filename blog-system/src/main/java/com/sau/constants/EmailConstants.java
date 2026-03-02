@@ -10,6 +10,6 @@ public class EmailConstants {
     // 验证码发送冷却时间：60秒（防刷核心）
     public static final long SEND_COOLDOWN = 60;
     // HTML模板路径
-    public static final String REGISTER_CODE_TEMPLATE_PATH = "classpath:templates/register-code-template.html";
+    public static final String EMAIL_CODE_TEMPLATE_PATH = "classpath:templates/email-code-template.html";
 
 }

@@ -37,7 +37,7 @@ public class OperationLogAspect {
 
         // 构建日志实体
         OperateLog olog = new OperateLog();
-        olog.setOperateUserId(getCurrentUserId());
+        olog.setOperateUserId(CurrentHolderUtils.getCurrentId());
         olog.setOperateTime(LocalDateTime.now());
         olog.setClassName(joinPoint.getTarget().getClass().getName());
         olog.setMethodName(joinPoint.getSignature().getName());
@@ -52,8 +52,4 @@ public class OperationLogAspect {
         return result;
     }
 
-    private Integer getCurrentUserId() {
-        // 实现获取当前登录用户的逻辑
-        return CurrentHolderUtils.getCurrentId();
-    }
 }

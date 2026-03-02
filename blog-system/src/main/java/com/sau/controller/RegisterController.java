@@ -36,15 +36,16 @@ public class RegisterController {
      */
     @Log
     @GetMapping("/send-register-code")
-    public Result sendRegisterCode(String email, String captchaParams ) {
+    public Result sendRegisterCode(String email, String captchaParam ) {
 
         // 1. 安全校验
-        CaptchaVerifyVO captchaResult = captchaService.verifyCaptcha(captchaParams);
+        CaptchaVerifyVO captchaResult = captchaService.verifyCaptcha(captchaParam);
         if (!captchaResult.isSuccess()) {
             return Result.error("安全验证失败，请重试");
         }
 
-        boolean success = emailService.sendRegisterCode(email);
+        // 2. 发送邮件验证码
+        boolean success = emailService.sendEmailCode(email);
         return success ?
                 Result.success() :
                 Result.error("验证码发送失败，请稍后重试");
@@ -59,7 +60,7 @@ public class RegisterController {
         log.info("用户注册请求：{}", registerDTO);
         // 判断邮箱验证码是否正确
         if (!emailService.verifyCode(registerDTO.getEmail(), registerDTO.getEmailVerificationCode())){
-            return Result.error("验证码错误");
+            return Result.error("验证码错误或已失效");
         }
         userService.register(registerDTO);
         return Result.success();

@@ -51,5 +51,5 @@ aliyun:
   email:
     endpoint: dm.aliyuncs.com
     account-name: backend@mail.iiisau.online  # 你的发件人账号
-    from-alias: 个人博客                        # 发件人显示名称
+    from-alias: 赵瑾瑜个人博客                        # 发件人显示名称
 

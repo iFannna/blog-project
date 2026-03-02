@@ -17,7 +17,9 @@ public class User {
     // 用户ID
     private Integer id;
     // 昵称
-    private String name;
+    private String nickname;
+    // 简介
+    private String introduction;
     // 用户名
     private String username;
     // 账号
@@ -29,7 +31,7 @@ public class User {
     // 手机号
     private String phone;
     // 头像
-    private String image;
+    private String avatar;
     // 账号状态
     private Integer status;
     // 用户类型
