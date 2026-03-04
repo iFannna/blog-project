@@ -16,7 +16,7 @@ import java.util.List;
  */
 @Slf4j
 @RestController
-@RequestMapping("/tags")
+@RequestMapping("/tag")
 public class TagController {
 
     @Autowired

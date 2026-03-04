@@ -2,10 +2,10 @@ package com.sau.service.impl;
 
 import com.sau.constants.JwtConstants;
 import com.sau.constants.RequestConstants;
-import com.sau.mapper.UserMapper;
+import com.sau.mapper.SysUserMapper;
 import com.sau.pojo.DTO.LoginDTO;
 import com.sau.pojo.entity.AuthResult;
-import com.sau.pojo.entity.User;
+import com.sau.pojo.entity.SysUser;
 import com.sau.service.AuthService;
 import com.sau.utils.CookieUtils;
 import com.sau.utils.JwtUtils;
@@ -26,7 +26,7 @@ import java.util.Map;
 public class AuthServiceImpl implements AuthService {
 
     @Autowired
-    private UserMapper userMapper;
+    private SysUserMapper sysUserMapper;
 
     @Autowired
     private RedisTokenUtils redisTokenUtils;
@@ -48,31 +48,31 @@ public class AuthServiceImpl implements AuthService {
         String rawPassword = loginDTO.getPassword();
 
         // 2. 根据账号查询数据库中的用户
-        User dbUser = userMapper.selectByAccount(account);
-        if (dbUser == null) {
+        SysUser dbSysUser = sysUserMapper.selectByAccount(account);
+        if (dbSysUser == null) {
             log.warn("账号不存在：{}", account);
             return null;
         }
 
         // 3. 用PasswordEncoder验证明文密码与数据库中的加密密码是否匹配
-        boolean matches = passwordEncoder.matches(rawPassword, dbUser.getPassword());
+        boolean matches = passwordEncoder.matches(rawPassword, dbSysUser.getPassword());
         if (!matches) {
             log.warn("密码错误：{}", account);
             return null;
         }
 
         // 4. 验证通过，生成access token和refresh token
-        log.info("登录成功，用户信息: {}", dbUser);
+        log.info("登录成功，用户信息: {}", dbSysUser);
 
         Map<String, Object> claims = new HashMap<>();
-        claims.put(JwtConstants.USER_ID, dbUser.getId());
-        claims.put(JwtConstants.USERNAME, dbUser.getUsername());
+        claims.put(JwtConstants.USER_ID, dbSysUser.getId());
+        claims.put(JwtConstants.USERNAME, dbSysUser.getUsername());
 
         // 4.1 access token
         String accessToken = JwtUtils.generateToken(claims, JwtConstants.TEMP_TOKEN_EXPIRATION);
         log.info("生成accessToken：{}", accessToken);
         // 将access token存入Redis
-        redisTokenUtils.saveAccessToken(dbUser.getId(), accessToken, JwtConstants.TEMP_TOKEN_EXPIRATION/1000);
+        redisTokenUtils.saveAccessToken(dbSysUser.getId(), accessToken, JwtConstants.TEMP_TOKEN_EXPIRATION/1000);
 
 
         long tokenExpiration;
@@ -84,15 +84,15 @@ public class AuthServiceImpl implements AuthService {
         String refreshToken = JwtUtils.generateToken(claims, tokenExpiration);
         log.info("生成refreshToken：{}", refreshToken);
         // 将refresh token存入Redis
-        redisTokenUtils.saveRefreshToken(dbUser.getId(), refreshToken, tokenExpiration/1000);
+        redisTokenUtils.saveRefreshToken(dbSysUser.getId(), refreshToken, tokenExpiration/1000);
 
         // 5. 返回结果
 
         return new AuthResult(
-                dbUser.getId(),
-                dbUser.getNickname(),
-                dbUser.getUsername(),
-                dbUser.getAvatar(),
+                dbSysUser.getId(),
+                dbSysUser.getNickname(),
+                dbSysUser.getUsername(),
+                dbSysUser.getAvatar(),
                 accessToken,
                 refreshToken,
                 tokenExpiration);
@@ -140,6 +140,9 @@ public class AuthServiceImpl implements AuthService {
         }
     }
 
+    /**
+     * 退出相关逻辑
+     */
     @Override
     public void logout(HttpServletRequest request, HttpServletResponse response) {
 

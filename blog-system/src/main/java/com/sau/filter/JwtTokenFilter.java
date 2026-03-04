@@ -48,8 +48,10 @@ public class JwtTokenFilter extends OncePerRequestFilter {
             // 1. 跳过不需要认证的接口
             List<String> publicPaths = Arrays.asList(
                     "/login", "/register", "/send-register-code", "/refresh-token",
-                    "/articles", "/tags", "/categories",
-                    "/articles/hot", "/articles/mostLike", "/articles/mostShare", "/articles/mostStar"
+                    "/article", "/tag", "/category",
+                    "/article/hot", "/article/mostLike", "/article/mostShare", "/article/mostStar",
+                    "/comment", "/comment/reply"
+
             );
 
             // 获取请求路径

@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class SysUser {
     // 用户ID
     private Integer id;
     // 昵称
@@ -34,8 +34,6 @@ public class User {
     private String avatar;
     // 账号状态
     private Integer status;
-    // 用户类型
-    private Integer userType;
     // 创建时间
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime createTime;

@@ -2,10 +2,9 @@ package com.sau.service;
 
 import com.sau.pojo.DTO.*;
 import com.sau.pojo.entity.Result;
-import jakarta.validation.constraints.NotBlank;
 
 
-public interface UserService {
+public interface SysUserService {
 
     /**
      * 注册
@@ -20,7 +19,7 @@ public interface UserService {
     /**
      * 修改用户信息
      */
-    boolean updateProfiles(UserProfilesUpdateDTO userProfilesUpdateDTO);
+    Result updateProfiles(UserProfilesUpdateDTO userProfilesUpdateDTO);
 
     /**
      * 修改密码

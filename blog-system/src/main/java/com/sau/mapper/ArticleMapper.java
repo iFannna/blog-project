@@ -1,7 +1,9 @@
 package com.sau.mapper;
 
+import com.sau.pojo.DTO.CommentQueryDTO;
 import com.sau.pojo.entity.Article;
 import com.sau.pojo.DTO.ArticleQueryDTO;
+import com.sau.pojo.entity.Comment;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Options;
 import org.apache.ibatis.annotations.Param;
@@ -14,7 +16,7 @@ public interface ArticleMapper {
     /**
      * 分页查询文章信息列表
      */
-    List<Article> list(ArticleQueryDTO articleQueryDTO);
+    List<Article> pageListArticles(ArticleQueryDTO articleQueryDTO);
 
     /**
      * 根据ID查询文章信息
@@ -51,4 +53,6 @@ public interface ArticleMapper {
      * 获取最分享的文章
      */
     List<Article> listMostShare();
+
+
 }

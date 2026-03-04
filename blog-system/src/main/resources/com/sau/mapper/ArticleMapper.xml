@@ -31,19 +31,19 @@
 
     <!--新增文章信息-->
     <insert id="save" parameterType="com.sau.pojo.entity.Article" useGeneratedKeys="true" keyProperty="id">
-        INSERT INTO article (title, summary, url, cover_image, author_id, author_name, author_avatar, publish_at, update_at,
-                             view_count, like_count, star_count, share_count, comment_count, type, quote_content, create_time, update_time)
-        VALUES (#{title}, #{summary}, #{url}, #{coverImage}, #{authorId}, #{authorName}, #{authorAvatar}, #{publishAt},
-                #{updateAt}, #{viewCount}, #{likeCount}, #{starCount}, #{shareCount}, #{commentCount}, #{type}, #{quoteContent}, #{createTime}, #{updateTime})
+        INSERT INTO article (title, summary, url, cover_image, author_id, author_name, author_avatar,
+                             view_count, like_count, star_count, share_count, comment_count, type, content, create_time, update_time)
+        VALUES (#{title}, #{summary}, #{url}, #{coverImage}, #{authorId}, #{authorName}, #{authorAvatar},
+                #{viewCount}, #{likeCount}, #{starCount}, #{shareCount}, #{commentCount}, #{type}, #{content}, #{createTime}, #{updateTime})
     </insert>
 
     <!-- 分页查询文章（多条件过滤） -->
-    <select id="list" resultMap="ArticleResultMap">
+    <select id="pageListArticles" resultMap="ArticleResultMap">
         <![CDATA[
         SELECT
             a.id, a.title, a.summary,a.url, a.cover_image, a.author_id, a.author_name, a.author_avatar,
-            a.publish_at, a.update_at, a.view_count, a.like_count, a.star_count, a.comment_count,
-            a.type, a.quote_content, a.create_time, a.update_time
+             a.view_count, a.like_count, a.star_count, a.comment_count,
+            a.type, a.content, a.create_time, a.update_time
         FROM article a
         ]]>
         <!-- 分类多ID全包含：子查询过滤 -->
@@ -92,14 +92,14 @@
                 <![CDATA[AND a.title LIKE CONCAT('%', #{title}, '%')]]>
             </if>
             <if test="begin != null">
-                <![CDATA[AND DATE(a.publish_at) >= #{begin}]]>
+                <![CDATA[AND DATE(a.create_time) >= #{begin}]]>
             </if>
             <if test="end != null">
-                <![CDATA[AND DATE(a.publish_at) <= #{end}]]>
+                <![CDATA[AND DATE(a.create_time) <= #{end}]]>
             </if>
         </where>
         <![CDATA[
-        ORDER BY a.publish_at DESC
+        ORDER BY a.create_time DESC
         ]]>
     </select>
 
@@ -107,8 +107,8 @@
     <select id="getById" resultMap="ArticleResultMap">
         SELECT
             id, title, summary, url, cover_image, author_id, author_name, author_avatar,
-            publish_at, update_at, view_count, like_count, star_count, share_count, comment_count,
-            type, quote_content, create_time, update_time
+            view_count, like_count, star_count, share_count, comment_count,
+            type, content, create_time, update_time
         FROM article
         WHERE id = #{id}
     </select>
@@ -118,49 +118,51 @@
         <![CDATA[
         SELECT
             id, title, summary, url, cover_image, author_id, author_name, author_avatar,
-            publish_at, update_at, view_count, like_count, star_count, share_count, comment_count,
-            type, quote_content, create_time, update_time
+            view_count, like_count, star_count, share_count, comment_count,
+            type, content, create_time, update_time
         FROM article
-        ORDER BY view_count DESC, publish_at DESC
+        ORDER BY view_count DESC, create_time DESC
         LIMIT 4
         ]]>
     </select>
 
+    <!-- 查询点赞较多的文章：按点赞量降序，浏览量相同按发布时间降序，只获取4条数据-->
     <select id="listMostLike" resultMap="ArticleResultMap">
         <![CDATA[
         SELECT
             id, title, summary, url, cover_image, author_id, author_name, author_avatar,
-            publish_at, update_at, view_count, like_count, star_count, share_count, comment_count,
-            type, quote_content, create_time, update_time
+            view_count, like_count, star_count, share_count, comment_count,
+            type, content, create_time, update_time
         FROM article
-        ORDER BY like_count DESC, publish_at DESC
+        ORDER BY like_count DESC, create_time DESC
         LIMIT 4
         ]]>
     </select>
-
+    <!-- 查询收藏较多的文章：按收藏量降序，浏览量相同按发布时间降序，只获取4条数据-->
     <select id="listMostStar" resultMap="ArticleResultMap">
         <![CDATA[
         SELECT
             id, title, summary, url, cover_image, author_id, author_name, author_avatar,
-            publish_at, update_at, view_count, like_count, star_count, share_count, comment_count,
-            type, quote_content, create_time, update_time
+            view_count, like_count, star_count, share_count, comment_count,
+            type, content, create_time, update_time
         FROM article
-        ORDER BY star_count DESC, publish_at DESC
+        ORDER BY star_count DESC, create_time DESC
         LIMIT 3
         ]]>
     </select>
-
+    <!-- 查询分享较多的文章：按分享量降序，浏览量相同按发布时间降序，只获取4条数据-->
     <select id="listMostShare" resultMap="ArticleResultMap">
         <![CDATA[
         SELECT
             id, title, summary, url, cover_image, author_id, author_name, author_avatar,
-            publish_at, update_at, view_count, like_count, star_count, share_count, comment_count,
-            type, quote_content, create_time, update_time
+            view_count, like_count, star_count, share_count, comment_count,
+            type, content, create_time, update_time
         FROM article
-        ORDER BY share_count DESC, publish_at DESC
+        ORDER BY share_count DESC, create_time DESC
         LIMIT 3
         ]]>
     </select>
+
 
     <!-- 批量删除文章信息 -->
     <delete id="delete">

@@ -14,7 +14,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,11 +32,11 @@ public class ArticleServiceImpl implements ArticleService {
      * 分页查询文章列表
      */
     @Override
-    public PageResult<Article> page(ArticleQueryDTO articleQueryDTO) {
+    public PageResult<Article> pageListArticles(ArticleQueryDTO articleQueryDTO) {
         //1.设置分页参数
         try (Page<Article> page = PageHelper.startPage(articleQueryDTO.getPage(), articleQueryDTO.getPageSize())) {
             //2.执行分页查询
-            List<Article> articleList = articleMapper.list(articleQueryDTO);
+            List<Article> articleList = articleMapper.pageListArticles(articleQueryDTO);
             //3.解析封装结果
             return new PageResult<Article>(page.getTotal(), page.getResult());
         }
@@ -58,8 +57,6 @@ public class ArticleServiceImpl implements ArticleService {
     @Override
     public void save(Article article) {
         // 插入文章基本信息
-        article.setCreateTime(LocalDateTime.now());
-        article.setUpdateTime(LocalDateTime.now());
         articleMapper.save(article);
 
         // 2. 处理文章标签关联表
@@ -71,8 +68,6 @@ public class ArticleServiceImpl implements ArticleService {
                 ArticleTag articleTag = new ArticleTag();
                 articleTag.setArticleId(article.getId());
                 articleTag.setTagId(tag.getId());
-                articleTag.setCreateTime(LocalDateTime.now());
-                articleTag.setUpdateTime(LocalDateTime.now());
                 articleTags.add(articleTag); // 添加到关联表列表
             }
         }
@@ -90,8 +85,6 @@ public class ArticleServiceImpl implements ArticleService {
                 ArticleCategory articleCategory = new ArticleCategory();
                 articleCategory.setArticleId(article.getId());
                 articleCategory.setCategoryId(category.getId());
-                articleCategory.setCreateTime(LocalDateTime.now());
-                articleCategory.setUpdateTime(LocalDateTime.now());
                 articleCategories.add(articleCategory); // 添加到关联表列表
             }
         }
@@ -147,5 +140,7 @@ public class ArticleServiceImpl implements ArticleService {
     public List<Article> listMostShare() {
         return articleMapper.listMostShare();
     }
+
+
 
 }

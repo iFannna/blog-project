@@ -35,12 +35,6 @@ public class Article {
     private String authorName;
     // 作者头像URL
     private String authorAvatar;
-    // 文章发布时间
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private LocalDateTime publishAt;
-    // 文章修改时间
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private LocalDateTime updateAt;
     // 浏览量
     private Integer viewCount;
     // 点赞数
@@ -53,12 +47,12 @@ public class Article {
     private Integer commentCount;
     // 文章类型（1：普通文章；2：引用类型文章 ......）
     private Integer type;
-    // 引用内容（仅quote类型文章有值）
-    private String quoteContent;
-    // 数据创建时间
+    // 内容
+    private String Content;
+    // 创建时间
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime createTime;
-    // 数据更新时间
+    // 更新时间
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime updateTime;
 }

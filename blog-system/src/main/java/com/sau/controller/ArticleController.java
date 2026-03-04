@@ -18,7 +18,7 @@ import java.util.List;
  */
 @Slf4j
 @RestController
-@RequestMapping("/articles")
+@RequestMapping("/article")
 public class ArticleController {
 
     @Autowired
@@ -29,9 +29,9 @@ public class ArticleController {
      */
     @Cacheable(cacheNames = "articlePageCache", key = "#articleQueryDTO")
     @GetMapping
-    public Result<PageResult<Article>> page(ArticleQueryDTO articleQueryDTO) {
+    public Result<PageResult<Article>> pageListArticles(ArticleQueryDTO articleQueryDTO) {
         log.info("分页查询,参数:{}", articleQueryDTO);
-        PageResult<Article> pageResult = articleService.page(articleQueryDTO);
+        PageResult<Article> pageResult = articleService.pageListArticles(articleQueryDTO);
         return Result.success(pageResult);
     }
 
@@ -111,5 +111,6 @@ public class ArticleController {
         List<Article> articleList = articleService.listMostShare();
         return Result.success(articleList);
     }
+
 
 }

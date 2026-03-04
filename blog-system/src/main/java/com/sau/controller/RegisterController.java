@@ -6,7 +6,7 @@ import com.sau.pojo.DTO.RegisterDTO;
 import com.sau.pojo.entity.Result;
 import com.sau.service.third.CaptchaService;
 import com.sau.service.third.EmailService;
-import com.sau.service.UserService;
+import com.sau.service.SysUserService;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.*;
 public class RegisterController {
 
     @Autowired
-    private UserService userService;
+    private SysUserService sysUserService;
 
     // 阿里云邮件推送服务
     @Autowired
@@ -62,7 +62,7 @@ public class RegisterController {
         if (!emailService.verifyCode(registerDTO.getEmail(), registerDTO.getEmailVerificationCode())){
             return Result.error("验证码错误或已失效");
         }
-        userService.register(registerDTO);
+        sysUserService.register(registerDTO);
         return Result.success();
     }
 }

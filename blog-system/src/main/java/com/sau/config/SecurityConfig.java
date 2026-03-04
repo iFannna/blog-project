@@ -62,7 +62,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         // 放行登录、注册接口
                         .requestMatchers("/login","/refresh-token", "/register", "/send-register-code",
-                                "/articles/**", "/tags","/categories"
+                                "/article/**", "/tag","/category","/comment/**"
                                 ).permitAll()
 
                         // 其他所有请求需要认证

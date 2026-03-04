@@ -3,7 +3,7 @@ package com.sau.controller;
 import com.sau.pojo.DTO.*;
 import com.sau.pojo.VO.CaptchaVerifyVO;
 import com.sau.pojo.entity.Result;
-import com.sau.service.UserService;
+import com.sau.service.SysUserService;
 import com.sau.service.third.CaptchaService;
 import com.sau.service.third.EmailService;
 import lombok.extern.slf4j.Slf4j;
@@ -17,9 +17,9 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 @RestController
 @RequestMapping("/user")
-public class UserController {
+public class SysUserController {
     @Autowired
-    private UserService userService;
+    private SysUserService sysUserService;
 
     @Autowired
     private EmailService emailService;
@@ -32,12 +32,8 @@ public class UserController {
      */
     @PutMapping(value ="/profiles", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public Result updateProfiles(@ModelAttribute UserProfilesUpdateDTO userProfilesUpdateDTO) {
-        log.info("修改头像");
-        boolean result = userService.updateProfiles(userProfilesUpdateDTO);
-        if (!result) {
-            return Result.error("更新失败");
-        }
-        return Result.success();
+        log.info("修改个人资料");
+        return sysUserService.updateProfiles(userProfilesUpdateDTO);
     }
 
     /**
@@ -45,7 +41,7 @@ public class UserController {
      */
     @PutMapping("/password")
     public Result updatePassword(@RequestBody UserPasswordUpdateDTO userPasswordUpdateDTO) {
-        return userService.updatePassword(userPasswordUpdateDTO);
+        return sysUserService.updatePassword(userPasswordUpdateDTO);
     }
 
     /**
@@ -61,7 +57,7 @@ public class UserController {
         }
         // 根据用户名查询邮箱
         String username = sendOldEmailCodeDTO.getUsername();
-        String dbEmail = userService.getEmailByUsername(username);
+        String dbEmail = sysUserService.getEmailByUsername(username);
         // 判断旧邮箱是否正确
         if (!dbEmail.equals(sendOldEmailCodeDTO.getOldEmail())) {
             return Result.error("邮箱错误");
@@ -83,7 +79,7 @@ public class UserController {
             return Result.error("验证码错误或已失效");
         }
         // 生成临时换绑令牌
-        String token = userService.generateTempEmailChangeToken(verifyOldEmailCodeDTO);
+        String token = sysUserService.generateTempEmailChangeToken(verifyOldEmailCodeDTO);
 
         return Result.success(token);
     }
@@ -94,11 +90,11 @@ public class UserController {
     @PostMapping("/email/send-new-code")
     public Result sendNewEmailCode(@RequestBody SendNewEmailCodeDTO sendNewEmailCodeDTO) {
         // 判断新邮箱是否已存在
-        if (userService.hasEmail(sendNewEmailCodeDTO.getNewEmail())) {
+        if (sysUserService.hasEmail(sendNewEmailCodeDTO.getNewEmail())) {
             return Result.error("该邮箱已被使用");
         }
         // 验证临时换绑令牌
-        if (!userService.verifyTempEmailChangeToken(sendNewEmailCodeDTO.getTempToken())) {
+        if (!sysUserService.verifyTempEmailChangeToken(sendNewEmailCodeDTO.getTempToken())) {
             return Result.error("令牌已失效");
         }
         // 向新邮箱发送验证码
@@ -115,7 +111,7 @@ public class UserController {
     @PutMapping("/email/update")
     public Result updateEmail(@RequestBody UserEmailUpdateDTO userEmailUpdateDTO) {
         // 验证临时换绑令牌
-        if (!userService.verifyTempEmailChangeToken(userEmailUpdateDTO.getTempToken())) {
+        if (!sysUserService.verifyTempEmailChangeToken(userEmailUpdateDTO.getTempToken())) {
             return Result.error("令牌已失效");
         }
         // 验证新邮箱验证码
@@ -124,7 +120,7 @@ public class UserController {
         }
 
         // 修改邮箱
-        userService.updateEmail(userEmailUpdateDTO);
+        sysUserService.updateEmail(userEmailUpdateDTO);
         return Result.success();
     }
 
