@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sau.mapper.CommentMapper">
+    <!-- 分页查询文章评论-->
+    <select id="pageListComments" resultType="com.sau.pojo.entity.Comment">
+        SELECT
+            id, article_id, user_id, content, like_count, create_time, update_time
+        FROM comment
+        WHERE article_id = #{articleId}
+        ORDER BY like_count DESC, create_time DESC
+    </select>
+
+    <!-- 分页查询文章评论回复-->
+    <select id="pageListCommentReplies" resultType="com.sau.pojo.entity.CommentReply">
+        SELECT
+            id, comment_id, user_id, reply_to_user_id, content, like_count, status, create_time, update_time
+        FROM comment_reply
+        WHERE comment_id = #{commentId}
+        ORDER BY like_count DESC, create_time DESC
+    </select>
+
+</mapper>
