@@ -1,15 +1,26 @@
 package com.sau.service.impl;
 
+import lombok.RequiredArgsConstructor;
+
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.sau.mapper.ArticleCategoryMapper;
 import com.sau.mapper.ArticleMapper;
 import com.sau.mapper.ArticleTagMapper;
+import com.sau.mapper.SysUserMapper;
 import com.sau.pojo.DTO.ArticleQueryDTO;
-import com.sau.pojo.entity.*;
+import com.sau.pojo.entity.Article;
+import com.sau.pojo.entity.ArticleCategory;
+import com.sau.pojo.entity.ArticleTag;
+import com.sau.pojo.entity.Category;
+import com.sau.pojo.entity.PageResult;
+import com.sau.pojo.entity.SysUser;
+import com.sau.pojo.entity.Tag;
 import com.sau.service.ArticleService;
+import com.sau.service.DataPermissionService;
+import com.sau.utils.SecurityUtils;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
@@ -17,100 +28,98 @@ import org.springframework.util.CollectionUtils;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 文章服务实现类。
+ */
 @Slf4j
+@RequiredArgsConstructor
 @Service
 public class ArticleServiceImpl implements ArticleService {
-
-    @Autowired
-    private ArticleMapper articleMapper;
-    @Autowired
-    private ArticleTagMapper articleTagMapper;
-    @Autowired
-    private ArticleCategoryMapper articleCategoryMapper;
+    private final ArticleMapper articleMapper;
+    private final ArticleTagMapper articleTagMapper;
+    private final ArticleCategoryMapper articleCategoryMapper;
+    private final SysUserMapper sysUserMapper;
+    private final DataPermissionService dataPermissionService;
 
     /**
-     * 分页查询文章列表
+     * 分页查询文章。
      */
     @Override
-    public PageResult<Article> pageListArticles(ArticleQueryDTO articleQueryDTO) {
-        //1.设置分页参数
+    public PageResult<Article> pageQueryArticles(ArticleQueryDTO articleQueryDTO) {
         try (Page<Article> page = PageHelper.startPage(articleQueryDTO.getPage(), articleQueryDTO.getPageSize())) {
-            //2.执行分页查询
-            List<Article> articleList = articleMapper.pageListArticles(articleQueryDTO);
-            //3.解析封装结果
-            return new PageResult<Article>(page.getTotal(), page.getResult());
+            List<Article> articleList = articleMapper.selectPageArticles(articleQueryDTO);
+            return new PageResult<>(page.getTotal(), articleList);
         }
     }
 
     /**
-     * 根据ID查询文章信息
+     * 根据 ID 查询文章详情。
      */
     @Override
     public Article getById(Integer id) {
-        return articleMapper.getById(id);
+        return articleMapper.selectById(id);
     }
 
     /**
-     * 新增文章信息
+     * 创建文章。
      */
-    @Transactional(rollbackFor = {Exception.class})
+    @Transactional(rollbackFor = Exception.class)
     @Override
-    public void save(Article article) {
-        // 插入文章基本信息
-        articleMapper.save(article);
+    public void create(Article article) {
+        Integer currentUserId = SecurityUtils.requireCurrentUserId();
+        SysUser currentUser = sysUserMapper.selectById(currentUserId);
+        if (currentUser == null) {
+            throw new AccessDeniedException("当前用户不存在或已失效");
+        }
 
-        // 2. 处理文章标签关联表
+        article.setAuthorId(currentUserId);
+        article.setAuthorName(currentUser.getNickname());
+        article.setAuthorAvatar(currentUser.getAvatar());
+        articleMapper.insert(article);
+
         List<Tag> tags = article.getTags();
         List<ArticleTag> articleTags = new ArrayList<>();
-        // 判空后遍历
         if (!CollectionUtils.isEmpty(tags)) {
             for (Tag tag : tags) {
                 ArticleTag articleTag = new ArticleTag();
                 articleTag.setArticleId(article.getId());
                 articleTag.setTagId(tag.getId());
-                articleTags.add(articleTag); // 添加到关联表列表
+                articleTags.add(articleTag);
             }
         }
-        // 批量插入标签关联数据
         if (!CollectionUtils.isEmpty(articleTags)) {
-            articleTagMapper.save(articleTags);
+            articleTagMapper.insertBatch(articleTags);
         }
 
-        // 3. 处理文章分类关联表
         List<Category> categories = article.getCategories();
         List<ArticleCategory> articleCategories = new ArrayList<>();
-        // 判空后遍历
         if (!CollectionUtils.isEmpty(categories)) {
             for (Category category : categories) {
                 ArticleCategory articleCategory = new ArticleCategory();
                 articleCategory.setArticleId(article.getId());
                 articleCategory.setCategoryId(category.getId());
-                articleCategories.add(articleCategory); // 添加到关联表列表
+                articleCategories.add(articleCategory);
             }
         }
-        // 批量插入分类关联数据
         if (!CollectionUtils.isEmpty(articleCategories)) {
-            articleCategoryMapper.save(articleCategories);
+            articleCategoryMapper.insertBatch(articleCategories);
         }
-
     }
 
     /**
-     * 批量删除文章信息
+     * 批量删除文章。
      */
-    @Transactional(rollbackFor = {Exception.class})
+    @Transactional(rollbackFor = Exception.class)
     @Override
-    public void delete(List<Integer> ids) {
-        // 批量删除文章基本信息
-        articleMapper.delete(ids);
-        // 批量删除文章标签关联表
+    public void deleteByIds(List<Integer> ids) {
+        dataPermissionService.assertAdminOrArticleOwner(ids);
+        articleMapper.deleteByIds(ids);
         articleTagMapper.deleteByArticleIds(ids);
-        // 批量删除文章分类关联表
         articleCategoryMapper.deleteByArticleIds(ids);
     }
 
     /**
-     * 获取热门文章信息
+     * 查询热门文章。
      */
     @Override
     public List<Article> listHot() {
@@ -118,7 +127,7 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     /**
-     * 获取最赞的文章信息
+     * 查询最多点赞文章。
      */
     @Override
     public List<Article> listMostLike() {
@@ -126,7 +135,7 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     /**
-     * 获取最Star的文章信息
+     * 查询最多收藏文章。
      */
     @Override
     public List<Article> listMostStar() {
@@ -134,13 +143,10 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     /**
-     * 获取最分享的文章信息
+     * 查询最多分享文章。
      */
     @Override
     public List<Article> listMostShare() {
         return articleMapper.listMostShare();
     }
-
-
-
 }

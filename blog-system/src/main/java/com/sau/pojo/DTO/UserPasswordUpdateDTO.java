@@ -13,19 +13,16 @@ import lombok.NoArgsConstructor;
 public class UserPasswordUpdateDTO {
 
     /**
-     * 用户名
-     */
-    private String username;
-    /**
      * 旧密码
      */
     private String oldPassword;
+
     /**
-     * 密码
-     * 长度必须在6-18位之间
+     * 新密码
+     * 长度必须在 6-18 位之间
      */
     @NotBlank
     @Size(min = 6, max = 18)
-    @PasswordStrength()
+    @PasswordStrength
     private String newPassword;
 }

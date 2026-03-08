@@ -2,12 +2,14 @@ package com.sau.pojo.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 认证结果封装类
  */
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class AuthResult {
     /**
      * 用户id

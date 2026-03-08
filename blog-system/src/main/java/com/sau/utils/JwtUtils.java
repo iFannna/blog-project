@@ -10,12 +10,19 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.Date;
 import java.util.Map;
 
+/**
+ * JWT 工具类。
+ */
 @Slf4j
-public class JwtUtils {
-    private static final String SECRET_KEY = "U0F1NTIw"; // 密钥
+public final class JwtUtils {
+
+    private static final String SECRET_KEY = "U0F1NTIw";
+
+    private JwtUtils() {
+    }
 
     /**
-     * 生成JWT令牌
+     * 生成 JWT 令牌。
      */
     public static String generateToken(Map<String, Object> claims, long expirationTime) {
         return Jwts.builder()
@@ -26,7 +33,7 @@ public class JwtUtils {
     }
 
     /**
-     * 解析JWT令牌
+     * 解析 JWT 令牌。
      */
     public static Claims parseToken(String token) {
         try {
@@ -34,10 +41,8 @@ public class JwtUtils {
                     .setSigningKey(SECRET_KEY)
                     .parseClaimsJws(token)
                     .getBody();
-        }
-        catch (JwtException e) {
+        } catch (JwtException e) {
             throw new TokenInvalidException("未登录或令牌无效");
         }
     }
-
 }

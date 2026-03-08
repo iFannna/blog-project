@@ -4,19 +4,23 @@ import com.sau.pojo.entity.Tag;
 
 import java.util.List;
 
+/**
+ * 标签服务接口。
+ */
 public interface TagService {
-    /**
-     * 新增标签
-     */
-    void save(Tag tag);
 
     /**
-     * 根据id删除标签
+     * 创建标签。
      */
-    void delete(Integer id);
+    void create(Tag tag);
 
     /**
-     * 查询所有标签
+     * 删除标签。
+     */
+    void deleteById(Integer id);
+
+    /**
+     * 查询全部标签。
      */
     List<Tag> list();
 }

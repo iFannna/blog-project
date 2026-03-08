@@ -1,55 +1,48 @@
+﻿server:
+  port: 8080
+
 spring:
-  application:
-    name: blog-project
-
-  # 数据库的链接信息
+  profiles:
+    active: dev
+  main:
+    allow-circular-references: true
   datasource:
-    url: jdbc:mysql://localhost:3306/blog_db
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: 1234
-
-  # Redis 配置
+    driver-class-name: ${blog.datasource.driver-class-name}
+    url: jdbc:mysql://${blog.datasource.host}:${blog.datasource.port}/${blog.datasource.database}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: ${blog.datasource.username}
+    password: ${blog.datasource.password}
   data:
     redis:
-      host: localhost
-      port: 6379
-      password: 123456
-      database: 1
-      jedis:
-        pool:
-          max-active: 8
-          max-wait: 1ms
-          max-idle: 4
-          min-idle: 0
+      host: ${blog.redis.host}
+      port: ${blog.redis.port}
+      password: ${blog.redis.password}
+      database: ${blog.redis.database}
 
-
-#Mybatis的相关配置
 mybatis:
+  mapper-locations: classpath:com/sau/mapper/*.xml
+  type-aliases-package: com.sau.pojo.entity
   configuration:
-    #驼峰命名映射
     map-underscore-to-camel-case: true
-    #控制台日志输出
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  mapper-locations: classpath:mapper/*.xml
 
-#配置事务管理日志级别
 logging:
   level:
+    com:
+      sau:
+        mapper: debug
+        service: info
+        controller: info
     org.springframework.jdbc.support.JdbcTransactionManager: debug
 
-#阿里云OSS对象存储服务
 aliyun:
   oss:
-    endpoint: https://oss-cn-beijing.aliyuncs.com
-    bucketName: java-ai-sau
-    region: cn-beijing
+    endpoint: ${blog.aliyun.oss.endpoint}
+    bucketName: ${blog.aliyun.oss.bucket-name}
+    region: ${blog.aliyun.oss.region}
   captcha:
-    endpoint: captcha.cn-shanghai.aliyuncs.com
-    region: cn-shanghai
-    scene-id: 1h222nka
+    endpoint: ${blog.aliyun.captcha.endpoint}
+    region: ${blog.aliyun.captcha.region}
+    scene-id: ${blog.aliyun.captcha.scene-id}
   email:
-    endpoint: dm.aliyuncs.com
-    account-name: backend@mail.iiisau.online  # 你的发件人账号
-    from-alias: 赵瑾瑜个人博客                        # 发件人显示名称
-
+    endpoint: ${blog.aliyun.email.endpoint}
+    account-name: ${blog.aliyun.email.account-name}
+    from-alias: ${blog.aliyun.email.from-alias}

@@ -15,7 +15,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Article {
-    // 文章ID
+    // 文章 ID
     private Integer id;
     // 文章标题
     private String title;
@@ -23,17 +23,17 @@ public class Article {
     private String summary;
     // 文章链接
     private String url;
-    // 封面图片URL
+    // 封面图片 URL
     private String coverImage;
     // 分类
     private List<Category> categories;
     // 标签
     private List<Tag> tags;
-    // 作者ID
+    // 作者 ID
     private Integer authorId;
     // 作者名称
     private String authorName;
-    // 作者头像URL
+    // 作者头像 URL
     private String authorAvatar;
     // 浏览量
     private Integer viewCount;
@@ -45,10 +45,10 @@ public class Article {
     private Integer shareCount;
     // 评论数
     private Integer commentCount;
-    // 文章类型（1：普通文章；2：引用类型文章 ......）
+    // 文章类型
     private Integer type;
     // 内容
-    private String Content;
+    private String content;
     // 创建时间
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime createTime;

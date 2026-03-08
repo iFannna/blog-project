@@ -11,16 +11,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class UserEmailUpdateDTO {
     /**
-     * 用户名
-     */
-    @NotBlank
-    private String username;
-
-    /**
      * 新邮箱
      */
     @NotBlank
-    @Email(regexp = "^[^\s@]+@[^\s@]+\\.[^\s@]+$")
+    @Email(regexp = "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$")
     private String newEmail;
 
     /**

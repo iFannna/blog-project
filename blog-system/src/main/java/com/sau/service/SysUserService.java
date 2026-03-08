@@ -1,48 +1,59 @@
 package com.sau.service;
 
-import com.sau.pojo.DTO.*;
+import com.sau.pojo.DTO.RegisterDTO;
+import com.sau.pojo.DTO.UserEmailUpdateDTO;
+import com.sau.pojo.DTO.UserPasswordUpdateDTO;
+import com.sau.pojo.DTO.UserProfilesUpdateDTO;
+import com.sau.pojo.DTO.VerifyOldEmailCodeDTO;
 import com.sau.pojo.entity.Result;
 
-
+/**
+ * 用户服务接口。
+ */
 public interface SysUserService {
 
     /**
-     * 注册
+     * 用户注册。
      */
     void register(RegisterDTO request);
 
     /**
-     * 邮箱是否存在
+     * 判断邮箱是否已存在。
      */
     boolean hasEmail(String email);
 
     /**
-     * 修改用户信息
+     * 修改个人资料。
      */
-    Result updateProfiles(UserProfilesUpdateDTO userProfilesUpdateDTO);
+    Result updateProfile(UserProfilesUpdateDTO userProfilesUpdateDTO);
 
     /**
-     * 修改密码
+     * 修改密码。
      */
     Result updatePassword(UserPasswordUpdateDTO userPasswordUpdateDTO);
 
     /**
-     * 根据用户名获取邮箱
+     * 根据用户名查询邮箱。
      */
     String getEmailByUsername(String username);
 
     /**
-     * 生成临时邮箱修改令牌
+     * 获取当前登录用户邮箱。
+     */
+    String getCurrentUserEmail();
+
+    /**
+     * 生成临时邮箱修改令牌。
      */
     String generateTempEmailChangeToken(VerifyOldEmailCodeDTO verifyOldEmailCodeDTO);
 
     /**
-     * 验证临时邮箱修改令牌
+     * 校验临时邮箱修改令牌。
      */
     boolean verifyTempEmailChangeToken(String tempToken);
 
     /**
-     * 修改邮箱
+     * 更新邮箱。
      */
     void updateEmail(UserEmailUpdateDTO userEmailUpdateDTO);
 }

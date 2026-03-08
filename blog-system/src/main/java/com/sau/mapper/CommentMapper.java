@@ -6,24 +6,35 @@ import com.sau.pojo.entity.Comment;
 import com.sau.pojo.entity.CommentReply;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
+/**
+ * 评论数据访问层。
+ */
 @Mapper
 public interface CommentMapper {
-    /**
-     * 分页查询文章评论
-     */
-    List<Comment> pageListComments(CommentQueryDTO commentQueryDTO);
 
     /**
-     * 分页查询文章评论回复
+     * 分页查询评论列表。
      */
-    List<CommentReply> pageListCommentReplies(CommentReplyQueryDTO commentReplyQueryDTO);
+    List<Comment> selectPageComments(CommentQueryDTO commentQueryDTO);
 
     /**
-     * 删除文章评论
+     * 分页查询评论回复列表。
+     */
+    List<CommentReply> selectPageCommentReplies(CommentReplyQueryDTO commentReplyQueryDTO);
+
+    /**
+     * 查询评论归属信息。
+     */
+    @Select("select id, user_id from comment where id = #{id}")
+    Comment selectOwnershipById(Integer id);
+
+    /**
+     * 根据 ID 删除评论。
      */
     @Delete("delete from comment where id = #{id}")
-    void delete(Integer id);
+    void deleteById(Integer id);
 }

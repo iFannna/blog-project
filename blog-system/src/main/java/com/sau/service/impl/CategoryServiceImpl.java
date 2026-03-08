@@ -4,23 +4,24 @@ import com.sau.mapper.ArticleCategoryMapper;
 import com.sau.mapper.CategoryMapper;
 import com.sau.pojo.entity.Category;
 import com.sau.service.CategoryService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+/**
+ * 分类服务实现类。
+ */
 @Service
+@RequiredArgsConstructor
 public class CategoryServiceImpl implements CategoryService {
 
-    @Autowired
-    private CategoryMapper categoryMapper;
-
-    @Autowired
-    private ArticleCategoryMapper articleCategoryMapper;
+    private final CategoryMapper categoryMapper;
+    private final ArticleCategoryMapper articleCategoryMapper;
 
     /**
-     * 查询所有分类
+     * 查询全部分类。
      */
     @Override
     public List<Category> list() {
@@ -28,22 +29,20 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     /**
-     * 新增分类
+     * 创建分类。
      */
     @Override
-    public void save(Category category) {
-        categoryMapper.save(category);
+    public void create(Category category) {
+        categoryMapper.insert(category);
     }
 
     /**
-     * 根据ID删除分类
+     * 删除分类并清理文章分类关系。
      */
-    @Transactional(rollbackFor = {Exception.class})
+    @Transactional(rollbackFor = Exception.class)
     @Override
-    public void delete(Integer id) {
-        // 删除分类
+    public void deleteById(Integer id) {
         categoryMapper.deleteById(id);
-        // 删除分类和文章的关联关系
         articleCategoryMapper.deleteByCategoryIds(List.of(id));
     }
 }

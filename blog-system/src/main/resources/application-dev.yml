@@ -1,0 +1,28 @@
+﻿blog:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    host: localhost
+    port: 3306
+    database: blog_db
+    username: root
+    password: 1234
+
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
+    database: 1
+
+  aliyun:
+    oss:
+      endpoint: https://oss-cn-beijing.aliyuncs.com
+      bucket-name: java-ai-sau
+      region: cn-beijing
+    captcha:
+      endpoint: captcha.cn-shanghai.aliyuncs.com
+      region: cn-shanghai
+      scene-id: 1h222nka
+    email:
+      endpoint: dm.aliyuncs.com
+      account-name: backend@mail.iiisau.online
+      from-alias: zhao-jinyu-blog

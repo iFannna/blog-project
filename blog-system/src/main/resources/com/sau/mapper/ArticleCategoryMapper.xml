@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.sau.mapper.ArticleCategoryMapper">
-<!--    批量新增文章分类关联-->
-    <insert id="save">
+    <!-- 批量插入文章分类关联 -->
+    <insert id="insertBatch">
         insert into article_category(article_id, category_id, create_time, update_time) values
         <foreach item="category" collection="list" separator=",">
             (#{category.articleId}, #{category.categoryId}, #{category.createTime}, #{category.updateTime})
         </foreach>
     </insert>
-<!--    根据文章ID批量删除文章分类关联-->
+
+    <!-- 根据文章 ID 批量删除文章分类关联 -->
     <delete id="deleteByArticleIds">
         delete from article_category where article_id in (
         <foreach item="id" collection="ids" separator=",">
@@ -16,7 +17,8 @@
         </foreach>
         )
     </delete>
-<!--    根据分类ID批量删除分类关联-->
+
+    <!-- 根据分类 ID 批量删除文章分类关联 -->
     <delete id="deleteByCategoryIds">
         delete from article_category where category_id in (
         <foreach item="id" collection="ids" separator=",">
@@ -24,5 +26,4 @@
         </foreach>
         )
     </delete>
-
 </mapper>

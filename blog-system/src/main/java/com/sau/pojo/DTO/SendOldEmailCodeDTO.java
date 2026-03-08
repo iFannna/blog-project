@@ -11,12 +11,6 @@ import lombok.NoArgsConstructor;
 public class SendOldEmailCodeDTO {
 
     /**
-     * 用户名
-     */
-    @NotBlank
-    private String username;
-
-    /**
      * 旧邮箱
      */
     @NotBlank

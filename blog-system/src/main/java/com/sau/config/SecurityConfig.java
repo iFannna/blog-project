@@ -1,12 +1,14 @@
 package com.sau.config;
 
 import com.sau.constants.ResponseConstants;
+import com.sau.constants.SecurityWhitelist;
 import com.sau.filter.JwtTokenFilter;
 import com.sau.utils.ResponseUtils;
 import jakarta.servlet.http.HttpServletResponse;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
@@ -20,18 +22,18 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 /**
- * Spring Security
+ * Spring Security 核心配置。
  */
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity
+@RequiredArgsConstructor
 public class SecurityConfig {
-    // 注入JwtTokenFilter
-    @Autowired
-    private JwtTokenFilter jwtTokenFilter;
+
+    private final JwtTokenFilter jwtTokenFilter;
 
     /**
-     * 密码编码器
+     * 密码编码器。
      */
     @Bean
     public PasswordEncoder passwordEncoder() {
@@ -39,7 +41,7 @@ public class SecurityConfig {
     }
 
     /**
-     * 认证管理器
+     * 认证管理器。
      */
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
@@ -47,45 +49,32 @@ public class SecurityConfig {
     }
 
     /**
-     * 核心安全过滤器链配置
+     * 安全过滤器链配置。
      */
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                // 1. 关闭CSRF（前后端分离+JWT场景不需要CSRF保护）
                 .csrf(AbstractHttpConfigurer::disable)
-                // 2. 配置会话管理：无状态（JWT不依赖session）
-                .sessionManagement(session -> session
-                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-                )
-                // 3. 配置URL授权规则
+                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
-                        // 放行登录、注册接口
-                        .requestMatchers("/login","/refresh-token", "/register", "/send-register-code",
-                                "/article/**", "/tag","/category","/comment/**"
-                                ).permitAll()
-
-                        // 其他所有请求需要认证
-                        .anyRequest().authenticated()
-                )
-                // 4. 配置异常处理
+                        .requestMatchers(HttpMethod.POST, SecurityWhitelist.PUBLIC_POST_ENDPOINTS).permitAll()
+                        .requestMatchers(HttpMethod.GET, SecurityWhitelist.PUBLIC_GET_ENDPOINTS).permitAll()
+                        .anyRequest().authenticated())
                 .exceptionHandling(ex -> ex
-                        .authenticationEntryPoint((request, response, authException) -> {
-                            // 响应HTTP状态码和错误信息
-                            ResponseUtils.writeResponse(
-                                    response,
-                                    ResponseConstants.JSON_UTF8,
-                                    HttpServletResponse.SC_UNAUTHORIZED,
-                                    ResponseConstants.UNAUTHORIZED
-                            );
-                        })
-                )
-                // 禁用Spring Security默认的logout处理，避免与自定义/logout冲突
+                        .authenticationEntryPoint((request, response, authException) ->
+                                ResponseUtils.writeResponse(
+                                        response,
+                                        ResponseConstants.JSON_UTF8,
+                                        HttpServletResponse.SC_UNAUTHORIZED,
+                                        ResponseConstants.UNAUTHORIZED))
+                        .accessDeniedHandler((request, response, accessDeniedException) ->
+                                ResponseUtils.writeResponse(
+                                        response,
+                                        ResponseConstants.JSON_UTF8,
+                                        HttpServletResponse.SC_FORBIDDEN,
+                                        ResponseConstants.FORBIDDEN)))
                 .logout(AbstractHttpConfigurer::disable)
-                // 注册JWT过滤器
                 .addFilterBefore(jwtTokenFilter, UsernamePasswordAuthenticationFilter.class);
-
-
 
         return http.build();
     }

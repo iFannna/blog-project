@@ -3,7 +3,10 @@ package com.sau.exception;
 import com.sau.pojo.entity.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DuplicateKeyException;
+import org.springframework.http.HttpStatus;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 /**
@@ -14,7 +17,17 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 public class GlobalExceptionHandler {
 
     /**
-     * 处理业务异常
+     * 处理无权限访问异常
+     */
+    @ResponseStatus(HttpStatus.FORBIDDEN)
+    @ExceptionHandler(AccessDeniedException.class)
+    public Result handleAccessDeniedException(AccessDeniedException e) {
+        log.warn("无权限访问: ", e);
+        return Result.error(e.getMessage());
+    }
+
+    /**
+     * 处理运行时异常
      */
     @ExceptionHandler(RuntimeException.class)
     public Result handleRuntimeException(RuntimeException e) {

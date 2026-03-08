@@ -12,11 +12,6 @@ import org.springframework.web.multipart.MultipartFile;
 @AllArgsConstructor
 public class UserProfilesUpdateDTO {
     /**
-     * 用户ID
-     */
-    private Integer id;
-
-    /**
      * 昵称
      */
     @NotBlank

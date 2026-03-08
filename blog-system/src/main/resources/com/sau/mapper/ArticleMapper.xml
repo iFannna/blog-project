@@ -4,7 +4,6 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.sau.mapper.ArticleMapper">
 
-    <!-- 结果映射：显式映射主键 + 关联分类/标签列表 -->
     <resultMap id="ArticleResultMap" type="com.sau.pojo.entity.Article">
         <id property="id" column="id"/>
         <collection property="categories" ofType="com.sau.pojo.entity.Category"
@@ -13,7 +12,6 @@
                     select="selectTagsByArticleId" column="id"/>
     </resultMap>
 
-    <!-- 子查询：根据文章ID查询关联的分类 -->
     <select id="selectCategoriesByArticleId" resultType="com.sau.pojo.entity.Category">
         SELECT c.id, c.name
         FROM article_category ac
@@ -21,7 +19,6 @@
         WHERE ac.article_id = #{id}
     </select>
 
-    <!-- 子查询：根据文章ID查询关联的标签 -->
     <select id="selectTagsByArticleId" resultType="com.sau.pojo.entity.Tag">
         SELECT t.id, t.name
         FROM article_tag atag
@@ -29,24 +26,21 @@
         WHERE atag.article_id = #{id}
     </select>
 
-    <!--新增文章信息-->
-    <insert id="save" parameterType="com.sau.pojo.entity.Article" useGeneratedKeys="true" keyProperty="id">
+    <insert id="insert" parameterType="com.sau.pojo.entity.Article" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO article (title, summary, url, cover_image, author_id, author_name, author_avatar,
                              view_count, like_count, star_count, share_count, comment_count, type, content, create_time, update_time)
         VALUES (#{title}, #{summary}, #{url}, #{coverImage}, #{authorId}, #{authorName}, #{authorAvatar},
                 #{viewCount}, #{likeCount}, #{starCount}, #{shareCount}, #{commentCount}, #{type}, #{content}, #{createTime}, #{updateTime})
     </insert>
 
-    <!-- 分页查询文章（多条件过滤） -->
-    <select id="pageListArticles" resultMap="ArticleResultMap">
+    <select id="selectPageArticles" resultMap="ArticleResultMap">
         <![CDATA[
         SELECT
-            a.id, a.title, a.summary,a.url, a.cover_image, a.author_id, a.author_name, a.author_avatar,
-             a.view_count, a.like_count, a.star_count, a.comment_count,
+            a.id, a.title, a.summary, a.url, a.cover_image, a.author_id, a.author_name, a.author_avatar,
+            a.view_count, a.like_count, a.star_count, a.comment_count,
             a.type, a.content, a.create_time, a.update_time
         FROM article a
         ]]>
-        <!-- 分类多ID全包含：子查询过滤 -->
         <if test="categoryId != null and categoryId.size() > 0">
             <![CDATA[
             INNER JOIN (
@@ -63,7 +57,6 @@
             ) ac_filter ON a.id = ac_filter.article_id
             ]]>
         </if>
-        <!-- 标签多ID全包含：子查询过滤 -->
         <if test="tagId != null and tagId.size() > 0">
             <![CDATA[
             INNER JOIN (
@@ -80,7 +73,6 @@
             ) tag_filter ON a.id = tag_filter.article_id
             ]]>
         </if>
-        <!-- 动态条件过滤 -->
         <where>
             <if test="type != null">
                 <![CDATA[a.type = #{type}]]>
@@ -103,8 +95,7 @@
         ]]>
     </select>
 
-    <!-- 根据ID查询文章-->
-    <select id="getById" resultMap="ArticleResultMap">
+    <select id="selectById" resultMap="ArticleResultMap">
         SELECT
             id, title, summary, url, cover_image, author_id, author_name, author_avatar,
             view_count, like_count, star_count, share_count, comment_count,
@@ -113,7 +104,15 @@
         WHERE id = #{id}
     </select>
 
-    <!-- 查询最热门的文章：按浏览量降序，浏览量相同按发布时间降序，只获取4条数据 -->
+    <select id="selectOwnershipByIds" resultType="com.sau.pojo.entity.Article">
+        SELECT id, author_id
+        FROM article
+        WHERE id IN
+        <foreach collection="ids" item="id" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </select>
+
     <select id="listHot" resultMap="ArticleResultMap">
         <![CDATA[
         SELECT
@@ -126,7 +125,6 @@
         ]]>
     </select>
 
-    <!-- 查询点赞较多的文章：按点赞量降序，浏览量相同按发布时间降序，只获取4条数据-->
     <select id="listMostLike" resultMap="ArticleResultMap">
         <![CDATA[
         SELECT
@@ -138,7 +136,7 @@
         LIMIT 4
         ]]>
     </select>
-    <!-- 查询收藏较多的文章：按收藏量降序，浏览量相同按发布时间降序，只获取4条数据-->
+
     <select id="listMostStar" resultMap="ArticleResultMap">
         <![CDATA[
         SELECT
@@ -150,7 +148,7 @@
         LIMIT 3
         ]]>
     </select>
-    <!-- 查询分享较多的文章：按分享量降序，浏览量相同按发布时间降序，只获取4条数据-->
+
     <select id="listMostShare" resultMap="ArticleResultMap">
         <![CDATA[
         SELECT
@@ -163,9 +161,7 @@
         ]]>
     </select>
 
-
-    <!-- 批量删除文章信息 -->
-    <delete id="delete">
+    <delete id="deleteByIds">
         DELETE FROM article WHERE id IN
         <foreach collection="ids" item="id" open="(" close=")" separator=",">
             #{id}

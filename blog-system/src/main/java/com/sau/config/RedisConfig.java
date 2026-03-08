@@ -1,31 +1,34 @@
 package com.sau.config;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.jsontype.BasicPolymorphicTypeValidator;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.cache.RedisCacheConfiguration;
+import org.springframework.data.redis.cache.RedisCacheManager;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.RedisSerializationContext;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
-import org.springframework.data.redis.cache.RedisCacheConfiguration;
-import org.springframework.data.redis.cache.RedisCacheManager;
 import org.springframework.web.client.RestTemplate;
 
+/**
+ * Redis 相关配置。
+ */
 @Configuration
 public class RedisConfig {
 
-    // 仅在方法内创建，避免成为全局 HTTP 的 ObjectMapper
+    /**
+     * 构建仅用于 Redis 序列化的 ObjectMapper。
+     */
     private ObjectMapper buildRedisObjectMapper() {
         ObjectMapper mapper = new ObjectMapper();
-        // 支持 Java 8 时间
         mapper.registerModule(new JavaTimeModule());
         mapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
-        // 开启类型信息，确保从 Redis 还原为原始类型（避免 LinkedHashMap）
         mapper.activateDefaultTyping(
                 BasicPolymorphicTypeValidator.builder().allowIfSubType(Object.class).build(),
                 ObjectMapper.DefaultTyping.NON_FINAL,
@@ -34,6 +37,9 @@ public class RedisConfig {
         return mapper;
     }
 
+    /**
+     * RedisTemplate 配置。
+     */
     @Bean
     public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory factory) {
         RedisTemplate<String, Object> template = new RedisTemplate<>();
@@ -47,11 +53,13 @@ public class RedisConfig {
         template.setValueSerializer(jsonSerializer);
         template.setHashKeySerializer(stringSerializer);
         template.setHashValueSerializer(jsonSerializer);
-
         template.afterPropertiesSet();
         return template;
     }
 
+    /**
+     * Spring Cache 使用的 RedisCacheManager。
+     */
     @Bean
     public RedisCacheManager cacheManager(RedisConnectionFactory factory) {
         GenericJackson2JsonRedisSerializer jsonSerializer =
@@ -66,6 +74,9 @@ public class RedisConfig {
                 .build();
     }
 
+    /**
+     * 通用 RestTemplate。
+     */
     @Bean
     public RestTemplate restTemplate() {
         return new RestTemplate();

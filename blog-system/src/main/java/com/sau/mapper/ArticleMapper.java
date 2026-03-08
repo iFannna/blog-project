@@ -1,58 +1,62 @@
 package com.sau.mapper;
 
-import com.sau.pojo.DTO.CommentQueryDTO;
-import com.sau.pojo.entity.Article;
 import com.sau.pojo.DTO.ArticleQueryDTO;
-import com.sau.pojo.entity.Comment;
+import com.sau.pojo.entity.Article;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Options;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
+/**
+ * 文章数据访问层。
+ */
 @Mapper
 public interface ArticleMapper {
 
     /**
-     * 分页查询文章信息列表
+     * 分页查询文章列表。
      */
-    List<Article> pageListArticles(ArticleQueryDTO articleQueryDTO);
+    List<Article> selectPageArticles(ArticleQueryDTO articleQueryDTO);
 
     /**
-     * 根据ID查询文章信息
+     * 根据 ID 查询文章详情。
      */
-    Article getById(Integer id);
+    Article selectById(Integer id);
 
     /**
-     * 新增文章信息
+     * 新增文章。
      */
     @Options(useGeneratedKeys = true, keyProperty = "id")
-    void save(Article article);
+    void insert(Article article);
 
     /**
-     * 批量删除文章信息
+     * 批量删除文章。
      */
-    void delete(@Param("ids") List<Integer> ids);
+    void deleteByIds(@Param("ids") List<Integer> ids);
 
     /**
-     * 查询最热门的文章
+     * 查询文章归属信息。
+     */
+    List<Article> selectOwnershipByIds(@Param("ids") List<Integer> ids);
+
+    /**
+     * 查询热门文章。
      */
     List<Article> listHot();
 
     /**
-     * 查询最赞的文章
+     * 查询最多点赞文章。
      */
     List<Article> listMostLike();
 
     /**
-     * 查询最Star的文章
+     * 查询最多收藏文章。
      */
     List<Article> listMostStar();
 
     /**
-     * 获取最分享的文章
+     * 查询最多分享文章。
      */
     List<Article> listMostShare();
-
-
 }

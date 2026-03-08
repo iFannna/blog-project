@@ -4,19 +4,23 @@ import com.sau.pojo.entity.Category;
 
 import java.util.List;
 
+/**
+ * 分类服务接口。
+ */
 public interface CategoryService {
+
     /**
-     * 查询所有分类
+     * 查询全部分类。
      */
     List<Category> list();
 
     /**
-     * 新增分类
+     * 创建分类。
      */
-    void save(Category category);
+    void create(Category category);
 
     /**
-     * 根据ID删除分类
+     * 删除分类。
      */
-    void delete(Integer id);
+    void deleteById(Integer id);
 }
