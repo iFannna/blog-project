@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 评论相关接口。
+ * 评论相关接口
  */
 @Slf4j
 @RequiredArgsConstructor
@@ -28,7 +28,7 @@ public class CommentController {
     private final CommentService commentService;
 
     /**
-     * 分页查询评论。
+     * 分页查询评论
      */
     @GetMapping
     public Result<PageResult<Comment>> pageQueryComments(CommentQueryDTO commentQueryDTO) {
@@ -38,7 +38,7 @@ public class CommentController {
     }
 
     /**
-     * 分页查询评论回复。
+     * 分页查询评论回复
      */
     @GetMapping("/reply")
     public Result<PageResult<CommentReply>> pageQueryCommentReplies(CommentReplyQueryDTO commentReplyQueryDTO) {
@@ -48,7 +48,7 @@ public class CommentController {
     }
 
     /**
-     * 根据 ID 删除评论。
+     * 根据 ID 删除评论
      */
     @PreAuthorize("hasAuthority('comment:delete')")
     @DeleteMapping("/{id}")

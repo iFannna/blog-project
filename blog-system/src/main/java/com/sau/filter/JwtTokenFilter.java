@@ -27,7 +27,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import java.io.IOException;
 
 /**
- * JWT 认证过滤器。
+ * JWT 认证过滤器
  */
 @Slf4j
 @Component
@@ -43,23 +43,27 @@ public class JwtTokenFilter extends OncePerRequestFilter {
                                     HttpServletResponse response,
                                     FilterChain filterChain) throws ServletException, IOException {
         try {
+            // 白名单接口直接放行，不进入鉴权流程
             if (isPublicEndpoint(request)) {
                 filterChain.doFilter(request, response);
                 return;
             }
 
+            // 尝试从请求头提取 accessToken
             String token = resolveAccessToken(request);
             if (token == null) {
                 filterChain.doFilter(request, response);
                 return;
             }
 
+            // 解析用户身份并校验 Redis 中的 accessToken 是否有效
             Integer userId = parseUserId(token);
             if (!isAccessTokenValid(userId, token)) {
                 writeUnauthorized(response);
                 return;
             }
 
+            // 重新加载认证用户信息并写入 Security 上下文
             AuthUser authUser = authUserService.loadAuthUser(userId);
             if (authUser == null) {
                 writeUnauthorized(response);
@@ -72,19 +76,20 @@ public class JwtTokenFilter extends OncePerRequestFilter {
             log.error("认证失败", e);
             writeUnauthorized(response);
         } finally {
+            // 请求结束后清理线程变量中的当前用户
             CurrentHolderUtils.remove();
         }
     }
 
     /**
-     * 判断当前请求是否属于公开接口。
+     * 判断当前请求是否属于公开接口
      */
     private boolean isPublicEndpoint(HttpServletRequest request) {
         return SecurityWhitelist.isPublicEndpoint(request.getMethod(), request.getRequestURI(), antPathMatcher);
     }
 
     /**
-     * 从请求头中提取 accessToken。
+     * 从请求头中提取 accessToken
      */
     private String resolveAccessToken(HttpServletRequest request) {
         String authorizationHeader = request.getHeader(RequestConstants.AUTHORIZATION);
@@ -96,7 +101,7 @@ public class JwtTokenFilter extends OncePerRequestFilter {
     }
 
     /**
-     * 解析 token 中的用户 ID。
+     * 解析 token 中的用户 ID
      */
     private Integer parseUserId(String token) {
         Claims claims = JwtUtils.parseToken(token);
@@ -104,7 +109,7 @@ public class JwtTokenFilter extends OncePerRequestFilter {
     }
 
     /**
-     * 校验 accessToken 是否仍然有效。
+     * 校验 accessToken 是否仍然有效
      */
     private boolean isAccessTokenValid(Integer userId, String token) {
         String storedAccessToken = redisTokenUtils.getAccessToken(userId);
@@ -112,7 +117,7 @@ public class JwtTokenFilter extends OncePerRequestFilter {
     }
 
     /**
-     * 将当前认证用户写入上下文。
+     * 将当前认证用户写入上下文
      */
     private void storeAuthentication(AuthUser authUser) {
         CurrentHolderUtils.setCurrentUser(authUser);
@@ -122,7 +127,7 @@ public class JwtTokenFilter extends OncePerRequestFilter {
     }
 
     /**
-     * 返回统一的未认证响应。
+     * 返回统一的未认证响应
      */
     private void writeUnauthorized(HttpServletResponse response) throws IOException {
         ResponseUtils.writeResponse(

@@ -22,7 +22,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 /**
- * Spring Security 核心配置。
+ * Spring Security 核心配置
  */
 @Configuration
 @EnableWebSecurity
@@ -33,7 +33,7 @@ public class SecurityConfig {
     private final JwtTokenFilter jwtTokenFilter;
 
     /**
-     * 密码编码器。
+     * 密码编码器
      */
     @Bean
     public PasswordEncoder passwordEncoder() {
@@ -41,7 +41,7 @@ public class SecurityConfig {
     }
 
     /**
-     * 认证管理器。
+     * 认证管理器
      */
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
@@ -49,7 +49,7 @@ public class SecurityConfig {
     }
 
     /**
-     * 安全过滤器链配置。
+     * 安全过滤器链配置
      */
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {

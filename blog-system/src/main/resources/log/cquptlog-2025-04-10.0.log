@@ -1,0 +1,85 @@
+2025-04-10 08:34:21.973 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 11908 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-04-10 08:34:21.975 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-10 08:34:23.391 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-10 08:34:23.406 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-10 08:34:23.409 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-10 08:34:23.409 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-10 08:34:23.508 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-10 08:34:23.508 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1475 ms
+2025-04-10 08:34:24.596 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-10 08:34:24.619 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-04-10 08:34:24.630 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 3.253 seconds (process running for 4.307)
+2025-04-10 08:34:29.533 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-10 08:34:29.534 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-10 08:34:29.535 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-10 08:34:29.577 [http-nio-8080-exec-1] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-10 08:34:29.604 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-10 08:34:29.615 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-10 08:34:30.076 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13d274e5
+2025-04-10 08:34:30.078 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-10 08:34:30.316 [http-nio-8080-exec-7] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-10 08:34:30.541 [http-nio-8080-exec-3] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-10 08:34:30.541 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-10 08:47:10.235 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-10 08:47:10.867 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-10 08:47:10.872 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-10 08:47:10.911 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-10 08:47:41.198 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 2548 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-04-10 08:47:41.201 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-10 08:47:42.552 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-10 08:47:42.569 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-10 08:47:42.572 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-10 08:47:42.573 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-10 08:47:42.682 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-10 08:47:42.683 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1431 ms
+2025-04-10 08:47:43.662 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-10 08:47:43.688 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-04-10 08:47:43.703 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 3.031 seconds (process running for 3.964)
+2025-04-10 08:48:29.397 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-10 08:48:29.397 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-10 08:48:29.397 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-04-10 08:48:29.538 [http-nio-8080-exec-1] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=赵瑾瑜, password=12345, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-10 08:48:29.581 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-10 08:48:29.950 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e1fa0d4
+2025-04-10 08:48:29.953 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-10 08:48:30.498 [http-nio-8080-exec-2] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=赵瑾瑜, password=12345, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-10 08:48:31.254 [http-nio-8080-exec-3] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=赵瑾瑜, password=12345, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-10 08:48:31.787 [http-nio-8080-exec-4] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=赵瑾瑜, password=12345, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-10 08:48:31.913 [http-nio-8080-exec-10] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=赵瑾瑜, password=12345, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-10 08:48:32.158 [http-nio-8080-exec-5] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=赵瑾瑜, password=12345, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-10 08:48:43.228 [http-nio-8080-exec-7] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=赵瑾瑜, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-10 08:48:49.642 [http-nio-8080-exec-8] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=赵瑾瑜, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-10 08:49:10.238 [http-nio-8080-exec-9] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=zhaojinyu, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-10 08:49:17.711 [http-nio-8080-exec-6] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-04-10 08:49:18.010 [http-nio-8080-exec-1] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-04-10 08:49:19.098 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-04-10 08:49:19.122 [http-nio-8080-exec-2] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-04-10 10:33:20.469 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h40m50s500ms943µs500ns).
+2025-04-10 10:48:19.813 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-10 10:48:19.917 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-10 10:48:19.922 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-10 10:48:19.931 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-10 10:48:23.189 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 1276 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-04-10 10:48:23.192 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-10 10:48:24.692 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-10 10:48:24.707 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-10 10:48:24.709 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-10 10:48:24.709 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-10 10:48:24.857 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-10 10:48:24.860 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1608 ms
+2025-04-10 10:48:25.924 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-10 10:48:25.954 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-04-10 10:48:25.968 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 3.354 seconds (process running for 4.549)
+2025-04-10 10:48:34.564 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-10 10:48:34.566 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-10 10:48:34.569 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-04-10 10:48:34.957 [http-nio-8080-exec-1] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=赵瑾瑜, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-10 10:48:35.099 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-10 10:48:36.263 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5bed29a3
+2025-04-10 10:48:36.268 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-10 10:48:36.499 [http-nio-8080-exec-3] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=赵瑾瑜, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-10 10:48:48.359 [http-nio-8080-exec-5] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=zhaojinyu, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-10 10:48:56.063 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-10 10:48:56.142 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-10 10:48:56.146 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-10 10:48:56.155 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -17,13 +17,13 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * Redis 相关配置。
+ * Redis 相关配置
  */
 @Configuration
 public class RedisConfig {
 
     /**
-     * 构建仅用于 Redis 序列化的 ObjectMapper。
+     * 构建仅用于 Redis 序列化的 ObjectMapper
      */
     private ObjectMapper buildRedisObjectMapper() {
         ObjectMapper mapper = new ObjectMapper();
@@ -38,7 +38,7 @@ public class RedisConfig {
     }
 
     /**
-     * RedisTemplate 配置。
+     * RedisTemplate 配置
      */
     @Bean
     public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory factory) {
@@ -58,7 +58,7 @@ public class RedisConfig {
     }
 
     /**
-     * Spring Cache 使用的 RedisCacheManager。
+     * Spring Cache 使用的 RedisCacheManager
      */
     @Bean
     public RedisCacheManager cacheManager(RedisConnectionFactory factory) {
@@ -75,7 +75,7 @@ public class RedisConfig {
     }
 
     /**
-     * 通用 RestTemplate。
+     * 通用 RestTemplate
      */
     @Bean
     public RestTemplate restTemplate() {

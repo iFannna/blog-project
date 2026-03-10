@@ -1,0 +1,445 @@
+2025-10-14 06:42:43.200 [main] INFO  c.sau.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 17.0.13 with PID 6828 (D:\Java\web-ai-project02\tlias-web-management\target\classes started by 77639 in D:\Java\web-ai-project02)
+2025-10-14 06:42:43.201 [main] INFO  c.sau.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-14 06:42:44.056 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-14 06:42:44.065 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-14 06:42:44.066 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-14 06:42:44.067 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-14 06:42:44.145 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-14 06:42:44.145 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 913 ms
+2025-10-14 06:42:44.752 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-14 06:42:44.767 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-14 06:42:44.773 [main] INFO  c.sau.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.911 seconds (process running for 2.547)
+2025-10-14 06:42:57.734 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-14 06:42:57.734 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-14 06:42:57.734 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-10-14 06:42:57.806 [http-nio-8080-exec-1] INFO  com.sau.controller.LoginController - 登录
+2025-10-14 06:42:57.822 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-14 06:42:58.063 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e5a9154
+2025-10-14 06:42:58.064 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-14 06:42:58.114 [http-nio-8080-exec-1] INFO  com.sau.service.impl.EmpServiceImpl - 登录成功,员工信息：Emp(id=1, username=liubei, password=123456, name=刘备, gender=1, phone=13320000020, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, job=3, salary=9500, deptId=3, entryDate=2006-01-15T00:00, createTime=2023-11-01T10:30, updateTime=2023-11-01T10:30, deptName=null, exprList=null)
+2025-10-14 06:43:03.310 [http-nio-8080-exec-2] INFO  com.sau.controller.LoginController - 登录
+2025-10-14 07:07:51.087 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-14 07:07:51.427 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-14 07:07:51.430 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-14 07:07:51.436 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-14 22:12:22.821 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 16500 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-14 22:12:22.822 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-14 22:12:23.702 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-14 22:12:23.715 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-14 22:12:23.716 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-14 22:12:23.717 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-14 22:12:23.770 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-14 22:12:23.770 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 914 ms
+2025-10-14 22:12:24.202 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-14 22:12:24.215 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-14 22:12:24.221 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 1.722 seconds (process running for 2.388)
+2025-10-14 22:12:28.704 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-14 22:12:29.044 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-14 22:15:50.076 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 14944 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-14 22:15:50.077 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-14 22:15:50.854 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-14 22:15:50.862 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-14 22:15:50.863 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-14 22:15:50.863 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-14 22:15:50.912 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-14 22:15:50.912 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 810 ms
+2025-10-14 22:15:51.311 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-14 22:15:51.323 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-14 22:15:51.329 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 1.531 seconds (process running for 2.069)
+2025-10-14 22:18:52.363 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-14 22:18:52.363 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-14 22:18:52.364 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-14 22:18:52.377 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-14 22:18:52.388 [http-nio-8080-exec-1] INFO  c.sau.interceptor.TokenInterceptor - 令牌为空，响应401
+2025-10-14 22:19:07.991 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-14 22:19:08.338 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-14 22:19:09.940 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 19060 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-14 22:19:09.941 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-14 22:19:10.723 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-14 22:19:10.731 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-14 22:19:10.732 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-14 22:19:10.732 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-14 22:19:10.781 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-14 22:19:10.782 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 816 ms
+2025-10-14 22:19:11.188 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-14 22:19:11.208 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-14 22:19:11.214 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 1.543 seconds (process running for 2.041)
+2025-10-14 22:19:18.355 [http-nio-8080-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-14 22:19:18.356 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-14 22:19:18.356 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-10-14 22:19:18.367 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-14 22:19:18.377 [http-nio-8080-exec-4] INFO  c.sau.interceptor.TokenInterceptor - 令牌为空，响应401
+2025-10-14 22:19:37.050 [http-nio-8080-exec-3] INFO  com.sau.controller.LoginController - 登录:User(id=null, name=null, username=zhaojinyu, password=123456, email=null, phone=null, images=null, status=null, userType=null, createTime=null, updateTime=null)
+2025-10-14 22:19:37.068 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-14 22:19:37.312 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@732b4ed9
+2025-10-14 22:19:37.313 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-14 22:19:37.356 [http-nio-8080-exec-3] INFO  c.sau.service.impl.UserServicrImpl - 登录成功，员工信息: User(id=1, name=赵瑾瑜, username=zhaojinyu, password=123456, email=88888@qq.com, phone=18866668888, images=null, status=1, userType=0, createTime=null, updateTime=null)
+2025-10-14 22:20:17.647 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-14 22:20:17.981 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-14 22:20:17.984 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-14 22:20:17.997 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-14 22:20:50.123 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 10888 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-14 22:20:50.124 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-14 22:20:50.884 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-14 22:20:50.893 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-14 22:20:50.894 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-14 22:20:50.894 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-14 22:20:50.949 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-14 22:20:50.949 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 792 ms
+2025-10-14 22:20:51.401 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-14 22:20:51.416 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-14 22:20:51.423 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 1.586 seconds (process running for 2.086)
+2025-10-14 22:20:56.540 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-14 22:20:56.540 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-14 22:20:56.541 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-14 22:20:56.611 [http-nio-8080-exec-1] INFO  com.sau.controller.LoginController - 登录:User(id=null, name=null, username=zhaojinyu, password=123456, email=null, phone=null, images=null, status=null, userType=null, createTime=null, updateTime=null)
+2025-10-14 22:20:56.628 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-14 22:20:56.810 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1942abec
+2025-10-14 22:20:56.811 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-14 22:20:56.848 [http-nio-8080-exec-1] INFO  c.sau.service.impl.UserServicrImpl - 登录成功，员工信息: User(id=1, name=赵瑾瑜, username=zhaojinyu, password=123456, email=88888@qq.com, phone=18866668888, images=null, status=1, userType=0, createTime=null, updateTime=null)
+2025-10-14 22:20:56.872 [http-nio-8080-exec-1] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-10-14T22:20:56.871155100, className=com.sau.controller.LoginController, methodName=login, methodParams=[User(id=null, name=null, username=zhaojinyu, password=123456, email=null, phone=null, images=null, status=null, userType=null, createTime=null, updateTime=null)], returnValue=Result(code=1, msg=success, data=LoginInfo(id=1, username=zhaojinyu, password=赵瑾瑜, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjA0OTQ4NTZ9.E3_hJj2vRCVUePG3trmvmxjCekHrBFf6XRICXP5_32I)), costTime=260, operateEmpName=null)
+2025-10-14 22:20:56.877 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.mybatis.spring.MyBatisSystemException: 
+### Error updating database.  Cause: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'operateUserId' in 'class com.sau.pojo.OperateLog'
+### The error may exist in com/sau/mapper/OperateLogMapper.java (best guess)
+### The error may involve com.sau.mapper.OperateLogMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into operate_log(operate_user_id, operate_time, class_name, method_name, method_params, return_value, cost_time) value (?, ?, ?, ?, ?, ?, ?)
+### Cause: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'operateUserId' in 'class com.sau.pojo.OperateLog'] with root cause
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'operateUserId' in 'class com.sau.pojo.OperateLog'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:385)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:160)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:156)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:50)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:115)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:82)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:97)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:65)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:91)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at jdk.proxy2/jdk.proxy2.$Proxy83.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:333)
+	at jdk.proxy2/jdk.proxy2.$Proxy66.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy68.insert(Unknown Source)
+	at com.sau.aop.OperationLogAspect.logOperation(OperationLogAspect.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.sau.controller.LoginController$$SpringCGLIB$$0.login(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-10-14 22:20:56.883 [http-nio-8080-exec-1] INFO  c.sau.interceptor.TokenInterceptor - 令牌为空，响应401
+2025-10-14 22:21:27.312 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-14 22:21:27.648 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-14 22:21:27.650 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-14 22:21:27.655 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-14 22:21:48.563 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 24428 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-14 22:21:48.564 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-14 22:21:49.295 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-14 22:21:49.302 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-14 22:21:49.303 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-14 22:21:49.304 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-14 22:21:49.356 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-14 22:21:49.358 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 768 ms
+2025-10-14 22:21:49.785 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-14 22:21:49.798 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-14 22:21:49.804 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 1.507 seconds (process running for 1.997)
+2025-10-14 22:22:00.756 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-14 22:22:00.757 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-14 22:22:00.757 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-10-14 22:22:00.823 [http-nio-8080-exec-1] INFO  com.sau.controller.LoginController - 登录:User(id=null, name=null, username=zhaojinyu, password=123456, email=null, phone=null, images=null, status=null, userType=null, createTime=null, updateTime=null)
+2025-10-14 22:22:00.839 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-14 22:22:01.028 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35fc31e6
+2025-10-14 22:22:01.030 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-14 22:22:01.068 [http-nio-8080-exec-1] INFO  c.sau.service.impl.UserServicrImpl - 登录成功，员工信息: User(id=1, name=赵瑾瑜, username=zhaojinyu, password=123456, email=88888@qq.com, phone=18866668888, images=null, status=1, userType=0, createTime=null, updateTime=null)
+2025-10-14 22:22:01.090 [http-nio-8080-exec-1] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=null, operateTime=2025-10-14T22:22:01.090921100, className=com.sau.controller.LoginController, methodName=login, methodParams=[User(id=null, name=null, username=zhaojinyu, password=123456, email=null, phone=null, images=null, status=null, userType=null, createTime=null, updateTime=null)], returnValue=Result(code=1, msg=success, data=LoginInfo(id=1, username=zhaojinyu, password=赵瑾瑜, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjA0OTQ5MjF9.YyqJ1l8qKgkfzZtZiDSSYbAf8jwLOxlnMPCfnxD4CZ8)), costTime=267, operateEmpName=null)
+2025-10-14 22:23:18.466 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-14 22:23:18.817 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-14 22:23:18.820 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-14 22:23:18.824 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-14 22:23:47.785 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 13852 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-14 22:23:47.786 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-14 22:23:48.573 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-14 22:23:48.581 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-14 22:23:48.583 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-14 22:23:48.583 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-14 22:23:48.635 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-14 22:23:48.635 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 824 ms
+2025-10-14 22:23:49.102 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-14 22:23:49.115 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-14 22:23:49.120 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 1.605 seconds (process running for 2.1)
+2025-10-14 22:23:52.694 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-14 22:23:52.694 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-14 22:23:52.695 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-14 22:23:52.761 [http-nio-8080-exec-1] INFO  com.sau.controller.LoginController - 登录:User(id=null, name=null, username=zhaojinyu, password=123456, email=null, phone=null, images=null, status=null, userType=null, createTime=null, updateTime=null)
+2025-10-14 22:23:52.779 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-14 22:23:52.971 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28640fba
+2025-10-14 22:23:52.972 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-14 22:23:53.013 [http-nio-8080-exec-1] INFO  c.sau.service.impl.UserServicrImpl - 登录成功，员工信息: User(id=1, name=赵瑾瑜, username=zhaojinyu, password=123456, email=88888@qq.com, phone=18866668888, images=null, status=1, userType=0, createTime=null, updateTime=null)
+2025-10-14 22:23:53.036 [http-nio-8080-exec-1] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=null, operateTime=2025-10-14T22:23:53.035221800, className=com.sau.controller.LoginController, methodName=login, methodParams=[User(id=null, name=null, username=zhaojinyu, password=123456, email=null, phone=null, images=null, status=null, userType=null, createTime=null, updateTime=null)], returnValue=Result(code=1, msg=success, data=LoginInfo(id=1, username=zhaojinyu, password=赵瑾瑜, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjA0OTUwMzN9.tzVTiucGAmLfrH-0BFHRS7ANkbAX5yB4HW2AR0JVBzc)), costTime=274, operateEmpName=null)
+2025-10-14 22:36:40.502 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-14 22:36:40.847 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-14 22:36:40.850 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-14 22:36:40.855 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-14 22:36:43.670 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 24812 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-14 22:36:43.672 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-14 22:36:44.426 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-14 22:36:44.438 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-14 22:36:44.440 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-14 22:36:44.440 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-14 22:36:44.496 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-14 22:36:44.496 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 799 ms
+2025-10-14 22:36:44.928 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-14 22:36:44.941 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-14 22:36:44.947 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 1.558 seconds (process running for 2.084)
+2025-10-14 22:38:23.454 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-14 22:38:23.454 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-14 22:38:23.454 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-10-14 22:38:23.515 [http-nio-8080-exec-2] INFO  com.sau.controller.LoginController - 登录:User(id=null, name=null, username=zhaojinyu, password=123456, email=null, phone=null, images=null, status=null, userType=null, createTime=null, updateTime=null)
+2025-10-14 22:38:23.532 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-14 22:38:23.717 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7693c2f9
+2025-10-14 22:38:23.718 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-14 22:38:23.756 [http-nio-8080-exec-2] INFO  c.sau.service.impl.UserServicrImpl - 登录成功，员工信息: User(id=1, name=赵瑾瑜, username=zhaojinyu, password=123456, email=88888@qq.com, phone=18866668888, images=null, status=1, userType=0, createTime=null, updateTime=null)
+2025-10-14 22:38:23.779 [http-nio-8080-exec-2] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=null, operateTime=2025-10-14T22:38:23.779568, className=com.sau.controller.LoginController, methodName=login, methodParams=[User(id=null, name=null, username=zhaojinyu, password=123456, email=null, phone=null, images=null, status=null, userType=null, createTime=null, updateTime=null)], returnValue=Result(code=1, msg=success, data=LoginInfo(id=1, username=zhaojinyu, password=赵瑾瑜, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjA0OTU5MDN9.u-0OtmWS3_CIr0Pq0tlYREDK63Fv5JFv7O4LYrbTAFo)), costTime=263, operateEmpName=null)
+2025-10-14 22:50:53.726 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-14 22:50:54.065 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-14 22:50:54.067 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-14 22:50:54.071 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-14 22:50:56.950 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 14360 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-14 22:50:56.951 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-14 22:50:57.678 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-14 22:50:57.687 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-14 22:50:57.688 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-14 22:50:57.688 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-14 22:50:57.740 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-14 22:50:57.741 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 766 ms
+2025-10-14 22:50:58.163 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-14 22:50:58.175 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-14 22:50:58.191 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 1.522 seconds (process running for 2.03)
+2025-10-14 22:51:02.130 [http-nio-8080-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-14 22:51:02.130 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-14 22:51:02.131 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-14 22:51:02.143 [http-nio-8080-exec-5] INFO  c.sau.interceptor.TokenInterceptor - 登录请求，放行
+2025-10-14 22:51:02.155 [http-nio-8080-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: JWT String argument cannot be null or empty.] with root cause
+java.lang.IllegalArgumentException: JWT String argument cannot be null or empty.
+	at io.jsonwebtoken.lang.Assert.hasText(Assert.java:135)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:479)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.sau.utils.JwtUtils.parseToken(JwtUtils.java:36)
+	at com.sau.interceptor.TokenInterceptor.preHandle(TokenInterceptor.java:30)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:146)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-10-14 22:51:02.161 [http-nio-8080-exec-5] INFO  c.sau.interceptor.TokenInterceptor - 令牌为空，响应401
+2025-10-14 22:57:08.712 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-14 22:57:09.075 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-14 22:57:11.882 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 11212 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-14 22:57:11.884 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-14 22:57:12.641 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-14 22:57:12.649 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-14 22:57:12.650 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-14 22:57:12.650 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-14 22:57:12.705 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-14 22:57:12.705 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 797 ms
+2025-10-14 22:57:13.122 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-14 22:57:13.135 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-14 22:57:13.144 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 1.544 seconds (process running for 2.039)
+2025-10-14 22:57:16.623 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-14 22:57:16.623 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-14 22:57:16.623 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-10-14 22:57:16.635 [http-nio-8080-exec-1] INFO  c.sau.interceptor.TokenInterceptor - 登录请求，放行
+2025-10-14 22:57:16.689 [http-nio-8080-exec-1] INFO  com.sau.controller.LoginController - 登录:User(id=null, name=null, username=zhaojinyu, password=123456, email=null, phone=null, images=null, status=null, userType=null, createTime=null, updateTime=null)
+2025-10-14 22:57:16.706 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-14 22:57:16.895 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52899307
+2025-10-14 22:57:16.896 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-14 22:57:16.942 [http-nio-8080-exec-1] INFO  c.sau.service.impl.UserServicrImpl - 登录成功，员工信息: User(id=1, name=赵瑾瑜, username=zhaojinyu, password=123456, email=88888@qq.com, phone=18866668888, images=null, status=1, userType=0, createTime=null, updateTime=null)
+2025-10-14 22:57:16.968 [http-nio-8080-exec-1] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=1, operateTime=2025-10-14T22:57:16.967750100, className=com.sau.controller.LoginController, methodName=login, methodParams=[User(id=null, name=null, username=zhaojinyu, password=123456, email=null, phone=null, images=null, status=null, userType=null, createTime=null, updateTime=null)], returnValue=Result(code=1, msg=success, data=LoginInfo(id=1, username=zhaojinyu, password=赵瑾瑜, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjA0OTcwMzZ9.4aWM1uYuwZz3SXiZpKd8FdwP5CT6PHGO3H4sLssiNfo)), costTime=278, operateEmpName=null)
+2025-10-14 23:07:12.429 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-14 23:07:12.764 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-14 23:07:12.767 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-14 23:07:12.771 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-14 23:07:15.667 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 9428 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-14 23:07:15.667 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-14 23:07:16.393 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-14 23:07:16.400 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-14 23:07:16.401 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-14 23:07:16.401 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-14 23:07:16.449 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-14 23:07:16.450 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 757 ms
+2025-10-14 23:07:16.867 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-14 23:07:16.880 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-14 23:07:16.886 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 1.523 seconds (process running for 2.06)
+2025-10-14 23:07:23.154 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-14 23:07:23.154 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-14 23:07:23.154 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-10-14 23:07:23.221 [http-nio-8080-exec-1] INFO  com.sau.controller.LoginController - 登录:User(id=null, name=null, username=zhaojinyu, password=123456, email=null, phone=null, images=null, status=null, userType=null, createTime=null, updateTime=null)
+2025-10-14 23:07:23.238 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-14 23:07:23.435 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@148f947f
+2025-10-14 23:07:23.436 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-14 23:07:23.476 [http-nio-8080-exec-1] INFO  c.sau.service.impl.UserServicrImpl - 登录成功，员工信息: User(id=1, name=赵瑾瑜, username=zhaojinyu, password=123456, email=88888@qq.com, phone=18866668888, images=null, status=1, userType=0, createTime=null, updateTime=null)
+2025-10-14 23:07:23.499 [http-nio-8080-exec-1] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=1, operateTime=2025-10-14T23:07:23.498952100, className=com.sau.controller.LoginController, methodName=login, methodParams=[User(id=null, name=null, username=zhaojinyu, password=123456, email=null, phone=null, images=null, status=null, userType=null, createTime=null, updateTime=null)], returnValue=Result(code=1, msg=success, data=LoginInfo(id=1, username=zhaojinyu, password=赵瑾瑜, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjA0OTc2NDN9.Xhjx-Erp4CfDAT3pdGRaw4gtPVmSn0uOepPq_3-CEmQ)), costTime=277, operateEmpName=null)
+2025-10-14 23:10:09.013 [http-nio-8080-exec-2] INFO  com.sau.controller.LoginController - 登录:User(id=null, name=null, username=zhaojinyu, password=123456, email=null, phone=null, images=null, status=null, userType=null, createTime=null, updateTime=null)
+2025-10-14 23:10:09.015 [http-nio-8080-exec-2] INFO  c.sau.service.impl.UserServicrImpl - 登录成功，员工信息: User(id=1, name=赵瑾瑜, username=zhaojinyu, password=123456, email=88888@qq.com, phone=18866668888, images=null, status=1, userType=0, createTime=null, updateTime=null)
+2025-10-14 23:10:09.015 [http-nio-8080-exec-2] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=1, operateTime=2025-10-14T23:10:09.015197600, className=com.sau.controller.LoginController, methodName=login, methodParams=[User(id=null, name=null, username=zhaojinyu, password=123456, email=null, phone=null, images=null, status=null, userType=null, createTime=null, updateTime=null)], returnValue=Result(code=1, msg=success, data=LoginInfo(id=1, username=zhaojinyu, password=赵瑾瑜, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjA0OTc4MDl9.7xPpdkrTPLYx6COF_Rhd0UX5BG_yOnVsFV7LxRgTp1E)), costTime=2, operateEmpName=null)
+2025-10-14 23:10:34.944 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-14 23:10:35.291 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-14 23:10:35.293 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-14 23:10:35.298 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-14 23:19:58.734 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 12248 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-14 23:19:58.735 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-14 23:19:59.446 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-14 23:19:59.453 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-14 23:19:59.455 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-14 23:19:59.456 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-14 23:19:59.517 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-14 23:19:59.517 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 756 ms
+2025-10-14 23:19:59.932 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-14 23:19:59.945 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-14 23:19:59.952 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 1.484 seconds (process running for 1.988)
+2025-10-14 23:20:12.953 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-14 23:20:12.954 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-14 23:20:12.954 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-10-14 23:20:13.021 [http-nio-8080-exec-1] INFO  com.sau.controller.LoginController - 登录:User(id=null, name=null, username=88888@qq.com, password=123456, email=null, phone=null, images=null, status=null, userType=null, createTime=null, updateTime=null)
+2025-10-14 23:20:13.039 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-14 23:20:13.243 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ef205f8
+2025-10-14 23:20:13.244 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-14 23:20:13.287 [http-nio-8080-exec-1] INFO  c.sau.service.impl.UserServicrImpl - 登录成功，员工信息: User(id=1, name=赵瑾瑜, username=zhaojinyu, password=123456, email=88888@qq.com, phone=18866668888, images=null, status=1, userType=0, createTime=null, updateTime=null)
+2025-10-14 23:20:13.312 [http-nio-8080-exec-1] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=1, operateTime=2025-10-14T23:20:13.311374900, className=com.sau.controller.LoginController, methodName=login, methodParams=[User(id=null, name=null, username=88888@qq.com, password=123456, email=null, phone=null, images=null, status=null, userType=null, createTime=null, updateTime=null)], returnValue=Result(code=1, msg=success, data=LoginInfo(id=1, username=zhaojinyu, password=赵瑾瑜, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjA0OTg0MTN9.z-ZWj7hgHUGcNRMnAQ2kO5mqNBb67hnXbF3hRkEkOto)), costTime=290, operateEmpName=null)
+2025-10-14 23:21:24.825 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-14 23:21:25.169 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-14 23:21:25.173 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-14 23:21:25.177 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-14 23:21:28.090 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 3800 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-14 23:21:28.091 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-14 23:21:28.818 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-14 23:21:28.827 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-14 23:21:28.829 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-14 23:21:28.830 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-14 23:21:28.893 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-14 23:21:28.893 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 778 ms
+2025-10-14 23:21:29.308 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-14 23:21:29.329 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-14 23:21:29.335 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 1.544 seconds (process running for 2.036)
+2025-10-14 23:21:39.646 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-14 23:21:39.646 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-14 23:21:39.647 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-14 23:21:39.712 [http-nio-8080-exec-1] INFO  com.sau.controller.LoginController - 登录:User(id=null, name=null, username=null, account=88888@qq.com, password=123456, email=null, phone=null, images=null, status=null, userType=null, createTime=null, updateTime=null)
+2025-10-14 23:21:39.729 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-14 23:21:39.919 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f6fda9f
+2025-10-14 23:21:39.920 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-14 23:21:39.958 [http-nio-8080-exec-1] INFO  c.sau.service.impl.UserServicrImpl - 登录成功，员工信息: User(id=1, name=赵瑾瑜, username=zhaojinyu, account=null, password=123456, email=88888@qq.com, phone=18866668888, images=null, status=1, userType=0, createTime=null, updateTime=null)
+2025-10-14 23:21:39.980 [http-nio-8080-exec-1] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=1, operateTime=2025-10-14T23:21:39.979064900, className=com.sau.controller.LoginController, methodName=login, methodParams=[User(id=null, name=null, username=null, account=88888@qq.com, password=123456, email=null, phone=null, images=null, status=null, userType=null, createTime=null, updateTime=null)], returnValue=Result(code=1, msg=success, data=LoginInfo(id=1, username=zhaojinyu, password=赵瑾瑜, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjA0OTg0OTl9.4kB6Ksosrr9oeAr5TS0xPSMqnuiW3OFnDgetHnuS62E)), costTime=267, operateEmpName=null)
+2025-10-14 23:32:29.073 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-14 23:32:29.433 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-14 23:32:29.436 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-14 23:32:29.438 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

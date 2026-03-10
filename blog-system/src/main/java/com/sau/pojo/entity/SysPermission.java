@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 /**
- * 系统权限实体。
+ * 系统权限实体
  */
 @Data
 @NoArgsConstructor

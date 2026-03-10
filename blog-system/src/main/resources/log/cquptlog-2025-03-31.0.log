@@ -1,0 +1,660 @@
+2025-03-31 21:44:03.969 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 23576 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-03-31 21:44:03.971 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-31 21:44:04.652 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-31 21:44:04.659 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-31 21:44:04.661 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-31 21:44:04.661 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-31 21:44:04.703 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-31 21:44:04.704 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 705 ms
+2025-03-31 21:44:05.081 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-31 21:44:05.092 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-31 21:44:05.097 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.429 seconds (process running for 1.953)
+2025-03-31 21:45:50.275 [http-nio-8080-exec-7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-31 21:45:50.276 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-31 21:45:50.277 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-31 21:45:55.481 [http-nio-8080-exec-8] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 21:45:55.498 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10
+2025-03-31 21:45:55.519 [http-nio-8080-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-31 21:45:56.134 [http-nio-8080-exec-8] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4787180d
+2025-03-31 21:45:56.136 [http-nio-8080-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-31 21:46:02.116 [http-nio-8080-exec-10] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 21:46:03.465 [http-nio-8080-exec-1] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 21:46:03.466 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10
+2025-03-31 21:46:38.773 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:1,20
+2025-03-31 21:46:42.501 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:1,30
+2025-03-31 21:46:48.663 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:1,40
+2025-03-31 21:47:03.403 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10
+2025-03-31 21:47:36.920 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:2,10
+2025-03-31 21:47:38.703 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:3,10
+2025-03-31 21:47:42.316 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:2,10
+2025-03-31 21:47:45.206 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10
+2025-03-31 21:47:52.934 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:2,10
+2025-03-31 22:12:06.689 [http-nio-8080-exec-10] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 22:12:06.689 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10
+2025-03-31 22:20:57.152 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-31 22:20:57.461 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-31 22:20:57.465 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-31 22:20:57.473 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-31 22:31:21.883 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 1784 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-03-31 22:31:21.884 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-31 22:31:22.525 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-31 22:31:22.532 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-31 22:31:22.533 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-31 22:31:22.534 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-31 22:31:22.576 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-31 22:31:22.577 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 668 ms
+2025-03-31 22:31:22.970 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-31 22:31:23.010 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-31 22:31:23.016 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.384 seconds (process running for 1.887)
+2025-03-31 22:31:29.086 [http-nio-8080-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-31 22:31:29.086 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-31 22:31:29.087 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-31 22:31:29.106 [http-nio-8080-exec-5] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 22:31:29.135 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10
+2025-03-31 22:31:29.158 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-31 22:31:29.625 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55acb982
+2025-03-31 22:31:29.630 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-31 22:31:33.126 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:1,20
+2025-03-31 22:31:35.913 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:1,40
+2025-03-31 22:31:38.461 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:1,30
+2025-03-31 22:31:40.991 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10
+2025-03-31 22:36:02.505 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10
+2025-03-31 22:36:02.505 [http-nio-8080-exec-2] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 22:36:54.730 [http-nio-8080-exec-9] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 22:36:54.731 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10
+2025-03-31 22:36:58.322 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:2,10
+2025-03-31 22:36:59.516 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10
+2025-03-31 22:37:00.090 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:2,10
+2025-03-31 22:37:01.050 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:3,10
+2025-03-31 22:37:02.048 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10
+2025-03-31 22:42:30.685 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:3,10
+2025-03-31 22:42:32.877 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:2,10
+2025-03-31 22:42:35.944 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10
+2025-03-31 22:43:06.023 [http-nio-8080-exec-3] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 22:43:06.430 [http-nio-8080-exec-4] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 22:43:06.430 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10
+2025-03-31 22:43:07.116 [http-nio-8080-exec-7] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 22:43:07.465 [http-nio-8080-exec-2] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 22:43:07.465 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10
+2025-03-31 22:43:14.291 [http-nio-8080-exec-10] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 22:43:14.292 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10
+2025-03-31 22:43:15.473 [http-nio-8080-exec-5] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 22:43:19.350 [http-nio-8080-exec-1] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 22:43:19.350 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10
+2025-03-31 22:49:23.261 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:2,10
+2025-03-31 22:49:23.278 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:3,10
+2025-03-31 22:49:25.796 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:3,10
+2025-03-31 22:49:27.134 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:3,10
+2025-03-31 22:55:33.831 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-31 22:55:34.216 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-31 22:55:34.218 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-31 22:55:34.222 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-31 23:11:38.562 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 6912 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-03-31 23:11:38.563 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-31 23:11:39.208 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-31 23:11:39.215 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-31 23:11:39.216 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-31 23:11:39.217 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-31 23:11:39.262 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-31 23:11:39.263 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 675 ms
+2025-03-31 23:11:39.678 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-31 23:11:39.700 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-31 23:11:39.705 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.458 seconds (process running for 1.982)
+2025-03-31 23:11:51.743 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-31 23:11:51.743 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-31 23:11:51.745 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-03-31 23:11:51.792 [http-nio-8080-exec-2] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:11:51.825 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:11:51.833 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-31 23:11:52.345 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65f4d61a
+2025-03-31 23:11:52.347 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-31 23:11:54.330 [http-nio-8080-exec-8] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:11:54.331 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:12:12.488 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-31 23:12:12.814 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-31 23:12:12.816 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-31 23:12:12.821 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-31 23:12:24.920 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 11840 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-03-31 23:12:24.921 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-31 23:12:25.500 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-31 23:12:25.507 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-31 23:12:25.508 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-31 23:12:25.508 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-31 23:12:25.545 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-31 23:12:25.545 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 597 ms
+2025-03-31 23:12:25.898 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-31 23:12:25.917 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-31 23:12:25.922 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.244 seconds (process running for 1.695)
+2025-03-31 23:12:30.057 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-31 23:12:30.057 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-31 23:12:30.058 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-31 23:12:30.079 [http-nio-8080-exec-2] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:12:30.089 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:12:30.093 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-31 23:12:30.254 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74e25595
+2025-03-31 23:12:30.256 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-31 23:12:30.488 [http-nio-8080-exec-6] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:12:30.488 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:12:30.652 [http-nio-8080-exec-9] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:12:30.652 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:12:30.802 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:12:30.819 [http-nio-8080-exec-5] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:12:30.955 [http-nio-8080-exec-3] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:12:30.955 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:12:31.095 [http-nio-8080-exec-1] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:12:31.095 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:12:35.330 [http-nio-8080-exec-6] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:12:35.828 [http-nio-8080-exec-4] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:12:35.829 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:13:03.108 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-31 23:13:03.470 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-31 23:13:03.473 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-31 23:13:03.478 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-31 23:18:02.859 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 24684 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-03-31 23:18:02.860 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-31 23:18:03.469 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-31 23:18:03.477 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-31 23:18:03.478 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-31 23:18:03.478 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-31 23:18:03.518 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-31 23:18:03.518 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 632 ms
+2025-03-31 23:18:03.677 [main] ERROR o.m.spring.mapper.MapperFactoryBean - Error while adding the mapper 'interface com.sau.mapper.EmpMapper' to configuration.
+java.lang.IllegalArgumentException: Mapped Statements collection already contains key com.sau.mapper.EmpMapper.list. please check com/sau/mapper/EmpMapper.xml and com/sau/mapper/EmpMapper.java (best guess)
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:1158)
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:1111)
+	at org.apache.ibatis.session.Configuration.addMappedStatement(Configuration.java:834)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:223)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.lambda$parseStatement$2(MapperAnnotationBuilder.java:349)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parseStatement(MapperAnnotationBuilder.java:286)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:131)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:943)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:76)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1606)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1664)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.sau.CquptWebManagementApplication.main(CquptWebManagementApplication.java:10)
+2025-03-31 23:18:03.680 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'empController': Unsatisfied dependency expressed through field 'empService': Error creating bean with name 'empServiceImpl': Unsatisfied dependency expressed through field 'empMapper': Error creating bean with name 'empMapper' defined in file [D:\Java\web-ai-practice\cqupt-web-management\target\classes\com\sau\mapper\EmpMapper.class]: java.lang.IllegalArgumentException: Mapped Statements collection already contains key com.sau.mapper.EmpMapper.list. please check com/sau/mapper/EmpMapper.xml and com/sau/mapper/EmpMapper.java (best guess)
+2025-03-31 23:18:03.682 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-03-31 23:18:03.689 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-31 23:18:03.702 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'empController': Unsatisfied dependency expressed through field 'empService': Error creating bean with name 'empServiceImpl': Unsatisfied dependency expressed through field 'empMapper': Error creating bean with name 'empMapper' defined in file [D:\Java\web-ai-practice\cqupt-web-management\target\classes\com\sau\mapper\EmpMapper.class]: java.lang.IllegalArgumentException: Mapped Statements collection already contains key com.sau.mapper.EmpMapper.list. please check com/sau/mapper/EmpMapper.xml and com/sau/mapper/EmpMapper.java (best guess)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.sau.CquptWebManagementApplication.main(CquptWebManagementApplication.java:10)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'empServiceImpl': Unsatisfied dependency expressed through field 'empMapper': Error creating bean with name 'empMapper' defined in file [D:\Java\web-ai-practice\cqupt-web-management\target\classes\com\sau\mapper\EmpMapper.class]: java.lang.IllegalArgumentException: Mapped Statements collection already contains key com.sau.mapper.EmpMapper.list. please check com/sau/mapper/EmpMapper.xml and com/sau/mapper/EmpMapper.java (best guess)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1664)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 22 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'empMapper' defined in file [D:\Java\web-ai-practice\cqupt-web-management\target\classes\com\sau\mapper\EmpMapper.class]: java.lang.IllegalArgumentException: Mapped Statements collection already contains key com.sau.mapper.EmpMapper.list. please check com/sau/mapper/EmpMapper.xml and com/sau/mapper/EmpMapper.java (best guess)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1606)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 36 common frames omitted
+Caused by: java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: Mapped Statements collection already contains key com.sau.mapper.EmpMapper.list. please check com/sau/mapper/EmpMapper.xml and com/sau/mapper/EmpMapper.java (best guess)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:79)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 45 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection already contains key com.sau.mapper.EmpMapper.list. please check com/sau/mapper/EmpMapper.xml and com/sau/mapper/EmpMapper.java (best guess)
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:1158)
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:1111)
+	at org.apache.ibatis.session.Configuration.addMappedStatement(Configuration.java:834)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:223)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.lambda$parseStatement$2(MapperAnnotationBuilder.java:349)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parseStatement(MapperAnnotationBuilder.java:286)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:131)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:943)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:76)
+	... 48 common frames omitted
+2025-03-31 23:19:30.112 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 22044 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-03-31 23:19:30.113 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-31 23:19:30.705 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-31 23:19:30.712 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-31 23:19:30.713 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-31 23:19:30.713 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-31 23:19:30.755 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-31 23:19:30.755 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 617 ms
+2025-03-31 23:19:31.104 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-31 23:19:31.116 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-31 23:19:31.124 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.251 seconds (process running for 1.717)
+2025-03-31 23:19:36.032 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-31 23:19:36.032 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-31 23:19:36.032 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-31 23:19:36.052 [http-nio-8080-exec-3] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:19:36.069 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:19:36.073 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-31 23:19:36.249 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@182baaaf
+2025-03-31 23:19:36.251 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-31 23:19:37.226 [http-nio-8080-exec-8] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:19:37.228 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:19:37.467 [http-nio-8080-exec-6] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:19:37.468 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:19:37.624 [http-nio-8080-exec-4] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:19:37.624 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:19:48.171 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,刘,null,null,null
+2025-03-31 23:19:48.822 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,刘,null,null,null
+2025-03-31 23:19:48.980 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,刘,null,null,null
+2025-03-31 23:20:26.454 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-31 23:20:26.759 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-31 23:20:26.769 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-31 23:20:26.776 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-31 23:20:29.846 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 19508 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-03-31 23:20:29.847 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-31 23:20:30.450 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-31 23:20:30.462 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-31 23:20:30.464 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-31 23:20:30.464 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-31 23:20:30.508 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-31 23:20:30.508 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 638 ms
+2025-03-31 23:20:30.822 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-31 23:20:30.835 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-31 23:20:30.842 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.241 seconds (process running for 1.702)
+2025-03-31 23:20:33.958 [http-nio-8080-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-31 23:20:33.958 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-31 23:20:33.959 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-31 23:20:33.982 [http-nio-8080-exec-5] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:20:33.996 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:20:34.002 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-31 23:20:34.178 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73f908f
+2025-03-31 23:20:34.181 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-31 23:20:35.514 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:20:35.514 [http-nio-8080-exec-3] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:20:35.705 [http-nio-8080-exec-4] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:20:35.706 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:20:35.835 [http-nio-8080-exec-7] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:20:35.836 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:20:35.984 [http-nio-8080-exec-10] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:20:35.984 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:20:36.116 [http-nio-8080-exec-5] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:20:36.116 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:20:36.238 [http-nio-8080-exec-3] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:20:36.239 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:20:36.409 [http-nio-8080-exec-4] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:20:36.409 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:20:36.551 [http-nio-8080-exec-7] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:20:36.551 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:20:36.688 [http-nio-8080-exec-10] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:20:36.688 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:21:34.161 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-31 23:21:34.484 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-31 23:21:34.487 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-31 23:21:34.492 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-31 23:21:37.607 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 5504 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-03-31 23:21:37.608 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-31 23:21:38.248 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-31 23:21:38.255 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-31 23:21:38.256 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-31 23:21:38.256 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-31 23:21:38.300 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-31 23:21:38.300 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 663 ms
+2025-03-31 23:21:38.627 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-31 23:21:38.640 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-31 23:21:38.646 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.312 seconds (process running for 1.798)
+2025-03-31 23:21:38.770 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-31 23:21:38.770 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-31 23:21:38.771 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-31 23:21:38.803 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:21:38.871 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-31 23:21:39.041 [http-nio-8080-exec-1] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:21:39.045 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43df5ead
+2025-03-31 23:21:39.047 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-31 23:21:41.128 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:21:41.129 [http-nio-8080-exec-4] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:27:21.091 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-31 23:27:21.414 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-31 23:27:21.417 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-31 23:27:21.422 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-31 23:27:24.406 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 21440 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-03-31 23:27:24.407 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-31 23:27:24.987 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-31 23:27:24.994 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-31 23:27:24.995 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-31 23:27:24.995 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-31 23:27:25.033 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-31 23:27:25.033 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 604 ms
+2025-03-31 23:27:25.150 [main] ERROR o.m.spring.mapper.MapperFactoryBean - Error while adding the mapper 'interface com.sau.mapper.EmpMapper' to configuration.
+org.apache.ibatis.builder.BuilderException: Detected conflicting annotations '@org.apache.ibatis.annotations.Select(databaseId="", affectData=false, value={"select e.*,d.name deptName from emp e left join dept d on e.dept_id = d.id order by e.update_time desc"})' and '@org.apache.ibatis.annotations.Select(databaseId="", affectData=false, value={"SELECT e.*, d.name deptName FROM emp e LEFT JOIN dept d ON e.dept_id = d.id WHERE e.name LIKE CONCAT(\'%\', #{name}, \'%\') AND e.gender = #{gender} AND e.entry_date BETWEEN #{begin} AND #{end} ORDER BY e.update_time DESC"})' on 'com.sau.mapper.EmpMapper.list'.
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.lambda$getAnnotationWrapper$5(MapperAnnotationBuilder.java:608)
+	at java.base/java.util.HashMap.merge(HashMap.java:1383)
+	at java.base/java.util.stream.Collectors.lambda$toMap$68(Collectors.java:1673)
+	at java.base/java.util.stream.ReduceOps$3ReducingSink.accept(ReduceOps.java:169)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.getAnnotationWrapper(MapperAnnotationBuilder.java:606)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.getAnnotationWrapper(MapperAnnotationBuilder.java:598)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:126)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:943)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:76)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1606)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1664)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.sau.CquptWebManagementApplication.main(CquptWebManagementApplication.java:10)
+2025-03-31 23:27:25.152 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'empController': Unsatisfied dependency expressed through field 'empService': Error creating bean with name 'empServiceImpl': Unsatisfied dependency expressed through field 'empMapper': Error creating bean with name 'empMapper' defined in file [D:\Java\web-ai-practice\cqupt-web-management\target\classes\com\sau\mapper\EmpMapper.class]: org.apache.ibatis.builder.BuilderException: Detected conflicting annotations '@org.apache.ibatis.annotations.Select(databaseId="", affectData=false, value={"select e.*,d.name deptName from emp e left join dept d on e.dept_id = d.id order by e.update_time desc"})' and '@org.apache.ibatis.annotations.Select(databaseId="", affectData=false, value={"SELECT e.*, d.name deptName FROM emp e LEFT JOIN dept d ON e.dept_id = d.id WHERE e.name LIKE CONCAT(\'%\', #{name}, \'%\') AND e.gender = #{gender} AND e.entry_date BETWEEN #{begin} AND #{end} ORDER BY e.update_time DESC"})' on 'com.sau.mapper.EmpMapper.list'.
+2025-03-31 23:27:25.153 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-03-31 23:27:25.162 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-31 23:27:25.174 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'empController': Unsatisfied dependency expressed through field 'empService': Error creating bean with name 'empServiceImpl': Unsatisfied dependency expressed through field 'empMapper': Error creating bean with name 'empMapper' defined in file [D:\Java\web-ai-practice\cqupt-web-management\target\classes\com\sau\mapper\EmpMapper.class]: org.apache.ibatis.builder.BuilderException: Detected conflicting annotations '@org.apache.ibatis.annotations.Select(databaseId="", affectData=false, value={"select e.*,d.name deptName from emp e left join dept d on e.dept_id = d.id order by e.update_time desc"})' and '@org.apache.ibatis.annotations.Select(databaseId="", affectData=false, value={"SELECT e.*, d.name deptName FROM emp e LEFT JOIN dept d ON e.dept_id = d.id WHERE e.name LIKE CONCAT(\'%\', #{name}, \'%\') AND e.gender = #{gender} AND e.entry_date BETWEEN #{begin} AND #{end} ORDER BY e.update_time DESC"})' on 'com.sau.mapper.EmpMapper.list'.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.sau.CquptWebManagementApplication.main(CquptWebManagementApplication.java:10)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'empServiceImpl': Unsatisfied dependency expressed through field 'empMapper': Error creating bean with name 'empMapper' defined in file [D:\Java\web-ai-practice\cqupt-web-management\target\classes\com\sau\mapper\EmpMapper.class]: org.apache.ibatis.builder.BuilderException: Detected conflicting annotations '@org.apache.ibatis.annotations.Select(databaseId="", affectData=false, value={"select e.*,d.name deptName from emp e left join dept d on e.dept_id = d.id order by e.update_time desc"})' and '@org.apache.ibatis.annotations.Select(databaseId="", affectData=false, value={"SELECT e.*, d.name deptName FROM emp e LEFT JOIN dept d ON e.dept_id = d.id WHERE e.name LIKE CONCAT(\'%\', #{name}, \'%\') AND e.gender = #{gender} AND e.entry_date BETWEEN #{begin} AND #{end} ORDER BY e.update_time DESC"})' on 'com.sau.mapper.EmpMapper.list'.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1664)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 22 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'empMapper' defined in file [D:\Java\web-ai-practice\cqupt-web-management\target\classes\com\sau\mapper\EmpMapper.class]: org.apache.ibatis.builder.BuilderException: Detected conflicting annotations '@org.apache.ibatis.annotations.Select(databaseId="", affectData=false, value={"select e.*,d.name deptName from emp e left join dept d on e.dept_id = d.id order by e.update_time desc"})' and '@org.apache.ibatis.annotations.Select(databaseId="", affectData=false, value={"SELECT e.*, d.name deptName FROM emp e LEFT JOIN dept d ON e.dept_id = d.id WHERE e.name LIKE CONCAT(\'%\', #{name}, \'%\') AND e.gender = #{gender} AND e.entry_date BETWEEN #{begin} AND #{end} ORDER BY e.update_time DESC"})' on 'com.sau.mapper.EmpMapper.list'.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1606)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 36 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Detected conflicting annotations '@org.apache.ibatis.annotations.Select(databaseId="", affectData=false, value={"select e.*,d.name deptName from emp e left join dept d on e.dept_id = d.id order by e.update_time desc"})' and '@org.apache.ibatis.annotations.Select(databaseId="", affectData=false, value={"SELECT e.*, d.name deptName FROM emp e LEFT JOIN dept d ON e.dept_id = d.id WHERE e.name LIKE CONCAT(\'%\', #{name}, \'%\') AND e.gender = #{gender} AND e.entry_date BETWEEN #{begin} AND #{end} ORDER BY e.update_time DESC"})' on 'com.sau.mapper.EmpMapper.list'.
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:79)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 45 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Detected conflicting annotations '@org.apache.ibatis.annotations.Select(databaseId="", affectData=false, value={"select e.*,d.name deptName from emp e left join dept d on e.dept_id = d.id order by e.update_time desc"})' and '@org.apache.ibatis.annotations.Select(databaseId="", affectData=false, value={"SELECT e.*, d.name deptName FROM emp e LEFT JOIN dept d ON e.dept_id = d.id WHERE e.name LIKE CONCAT(\'%\', #{name}, \'%\') AND e.gender = #{gender} AND e.entry_date BETWEEN #{begin} AND #{end} ORDER BY e.update_time DESC"})' on 'com.sau.mapper.EmpMapper.list'.
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.lambda$getAnnotationWrapper$5(MapperAnnotationBuilder.java:608)
+	at java.base/java.util.HashMap.merge(HashMap.java:1383)
+	at java.base/java.util.stream.Collectors.lambda$toMap$68(Collectors.java:1673)
+	at java.base/java.util.stream.ReduceOps$3ReducingSink.accept(ReduceOps.java:169)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.getAnnotationWrapper(MapperAnnotationBuilder.java:606)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.getAnnotationWrapper(MapperAnnotationBuilder.java:598)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:126)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:943)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:76)
+	... 48 common frames omitted
+2025-03-31 23:29:10.569 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 11044 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-03-31 23:29:10.570 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-31 23:29:11.151 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-31 23:29:11.157 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-31 23:29:11.158 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-31 23:29:11.159 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-31 23:29:11.195 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-31 23:29:11.195 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 604 ms
+2025-03-31 23:29:11.514 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-31 23:29:11.525 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-31 23:29:11.531 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.202 seconds (process running for 1.646)
+2025-03-31 23:29:22.632 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-31 23:29:22.633 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-31 23:29:22.635 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-31 23:29:22.679 [http-nio-8080-exec-3] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:22.737 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:22.748 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-31 23:29:23.236 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53d6708c
+2025-03-31 23:29:23.237 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-31 23:29:25.170 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:25.193 [http-nio-8080-exec-5] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:25.311 [http-nio-8080-exec-6] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:25.312 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:25.479 [http-nio-8080-exec-10] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:25.480 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:25.634 [http-nio-8080-exec-9] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:25.635 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:28.230 [http-nio-8080-exec-3] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:28.231 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:28.374 [http-nio-8080-exec-5] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:28.375 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:28.529 [http-nio-8080-exec-6] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:28.529 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:28.696 [http-nio-8080-exec-8] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:28.696 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:28.854 [http-nio-8080-exec-7] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:28.855 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:29.074 [http-nio-8080-exec-1] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:29.074 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:29.225 [http-nio-8080-exec-4] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:29.226 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:29.400 [http-nio-8080-exec-6] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:29.400 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:29.567 [http-nio-8080-exec-8] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:29.567 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:29.721 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:29.740 [http-nio-8080-exec-7] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:30.044 [http-nio-8080-exec-3] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:30.045 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:30.234 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:30.258 [http-nio-8080-exec-5] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:30.408 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:30.430 [http-nio-8080-exec-2] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:30.569 [http-nio-8080-exec-8] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:30.569 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:30.874 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:30.884 [http-nio-8080-exec-7] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:31.065 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:31.089 [http-nio-8080-exec-1] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:31.253 [http-nio-8080-exec-5] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:31.255 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:31.436 [http-nio-8080-exec-6] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:31.437 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:31.615 [http-nio-8080-exec-10] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:31.616 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:31.792 [http-nio-8080-exec-7] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:31.792 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:31.976 [http-nio-8080-exec-3] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:31.977 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:29:32.132 [http-nio-8080-exec-4] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:29:32.133 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:32:07.935 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-31 23:32:08.267 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-31 23:32:08.270 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-31 23:32:08.275 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-31 23:32:11.319 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 20456 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-03-31 23:32:11.321 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-31 23:32:11.910 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-31 23:32:11.917 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-31 23:32:11.919 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-31 23:32:11.919 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-31 23:32:11.967 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-31 23:32:11.967 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 624 ms
+2025-03-31 23:32:12.279 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-31 23:32:12.291 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-31 23:32:12.297 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.212 seconds (process running for 1.68)
+2025-03-31 23:32:16.298 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-31 23:32:16.299 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-31 23:32:16.300 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-31 23:32:16.322 [http-nio-8080-exec-1] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-03-31 23:32:16.344 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:1,10,,null,null,null
+2025-03-31 23:32:16.345 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-31 23:32:16.514 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67767f95
+2025-03-31 23:32:16.515 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-31 23:32:25.732 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-31 23:32:26.127 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-31 23:32:26.130 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-31 23:32:26.135 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

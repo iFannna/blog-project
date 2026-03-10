@@ -1,0 +1,935 @@
+2025-10-28 11:13:35.358 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 11:13:35.398 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 3980 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 11:13:35.399 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 11:13:35.948 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+2025-10-28 11:13:35.953 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-28 11:13:35.968 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:553)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:501)
+	at org.springframework.core.ResolvableType.forClass(ResolvableType.java:1157)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.getTargetType(PluginRegistriesBeanDefinitionRegistrar.java:101)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.registerBeanDefinitions(PluginRegistriesBeanDefinitionRegistrar.java:71)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:401)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:400)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:430)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.sau.ECommerceImageSystemApplication.main(ECommerceImageSystemApplication.java:10)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 32 common frames omitted
+2025-10-28 11:26:28.219 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 11:26:28.255 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 18976 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 11:26:28.255 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 11:26:28.864 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-28 11:26:28.866 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-28 11:26:28.892 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-10-28 11:26:29.532 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-28 11:26:29.541 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-28 11:26:29.542 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-28 11:26:29.543 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-28 11:26:29.630 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-28 11:26:29.630 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1344 ms
+2025-10-28 11:26:30.675 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-28 11:26:30.695 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-28 11:26:30.705 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.741 seconds (process running for 3.351)
+2025-10-28 11:26:51.462 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-28 11:26:51.462 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-28 11:26:51.463 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-10-28 11:28:19.138 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-28 11:28:19.459 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-28 11:28:23.145 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 11:28:23.177 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 22800 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 11:28:23.177 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 11:28:23.717 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-28 11:28:23.719 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-28 11:28:23.743 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2025-10-28 11:28:24.311 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-28 11:28:24.320 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-28 11:28:24.321 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-28 11:28:24.321 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-28 11:28:24.410 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-28 11:28:24.411 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1206 ms
+2025-10-28 11:28:25.390 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-28 11:28:25.403 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-28 11:28:25.412 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.565 seconds (process running for 3.141)
+2025-10-28 11:28:30.078 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-28 11:28:30.078 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-28 11:28:30.081 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-10-28 11:29:05.432 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-28 11:29:05.780 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-28 11:29:09.211 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 11:29:09.246 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 16776 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 11:29:09.246 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 11:29:09.784 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-28 11:29:09.786 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-28 11:29:09.814 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2025-10-28 11:29:10.374 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-28 11:29:10.383 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-28 11:29:10.384 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-28 11:29:10.384 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-28 11:29:10.457 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-28 11:29:10.458 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1176 ms
+2025-10-28 11:29:11.406 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-28 11:29:11.424 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-28 11:29:11.430 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.455 seconds (process running for 3.051)
+2025-10-28 11:29:15.495 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-28 11:29:15.495 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-28 11:29:15.496 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-28 11:30:52.289 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-28 11:30:52.621 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-28 11:30:56.264 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 11:30:56.295 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 20500 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 11:30:56.297 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 11:30:56.795 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-28 11:30:56.797 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-28 11:30:56.819 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-10-28 11:30:57.359 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-28 11:30:57.366 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-28 11:30:57.368 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-28 11:30:57.368 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-28 11:30:57.446 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-28 11:30:57.447 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1120 ms
+2025-10-28 11:30:58.350 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-28 11:30:58.364 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-28 11:30:58.372 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.355 seconds (process running for 2.985)
+2025-10-28 11:31:02.928 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-28 11:31:02.928 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-28 11:31:02.929 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-28 11:31:41.031 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-28 11:31:41.389 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-28 11:31:45.236 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 11:31:45.273 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 19848 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 11:31:45.274 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 11:31:45.872 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-28 11:31:45.874 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-28 11:31:45.909 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2025-10-28 11:31:46.506 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-28 11:31:46.599 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1291 ms
+2025-10-28 11:31:47.628 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-28 11:31:47.634 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.653 seconds (process running for 3.258)
+2025-10-28 11:31:47.637 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-28 11:31:47.979 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-28 11:31:52.859 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 11:31:52.887 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 23184 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 11:31:52.888 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 11:31:53.405 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-28 11:31:53.407 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-28 11:31:53.433 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2025-10-28 11:31:53.994 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-28 11:31:54.003 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-28 11:31:54.004 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-28 11:31:54.005 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-28 11:31:54.074 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-28 11:31:54.074 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1159 ms
+2025-10-28 11:31:54.950 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-28 11:31:54.966 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-28 11:31:54.973 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.393 seconds (process running for 2.957)
+2025-10-28 11:31:59.690 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-28 11:31:59.690 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-28 11:31:59.691 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-28 11:33:14.845 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-28 11:33:15.184 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-28 11:33:19.295 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 11:33:19.331 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 8496 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 11:33:19.332 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 11:33:19.838 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-28 11:33:19.840 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-28 11:33:19.864 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-10-28 11:33:20.401 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-28 11:33:20.409 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-28 11:33:20.411 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-28 11:33:20.411 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-28 11:33:20.490 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-28 11:33:20.490 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1129 ms
+2025-10-28 11:33:21.410 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-28 11:33:21.423 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-28 11:33:21.430 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.383 seconds (process running for 3.004)
+2025-10-28 11:33:25.092 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-28 11:33:25.092 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-28 11:33:25.093 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-28 11:33:25.232 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /swagger-resources
+2025-10-28 11:33:25.235 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound - No endpoint GET /swagger-resources.
+2025-10-28 11:33:26.125 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /swagger-resources
+2025-10-28 11:33:26.125 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No endpoint GET /swagger-resources.
+2025-10-28 11:33:26.646 [http-nio-8080-exec-7] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /swagger-resources
+2025-10-28 11:33:26.646 [http-nio-8080-exec-7] WARN  o.s.web.servlet.PageNotFound - No endpoint GET /swagger-resources.
+2025-10-28 11:34:18.983 [http-nio-8080-exec-6] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /swagger-resources
+2025-10-28 11:34:18.984 [http-nio-8080-exec-6] WARN  o.s.web.servlet.PageNotFound - No endpoint GET /swagger-resources.
+2025-10-28 11:41:16.170 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-28 11:41:16.503 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-28 11:43:24.634 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 11:43:24.665 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 10716 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 11:43:24.665 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 11:43:25.200 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+2025-10-28 11:43:25.205 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-28 11:43:25.217 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:553)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:501)
+	at org.springframework.core.ResolvableType.forClass(ResolvableType.java:1157)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.getTargetType(PluginRegistriesBeanDefinitionRegistrar.java:101)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.registerBeanDefinitions(PluginRegistriesBeanDefinitionRegistrar.java:71)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:401)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:400)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:430)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.sau.ECommerceImageSystemApplication.main(ECommerceImageSystemApplication.java:10)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 32 common frames omitted
+2025-10-28 11:48:40.016 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 11:48:40.049 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 2428 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 11:48:40.050 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 11:48:40.750 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-28 11:48:40.752 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-28 11:48:40.782 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2025-10-28 11:48:41.385 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-28 11:48:41.400 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-28 11:48:41.401 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-28 11:48:41.402 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-28 11:48:41.478 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-28 11:48:41.478 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1400 ms
+2025-10-28 11:48:42.595 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-28 11:48:42.608 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-28 11:48:42.616 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.854 seconds (process running for 3.441)
+2025-10-28 11:48:49.162 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-28 11:48:49.162 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-28 11:48:49.163 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-28 11:51:36.226 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-28 11:51:36.562 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-28 11:51:39.911 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 11:51:39.938 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 21680 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 11:51:39.938 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 11:51:40.575 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-28 11:51:40.576 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-28 11:51:40.597 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2025-10-28 11:51:41.129 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-28 11:51:41.138 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-28 11:51:41.139 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-28 11:51:41.139 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-28 11:51:41.213 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-28 11:51:41.214 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1247 ms
+2025-10-28 11:51:42.281 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-28 11:51:42.294 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-28 11:51:42.302 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.646 seconds (process running for 3.216)
+2025-10-28 11:51:48.370 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-28 11:51:48.370 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-28 11:51:48.371 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-28 11:54:12.510 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-28 11:54:13.359 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-28 11:54:19.490 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 11:54:19.524 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 18024 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 11:54:19.524 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 11:54:20.163 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-28 11:54:20.165 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-28 11:54:20.186 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-10-28 11:54:20.780 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-28 11:54:20.788 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-28 11:54:20.792 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-28 11:54:20.792 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-28 11:54:20.872 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-28 11:54:20.872 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1321 ms
+2025-10-28 11:54:22.033 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-28 11:54:22.050 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-28 11:54:22.058 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.846 seconds (process running for 3.437)
+2025-10-28 11:54:27.948 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-28 11:54:27.948 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-28 11:54:27.949 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-10-28 11:56:33.445 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-28 11:56:33.813 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-28 12:04:24.646 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 12:04:24.679 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 22692 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 12:04:24.680 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 12:04:25.191 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+2025-10-28 12:04:25.197 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-28 12:04:25.211 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:553)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:501)
+	at org.springframework.core.ResolvableType.forClass(ResolvableType.java:1157)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.getTargetType(PluginRegistriesBeanDefinitionRegistrar.java:101)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.registerBeanDefinitions(PluginRegistriesBeanDefinitionRegistrar.java:71)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:401)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:400)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:430)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.sau.ECommerceImageSystemApplication.main(ECommerceImageSystemApplication.java:10)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 32 common frames omitted
+2025-10-28 12:06:05.656 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 12:06:05.689 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 2400 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 12:06:05.690 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 12:06:06.174 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+2025-10-28 12:06:06.179 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-28 12:06:06.191 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:553)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:501)
+	at org.springframework.core.ResolvableType.forClass(ResolvableType.java:1157)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.getTargetType(PluginRegistriesBeanDefinitionRegistrar.java:101)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.registerBeanDefinitions(PluginRegistriesBeanDefinitionRegistrar.java:71)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:401)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:400)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:430)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.sau.ECommerceImageSystemApplication.main(ECommerceImageSystemApplication.java:10)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 32 common frames omitted
+2025-10-28 12:17:24.486 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 12:17:24.522 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 25640 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 12:17:24.523 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 12:17:25.121 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-28 12:17:25.123 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-28 12:17:25.144 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-10-28 12:17:25.682 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-28 12:17:25.694 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-28 12:17:25.695 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-28 12:17:25.695 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-28 12:17:25.764 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-28 12:17:25.765 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1217 ms
+2025-10-28 12:17:26.792 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-28 12:17:26.805 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-28 12:17:26.814 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.613 seconds (process running for 3.16)
+2025-10-28 12:17:35.761 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-28 12:17:35.761 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-28 12:17:35.761 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-10-28 12:20:01.737 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-28 12:20:02.056 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-28 12:20:05.348 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 12:20:05.383 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 24436 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 12:20:05.384 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 12:20:05.974 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-28 12:20:05.979 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-28 12:20:06.001 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-10-28 12:20:06.532 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-28 12:20:06.541 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-28 12:20:06.542 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-28 12:20:06.542 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-28 12:20:06.617 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-28 12:20:06.618 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1208 ms
+2025-10-28 12:20:07.627 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-28 12:20:07.642 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-28 12:20:07.649 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.536 seconds (process running for 3.115)
+2025-10-28 12:20:13.761 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-28 12:20:13.761 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-28 12:20:13.763 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-10-28 12:24:51.535 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-28 12:24:52.332 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-28 12:24:57.215 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 12:24:57.243 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 24448 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 12:24:57.244 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 12:24:57.845 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-28 12:24:57.847 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-28 12:24:57.867 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-10-28 12:24:58.396 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-28 12:24:58.404 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-28 12:24:58.405 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-28 12:24:58.406 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-28 12:24:58.479 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-28 12:24:58.481 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1208 ms
+2025-10-28 12:24:59.522 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-28 12:24:59.536 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-28 12:24:59.545 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.601 seconds (process running for 3.14)
+2025-10-28 12:25:11.950 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-28 12:25:11.950 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-28 12:25:11.950 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-10-28 12:30:06.949 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-28 12:30:07.718 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-28 12:30:12.432 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 12:30:12.459 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 14052 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 12:30:12.460 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 12:30:13.070 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-28 12:30:13.072 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-28 12:30:13.096 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-10-28 12:30:13.685 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-28 12:30:13.696 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-28 12:30:13.697 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-28 12:30:13.697 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-28 12:30:13.773 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-28 12:30:13.774 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1291 ms
+2025-10-28 12:30:14.877 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-28 12:30:14.892 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-28 12:30:14.904 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.708 seconds (process running for 3.263)
+2025-10-28 12:30:18.767 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-28 12:30:18.767 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-28 12:30:18.768 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-28 12:30:18.782 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /swagger-ui.html
+2025-10-28 12:30:18.784 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/login]: false
+2025-10-28 12:30:18.784 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/register]: false
+2025-10-28 12:30:18.785 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/send-register-code]: false
+2025-10-28 12:30:18.785 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/swagger-ui.html]: true
+2025-10-28 12:30:18.785 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 跳过JWT校验，路径: /swagger-ui.html
+2025-10-28 12:30:18.829 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /favicon.ico
+2025-10-28 12:30:18.829 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/login]: false
+2025-10-28 12:30:18.829 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/register]: false
+2025-10-28 12:30:18.829 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/send-register-code]: false
+2025-10-28 12:30:18.829 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:30:18.829 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:30:18.829 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:30:18.829 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:30:19.181 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /swagger-ui.html
+2025-10-28 12:30:19.184 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/login]: false
+2025-10-28 12:30:19.184 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/register]: false
+2025-10-28 12:30:19.184 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/send-register-code]: false
+2025-10-28 12:30:19.184 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/swagger-ui.html]: true
+2025-10-28 12:30:19.184 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 跳过JWT校验，路径: /swagger-ui.html
+2025-10-28 12:30:19.209 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /favicon.ico
+2025-10-28 12:30:19.209 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/login]: false
+2025-10-28 12:30:19.209 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/register]: false
+2025-10-28 12:30:19.210 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/send-register-code]: false
+2025-10-28 12:30:19.210 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:30:19.210 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:30:19.210 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:30:19.210 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:30:19.343 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /swagger-ui.html
+2025-10-28 12:30:19.343 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/login]: false
+2025-10-28 12:30:19.343 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/register]: false
+2025-10-28 12:30:19.343 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/send-register-code]: false
+2025-10-28 12:30:19.343 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/swagger-ui.html]: true
+2025-10-28 12:30:19.343 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 跳过JWT校验，路径: /swagger-ui.html
+2025-10-28 12:30:19.367 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /favicon.ico
+2025-10-28 12:30:19.367 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/login]: false
+2025-10-28 12:30:19.368 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/register]: false
+2025-10-28 12:30:19.368 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/send-register-code]: false
+2025-10-28 12:30:19.368 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:30:19.368 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:30:19.368 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:30:19.368 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:30:19.493 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /swagger-ui.html
+2025-10-28 12:30:19.493 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/login]: false
+2025-10-28 12:30:19.493 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/register]: false
+2025-10-28 12:30:19.493 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/send-register-code]: false
+2025-10-28 12:30:19.493 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/swagger-ui.html]: true
+2025-10-28 12:30:19.493 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 跳过JWT校验，路径: /swagger-ui.html
+2025-10-28 12:30:19.522 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /favicon.ico
+2025-10-28 12:30:19.522 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/login]: false
+2025-10-28 12:30:19.522 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/register]: false
+2025-10-28 12:30:19.522 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/send-register-code]: false
+2025-10-28 12:30:19.522 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:30:19.522 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:30:19.522 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:30:19.523 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:30:19.621 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /swagger-ui.html
+2025-10-28 12:30:19.621 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/login]: false
+2025-10-28 12:30:19.621 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/register]: false
+2025-10-28 12:30:19.621 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/send-register-code]: false
+2025-10-28 12:30:19.621 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/swagger-ui.html]: true
+2025-10-28 12:30:19.621 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 跳过JWT校验，路径: /swagger-ui.html
+2025-10-28 12:30:19.647 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /favicon.ico
+2025-10-28 12:30:19.647 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/login]: false
+2025-10-28 12:30:19.647 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/register]: false
+2025-10-28 12:30:19.647 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/send-register-code]: false
+2025-10-28 12:30:19.647 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:30:19.647 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:30:19.647 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:30:19.647 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:30:19.765 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /swagger-ui.html
+2025-10-28 12:30:19.765 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/login]: false
+2025-10-28 12:30:19.765 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/register]: false
+2025-10-28 12:30:19.765 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/send-register-code]: false
+2025-10-28 12:30:19.766 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/swagger-ui.html]: true
+2025-10-28 12:30:19.767 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 跳过JWT校验，路径: /swagger-ui.html
+2025-10-28 12:30:19.796 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /favicon.ico
+2025-10-28 12:30:19.796 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/login]: false
+2025-10-28 12:30:19.796 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/register]: false
+2025-10-28 12:30:19.796 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/send-register-code]: false
+2025-10-28 12:30:19.796 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:30:19.796 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:30:19.796 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:30:19.796 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:30:28.716 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /swagger-ui.html
+2025-10-28 12:30:28.716 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/login]: false
+2025-10-28 12:30:28.716 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/register]: false
+2025-10-28 12:30:28.716 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/send-register-code]: false
+2025-10-28 12:30:28.716 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/swagger-ui.html] 匹配模式[/swagger-ui.html]: true
+2025-10-28 12:30:28.716 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 跳过JWT校验，路径: /swagger-ui.html
+2025-10-28 12:30:28.744 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /favicon.ico
+2025-10-28 12:30:28.744 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/login]: false
+2025-10-28 12:30:28.744 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/register]: false
+2025-10-28 12:30:28.744 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/send-register-code]: false
+2025-10-28 12:30:28.744 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:30:28.744 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:30:28.744 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:30:28.745 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:30:48.845 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /api/swagger-ui.html
+2025-10-28 12:30:48.845 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/login]: false
+2025-10-28 12:30:48.845 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/register]: false
+2025-10-28 12:30:48.845 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/send-register-code]: false
+2025-10-28 12:30:48.845 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:30:48.845 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:30:48.845 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:30:48.845 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:30:48.880 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /favicon.ico
+2025-10-28 12:30:48.880 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/login]: false
+2025-10-28 12:30:48.880 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/register]: false
+2025-10-28 12:30:48.880 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/send-register-code]: false
+2025-10-28 12:30:48.880 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:30:48.880 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:30:48.880 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:30:48.880 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:30:50.629 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /api/swagger-ui.html
+2025-10-28 12:30:50.629 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/login]: false
+2025-10-28 12:30:50.629 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/register]: false
+2025-10-28 12:30:50.629 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/send-register-code]: false
+2025-10-28 12:30:50.629 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:30:50.629 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:30:50.630 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:30:50.630 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:30:50.653 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /favicon.ico
+2025-10-28 12:30:50.653 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/login]: false
+2025-10-28 12:30:50.653 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/register]: false
+2025-10-28 12:30:50.653 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/send-register-code]: false
+2025-10-28 12:30:50.653 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:30:50.653 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:30:50.653 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:30:50.653 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:30:51.022 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /api/swagger-ui.html
+2025-10-28 12:30:51.022 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/login]: false
+2025-10-28 12:30:51.022 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/register]: false
+2025-10-28 12:30:51.029 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/send-register-code]: false
+2025-10-28 12:30:51.029 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:30:51.029 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:30:51.029 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:30:51.029 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:30:51.055 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /favicon.ico
+2025-10-28 12:30:51.055 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/login]: false
+2025-10-28 12:30:51.055 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/register]: false
+2025-10-28 12:30:51.055 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/send-register-code]: false
+2025-10-28 12:30:51.055 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:30:51.055 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:30:51.055 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:30:51.055 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:32:53.056 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-28 12:32:53.056 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/login]: false
+2025-10-28 12:32:53.057 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/register]: false
+2025-10-28 12:32:53.057 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/send-register-code]: false
+2025-10-28 12:32:53.057 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:32:53.057 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:32:53.057 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:32:53.057 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:33:23.859 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /api/swagger-ui.html
+2025-10-28 12:33:23.859 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/login]: false
+2025-10-28 12:33:23.859 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/register]: false
+2025-10-28 12:33:23.859 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/send-register-code]: false
+2025-10-28 12:33:23.859 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:33:23.859 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:33:23.859 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:33:23.859 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:33:23.880 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-28 12:33:23.880 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/login]: false
+2025-10-28 12:33:23.880 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/register]: false
+2025-10-28 12:33:23.880 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/send-register-code]: false
+2025-10-28 12:33:23.880 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:33:23.880 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:33:23.880 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:33:23.880 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:33:23.904 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /favicon.ico
+2025-10-28 12:33:23.904 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/login]: false
+2025-10-28 12:33:23.904 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/register]: false
+2025-10-28 12:33:23.904 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/send-register-code]: false
+2025-10-28 12:33:23.904 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:33:23.904 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:33:23.904 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:33:23.904 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:33:56.842 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-28 12:33:57.187 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-28 12:34:00.880 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 12:34:00.912 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 20420 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 12:34:00.913 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 12:34:01.506 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-28 12:34:01.508 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-28 12:34:01.530 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-10-28 12:34:02.064 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-28 12:34:02.072 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-28 12:34:02.074 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-28 12:34:02.074 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-28 12:34:02.148 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-28 12:34:02.148 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1206 ms
+2025-10-28 12:34:03.185 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-28 12:34:03.212 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-28 12:34:03.220 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.59 seconds (process running for 3.238)
+2025-10-28 12:34:28.388 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-28 12:34:28.388 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-28 12:34:28.388 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-10-28 12:34:28.412 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /api/swagger-ui.html
+2025-10-28 12:34:28.413 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/login]: false
+2025-10-28 12:34:28.413 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/register]: false
+2025-10-28 12:34:28.413 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/send-register-code]: false
+2025-10-28 12:34:28.413 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:34:28.414 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:34:28.414 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:34:28.414 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:34:28.414 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/favicon.ico]: false
+2025-10-28 12:34:28.461 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /favicon.ico
+2025-10-28 12:34:28.461 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/login]: false
+2025-10-28 12:34:28.461 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/register]: false
+2025-10-28 12:34:28.461 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/send-register-code]: false
+2025-10-28 12:34:28.462 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:34:28.462 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:34:28.462 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:34:28.462 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:34:28.462 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/favicon.ico]: true
+2025-10-28 12:34:28.462 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 跳过JWT校验，路径: /favicon.ico
+2025-10-28 12:34:29.034 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /api/swagger-ui.html
+2025-10-28 12:34:29.034 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/login]: false
+2025-10-28 12:34:29.034 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/register]: false
+2025-10-28 12:34:29.034 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/send-register-code]: false
+2025-10-28 12:34:29.034 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:34:29.035 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:34:29.035 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:34:29.035 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:34:29.035 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/favicon.ico]: false
+2025-10-28 12:34:29.059 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /favicon.ico
+2025-10-28 12:34:29.059 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/login]: false
+2025-10-28 12:34:29.059 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/register]: false
+2025-10-28 12:34:29.059 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/send-register-code]: false
+2025-10-28 12:34:29.059 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:34:29.059 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:34:29.059 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:34:29.060 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:34:29.060 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/favicon.ico]: true
+2025-10-28 12:34:29.060 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 跳过JWT校验，路径: /favicon.ico
+2025-10-28 12:34:29.204 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /api/swagger-ui.html
+2025-10-28 12:34:29.205 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/login]: false
+2025-10-28 12:34:29.205 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/register]: false
+2025-10-28 12:34:29.205 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/send-register-code]: false
+2025-10-28 12:34:29.205 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:34:29.205 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:34:29.205 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:34:29.205 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:34:29.205 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/favicon.ico]: false
+2025-10-28 12:34:29.229 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /favicon.ico
+2025-10-28 12:34:29.229 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/login]: false
+2025-10-28 12:34:29.229 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/register]: false
+2025-10-28 12:34:29.229 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/send-register-code]: false
+2025-10-28 12:34:29.229 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:34:29.229 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:34:29.229 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:34:29.230 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:34:29.230 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/favicon.ico]: true
+2025-10-28 12:34:29.230 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 跳过JWT校验，路径: /favicon.ico
+2025-10-28 12:34:32.072 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-28 12:34:32.077 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/login]: false
+2025-10-28 12:34:32.077 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/register]: false
+2025-10-28 12:34:32.077 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/send-register-code]: false
+2025-10-28 12:34:32.077 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:34:32.077 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:34:32.077 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:34:32.077 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:34:32.077 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/favicon.ico]: false
+2025-10-28 12:34:35.583 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /favicon.ico
+2025-10-28 12:34:35.584 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/login]: false
+2025-10-28 12:34:35.584 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/register]: false
+2025-10-28 12:34:35.584 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/send-register-code]: false
+2025-10-28 12:34:35.584 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:34:35.584 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:34:35.584 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:34:35.584 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:34:35.584 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/favicon.ico]: true
+2025-10-28 12:34:35.584 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 跳过JWT校验，路径: /favicon.ico
+2025-10-28 12:34:35.636 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /favicon.ico
+2025-10-28 12:34:35.636 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/login]: false
+2025-10-28 12:34:35.636 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/register]: false
+2025-10-28 12:34:35.636 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/send-register-code]: false
+2025-10-28 12:34:35.636 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:34:35.636 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:34:35.636 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:34:35.636 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:34:35.636 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/favicon.ico]: true
+2025-10-28 12:34:35.636 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 跳过JWT校验，路径: /favicon.ico
+2025-10-28 12:34:46.276 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /api/swagger-ui.html
+2025-10-28 12:34:46.276 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/login]: false
+2025-10-28 12:34:46.276 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/register]: false
+2025-10-28 12:34:46.276 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/send-register-code]: false
+2025-10-28 12:34:46.276 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:34:46.276 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:34:46.276 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:34:46.276 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:34:46.276 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 路径[/api/swagger-ui.html] 匹配模式[/favicon.ico]: false
+2025-10-28 12:34:46.298 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /.well-known/appspecific/com.chrome.devtools.json
+2025-10-28 12:34:46.298 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/login]: false
+2025-10-28 12:34:46.298 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/register]: false
+2025-10-28 12:34:46.298 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/send-register-code]: false
+2025-10-28 12:34:46.298 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:34:46.298 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:34:46.298 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:34:46.298 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:34:46.299 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 路径[/.well-known/appspecific/com.chrome.devtools.json] 匹配模式[/favicon.ico]: false
+2025-10-28 12:34:46.316 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 当前请求URI: /favicon.ico
+2025-10-28 12:34:46.316 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/login]: false
+2025-10-28 12:34:46.316 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/register]: false
+2025-10-28 12:34:46.316 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/send-register-code]: false
+2025-10-28 12:34:46.316 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui.html]: false
+2025-10-28 12:34:46.316 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/swagger-ui/**]: false
+2025-10-28 12:34:46.316 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/v3/api-docs/**]: false
+2025-10-28 12:34:46.317 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/webjars/swagger-ui/**]: false
+2025-10-28 12:34:46.317 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 路径[/favicon.ico] 匹配模式[/favicon.ico]: true
+2025-10-28 12:34:46.317 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 跳过JWT校验，路径: /favicon.ico
+2025-10-28 12:35:09.460 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-28 12:35:09.809 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-28 12:41:19.517 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 12:41:19.552 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 20008 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 12:41:19.553 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 12:41:20.133 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-28 12:41:20.135 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-28 12:41:20.155 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-10-28 12:41:20.671 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-28 12:41:20.679 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-28 12:41:20.680 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-28 12:41:20.680 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-28 12:41:20.745 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-28 12:41:20.745 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1165 ms
+2025-10-28 12:41:20.911 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through field 'userService': Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'passwordEncoder': No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-10-28 12:41:20.913 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-10-28 12:41:20.922 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-28 12:41:20.937 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field passwordEncoder in com.sau.service.impl.UserServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2025-10-28 12:56:03.668 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 12:56:03.702 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 9680 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 12:56:03.703 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 12:56:04.256 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-28 12:56:04.258 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-28 12:56:04.276 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-10-28 12:56:04.782 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-28 12:56:04.790 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-28 12:56:04.791 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-28 12:56:04.791 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-28 12:56:04.861 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-28 12:56:04.861 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1135 ms
+2025-10-28 12:56:05.877 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-28 12:56:05.893 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-28 12:56:05.900 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.463 seconds (process running for 3.027)
+2025-10-28 12:56:16.398 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-28 12:56:16.405 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-28 12:56:16.406 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-28 13:01:14.073 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-28 13:01:14.964 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-28 13:02:37.143 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 13:02:37.181 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 12816 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 13:02:37.181 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 13:02:37.771 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-28 13:02:37.772 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-28 13:02:37.793 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-10-28 13:02:38.356 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-28 13:02:38.364 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-28 13:02:38.366 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-28 13:02:38.366 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-28 13:02:38.433 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-28 13:02:38.433 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1223 ms
+2025-10-28 13:02:39.476 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-28 13:02:39.497 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-28 13:02:39.507 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.615 seconds (process running for 3.226)
+2025-10-28 13:02:43.530 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-28 13:02:43.530 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-28 13:02:43.531 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-28 13:04:06.744 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-28 13:04:07.680 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-28 18:36:16.049 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 18:36:16.092 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 18352 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 18:36:16.093 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 18:36:16.897 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-28 18:36:16.897 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-28 18:36:16.952 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2025-10-28 18:36:17.806 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-28 18:36:17.817 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-28 18:36:17.818 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-28 18:36:17.819 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-28 18:36:17.905 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-28 18:36:17.905 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1780 ms
+2025-10-28 18:36:19.160 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-28 18:36:19.173 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-28 18:36:19.180 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 3.465 seconds (process running for 4.256)
+2025-10-28 18:36:35.008 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-28 18:36:35.008 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-28 18:36:35.008 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-10-28 18:36:35.144 [http-nio-8080-exec-2] INFO  com.sau.controller.LoginController - 登录请求: 账号=zhaojinyu, rememberMe=false
+2025-10-28 18:36:35.988 [http-nio-8080-exec-2] INFO  c.sau.service.third.CaptchaService - 验证码验证结果: 成功, VerifyCode: T001
+2025-10-28 18:36:35.988 [http-nio-8080-exec-2] INFO  com.sau.controller.LoginController - 验证码验证成功，开始验证用户凭证
+2025-10-28 18:36:36.060 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-28 18:36:36.377 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4aabf0ad
+2025-10-28 18:36:36.377 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-28 18:36:36.986 [http-nio-8080-exec-2] INFO  c.sau.service.impl.UserServiceImpl - 登录成功，用户信息: User(id=1, name=赵瑾瑜, username=zhaojinyu, account=null, password=$2a$12$kFEfURVVsiK7ulY7UvnreegZkQGJFSIzBIUno1dtEq9rHr3.LzREK, email=88888@qq.com, phone=18866668888, images=null, status=1, userType=0, createTime=null, updateTime=null)
+2025-10-28 18:36:37.272 [http-nio-8080-exec-2] INFO  com.sau.controller.LoginController - 用户登录成功: zhaojinyu
+2025-10-28 18:36:37.275 [http-nio-8080-exec-2] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=1, operateTime=2025-10-28T18:36:37.272125, className=com.sau.controller.LoginController, methodName=login, methodParams=[LoginDTO(account=zhaojinyu, password=123456, rememberMe=false, captchaParams=eyJjZXJ0aWZ5SWQiOiJJQjlQT0J1aXVNIiwic2NlbmVJZCI6IjFoMjIybmthIiwiaXNTaWduIjp0cnVlLCJzZWN1cml0eVRva2VuIjoiNm9PbzdlNzJuQTYxdVZMaVpWS2lMWDNMcjVGaFNoK1RMRnRBWEhwZStxcCsxUko2R0tESnl6SVlPcWh3ak0zUXphRmRaeVBNY3VVdGFGaUtwc1pWbXNXODFNbS9KSlhFc0Nqb3JPeE9sK2pBMDZRLzY5em5jQkkxSTlSQXBGY24ifQ==)], returnValue=Result(code=1, msg=success, data=LoginVO(id=1, username=zhaojinyu, password=赵瑾瑜, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjE2OTA5OTd9.zwLTnaUTA8MhCCeCtj_tIeftyAoF0dRzC3Ts4lo7OZM)), costTime=2128, operateEmpName=null)
+2025-10-28 18:40:02.498 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot coerce empty String ("") to element of `java.util.ArrayList` (but could if coercion was enabled using `CoercionConfig`)]
+2025-10-28 18:40:04.109 [http-nio-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot coerce empty String ("") to element of `java.util.ArrayList` (but could if coercion was enabled using `CoercionConfig`)]
+2025-10-28 18:40:38.602 [http-nio-8080-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `java.util.ArrayList` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('null')]
+2025-10-28 18:41:06.848 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-28 18:41:07.160 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-28 18:41:07.175 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-28 18:41:07.178 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-28 23:12:52.357 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-28 23:12:52.396 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 19344 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-28 23:12:52.397 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-28 23:12:52.971 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-28 23:12:52.973 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-28 23:12:53.002 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-10-28 23:12:53.613 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-28 23:12:53.622 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-28 23:12:53.624 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-28 23:12:53.624 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-28 23:12:53.692 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-28 23:12:53.692 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1267 ms
+2025-10-28 23:12:54.749 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-28 23:12:54.771 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-28 23:12:54.779 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.709 seconds (process running for 3.434)
+2025-10-28 23:14:39.562 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-28 23:14:39.563 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-28 23:14:39.564 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-10-28 23:14:39.641 [http-nio-8080-exec-1] INFO  com.sau.controller.LoginController - 登录请求: 账号=zhaojinyu, rememberMe=true
+2025-10-28 23:14:39.657 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-28 23:14:39.936 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@700d4b5b
+2025-10-28 23:14:39.937 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-28 23:14:40.244 [http-nio-8080-exec-1] INFO  c.sau.service.impl.UserServiceImpl - 登录成功，用户信息: User(id=1, name=赵瑾瑜, username=zhaojinyu, account=null, password=$2a$12$kFEfURVVsiK7ulY7UvnreegZkQGJFSIzBIUno1dtEq9rHr3.LzREK, email=88888@qq.com, phone=18866668888, images=null, status=1, userType=0, createTime=null, updateTime=null)
+2025-10-28 23:14:40.429 [http-nio-8080-exec-1] INFO  com.sau.controller.LoginController - 用户登录成功: zhaojinyu
+2025-10-28 23:14:40.431 [http-nio-8080-exec-1] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=1, operateTime=2025-10-28T23:14:40.430027, className=com.sau.controller.LoginController, methodName=login, methodParams=[LoginDTO(account=zhaojinyu, password=123456, rememberMe=true)], returnValue=Result(code=1, msg=success, data=LoginVO(id=1, username=zhaojinyu, password=赵瑾瑜, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjE3MDc2ODB9.mo8oIqEny8kJpTb-D1hgTK66Jpy9npaWgVIznPslSKY)), costTime=789)
+2025-10-28 23:20:49.105 [http-nio-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot coerce empty String ("") to element of `java.util.ArrayList` (but could if coercion was enabled using `CoercionConfig`)]
+2025-10-28 23:21:09.814 [http-nio-8080-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot coerce empty String ("") to element of `java.util.ArrayList` (but could if coercion was enabled using `CoercionConfig`)]
+2025-10-28 23:22:45.075 [http-nio-8080-exec-9] INFO  c.s.s.third.ImageGenerationService - 图片生成请求: 分别生成两幅写实风景图、ins风格
+2025-10-28 23:23:36.220 [http-nio-8080-exec-9] INFO  c.s.s.third.ImageGenerationService - 图片生成结果: ImagesResponse{model='doubao-seedream-4-0-250828'created=1761665015data=[Image{url=https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-seedream-4-0/021761664964212b2b9a46afed0b861ea2dc4e9b8cdcb8d2667dc_0.jpeg?X-Tos-Algorithm=TOS4-HMAC-SHA256&X-Tos-Credential=AKLTYWJkZTExNjA1ZDUyNDc3YzhjNTM5OGIyNjBhNDcyOTQ%2F20251028%2Fcn-beijing%2Ftos%2Frequest&X-Tos-Date=20251028T152333Z&X-Tos-Expires=86400&X-Tos-Signature=37dced166432ab94337c4af074fb7b31c43dec386268d2857377040d8bab6793&X-Tos-SignedHeaders=host&x-tos-process=image%2Fwatermark%2Cimage_YXNzZXRzL3dhdGVybWFyay5wbmc_eC10b3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8xNQ%3D%3Db64Json=nullsize=3328x4992}, Image{url=https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-seedream-4-0/021761664964212b2b9a46afed0b861ea2dc4e9b8cdcb8d2667dc_1.jpeg?X-Tos-Algorithm=TOS4-HMAC-SHA256&X-Tos-Credential=AKLTYWJkZTExNjA1ZDUyNDc3YzhjNTM5OGIyNjBhNDcyOTQ%2F20251028%2Fcn-beijing%2Ftos%2Frequest&X-Tos-Date=20251028T152334Z&X-Tos-Expires=86400&X-Tos-Signature=0cf9f094f84206a810b7a80b1499325f8cf3c7d01f5f458cd38452f8a3e6d295&X-Tos-SignedHeaders=host&x-tos-process=image%2Fwatermark%2Cimage_YXNzZXRzL3dhdGVybWFyay5wbmc_eC10b3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8xNQ%3D%3Db64Json=nullsize=3328x4992}]usage=Usage{generatedImages=2}error=null}
+2025-10-28 23:23:36.221 [http-nio-8080-exec-9] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=1, operateTime=2025-10-28T23:23:36.221685300, className=com.sau.controller.ImageGenerationController, methodName=generateImage, methodParams=[ImageGenerationDTO(prompt=分别生成两幅写实风景图、ins风格, referenceImages=null)], returnValue=Result(code=1, msg=success, data=ImageGenerationVO(model=doubao-seedream-4-0-250828, created=1761665015, data=[Image(url=https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-seedream-4-0/021761664964212b2b9a46afed0b861ea2dc4e9b8cdcb8d2667dc_0.jpeg?X-Tos-Algorithm=TOS4-HMAC-SHA256&X-Tos-Credential=AKLTYWJkZTExNjA1ZDUyNDc3YzhjNTM5OGIyNjBhNDcyOTQ%2F20251028%2Fcn-beijing%2Ftos%2Frequest&X-Tos-Date=20251028T152333Z&X-Tos-Expires=86400&X-Tos-Signature=37dced166432ab94337c4af074fb7b31c43dec386268d2857377040d8bab6793&X-Tos-SignedHeaders=host&x-tos-process=image%2Fwatermark%2Cimage_YXNzZXRzL3dhdGVybWFyay5wbmc_eC10b3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8xNQ%3D%3D, size=3328x4992), Image(url=https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-seedream-4-0/021761664964212b2b9a46afed0b861ea2dc4e9b8cdcb8d2667dc_1.jpeg?X-Tos-Algorithm=TOS4-HMAC-SHA256&X-Tos-Credential=AKLTYWJkZTExNjA1ZDUyNDc3YzhjNTM5OGIyNjBhNDcyOTQ%2F20251028%2Fcn-beijing%2Ftos%2Frequest&X-Tos-Date=20251028T152334Z&X-Tos-Expires=86400&X-Tos-Signature=0cf9f094f84206a810b7a80b1499325f8cf3c7d01f5f458cd38452f8a3e6d295&X-Tos-SignedHeaders=host&x-tos-process=image%2Fwatermark%2Cimage_YXNzZXRzL3dhdGVybWFyay5wbmc_eC10b3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8xNQ%3D%3D, size=3328x4992)], generatedImages=2)), costTime=51213)
+2025-10-28 23:33:22.936 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-28 23:33:23.233 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-28 23:33:23.246 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-28 23:33:23.251 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

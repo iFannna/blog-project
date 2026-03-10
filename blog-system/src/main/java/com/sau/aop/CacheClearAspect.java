@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * 按前缀清理缓存的切面。
+ * 按前缀清理缓存的切面
  */
 @Slf4j
 @Aspect

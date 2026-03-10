@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
- * 分类相关接口。
+ * 分类相关接口
  */
 @Slf4j
 @RestController
@@ -30,7 +30,7 @@ public class CategoryController {
     private final CategoryService categoryService;
 
     /**
-     * 查询全部分类。
+     * 查询全部分类
      */
     @Cacheable(cacheNames = "categoryCache")
     @GetMapping
@@ -40,7 +40,7 @@ public class CategoryController {
     }
 
     /**
-     * 创建分类。
+     * 创建分类
      */
     @PreAuthorize("hasAuthority('category:create')")
     @CacheEvict(cacheNames = "categoryCache", allEntries = true)
@@ -52,7 +52,7 @@ public class CategoryController {
     }
 
     /**
-     * 删除分类。
+     * 删除分类
      */
     @PreAuthorize("hasAuthority('category:delete')")
     @CacheEvict(cacheNames = "categoryCache", allEntries = true)

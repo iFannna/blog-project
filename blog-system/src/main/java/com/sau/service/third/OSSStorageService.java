@@ -13,7 +13,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.UUID;
 
 /**
- * OSS 文件存储服务。
+ * OSS 文件存储服务
  */
 @Slf4j
 @Service

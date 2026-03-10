@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 注册相关接口。
+ * 注册相关接口
  */
 @Slf4j
 @RequiredArgsConstructor
@@ -28,7 +28,7 @@ public class RegisterController {
     private final CaptchaService captchaService;
 
     /**
-     * 发送注册验证码。
+     * 发送注册验证码
      */
     @Log
     @GetMapping("/send-register-code")
@@ -43,7 +43,7 @@ public class RegisterController {
     }
 
     /**
-     * 用户注册。
+     * 用户注册
      */
     @Log
     @PostMapping("/register")

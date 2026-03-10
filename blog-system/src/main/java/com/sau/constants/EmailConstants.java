@@ -1,7 +1,7 @@
 package com.sau.constants;
 
 /**
- * 邮件相关常量。
+ * 邮件相关常量
  */
 public final class EmailConstants {
 

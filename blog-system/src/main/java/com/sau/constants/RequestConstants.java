@@ -1,7 +1,7 @@
 package com.sau.constants;
 
 /**
- * 请求相关常量。
+ * 请求相关常量
  */
 public final class RequestConstants {
 

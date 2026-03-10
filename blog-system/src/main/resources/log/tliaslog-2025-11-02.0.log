@@ -1,0 +1,838 @@
+2025-11-02 08:32:19.667 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 08:32:19.702 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 13572 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 08:32:19.702 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 08:32:20.249 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 08:32:20.249 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 08:32:20.268 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2025-11-02 08:32:20.841 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 08:32:20.849 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 08:32:20.849 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 08:32:20.849 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 08:32:20.909 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 08:32:20.909 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1179 ms
+2025-11-02 08:32:21.921 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 08:32:21.938 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 08:32:21.940 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.544 seconds (process running for 3.207)
+2025-11-02 08:35:12.830 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 08:35:12.830 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 08:35:12.834 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-02 08:36:11.511 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 08:36:11.872 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 08:36:15.359 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 08:36:15.386 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 19104 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 08:36:15.388 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 08:36:15.905 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 08:36:15.907 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 08:36:15.928 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-11-02 08:36:16.439 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 08:36:16.450 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 08:36:16.450 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 08:36:16.450 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 08:36:16.516 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 08:36:16.516 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1103 ms
+2025-11-02 08:36:17.442 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 08:36:17.456 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 08:36:17.463 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.376 seconds (process running for 2.965)
+2025-11-02 08:36:21.282 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 08:36:21.282 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 08:36:21.282 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-02 08:36:21.315 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信接入验证：null
+2025-11-02 08:37:16.100 [http-nio-8080-exec-2] INFO  com.sau.controller.WeChatController - 微信接入验证：null
+2025-11-02 08:38:34.073 [http-nio-8080-exec-4] INFO  com.sau.controller.WeChatController - 微信接入验证：4
+2025-11-02 08:38:34.264 [http-nio-8080-exec-4] ERROR com.sau.controller.WeChatController - 微信接入验证失败
+2025-11-02 08:38:50.453 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 08:38:50.799 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 08:38:54.054 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 08:38:54.086 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 9124 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 08:38:54.087 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 08:38:54.644 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 08:38:54.646 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 08:38:54.679 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-11-02 08:38:55.226 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 08:38:55.236 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 08:38:55.238 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 08:38:55.238 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 08:38:55.310 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 08:38:55.310 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1198 ms
+2025-11-02 08:38:56.304 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 08:38:56.319 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 08:38:56.326 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.557 seconds (process running for 3.137)
+2025-11-02 08:39:04.327 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 08:39:04.327 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 08:39:04.328 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-02 08:39:04.364 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信接入验证：4
+2025-11-02 08:39:47.305 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 08:39:47.659 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 08:39:50.750 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 08:39:50.781 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 23424 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 08:39:50.782 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 08:39:51.280 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 08:39:51.282 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 08:39:51.304 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-11-02 08:39:51.829 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 08:39:51.838 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 08:39:51.839 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 08:39:51.839 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 08:39:51.903 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 08:39:51.904 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1095 ms
+2025-11-02 08:39:52.815 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 08:39:52.828 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 08:39:52.835 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.32 seconds (process running for 2.867)
+2025-11-02 08:40:28.639 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 08:40:28.639 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 08:40:28.648 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2025-11-02 08:40:28.719 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'signature' for method parameter type String is not present]
+2025-11-02 08:41:43.985 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 08:41:44.337 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 08:41:47.505 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 08:41:47.551 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 8032 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 08:41:47.552 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 08:41:48.080 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 08:41:48.081 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 08:41:48.104 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-11-02 08:41:48.650 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 08:41:48.658 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 08:41:48.659 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 08:41:48.659 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 08:41:48.722 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 08:41:48.722 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1133 ms
+2025-11-02 08:41:49.646 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 08:41:49.661 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 08:41:49.669 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.391 seconds (process running for 2.948)
+2025-11-02 08:42:41.546 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 08:42:41.547 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 08:42:41.547 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-02 08:42:41.629 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'signature' for method parameter type String is not present]
+2025-11-02 08:44:11.489 [http-nio-8080-exec-4] INFO  com.sau.controller.WeChatController - 微信接入验证：4
+2025-11-02 08:44:11.643 [http-nio-8080-exec-4] ERROR com.sau.controller.WeChatController - 微信接入验证失败
+2025-11-02 08:59:27.893 [http-nio-8080-exec-9] INFO  com.sau.controller.WeChatController - 微信接入验证：4153778735073963262
+2025-11-02 09:04:32.721 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 09:04:33.074 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 09:17:47.317 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 09:17:47.351 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 25472 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 09:17:47.353 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 09:17:47.914 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 09:17:47.916 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 09:17:47.940 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2025-11-02 09:17:48.513 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 09:17:48.523 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 09:17:48.524 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 09:17:48.524 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 09:17:48.601 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1222 ms
+2025-11-02 09:17:49.594 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 09:17:49.602 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.541 seconds (process running for 3.153)
+2025-11-02 09:17:49.603 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 09:17:49.980 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 09:18:27.605 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 09:18:27.642 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 11644 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 09:18:27.643 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 09:18:28.240 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 09:18:28.242 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 09:18:28.265 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-11-02 09:18:28.860 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 09:18:28.869 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 09:18:28.870 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 09:18:28.871 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 09:18:28.947 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 09:18:28.948 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1271 ms
+2025-11-02 09:18:29.961 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 09:18:29.983 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 09:18:29.991 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.647 seconds (process running for 3.616)
+2025-11-02 09:18:32.775 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 09:18:33.123 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 09:18:36.576 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 09:18:36.607 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 5300 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 09:18:36.608 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 09:18:37.130 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 09:18:37.132 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 09:18:37.154 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-11-02 09:18:37.671 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 09:18:37.680 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 09:18:37.681 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 09:18:37.681 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 09:18:37.746 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 09:18:37.746 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1110 ms
+2025-11-02 09:18:38.647 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 09:18:38.660 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 09:18:38.667 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.337 seconds (process running for 2.884)
+2025-11-02 09:21:08.595 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 09:21:08.595 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 09:21:08.596 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-02 09:25:39.143 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 09:25:39.504 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 09:25:42.736 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 09:25:42.768 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 16872 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 09:25:42.768 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 09:25:43.295 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 09:25:43.297 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 09:25:43.318 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-11-02 09:25:43.850 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 09:25:43.858 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 09:25:43.860 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 09:25:43.860 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 09:25:43.923 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 09:25:43.924 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1130 ms
+2025-11-02 09:25:44.873 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 09:25:44.886 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 09:25:44.893 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.403 seconds (process running for 2.928)
+2025-11-02 09:25:49.726 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 09:25:49.727 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 09:25:49.728 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-02 09:27:18.837 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 09:27:19.193 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 09:27:22.453 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 09:27:22.490 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 16012 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 09:27:22.490 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 09:27:23.017 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 09:27:23.019 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 09:27:23.041 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-11-02 09:27:23.566 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 09:27:23.575 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 09:27:23.576 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 09:27:23.576 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 09:27:23.648 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 09:27:23.648 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1130 ms
+2025-11-02 09:27:24.566 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 09:27:24.578 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 09:27:24.585 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.38 seconds (process running for 2.96)
+2025-11-02 09:28:20.464 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 09:28:20.464 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 09:28:20.464 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-02 09:28:35.111 [http-nio-8080-exec-4] INFO  com.sau.controller.WeChatController - 微信回调：061XMh100mI6eV1Ia2100tOcnY0XMh1I
+2025-11-02 09:30:03.791 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 09:30:04.146 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 09:30:08.132 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 09:30:08.169 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 17460 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 09:30:08.170 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 09:30:08.701 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 09:30:08.703 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 09:30:08.724 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-11-02 09:30:09.283 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 09:30:09.291 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 09:30:09.294 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 09:30:09.294 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 09:30:09.369 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 09:30:09.369 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1172 ms
+2025-11-02 09:30:10.411 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 09:30:10.427 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 09:30:10.436 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.559 seconds (process running for 3.126)
+2025-11-02 09:30:17.898 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 09:30:17.899 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 09:30:17.899 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-02 09:32:03.262 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 09:32:03.689 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 09:32:06.949 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 09:32:06.983 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 27380 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 09:32:06.984 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 09:32:07.499 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 09:32:07.501 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 09:32:07.523 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-11-02 09:32:08.061 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 09:32:08.069 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 09:32:08.070 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 09:32:08.071 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 09:32:08.138 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 09:32:08.138 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1128 ms
+2025-11-02 09:32:09.084 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 09:32:09.098 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 09:32:09.107 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.408 seconds (process running for 2.958)
+2025-11-02 09:32:12.566 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 09:32:12.566 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 09:32:12.567 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-02 09:32:38.559 [http-nio-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-11-02 09:32:38.787 [http-nio-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-11-02 09:32:38.985 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-11-02 09:32:52.065 [http-nio-8080-exec-5] INFO  com.sau.controller.WeChatController - 微信回调：031DQF0w3DzWT53euW2w37P3jJ2DQF0X
+2025-11-02 09:35:57.141 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 09:35:57.508 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 09:36:00.771 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 09:36:00.802 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 22420 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 09:36:00.802 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 09:36:01.322 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 09:36:01.324 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 09:36:01.350 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2025-11-02 09:36:01.894 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 09:36:01.904 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 09:36:01.905 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 09:36:01.905 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 09:36:01.981 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 09:36:01.981 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1154 ms
+2025-11-02 09:36:02.920 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 09:36:02.933 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 09:36:02.939 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.419 seconds (process running for 2.986)
+2025-11-02 09:36:14.978 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 09:36:14.978 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 09:36:14.978 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-02 09:36:20.269 [http-nio-8080-exec-3] INFO  com.sau.controller.WeChatController - 微信回调：071lmQ100JFwdV1Dk4300L4AYU0lmQ1E
+2025-11-02 09:36:40.995 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 09:36:41.358 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 09:36:44.661 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 09:36:44.694 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 17868 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 09:36:44.694 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 09:36:45.185 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 09:36:45.187 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 09:36:45.210 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-11-02 09:36:45.721 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 09:36:45.730 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 09:36:45.731 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 09:36:45.732 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 09:36:45.796 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 09:36:45.796 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1073 ms
+2025-11-02 09:36:46.694 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 09:36:46.708 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 09:36:46.716 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.286 seconds (process running for 2.856)
+2025-11-02 09:54:09.511 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 09:54:10.526 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 09:54:15.400 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 09:54:15.440 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 26836 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 09:54:15.441 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 09:54:15.998 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 09:54:15.999 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 09:54:16.031 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2025-11-02 09:54:16.627 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 09:54:16.636 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 09:54:16.637 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 09:54:16.637 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 09:54:16.717 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 09:54:16.717 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1244 ms
+2025-11-02 09:54:17.686 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 09:54:17.704 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 09:54:17.712 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.583 seconds (process running for 3.124)
+2025-11-02 09:54:25.031 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 09:54:25.031 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 09:54:25.032 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-02 09:54:31.690 [http-nio-8080-exec-8] INFO  com.sau.controller.WeChatController - 微信回调：021vaH0w3Ln4U53cVP0w3XLXNf2vaH0i
+2025-11-02 09:57:23.972 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 09:57:24.318 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 10:29:01.876 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 10:29:01.922 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 9900 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 10:29:01.922 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 10:29:02.432 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 10:29:02.434 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 10:29:02.454 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2025-11-02 10:29:02.999 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 10:29:03.009 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 10:29:03.010 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 10:29:03.010 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 10:29:03.073 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 10:29:03.074 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1125 ms
+2025-11-02 10:29:03.443 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static org.springframework.web.client.RestTemplate com.sau.utils.WechatUtil.restTemplate
+2025-11-02 10:29:03.987 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 10:29:03.999 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 10:29:04.006 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.376 seconds (process running for 2.99)
+2025-11-02 10:29:09.842 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 10:29:09.842 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 10:29:09.844 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-11-02 10:32:57.455 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 10:32:57.792 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 10:33:01.542 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 10:33:01.579 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 9392 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 10:33:01.580 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 10:33:02.085 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 10:33:02.087 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 10:33:02.108 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-11-02 10:33:02.638 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 10:33:02.645 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 10:33:02.646 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 10:33:02.647 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 10:33:02.711 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 10:33:02.711 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1104 ms
+2025-11-02 10:33:03.087 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static org.springframework.web.client.RestTemplate com.sau.utils.WechatUtil.restTemplate
+2025-11-02 10:33:03.676 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 10:33:03.690 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 10:33:03.697 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.401 seconds (process running for 2.956)
+2025-11-02 10:33:08.007 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 10:33:08.008 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 10:33:08.008 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-02 10:36:56.330 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 10:36:56.698 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 10:37:00.035 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 10:37:00.070 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 24044 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 10:37:00.070 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 10:37:00.632 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 10:37:00.634 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 10:37:00.659 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-11-02 10:37:01.236 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 10:37:01.245 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 10:37:01.246 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 10:37:01.247 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 10:37:01.316 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 10:37:01.317 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1218 ms
+2025-11-02 10:37:01.692 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static org.springframework.web.client.RestTemplate com.sau.utils.WechatUtil.restTemplate
+2025-11-02 10:37:02.254 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 10:37:02.266 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 10:37:02.273 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.511 seconds (process running for 3.074)
+2025-11-02 10:37:06.718 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 10:37:06.719 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 10:37:06.719 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-02 10:37:06.825 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信二维码生成成功
+2025-11-02 10:37:14.079 [http-nio-8080-exec-2] INFO  com.sau.controller.WeChatController - 微信回调码：0815quHa1lwxyK0eapFa1XczTI15quHB
+2025-11-02 10:42:56.375 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 10:42:56.733 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 10:43:00.326 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 10:43:00.354 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 14668 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 10:43:00.355 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 10:43:00.872 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 10:43:00.874 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 10:43:00.897 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-11-02 10:43:01.414 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 10:43:01.421 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 10:43:01.423 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 10:43:01.423 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 10:43:01.486 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 10:43:01.487 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1106 ms
+2025-11-02 10:43:01.870 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static org.springframework.web.client.RestTemplate com.sau.utils.WechatUtil.restTemplate
+2025-11-02 10:43:02.438 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 10:43:02.450 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 10:43:02.458 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.376 seconds (process running for 2.956)
+2025-11-02 10:43:08.122 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 10:43:08.122 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 10:43:08.123 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-02 10:43:08.219 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信二维码生成成功
+2025-11-02 10:43:19.533 [http-nio-8080-exec-2] INFO  com.sau.controller.WeChatController - 微信回调码：0712fi1w3TJrT53QNU2w3SC0to12fi1P
+2025-11-02 10:43:29.952 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 10:43:30.289 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 10:45:05.540 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 10:45:05.573 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 6268 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 10:45:05.574 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 10:45:06.112 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 10:45:06.114 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 10:45:06.138 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2025-11-02 10:45:06.700 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 10:45:06.709 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 10:45:06.710 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 10:45:06.710 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 10:45:06.777 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 10:45:06.777 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1174 ms
+2025-11-02 10:45:07.163 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static org.springframework.web.client.RestTemplate com.sau.utils.WechatUtil.restTemplate
+2025-11-02 10:45:07.721 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 10:45:07.734 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 10:45:07.742 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.438 seconds (process running for 3.001)
+2025-11-02 10:45:17.005 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 10:45:17.006 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 10:45:17.006 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-02 10:45:17.033 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信登录请求
+2025-11-02 10:45:17.108 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信二维码生成成功
+2025-11-02 10:45:27.770 [http-nio-8080-exec-2] INFO  com.sau.controller.WeChatController - 微信回调码：041ZCQFa1dZbAK0vMXFa1jqQis2ZCQFH
+2025-11-02 10:46:09.446 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 10:46:09.795 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 10:46:12.999 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 10:46:13.031 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 21116 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 10:46:13.032 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 10:46:13.514 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 10:46:13.516 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 10:46:13.542 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-11-02 10:46:14.070 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 10:46:14.078 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 10:46:14.079 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 10:46:14.080 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 10:46:14.148 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 10:46:14.148 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1093 ms
+2025-11-02 10:46:14.552 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static org.springframework.web.client.RestTemplate com.sau.utils.WechatUtil.restTemplate
+2025-11-02 10:46:15.100 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 10:46:15.112 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 10:46:15.119 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.351 seconds (process running for 2.867)
+2025-11-02 10:46:18.687 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 10:46:18.688 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 10:46:18.689 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-02 10:46:18.717 [http-nio-8080-exec-2] INFO  com.sau.controller.WeChatController - 微信登录请求
+2025-11-02 10:46:18.796 [http-nio-8080-exec-2] INFO  com.sau.controller.WeChatController - 微信二维码生成成功
+2025-11-02 10:46:27.418 [http-nio-8080-exec-3] INFO  com.sau.controller.WeChatController - 微信回调码：001m8Zll2nKKyg4qiznl2yvgs42m8ZlJ
+2025-11-02 10:48:10.845 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 10:48:11.230 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 10:48:14.715 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 10:48:14.746 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 3376 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 10:48:14.746 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 10:48:15.291 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 10:48:15.294 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 10:48:15.317 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-11-02 10:48:15.862 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 10:48:15.869 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 10:48:15.874 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 10:48:15.874 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 10:48:15.948 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 10:48:15.948 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1177 ms
+2025-11-02 10:48:16.360 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static org.springframework.web.client.RestTemplate com.sau.utils.WechatUtil.restTemplate
+2025-11-02 10:48:16.920 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 10:48:16.934 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 10:48:16.944 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.463 seconds (process running for 3.01)
+2025-11-02 10:48:21.324 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 10:48:21.325 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 10:48:21.325 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-02 10:48:21.351 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信登录请求
+2025-11-02 10:48:21.433 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信二维码生成成功
+2025-11-02 10:48:28.359 [http-nio-8080-exec-6] INFO  com.sau.controller.WeChatController - 微信回调码：051qUoGa16RDzK0hAfIa1WtBZn0qUoGo
+2025-11-02 10:51:23.240 [main] ERROR com.sau.WechatUtilTest - 获取微信用户信息失败
+org.springframework.web.client.UnknownContentTypeException: Could not extract response: no suitable HttpMessageConverter found for response type [class com.sau.pojo.entity.TokenInfo] and content type [text/plain]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:133)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:903)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801)
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:415)
+	at com.sau.WechatUtilTest.getUserInfo(WechatUtilTest.java:39)
+	at com.sau.WechatUtilTest.main(WechatUtilTest.java:23)
+2025-11-02 11:05:49.331 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 11:05:49.667 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 11:05:53.636 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 11:05:53.669 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 16592 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 11:05:53.669 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 11:05:54.195 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 11:05:54.197 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 11:05:54.219 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-11-02 11:05:54.758 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 11:05:54.767 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 11:05:54.768 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 11:05:54.769 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 11:05:54.842 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 11:05:54.842 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1148 ms
+2025-11-02 11:05:55.892 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 11:05:55.906 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 11:05:55.915 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.512 seconds (process running for 3.068)
+2025-11-02 11:06:03.362 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 11:06:03.362 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 11:06:03.363 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-02 11:06:03.388 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信登录请求
+2025-11-02 11:06:03.465 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信二维码生成成功
+2025-11-02 11:06:11.721 [http-nio-8080-exec-2] INFO  com.sau.controller.WeChatController - 微信回调码：051Rbbll268tzg4DNUol2kqpUj1RbblD
+2025-11-02 11:06:12.401 [http-nio-8080-exec-2] INFO  com.sau.utils.WechatUtil - 获取accessToken返回结果：{"access_token":"97_RH_jo72rZUkYcOkshTDITKwaxY9jpIireQ4kwI6zbi9oEBIsLO9OGA__WHGraS1AAHhuHgTY33cvKZiIYMJXDUb8vGLejgNSD3iF8wNpeHA","expires_in":7200,"refresh_token":"97_CsiwESUJpkJ7GXN-59ZI6Tkm1o4JfVFRDy--6K8w1UGuCgXZ9mTnzJ6PlI8JzvIa3kxRnex3nK4yLQ4ZVrOTgpfoZ84jLNNp0kkGGMFnOtA","openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","scope":"snsapi_userinfo"}
+2025-11-02 11:06:12.674 [http-nio-8080-exec-2] INFO  com.sau.utils.WechatUtil - 获取个人信息返回：{"errcode":41009,"errmsg":"missing openid, rid: 6906caa3-1b13f45b-1cc27d24"}
+2025-11-02 11:09:20.386 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 11:09:20.765 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 11:09:24.071 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 11:09:24.103 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 19564 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 11:09:24.104 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 11:09:24.601 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 11:09:24.603 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 11:09:24.627 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-11-02 11:09:25.151 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 11:09:25.159 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 11:09:25.160 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 11:09:25.161 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 11:09:25.225 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 11:09:25.226 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1097 ms
+2025-11-02 11:09:26.156 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 11:09:26.170 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 11:09:26.176 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.341 seconds (process running for 2.965)
+2025-11-02 11:09:40.405 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 11:09:40.405 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 11:09:40.406 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-02 11:09:40.431 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信登录请求
+2025-11-02 11:09:40.509 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信二维码生成成功
+2025-11-02 11:09:46.792 [http-nio-8080-exec-2] INFO  com.sau.controller.WeChatController - 微信回调码：0013jYGa1EeqyK0M0TFa14xK4C13jYGK
+2025-11-02 11:09:47.379 [http-nio-8080-exec-2] INFO  com.sau.utils.WechatUtil - 获取accessToken返回结果：{"access_token":"97_KFPduJrYhHUCdWiBTKvZMircfzb5k5p858dbBa7WhYqZ1_hIKjPVmBkWI3UUlb1ZHeXgREhNc_kbtXqh2Y0kobYAWZHfNyZCnje8I3GcFSE","expires_in":7200,"refresh_token":"97_i0v_q9HUA1NNvuivPC_LBN0TncTqJvkTkmU8Bg1aKF2tazcqlhkfzNac8LUrDzmjFx33CHx4DnlEHifgTOrNBtZ_bUI7aUzoqpQ3gnu1KaQ","openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","scope":"snsapi_userinfo"}
+2025-11-02 11:09:47.633 [http-nio-8080-exec-2] INFO  com.sau.utils.WechatUtil - 获取个人信息返回：{"openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","nickname":"赵瑾瑜","sex":0,"language":"","city":"","province":"","country":"","headimgurl":"https:\/\/thirdwx.qlogo.cn\/mmopen\/vi_32\/EVAowwWDAUxxUsByw6nmicvBJhSKOvzE4REXTwZeNiaSHticLPyONOrveWaibSjia5nAAc0PSauMHibPP7oexaZ6Zkm5GJA8z7WI5zWoCRZPdEwvQ\/132","privilege":[]}
+2025-11-02 11:10:42.795 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 11:10:43.142 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 11:10:46.438 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 11:10:46.475 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 9668 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 11:10:46.475 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 11:10:46.997 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 11:10:46.999 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 11:10:47.022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-11-02 11:10:47.584 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 11:10:47.592 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 11:10:47.593 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 11:10:47.593 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 11:10:47.665 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 11:10:47.665 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1161 ms
+2025-11-02 11:10:48.611 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 11:10:48.623 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 11:10:48.629 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.441 seconds (process running for 2.97)
+2025-11-02 11:11:09.354 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 11:11:09.354 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 11:11:09.354 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-02 11:11:09.379 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信登录请求
+2025-11-02 11:11:09.450 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信二维码生成成功
+2025-11-02 11:11:13.793 [http-nio-8080-exec-2] INFO  com.sau.controller.WeChatController - 微信回调码：041pKd0w3DzYU53mbt1w30B8QS3pKd0E
+2025-11-02 11:11:14.374 [http-nio-8080-exec-2] INFO  com.sau.utils.WechatUtil - 获取accessToken返回结果：{"access_token":"97_cHxkgsjU-jMD1CnJwBhgt5uH1fbdsoLmCWUeR4OQ8vdpiild2J4r09SWg6bpDtMn5GteCsdw6zmwnHB3Q93vZDf3EwDOciM-4t0szBtVLc8","expires_in":7200,"refresh_token":"97_3Oc6DGniG_D4mR46qyXoESOojK_InSA0O8PdwJfiPLJz8a-aB7-kifZYLx7x6HSj9HR2eNBeqCg3hpMy3xYzuIo4n9ZeWOnz6kLB6YkbL08","openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","scope":"snsapi_userinfo"}
+2025-11-02 11:11:14.672 [http-nio-8080-exec-2] INFO  com.sau.utils.WechatUtil - 获取个人信息返回：{"openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","nickname":"赵瑾瑜","sex":0,"language":"","city":"","province":"","country":"","headimgurl":"https:\/\/thirdwx.qlogo.cn\/mmopen\/vi_32\/EVAowwWDAUxxUsByw6nmicvBJhSKOvzE4REXTwZeNiaSHticLPyONOrveWaibSjia5nAAc0PSauMHibPP7oexaZ6Zkm5GJA8z7WI5zWoCRZPdEwvQ\/132","privilege":[]}
+2025-11-02 11:12:55.178 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 11:12:55.527 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 11:12:59.033 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 11:12:59.063 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 24604 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 11:12:59.064 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 11:12:59.588 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 11:12:59.589 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 11:12:59.610 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-11-02 11:13:00.149 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 11:13:00.158 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 11:13:00.159 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 11:13:00.159 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 11:13:00.227 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 11:13:00.227 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1137 ms
+2025-11-02 11:13:01.191 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 11:13:01.204 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 11:13:01.212 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.443 seconds (process running for 2.992)
+2025-11-02 11:13:12.681 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 11:13:12.681 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 11:13:12.681 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-02 11:13:12.708 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信登录请求
+2025-11-02 11:13:12.781 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信二维码生成成功
+2025-11-02 11:13:19.685 [http-nio-8080-exec-9] INFO  com.sau.controller.WeChatController - 微信回调码：081mn9Ga1wtNzK0i3PFa1vSSeA2mn9GM
+2025-11-02 11:13:20.277 [http-nio-8080-exec-9] INFO  com.sau.utils.WechatUtil - 获取accessToken返回结果：{"access_token":"97_FA1G32mgH3qhADfOd_bbjASSLXoMVKHTNrcjLPe4cJpJWXmvEIPossi7SCB8PNiAXWcl_UJZs_EtSTo1fQZiIOY902oRdfrZCwaLYauh95E","expires_in":7200,"refresh_token":"97_jj5WA7V_J5cG9PUx-rWzZbi64sj66xC9guFTa0o9nkDryOiwIi7tgEmPodCzho4FTDtCoD6UvyvNnNJsPaaWUj6UfyNNoIo0DcVVHBX_ecA","openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","scope":"snsapi_userinfo"}
+2025-11-02 11:13:20.541 [http-nio-8080-exec-9] INFO  com.sau.utils.WechatUtil - 获取个人信息返回：{"openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","nickname":"赵瑾瑜","sex":0,"language":"","city":"","province":"","country":"","headimgurl":"https:\/\/thirdwx.qlogo.cn\/mmopen\/vi_32\/EVAowwWDAUxxUsByw6nmicvBJhSKOvzE4REXTwZeNiaSHticLPyONOrveWaibSjia5nAAc0PSauMHibPP7oexaZ6Zkm5GJA8z7WI5zWoCRZPdEwvQ\/132","privilege":[]}
+2025-11-02 11:21:02.752 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 11:21:03.102 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 11:21:06.696 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 11:21:06.726 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 20720 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 11:21:06.726 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 11:21:07.225 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 11:21:07.227 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 11:21:07.249 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-11-02 11:21:07.768 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 11:21:07.777 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 11:21:07.778 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 11:21:07.778 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 11:21:07.846 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 11:21:07.846 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1095 ms
+2025-11-02 11:21:08.772 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 11:21:08.785 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 11:21:08.792 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.325 seconds (process running for 2.885)
+2025-11-02 11:21:24.442 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 11:21:24.444 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 11:21:24.444 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-02 11:21:24.470 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信登录请求
+2025-11-02 11:21:24.542 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信二维码生成成功
+2025-11-02 11:21:30.376 [http-nio-8080-exec-2] INFO  com.sau.controller.WeChatController - 微信回调码：081fne0w39SZU53PlV2w3glcju4fne0O
+2025-11-02 11:21:31.058 [http-nio-8080-exec-2] INFO  com.sau.utils.WechatUtil - 获取accessToken返回结果：{"access_token":"97_j8R9qUK1mLbeDsGIin7wauQFQKZi9tTlBuPs3AugEXlbZl6HO3i8AffAaKxtNTRNiyxzJ6rfe86u9V6KLvoqlJmetRnnFjw6GjbLAuEk2G8","expires_in":7200,"refresh_token":"97_oUMDtKsX9du1auIAO38Y8_OtbRlx6XM2G4fsMg0eXPp78kwlqdWXTY8xXmPJVoNQ1tZj1JL0OH5CbaRtoHzkRYCEjQsH6IPd4REZy-36gqM","openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","scope":"snsapi_userinfo"}
+2025-11-02 11:21:31.373 [http-nio-8080-exec-2] INFO  com.sau.utils.WechatUtil - 获取个人信息返回：{"openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","nickname":"赵瑾瑜","sex":0,"language":"","city":"","province":"","country":"","headimgurl":"https:\/\/thirdwx.qlogo.cn\/mmopen\/vi_32\/EVAowwWDAUxxUsByw6nmicvBJhSKOvzE4REXTwZeNiaSHticLPyONOrveWaibSjia5nAAc0PSauMHibPP7oexaZ6Zkm5GJA8z7WI5zWoCRZPdEwvQ\/132","privilege":[]}
+2025-11-02 11:29:09.855 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 11:29:10.724 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 11:29:14.926 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 11:29:14.960 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 11596 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 11:29:14.961 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 11:29:15.470 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 11:29:15.472 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 11:29:15.495 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-11-02 11:29:16.028 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 11:29:16.036 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 11:29:16.037 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 11:29:16.037 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 11:29:16.106 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 11:29:16.107 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1118 ms
+2025-11-02 11:29:17.042 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 11:29:17.053 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 11:29:17.061 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.399 seconds (process running for 2.947)
+2025-11-02 11:29:22.624 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 11:29:22.624 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 11:29:22.625 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-02 11:29:22.656 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信登录请求
+2025-11-02 11:29:22.733 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信二维码生成成功
+2025-11-02 11:29:35.953 [http-nio-8080-exec-2] INFO  com.sau.controller.WeChatController - 微信回调码：071YvZGa1YYqyK0M7sFa1r13y30YvZGB
+2025-11-02 11:29:36.637 [http-nio-8080-exec-2] INFO  com.sau.utils.WechatUtil - 获取accessToken返回结果：{"access_token":"97_9zVs6qq2spjxEehuO5ZbZtesK7vXGmiUSj54666UMByj-c70S588e-vikme9yI-IvpEHLC2XvBvj9x31rbfyJV06BMGYhwsieh6QStRrgdk","expires_in":7200,"refresh_token":"97_zklbjjCkrzoXbHZMf-iE0vVtCWIX6B3DaHCK41CQTtkqXFcdtjOOUN-Z_b4GHJnozA5OfSiUYj6HKqK5X76Y3dOwgdL3Q1n5U1rnuRoBVdM","openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","scope":"snsapi_userinfo"}
+2025-11-02 11:29:36.949 [http-nio-8080-exec-2] INFO  com.sau.utils.WechatUtil - 获取个人信息返回：{"openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","nickname":"赵瑾瑜","sex":0,"language":"","city":"","province":"","country":"","headimgurl":"https:\/\/thirdwx.qlogo.cn\/mmopen\/vi_32\/EVAowwWDAUxxUsByw6nmicvBJhSKOvzE4REXTwZeNiaSHticLPyONOrveWaibSjia5nAAc0PSauMHibPP7oexaZ6Zkm5GJA8z7WI5zWoCRZPdEwvQ\/132","privilege":[]}
+2025-11-02 11:30:06.469 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 11:30:06.840 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 11:31:40.478 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 11:31:40.521 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 8032 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 11:31:40.521 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 11:31:41.032 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 11:31:41.034 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 11:31:41.057 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-11-02 11:31:41.601 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 11:31:41.610 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 11:31:41.611 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 11:31:41.611 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 11:31:41.676 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 11:31:41.676 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1129 ms
+2025-11-02 11:31:42.592 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 11:31:42.604 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 11:31:42.611 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.375 seconds (process running for 2.92)
+2025-11-02 11:31:48.057 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 11:31:48.057 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 11:31:48.058 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-02 11:31:48.084 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信登录请求
+2025-11-02 11:31:48.161 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信二维码生成成功
+2025-11-02 11:31:55.619 [http-nio-8080-exec-2] INFO  com.sau.controller.WeChatController - 微信回调码：021NHgHa13dIyK0UuYGa1yv00A4NHgHi
+2025-11-02 11:31:56.260 [http-nio-8080-exec-2] INFO  com.sau.utils.WechatUtil - 获取accessToken返回结果：{"access_token":"97_Gq5C6rNaLa0CwqZl4VxW13S1Nrc7cWS_ETt17zTMqcD7OZlFPiFsCOM6Ox4C1_xlmas82hCSKSr69ETGz8PmUw965UntBBxilGj8GLfQ0Xk","expires_in":7200,"refresh_token":"97_3OFKrfntaAcHzYJQc_Un9BnwnF52_z4unpUGE3xxJe5QE51Nvp-tjNdzyVGCRMRkSnbfle989cpviUxp6ZVqsfiuxMQXVvqaV4YOuhxb8Ng","openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","scope":"snsapi_userinfo"}
+2025-11-02 11:31:56.536 [http-nio-8080-exec-2] INFO  com.sau.utils.WechatUtil - 获取个人信息返回：{"openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","nickname":"赵瑾瑜","sex":0,"language":"","city":"","province":"","country":"","headimgurl":"https:\/\/thirdwx.qlogo.cn\/mmopen\/vi_32\/EVAowwWDAUxxUsByw6nmicvBJhSKOvzE4REXTwZeNiaSHticLPyONOrveWaibSjia5nAAc0PSauMHibPP7oexaZ6Zkm5GJA8z7WI5zWoCRZPdEwvQ\/132","privilege":[]}
+2025-11-02 11:31:56.541 [http-nio-8080-exec-2] INFO  com.sau.utils.WechatUtil - 封装的用户信息：WeChatUser(openid=oEDT42IEDYc1MooxKTUB9hLJyPMY, nickname=赵瑾瑜, sex=0, country=, province=, city=, headimgurl=https://thirdwx.qlogo.cn/mmopen/vi_32/EVAowwWDAUxxUsByw6nmicvBJhSKOvzE4REXTwZeNiaSHticLPyONOrveWaibSjia5nAAc0PSauMHibPP7oexaZ6Zkm5GJA8z7WI5zWoCRZPdEwvQ/132, privilege=[], unionid=null, language=)
+2025-11-02 11:57:35.339 [http-nio-8080-exec-5] INFO  com.sau.controller.WeChatController - 微信接入验证：2218598120561759997
+2025-11-02 12:02:03.730 [http-nio-8080-exec-8] INFO  com.sau.controller.WeChatController - 微信接入验证：7343967532177348601
+2025-11-02 12:03:40.425 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 12:03:41.477 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 12:03:44.813 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 12:03:44.843 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 17468 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 12:03:44.843 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 12:03:45.352 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 12:03:45.353 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 12:03:45.377 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-11-02 12:03:45.907 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 12:03:45.915 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 12:03:45.916 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 12:03:45.917 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 12:03:45.980 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 12:03:45.980 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1111 ms
+2025-11-02 12:03:46.918 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 12:03:46.930 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 12:03:46.936 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.361 seconds (process running for 2.897)
+2025-11-02 12:04:00.708 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 12:04:00.708 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 12:04:00.710 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-11-02 12:04:00.735 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信登录请求
+2025-11-02 12:04:00.813 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信二维码生成成功
+2025-11-02 12:14:47.587 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 12:14:47.972 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 12:14:51.341 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 12:14:51.380 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 20128 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 12:14:51.380 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 12:14:51.894 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 12:14:51.896 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 12:14:51.918 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-11-02 12:14:52.471 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 12:14:52.482 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 12:14:52.482 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 12:14:52.482 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 12:14:52.547 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 12:14:52.547 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1140 ms
+2025-11-02 12:14:53.532 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 12:14:53.546 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 12:14:53.554 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.48 seconds (process running for 3.013)
+2025-11-02 12:14:56.030 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 12:14:56.030 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 12:14:56.031 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-02 12:14:56.060 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信登录请求
+2025-11-02 12:14:56.155 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信二维码生成成功
+2025-11-02 12:15:01.818 [http-nio-8080-exec-2] INFO  com.sau.controller.WeChatController - 微信回调码：011Hh2Ha1LLnyK03oIGa1AVFXW2Hh2HC
+2025-11-02 12:15:02.465 [http-nio-8080-exec-2] INFO  com.sau.utils.WechatUtil - 获取accessToken返回结果：{"access_token":"97_b_0LtouhhMYwGD1xAZ28HPXYMPodRNMfl6dvbb6bkDjJFjogpcPub0rUxFqOwPh8zxoUxtw-ZFma8V2_M6uKZ3FUbavMbjdvdPiOIWzQY2I","expires_in":7200,"refresh_token":"97_kYofO0-L6jlWaK34dUNwfhWJKyoaQF_l6aGg40Z4Sl9Nj6RZv7hBFbFZ88RDx94ZO9jO5WaZ4xDCDjEFBp7zr_LMZeKlDV4yWxl-vg96F1s","openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","scope":"snsapi_userinfo"}
+2025-11-02 12:15:02.758 [http-nio-8080-exec-2] INFO  com.sau.utils.WechatUtil - 获取个人信息返回：{"openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","nickname":"赵瑾瑜","sex":0,"language":"","city":"","province":"","country":"","headimgurl":"https:\/\/thirdwx.qlogo.cn\/mmopen\/vi_32\/EVAowwWDAUxxUsByw6nmicvBJhSKOvzE4REXTwZeNiaSHticLPyONOrveWaibSjia5nAAc0PSauMHibPP7oexaZ6Zkm5GJA8z7WI5zWoCRZPdEwvQ\/132","privilege":[]}
+2025-11-02 12:15:02.762 [http-nio-8080-exec-2] INFO  com.sau.utils.WechatUtil - 封装的用户信息：WeChatUser(openid=oEDT42IEDYc1MooxKTUB9hLJyPMY, nickname=赵瑾瑜, sex=0, country=, province=, city=, headimgurl=https://thirdwx.qlogo.cn/mmopen/vi_32/EVAowwWDAUxxUsByw6nmicvBJhSKOvzE4REXTwZeNiaSHticLPyONOrveWaibSjia5nAAc0PSauMHibPP7oexaZ6Zkm5GJA8z7WI5zWoCRZPdEwvQ/132, privilege=[], unionid=null, language=)
+2025-11-02 13:02:57.426 [http-nio-8080-exec-6] INFO  com.sau.controller.WeChatController - 微信登录请求
+2025-11-02 13:02:57.443 [http-nio-8080-exec-6] INFO  com.sau.controller.WeChatController - 微信二维码生成成功
+2025-11-02 13:03:12.469 [http-nio-8080-exec-3] INFO  com.sau.controller.WeChatController - 微信回调码：041bh1ll2XseAg4EQYnl2wDG1A4bh1le
+2025-11-02 13:03:12.928 [http-nio-8080-exec-3] INFO  com.sau.utils.WechatUtil - 获取accessToken返回结果：{"access_token":"97_TlYZ57EzQJyjB6z-Y4tZzdZHqIN6tI1M0BN3hCaX6g7iQozBZgJd_VdjrSvI49gD3kjjLB1OYo9sgqURzNlSSnr9q6PMwa6PU5nGdeldnWw","expires_in":7200,"refresh_token":"97_r0Wvpw_fo8rczWxphHjODh1DtCzSAO-iYPHfiIrE384042NNJztUc2JoSxw677HguBwAbK68LVqHbpEp_KCT9NL8RbBEStQ7yJchLRfrSYw","openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","scope":"snsapi_userinfo"}
+2025-11-02 13:03:13.177 [http-nio-8080-exec-3] INFO  com.sau.utils.WechatUtil - 获取个人信息返回：{"openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","nickname":"赵瑾瑜","sex":0,"language":"","city":"","province":"","country":"","headimgurl":"https:\/\/thirdwx.qlogo.cn\/mmopen\/vi_32\/EVAowwWDAUxxUsByw6nmicvBJhSKOvzE4REXTwZeNiaSHticLPyONOrveWaibSjia5nAAc0PSauMHibPP7oexaZ6Zkm5GJA8z7WI5zWoCRZPdEwvQ\/132","privilege":[]}
+2025-11-02 13:03:13.178 [http-nio-8080-exec-3] INFO  com.sau.utils.WechatUtil - 封装的用户信息：WeChatUser(openid=oEDT42IEDYc1MooxKTUB9hLJyPMY, nickname=赵瑾瑜, sex=0, country=, province=, city=, headimgurl=https://thirdwx.qlogo.cn/mmopen/vi_32/EVAowwWDAUxxUsByw6nmicvBJhSKOvzE4REXTwZeNiaSHticLPyONOrveWaibSjia5nAAc0PSauMHibPP7oexaZ6Zkm5GJA8z7WI5zWoCRZPdEwvQ/132, privilege=[], unionid=null, language=)
+2025-11-02 13:03:33.182 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 13:03:33.557 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 13:28:09.169 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 13:28:09.207 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 12368 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 13:28:09.207 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 13:28:09.801 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 13:28:09.804 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 13:28:09.828 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-11-02 13:28:10.455 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 13:28:10.465 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 13:28:10.466 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 13:28:10.466 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 13:28:10.540 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 13:28:10.540 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1301 ms
+2025-11-02 13:28:11.625 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 13:28:11.638 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 13:28:11.645 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.762 seconds (process running for 3.38)
+2025-11-02 13:28:17.722 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 13:28:17.722 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 13:28:17.723 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-02 13:28:17.753 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信登录请求
+2025-11-02 13:28:17.851 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信二维码生成成功
+2025-11-02 13:28:17.858 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class com.sau.pojo.entity.Result] with preset Content-Type 'image/jpg'
+2025-11-02 13:28:17.858 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class com.sau.pojo.entity.Result] with preset Content-Type 'image/jpg']
+2025-11-02 13:28:34.399 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 13:28:34.760 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 13:28:38.187 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 13:28:38.223 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 3736 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 13:28:38.224 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 13:28:38.790 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 13:28:38.795 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 13:28:38.818 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-11-02 13:28:39.376 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 13:28:39.385 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 13:28:39.389 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 13:28:39.389 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 13:28:39.464 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 13:28:39.464 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1212 ms
+2025-11-02 13:28:40.427 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 13:28:40.439 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 13:28:40.445 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.551 seconds (process running for 3.176)
+2025-11-02 13:28:44.791 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 13:28:44.791 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 13:28:44.791 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-02 13:28:44.818 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信登录请求
+2025-11-02 13:28:44.899 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信二维码生成成功
+2025-11-02 13:29:34.791 [http-nio-8080-exec-3] INFO  com.sau.controller.WeChatController - 微信登录请求
+2025-11-02 13:29:34.804 [http-nio-8080-exec-3] INFO  com.sau.controller.WeChatController - 微信二维码生成成功
+2025-11-02 13:33:54.451 [http-nio-8080-exec-8] INFO  com.sau.controller.WeChatController - 微信回调码：null
+2025-11-02 13:33:55.487 [http-nio-8080-exec-8] INFO  com.sau.utils.WechatUtil - 获取accessToken返回结果：{"errcode":40029,"errmsg":"invalid code, rid: 6906ed42-17b209a3-336ea842"}
+2025-11-02 13:34:38.302 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 13:34:38.660 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 13:34:42.561 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 13:34:42.590 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 3364 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 13:34:42.591 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 13:34:43.129 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 13:34:43.130 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 13:34:43.154 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-11-02 13:34:43.700 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 13:34:43.708 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 13:34:43.709 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 13:34:43.709 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 13:34:43.788 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 13:34:43.788 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1170 ms
+2025-11-02 13:34:44.752 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 13:34:44.765 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 13:34:44.771 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.48 seconds (process running for 3.051)
+2025-11-02 13:34:50.320 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 13:34:50.320 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 13:34:50.321 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-02 13:34:50.345 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信登录请求
+2025-11-02 13:34:50.411 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信二维码生成成功
+2025-11-02 13:38:54.419 [http-nio-8080-exec-4] INFO  com.sau.controller.WeChatController - 微信回调码：null
+2025-11-02 13:38:55.376 [http-nio-8080-exec-4] INFO  com.sau.utils.WechatUtil - 获取accessToken返回结果：{"errcode":40029,"errmsg":"invalid code, rid: 6906ee6e-01088563-4b022de4"}
+2025-11-02 13:43:47.072 [http-nio-8080-exec-5] INFO  com.sau.controller.WeChatController - 微信回调码：null
+2025-11-02 13:43:47.341 [http-nio-8080-exec-5] INFO  com.sau.utils.WechatUtil - 获取accessToken返回结果：{"errcode":40029,"errmsg":"invalid code, rid: 6906ef92-7a38cb76-665d451f"}
+2025-11-02 13:48:22.031 [http-nio-8080-exec-7] INFO  com.sau.controller.WeChatController - 微信回调码：null
+2025-11-02 13:48:22.439 [http-nio-8080-exec-7] INFO  com.sau.utils.WechatUtil - 获取accessToken返回结果：{"errcode":40029,"errmsg":"invalid code, rid: 6906f0a5-0b325135-7b1bd1e4"}
+2025-11-02 13:56:22.082 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 13:56:22.444 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 13:56:25.977 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 13:56:26.012 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 16136 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 13:56:26.012 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 13:56:26.621 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 13:56:26.623 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 13:56:26.658 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-11-02 13:56:27.231 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 13:56:27.241 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 13:56:27.242 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 13:56:27.243 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 13:56:27.326 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 13:56:27.326 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1286 ms
+2025-11-02 13:56:28.384 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 13:56:28.399 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 13:56:28.405 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.737 seconds (process running for 3.377)
+2025-11-02 13:57:45.201 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 13:57:45.201 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 13:57:45.202 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-02 13:57:45.226 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信登录请求
+2025-11-02 13:57:45.303 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信二维码生成成功
+2025-11-02 13:58:52.684 [http-nio-8080-exec-8] INFO  com.sau.controller.WeChatController - 微信回调码：0615V60w3fZzU53i013w3GlnQL05V60B
+2025-11-02 13:58:53.282 [http-nio-8080-exec-8] INFO  com.sau.utils.WechatUtil - 获取accessToken返回结果：{"access_token":"97_ZhpU6_MJ_9jfGdMydUx2LUul_iXELW4r2KrLVpP0x2GQnYvhq2pPoRWW9J19jpU4nF0drC9lJQ6tk6gShMkUf1T35SL1CAeX3inDzHQUUbg","expires_in":7200,"refresh_token":"97_lceFjMoTu55JiUOv0nSHfvReaAs21AyDF7WfWP3pgYab2lLt90wk0q4o4_FLJFj41Go1N0aXKUiZPCnvZgmZNWKnKxKKEPSrQ6WK49FaZB0","openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","scope":"snsapi_userinfo"}
+2025-11-02 13:58:53.565 [http-nio-8080-exec-8] INFO  com.sau.utils.WechatUtil - 获取个人信息返回：{"openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","nickname":"赵瑾瑜","sex":0,"language":"","city":"","province":"","country":"","headimgurl":"https:\/\/thirdwx.qlogo.cn\/mmopen\/vi_32\/EVAowwWDAUxxUsByw6nmicvBJhSKOvzE4REXTwZeNiaSHticLPyONOrveWaibSjia5nAAc0PSauMHibPP7oexaZ6Zkm5GJA8z7WI5zWoCRZPdEwvQ\/132","privilege":[]}
+2025-11-02 13:58:53.565 [http-nio-8080-exec-8] INFO  com.sau.utils.WechatUtil - 封装的用户信息：WeChatUser(openid=oEDT42IEDYc1MooxKTUB9hLJyPMY, nickname=赵瑾瑜, sex=0, country=, province=, city=, headimgurl=https://thirdwx.qlogo.cn/mmopen/vi_32/EVAowwWDAUxxUsByw6nmicvBJhSKOvzE4REXTwZeNiaSHticLPyONOrveWaibSjia5nAAc0PSauMHibPP7oexaZ6Zkm5GJA8z7WI5zWoCRZPdEwvQ/132, privilege=[], unionid=null, language=)
+2025-11-02 14:02:13.413 [http-nio-8080-exec-6] INFO  com.sau.controller.WeChatController - 微信回调码：null
+2025-11-02 14:02:13.626 [http-nio-8080-exec-6] INFO  com.sau.utils.WechatUtil - 获取accessToken返回结果：{"errcode":40029,"errmsg":"invalid code, rid: 6906f3e4-5fae283d-6aabea73"}
+2025-11-02 14:10:09.168 [http-nio-8080-exec-2] INFO  com.sau.controller.WeChatController - 微信回调码：null
+2025-11-02 14:10:09.442 [http-nio-8080-exec-2] INFO  com.sau.utils.WechatUtil - 获取accessToken返回结果：{"errcode":40029,"errmsg":"invalid code, rid: 6906f5c0-27d21387-1a13e9f7"}
+2025-11-02 14:15:36.201 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 14:15:36.557 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-02 14:15:39.868 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-02 14:15:39.900 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 15372 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-11-02 14:15:39.901 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 14:15:40.425 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-02 14:15:40.427 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-02 14:15:40.447 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-11-02 14:15:41.011 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-02 14:15:41.025 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-02 14:15:41.027 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-02 14:15:41.027 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-02 14:15:41.103 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-02 14:15:41.104 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1179 ms
+2025-11-02 14:15:42.094 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-02 14:15:42.107 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-02 14:15:42.114 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.479 seconds (process running for 3.07)
+2025-11-02 14:15:52.805 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02 14:15:52.805 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-02 14:15:52.812 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-02 14:15:52.882 [http-nio-8080-exec-1] INFO  com.sau.controller.WeChatController - 微信回调码：051zHqHa1jMyyK0ZFHHa1wRP312zHqH2
+2025-11-02 14:15:53.706 [http-nio-8080-exec-1] INFO  com.sau.utils.WechatUtil - 获取accessToken返回结果：{"access_token":"97_dRtJjW7lnRrve2nEZcxt8QW8f0FsE-yLZI9U23Z9_P0uRt3vwxxYuiOfGd8RlwoPaChtM9w_Zh12iWt5NQRK2HjfFKxIgaG2zp9yIE0Yk1g","expires_in":7200,"refresh_token":"97_eBXKfdN0ipuiq8sAkbXYjP0Nx_0Gq4jqaLjl0xkW1Zt6IyZYpcw18HCzxdXqVjpPr5VB5HbzwcDQYsPqNPeye_iSNnfxXLyInG75ikkHXqI","openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","scope":"snsapi_userinfo"}
+2025-11-02 14:15:54.055 [http-nio-8080-exec-1] INFO  com.sau.utils.WechatUtil - 获取个人信息返回：{"openid":"oEDT42IEDYc1MooxKTUB9hLJyPMY","nickname":"赵瑾瑜","sex":0,"language":"","city":"","province":"","country":"","headimgurl":"https:\/\/thirdwx.qlogo.cn\/mmopen\/vi_32\/EVAowwWDAUxxUsByw6nmicvBJhSKOvzE4REXTwZeNiaSHticLPyONOrveWaibSjia5nAAc0PSauMHibPP7oexaZ6Zkm5GJA8z7WI5zWoCRZPdEwvQ\/132","privilege":[]}
+2025-11-02 14:15:54.061 [http-nio-8080-exec-1] INFO  com.sau.utils.WechatUtil - 封装的用户信息：WeChatUser(openid=oEDT42IEDYc1MooxKTUB9hLJyPMY, nickname=赵瑾瑜, sex=0, country=, province=, city=, headimgurl=https://thirdwx.qlogo.cn/mmopen/vi_32/EVAowwWDAUxxUsByw6nmicvBJhSKOvzE4REXTwZeNiaSHticLPyONOrveWaibSjia5nAAc0PSauMHibPP7oexaZ6Zkm5GJA8z7WI5zWoCRZPdEwvQ/132, privilege=[], unionid=null, language=)
+2025-11-02 14:16:25.546 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-02 14:16:26.630 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete

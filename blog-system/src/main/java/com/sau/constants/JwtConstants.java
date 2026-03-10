@@ -1,7 +1,7 @@
 package com.sau.constants;
 
 /**
- * JWT 相关常量。
+ * JWT 相关常量
  */
 public final class JwtConstants {
 

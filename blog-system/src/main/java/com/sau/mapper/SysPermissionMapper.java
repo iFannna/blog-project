@@ -6,13 +6,13 @@ import org.apache.ibatis.annotations.Select;
 import java.util.List;
 
 /**
- * 系统权限数据访问层。
+ * 系统权限数据访问层
  */
 @Mapper
 public interface SysPermissionMapper {
 
     /**
-     * 根据用户 ID 查询启用状态下的权限编码列表。
+     * 根据用户 ID 查询启用状态下的权限编码列表
      */
     @Select("""
             select distinct p.perm_code

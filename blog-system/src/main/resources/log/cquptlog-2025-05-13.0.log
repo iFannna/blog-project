@@ -1,0 +1,1575 @@
+2025-05-13 18:48:06.309 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 29912 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-05-13 18:48:06.311 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-13 18:48:07.368 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-13 18:48:07.376 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-13 18:48:07.377 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-13 18:48:07.377 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-05-13 18:48:07.427 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-13 18:48:07.428 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1069 ms
+2025-05-13 18:48:08.051 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-13 18:48:08.065 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-13 18:48:08.071 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 2.146 seconds (process running for 2.846)
+2025-05-13 18:49:25.967 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-13 18:49:25.967 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-13 18:49:25.967 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-05-13 18:49:26.076 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析失败，请求被拒绝
+2025-05-13 18:49:26.076 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析失败，请求被拒绝
+2025-05-13 18:49:41.952 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 登录请求，放行
+2025-05-13 18:49:42.063 [http-nio-8080-exec-2] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=zhaojinyu, password=131421, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-05-13 18:49:42.089 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-13 18:49:42.441 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d2fd610
+2025-05-13 18:49:42.442 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-13 18:49:52.038 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 登录请求，放行
+2025-05-13 18:49:52.039 [http-nio-8080-exec-5] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=zhaojinyu, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-05-13 18:49:52.051 [http-nio-8080-exec-5] INFO  com.sau.service.impl.EmpServiceImpl - 登录成功，员工信息: Emp(id=34, username=zhaojinyu, password=null, name=赵瑾瑜, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-05-13 18:49:54.368 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 18:49:54.368 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 18:49:54.368 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 18:49:54.368 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 18:49:54.373 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-05-13 18:49:54.387 [http-nio-8080-exec-6] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-05-13 18:49:59.146 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 18:49:59.146 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 18:49:59.146 [http-nio-8080-exec-8] INFO  com.sau.controller.ClazzController - 根据id查询班级信息:8
+2025-05-13 20:24:57.086 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 20:24:57.086 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 20:24:57.086 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 20:24:57.086 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 20:24:57.093 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-05-13 20:24:57.097 [http-nio-8080-exec-3] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-05-13 20:25:01.310 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 20:25:01.310 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 20:25:01.312 [http-nio-8080-exec-10] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-13 20:25:02.217 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 20:25:02.217 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 20:25:02.217 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 20:25:02.217 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 20:25:02.217 [http-nio-8080-exec-1] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-13 20:25:02.219 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-05-13 22:05:28.845 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:05:28.845 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:05:28.845 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:05:28.846 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:05:28.850 [http-nio-8080-exec-5] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-13 22:05:28.852 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-05-13 22:05:31.238 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:05:31.238 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:05:31.238 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:05:31.238 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:05:31.239 [http-nio-8080-exec-6] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-13 22:05:31.239 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-05-13 22:05:35.315 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:05:35.315 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:05:35.315 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:05:35.315 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:05:35.315 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-05-13 22:05:35.315 [http-nio-8080-exec-3] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:06:24.555 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:06:24.555 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:06:24.556 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:06:24.556 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:06:24.556 [http-nio-8080-exec-10] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:06:24.559 [http-nio-8080-exec-9] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:06:30.859 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:06:30.860 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:06:30.861 [http-nio-8080-exec-1] INFO  c.sau.controller.StudentController - 根据id查询学员信息:12
+2025-05-13 22:06:45.437 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:06:45.437 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:06:45.437 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:06:45.437 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:06:45.437 [http-nio-8080-exec-5] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-13 22:06:45.437 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-05-13 22:06:46.701 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:06:46.701 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:06:46.702 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 根据id查询员工信息:34
+2025-05-13 22:06:49.478 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:06:49.478 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:06:49.478 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:06:49.478 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:06:49.478 [http-nio-8080-exec-7] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:06:49.479 [http-nio-8080-exec-6] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:07:49.686 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:07:49.686 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:07:49.686 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:07:49.686 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:07:49.686 [http-nio-8080-exec-3] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:07:49.687 [http-nio-8080-exec-8] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:07:55.233 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:07:55.233 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:07:55.233 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:07:55.233 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:07:55.233 [http-nio-8080-exec-9] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:07:55.233 [http-nio-8080-exec-10] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:08:04.747 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:08:04.747 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:08:04.747 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:08:04.747 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:08:04.748 [http-nio-8080-exec-5] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:08:04.748 [http-nio-8080-exec-1] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:08:24.329 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:08:24.329 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:08:24.329 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:08:24.329 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:08:24.329 [http-nio-8080-exec-2] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:08:24.329 [http-nio-8080-exec-4] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:08:57.609 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:08:57.609 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:08:57.610 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:08:57.610 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:08:57.610 [http-nio-8080-exec-6] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:08:57.610 [http-nio-8080-exec-7] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:08:57.883 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:08:57.883 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:08:57.883 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:08:57.883 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:08:57.883 [http-nio-8080-exec-3] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:08:57.885 [http-nio-8080-exec-8] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:09:05.633 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:09:05.633 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:09:05.633 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:09:05.633 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:09:05.633 [http-nio-8080-exec-10] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:09:05.635 [http-nio-8080-exec-9] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:09:12.808 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:09:12.808 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:09:12.808 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:09:12.808 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:09:12.808 [http-nio-8080-exec-1] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:09:12.809 [http-nio-8080-exec-5] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:09:26.464 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:09:26.464 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:09:26.464 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:09:26.464 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:09:26.464 [http-nio-8080-exec-4] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:09:26.464 [http-nio-8080-exec-2] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:10:07.143 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:10:07.143 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:10:07.143 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:10:07.144 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:10:07.144 [http-nio-8080-exec-7] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:10:07.144 [http-nio-8080-exec-6] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:10:13.278 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:10:13.278 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:10:13.278 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:10:13.279 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:10:13.279 [http-nio-8080-exec-8] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:10:13.279 [http-nio-8080-exec-3] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:10:30.044 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:10:30.044 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:10:30.045 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:10:30.045 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:10:30.045 [http-nio-8080-exec-9] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:10:30.045 [http-nio-8080-exec-10] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:10:42.704 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:10:42.704 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:10:42.705 [http-nio-8080-exec-1] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=2, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:10:44.035 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:10:44.035 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:10:44.039 [http-nio-8080-exec-5] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:11:03.510 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:11:03.511 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:11:03.511 [http-nio-8080-exec-4] INFO  c.sau.controller.StudentController - 根据id查询学员信息:12
+2025-05-13 22:15:29.356 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:15:29.356 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:15:29.356 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:15:29.356 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:15:29.357 [http-nio-8080-exec-7] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:15:29.357 [http-nio-8080-exec-2] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:15:44.889 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:15:44.889 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:15:44.889 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:15:44.890 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:15:44.890 [http-nio-8080-exec-8] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:15:44.890 [http-nio-8080-exec-6] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:15:55.076 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:15:55.076 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:15:55.077 [http-nio-8080-exec-3] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:15:55.077 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:15:55.077 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:15:55.077 [http-nio-8080-exec-9] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:16:01.474 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:16:01.474 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:16:01.475 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:16:01.475 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:16:01.475 [http-nio-8080-exec-1] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:16:01.475 [http-nio-8080-exec-10] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:16:19.831 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:16:19.831 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:16:19.831 [http-nio-8080-exec-5] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:16:19.831 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:16:19.831 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:16:19.832 [http-nio-8080-exec-4] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:16:49.600 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:16:49.600 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:16:49.601 [http-nio-8080-exec-7] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:16:49.601 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:16:49.601 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:16:49.601 [http-nio-8080-exec-2] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:17:04.670 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:17:04.670 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:17:04.670 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:17:04.670 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:17:04.670 [http-nio-8080-exec-6] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:17:04.671 [http-nio-8080-exec-8] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:17:22.867 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:17:22.867 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:17:22.868 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:17:22.868 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:17:22.868 [http-nio-8080-exec-3] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:17:22.868 [http-nio-8080-exec-9] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:17:46.309 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:17:46.309 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:17:46.310 [http-nio-8080-exec-1] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=阿, degree=null, clazzId=null)
+2025-05-13 22:17:51.153 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:17:51.153 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:17:51.155 [http-nio-8080-exec-10] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=1, clazzId=null)
+2025-05-13 22:17:55.086 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:17:55.086 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:17:55.086 [http-nio-8080-exec-4] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=4, clazzId=null)
+2025-05-13 22:18:16.122 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:18:16.122 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:18:16.128 [http-nio-8080-exec-5] ERROR c.s.exception.GlobalExceptionHandler - 程序出错啦~
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.sau.pojo.Result com.sau.controller.StudentController.page(com.sau.pojo.StudentQueryParam): [Field error in object 'studentQueryParam' on field 'clazzId': rejected value [undefined]; codes [typeMismatch.studentQueryParam.clazzId,typeMismatch.clazzId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentQueryParam.clazzId,clazzId]; arguments []; default message [clazzId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'clazzId'; For input string: "undefined"]] 
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.sau.filer.TokenFilter.doFilter(TokenFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-13 22:18:17.890 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:18:17.890 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:18:17.900 [http-nio-8080-exec-2] ERROR c.s.exception.GlobalExceptionHandler - 程序出错啦~
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.sau.pojo.Result com.sau.controller.StudentController.page(com.sau.pojo.StudentQueryParam): [Field error in object 'studentQueryParam' on field 'clazzId': rejected value [undefined]; codes [typeMismatch.studentQueryParam.clazzId,typeMismatch.clazzId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentQueryParam.clazzId,clazzId]; arguments []; default message [clazzId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'clazzId'; For input string: "undefined"]] 
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.sau.filer.TokenFilter.doFilter(TokenFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-13 22:18:19.497 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:18:19.497 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:18:19.497 [http-nio-8080-exec-7] ERROR c.s.exception.GlobalExceptionHandler - 程序出错啦~
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.sau.pojo.Result com.sau.controller.StudentController.page(com.sau.pojo.StudentQueryParam): [Field error in object 'studentQueryParam' on field 'clazzId': rejected value [undefined]; codes [typeMismatch.studentQueryParam.clazzId,typeMismatch.clazzId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentQueryParam.clazzId,clazzId]; arguments []; default message [clazzId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'clazzId'; For input string: "undefined"]] 
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.sau.filer.TokenFilter.doFilter(TokenFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-13 22:18:21.862 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:18:21.862 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:18:21.863 [http-nio-8080-exec-6] ERROR c.s.exception.GlobalExceptionHandler - 程序出错啦~
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.sau.pojo.Result com.sau.controller.StudentController.page(com.sau.pojo.StudentQueryParam): [Field error in object 'studentQueryParam' on field 'clazzId': rejected value [undefined]; codes [typeMismatch.studentQueryParam.clazzId,typeMismatch.clazzId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentQueryParam.clazzId,clazzId]; arguments []; default message [clazzId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'clazzId'; For input string: "undefined"]] 
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.sau.filer.TokenFilter.doFilter(TokenFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-13 22:18:29.265 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:18:29.265 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:18:29.265 [http-nio-8080-exec-8] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:20:01.460 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:20:01.460 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:20:01.460 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:20:01.460 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:20:01.460 [http-nio-8080-exec-9] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:20:01.461 [http-nio-8080-exec-3] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:20:05.437 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:20:05.437 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:20:05.438 [http-nio-8080-exec-1] ERROR c.s.exception.GlobalExceptionHandler - 程序出错啦~
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.sau.pojo.Result com.sau.controller.StudentController.page(com.sau.pojo.StudentQueryParam): [Field error in object 'studentQueryParam' on field 'clazzId': rejected value [undefined]; codes [typeMismatch.studentQueryParam.clazzId,typeMismatch.clazzId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentQueryParam.clazzId,clazzId]; arguments []; default message [clazzId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'clazzId'; For input string: "undefined"]] 
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.sau.filer.TokenFilter.doFilter(TokenFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-13 22:20:09.146 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:20:09.146 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:20:09.147 [http-nio-8080-exec-10] ERROR c.s.exception.GlobalExceptionHandler - 程序出错啦~
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.sau.pojo.Result com.sau.controller.StudentController.page(com.sau.pojo.StudentQueryParam): [Field error in object 'studentQueryParam' on field 'clazzId': rejected value [undefined]; codes [typeMismatch.studentQueryParam.clazzId,typeMismatch.clazzId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentQueryParam.clazzId,clazzId]; arguments []; default message [clazzId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'clazzId'; For input string: "undefined"]] 
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.sau.filer.TokenFilter.doFilter(TokenFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-13 22:20:16.767 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:20:16.767 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:20:16.768 [http-nio-8080-exec-4] ERROR c.s.exception.GlobalExceptionHandler - 程序出错啦~
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.sau.pojo.Result com.sau.controller.StudentController.page(com.sau.pojo.StudentQueryParam): [Field error in object 'studentQueryParam' on field 'clazzId': rejected value [undefined]; codes [typeMismatch.studentQueryParam.clazzId,typeMismatch.clazzId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentQueryParam.clazzId,clazzId]; arguments []; default message [clazzId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'clazzId'; For input string: "undefined"]] 
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.sau.filer.TokenFilter.doFilter(TokenFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-13 22:22:01.909 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:22:01.909 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:22:01.909 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:22:01.909 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:22:01.909 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-05-13 22:22:01.910 [http-nio-8080-exec-5] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-05-13 22:22:02.627 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:22:02.627 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:22:02.627 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:22:02.627 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:22:02.627 [http-nio-8080-exec-6] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:22:02.627 [http-nio-8080-exec-7] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:22:09.723 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:22:09.723 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:22:09.723 [http-nio-8080-exec-8] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-13 22:22:10.281 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:22:10.281 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:22:10.281 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:22:10.282 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:22:10.282 [http-nio-8080-exec-3] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-13 22:22:10.282 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-05-13 22:22:12.774 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:22:12.774 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:22:12.774 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:22:12.774 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:22:12.774 [http-nio-8080-exec-10] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:22:12.774 [http-nio-8080-exec-1] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:22:13.328 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:22:13.328 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:22:13.328 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:22:13.328 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:22:13.328 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-05-13 22:22:13.328 [http-nio-8080-exec-4] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-05-13 22:22:14.355 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:22:14.355 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:22:14.355 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:22:14.355 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:22:14.355 [http-nio-8080-exec-6] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:22:14.360 [http-nio-8080-exec-5] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:22:15.749 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:22:15.749 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:22:15.749 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:22:15.749 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:22:15.749 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-05-13 22:22:15.749 [http-nio-8080-exec-7] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-05-13 22:22:34.246 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:22:34.246 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:22:34.246 [http-nio-8080-exec-3] INFO  com.sau.controller.ClazzController - 根据id查询班级信息:8
+2025-05-13 22:22:57.393 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:22:57.393 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:22:57.395 [http-nio-8080-exec-9] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-13 22:22:58.245 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:22:58.245 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:22:58.245 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:22:58.245 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:22:58.245 [http-nio-8080-exec-1] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:22:58.245 [http-nio-8080-exec-10] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:23:08.392 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:08.392 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:08.392 [http-nio-8080-exec-2] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-13 22:23:08.759 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:08.759 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:08.759 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:08.759 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:08.760 [http-nio-8080-exec-6] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-13 22:23:08.761 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-05-13 22:23:11.748 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:11.749 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:11.749 [http-nio-8080-exec-5] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-13 22:23:13.145 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:13.145 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:13.145 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:13.146 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:13.146 [http-nio-8080-exec-7] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:23:13.146 [http-nio-8080-exec-8] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:23:13.853 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:13.853 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:13.853 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:13.853 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:13.853 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-05-13 22:23:13.853 [http-nio-8080-exec-3] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-05-13 22:23:15.761 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:15.761 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:15.761 [http-nio-8080-exec-1] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:23:15.762 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:15.762 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:15.762 [http-nio-8080-exec-10] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:23:16.485 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:16.485 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:16.485 [http-nio-8080-exec-2] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-13 22:23:16.920 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:16.920 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:16.920 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:16.920 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:16.921 [http-nio-8080-exec-4] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-13 22:23:16.922 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-05-13 22:23:21.591 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:21.591 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:21.592 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:21.592 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:21.592 [http-nio-8080-exec-7] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:23:21.592 [http-nio-8080-exec-5] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:23:23.893 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:23.893 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:23.893 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:23.893 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:23.893 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-05-13 22:23:23.893 [http-nio-8080-exec-9] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-05-13 22:23:26.249 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:26.250 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:26.249 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:26.250 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:26.250 [http-nio-8080-exec-10] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:23:26.250 [http-nio-8080-exec-3] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:23:29.441 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:29.441 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:29.441 [http-nio-8080-exec-1] ERROR c.s.exception.GlobalExceptionHandler - 程序出错啦~
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.sau.pojo.Result com.sau.controller.StudentController.page(com.sau.pojo.StudentQueryParam): [Field error in object 'studentQueryParam' on field 'clazzId': rejected value [undefined]; codes [typeMismatch.studentQueryParam.clazzId,typeMismatch.clazzId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentQueryParam.clazzId,clazzId]; arguments []; default message [clazzId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'clazzId'; For input string: "undefined"]] 
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.sau.filer.TokenFilter.doFilter(TokenFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-13 22:23:29.902 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:29.902 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:29.902 [http-nio-8080-exec-2] ERROR c.s.exception.GlobalExceptionHandler - 程序出错啦~
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.sau.pojo.Result com.sau.controller.StudentController.page(com.sau.pojo.StudentQueryParam): [Field error in object 'studentQueryParam' on field 'clazzId': rejected value [undefined]; codes [typeMismatch.studentQueryParam.clazzId,typeMismatch.clazzId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentQueryParam.clazzId,clazzId]; arguments []; default message [clazzId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'clazzId'; For input string: "undefined"]] 
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.sau.filer.TokenFilter.doFilter(TokenFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-13 22:23:30.056 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:23:30.056 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:23:30.056 [http-nio-8080-exec-4] ERROR c.s.exception.GlobalExceptionHandler - 程序出错啦~
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.sau.pojo.Result com.sau.controller.StudentController.page(com.sau.pojo.StudentQueryParam): [Field error in object 'studentQueryParam' on field 'clazzId': rejected value [undefined]; codes [typeMismatch.studentQueryParam.clazzId,typeMismatch.clazzId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentQueryParam.clazzId,clazzId]; arguments []; default message [clazzId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'clazzId'; For input string: "undefined"]] 
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.sau.filer.TokenFilter.doFilter(TokenFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-13 22:25:58.654 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:25:58.654 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:25:58.655 [http-nio-8080-exec-6] ERROR c.s.exception.GlobalExceptionHandler - 程序出错啦~
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.sau.pojo.Result com.sau.controller.StudentController.page(com.sau.pojo.StudentQueryParam): [Field error in object 'studentQueryParam' on field 'clazzId': rejected value [undefined]; codes [typeMismatch.studentQueryParam.clazzId,typeMismatch.clazzId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentQueryParam.clazzId,clazzId]; arguments []; default message [clazzId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'clazzId'; For input string: "undefined"]] 
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.sau.filer.TokenFilter.doFilter(TokenFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-13 22:36:40.812 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:36:40.812 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:36:40.812 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:36:40.812 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:36:40.812 [http-nio-8080-exec-5] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:36:40.813 [http-nio-8080-exec-7] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:36:43.848 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:36:43.848 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:36:43.848 [http-nio-8080-exec-8] ERROR c.s.exception.GlobalExceptionHandler - 程序出错啦~
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.sau.pojo.Result com.sau.controller.StudentController.page(com.sau.pojo.StudentQueryParam): [Field error in object 'studentQueryParam' on field 'clazzId': rejected value [undefined]; codes [typeMismatch.studentQueryParam.clazzId,typeMismatch.clazzId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentQueryParam.clazzId,clazzId]; arguments []; default message [clazzId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'clazzId'; For input string: "undefined"]] 
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.sau.filer.TokenFilter.doFilter(TokenFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-13 22:36:44.745 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:36:44.745 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:36:44.746 [http-nio-8080-exec-9] ERROR c.s.exception.GlobalExceptionHandler - 程序出错啦~
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.sau.pojo.Result com.sau.controller.StudentController.page(com.sau.pojo.StudentQueryParam): [Field error in object 'studentQueryParam' on field 'clazzId': rejected value [undefined]; codes [typeMismatch.studentQueryParam.clazzId,typeMismatch.clazzId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentQueryParam.clazzId,clazzId]; arguments []; default message [clazzId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'clazzId'; For input string: "undefined"]] 
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.sau.filer.TokenFilter.doFilter(TokenFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-13 22:36:44.954 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:36:44.954 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:36:44.956 [http-nio-8080-exec-10] ERROR c.s.exception.GlobalExceptionHandler - 程序出错啦~
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.sau.pojo.Result com.sau.controller.StudentController.page(com.sau.pojo.StudentQueryParam): [Field error in object 'studentQueryParam' on field 'clazzId': rejected value [undefined]; codes [typeMismatch.studentQueryParam.clazzId,typeMismatch.clazzId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentQueryParam.clazzId,clazzId]; arguments []; default message [clazzId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'clazzId'; For input string: "undefined"]] 
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.sau.filer.TokenFilter.doFilter(TokenFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-13 22:36:45.141 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:36:45.141 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:36:45.143 [http-nio-8080-exec-3] ERROR c.s.exception.GlobalExceptionHandler - 程序出错啦~
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.sau.pojo.Result com.sau.controller.StudentController.page(com.sau.pojo.StudentQueryParam): [Field error in object 'studentQueryParam' on field 'clazzId': rejected value [undefined]; codes [typeMismatch.studentQueryParam.clazzId,typeMismatch.clazzId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentQueryParam.clazzId,clazzId]; arguments []; default message [clazzId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'clazzId'; For input string: "undefined"]] 
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.sau.filer.TokenFilter.doFilter(TokenFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-13 22:36:47.438 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:36:47.438 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:36:47.440 [http-nio-8080-exec-1] ERROR c.s.exception.GlobalExceptionHandler - 程序出错啦~
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.sau.pojo.Result com.sau.controller.StudentController.page(com.sau.pojo.StudentQueryParam): [Field error in object 'studentQueryParam' on field 'clazzId': rejected value [undefined]; codes [typeMismatch.studentQueryParam.clazzId,typeMismatch.clazzId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentQueryParam.clazzId,clazzId]; arguments []; default message [clazzId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'clazzId'; For input string: "undefined"]] 
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.sau.filer.TokenFilter.doFilter(TokenFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-13 22:36:47.583 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:36:47.583 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:36:47.584 [http-nio-8080-exec-2] ERROR c.s.exception.GlobalExceptionHandler - 程序出错啦~
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.sau.pojo.Result com.sau.controller.StudentController.page(com.sau.pojo.StudentQueryParam): [Field error in object 'studentQueryParam' on field 'clazzId': rejected value [undefined]; codes [typeMismatch.studentQueryParam.clazzId,typeMismatch.clazzId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentQueryParam.clazzId,clazzId]; arguments []; default message [clazzId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'clazzId'; For input string: "undefined"]] 
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.sau.filer.TokenFilter.doFilter(TokenFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-13 22:37:00.721 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:37:00.721 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:37:00.721 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:37:00.721 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:37:00.721 [http-nio-8080-exec-6] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:37:00.721 [http-nio-8080-exec-4] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:37:01.463 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:37:01.464 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:37:01.466 [http-nio-8080-exec-5] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:37:06.308 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:37:06.308 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:37:06.308 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:37:06.308 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:37:06.308 [http-nio-8080-exec-8] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:37:06.309 [http-nio-8080-exec-7] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:37:19.498 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:37:19.498 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:37:19.498 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:37:19.498 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:37:19.499 [http-nio-8080-exec-10] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:37:19.499 [http-nio-8080-exec-9] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:37:51.687 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:37:51.687 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:37:51.687 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:37:51.687 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:37:51.687 [http-nio-8080-exec-1] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:37:51.688 [http-nio-8080-exec-3] ERROR c.s.exception.GlobalExceptionHandler - 程序出错啦~
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.sau.pojo.Result com.sau.controller.StudentController.page(com.sau.pojo.StudentQueryParam): [Field error in object 'studentQueryParam' on field 'clazzId': rejected value [NaN]; codes [typeMismatch.studentQueryParam.clazzId,typeMismatch.clazzId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentQueryParam.clazzId,clazzId]; arguments []; default message [clazzId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'clazzId'; For input string: "NaN"]] 
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.sau.filer.TokenFilter.doFilter(TokenFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-13 22:37:53.557 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:37:53.557 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:37:53.557 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:37:53.557 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:37:53.558 [http-nio-8080-exec-6] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:37:53.558 [http-nio-8080-exec-2] ERROR c.s.exception.GlobalExceptionHandler - 程序出错啦~
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.sau.pojo.Result com.sau.controller.StudentController.page(com.sau.pojo.StudentQueryParam): [Field error in object 'studentQueryParam' on field 'clazzId': rejected value [NaN]; codes [typeMismatch.studentQueryParam.clazzId,typeMismatch.clazzId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentQueryParam.clazzId,clazzId]; arguments []; default message [clazzId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'clazzId'; For input string: "NaN"]] 
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.sau.filer.TokenFilter.doFilter(TokenFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-13 22:38:14.379 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:38:14.379 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:38:14.379 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:38:14.379 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:38:14.381 [http-nio-8080-exec-5] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:38:14.381 [http-nio-8080-exec-4] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:38:25.038 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:38:25.038 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:38:25.038 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:38:25.039 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:38:25.039 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-05-13 22:38:25.039 [http-nio-8080-exec-8] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-05-13 22:38:29.221 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:38:29.221 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:38:29.221 [http-nio-8080-exec-10] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-13 22:38:29.704 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:38:29.706 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:38:29.706 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:38:29.706 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:38:29.706 [http-nio-8080-exec-3] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-13 22:38:29.706 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-05-13 22:38:31.978 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:38:31.978 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:38:31.978 [http-nio-8080-exec-1] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-13 22:38:33.407 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:38:33.407 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:38:33.407 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:38:33.407 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:38:33.408 [http-nio-8080-exec-6] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:38:33.408 [http-nio-8080-exec-2] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:42:50.393 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:42:50.393 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:42:50.394 [http-nio-8080-exec-5] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:43:32.600 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:43:32.600 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:43:32.601 [http-nio-8080-exec-4] ERROR c.s.exception.GlobalExceptionHandler - 程序出错啦~
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.sau.pojo.Result com.sau.controller.StudentController.page(com.sau.pojo.StudentQueryParam): [Field error in object 'studentQueryParam' on field 'clazzId': rejected value [undefined]; codes [typeMismatch.studentQueryParam.clazzId,typeMismatch.clazzId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentQueryParam.clazzId,clazzId]; arguments []; default message [clazzId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'clazzId'; For input string: "undefined"]] 
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:158)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.sau.filer.TokenFilter.doFilter(TokenFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-13 22:50:06.456 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:50:06.456 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:50:06.456 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:50:06.456 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:50:06.456 [http-nio-8080-exec-8] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:50:06.457 [http-nio-8080-exec-7] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:50:06.462 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:50:06.462 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:50:06.463 [http-nio-8080-exec-10] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:50:12.256 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:50:12.256 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:50:12.257 [http-nio-8080-exec-3] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:50:13.961 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:50:13.961 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:50:13.961 [http-nio-8080-exec-9] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:50:15.429 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:50:15.429 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:50:15.429 [http-nio-8080-exec-1] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:50:16.888 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:50:16.888 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:50:16.888 [http-nio-8080-exec-6] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:50:18.940 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:50:18.940 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:50:18.941 [http-nio-8080-exec-2] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:50:19.163 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:50:19.164 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:50:19.164 [http-nio-8080-exec-5] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:51:27.437 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:51:27.437 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:51:27.437 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:51:27.437 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:51:27.437 [http-nio-8080-exec-8] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-13 22:51:27.438 [http-nio-8080-exec-4] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 22:51:30.548 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:51:30.548 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:51:30.549 [http-nio-8080-exec-7] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=8)
+2025-05-13 22:51:31.900 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:51:31.900 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:51:31.901 [http-nio-8080-exec-10] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=2)
+2025-05-13 22:51:33.145 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:51:33.146 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:51:33.146 [http-nio-8080-exec-3] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=1)
+2025-05-13 22:51:35.054 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:51:35.054 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:51:35.056 [http-nio-8080-exec-9] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=3)
+2025-05-13 22:51:36.395 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:51:36.396 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:51:36.396 [http-nio-8080-exec-1] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=4)
+2025-05-13 22:51:37.537 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:51:37.537 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:51:37.537 [http-nio-8080-exec-6] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=1)
+2025-05-13 22:51:38.836 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-13 22:51:38.836 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-13 22:51:38.836 [http-nio-8080-exec-2] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-13 23:31:41.317 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-13 23:31:41.792 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-13 23:31:41.796 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-13 23:31:41.807 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

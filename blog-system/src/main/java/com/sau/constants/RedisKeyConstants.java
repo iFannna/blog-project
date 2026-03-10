@@ -1,7 +1,7 @@
 package com.sau.constants;
 
 /**
- * Redis Key 统一定义。
+ * Redis Key 统一定义
  */
 public final class RedisKeyConstants {
 

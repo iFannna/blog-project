@@ -11,7 +11,7 @@ import java.util.Date;
 import java.util.Map;
 
 /**
- * JWT 工具类。
+ * JWT 工具类
  */
 @Slf4j
 public final class JwtUtils {
@@ -22,7 +22,7 @@ public final class JwtUtils {
     }
 
     /**
-     * 生成 JWT 令牌。
+     * 生成 JWT 令牌
      */
     public static String generateToken(Map<String, Object> claims, long expirationTime) {
         return Jwts.builder()
@@ -33,7 +33,7 @@ public final class JwtUtils {
     }
 
     /**
-     * 解析 JWT 令牌。
+     * 解析 JWT 令牌
      */
     public static Claims parseToken(String token) {
         try {

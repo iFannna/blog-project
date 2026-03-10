@@ -1,0 +1,271 @@
+2025-04-12 15:30:41.838 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 17496 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-04-12 15:30:41.839 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-12 15:30:42.615 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-12 15:30:42.624 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-12 15:30:42.626 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-12 15:30:42.626 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-12 15:30:42.687 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-12 15:30:42.687 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 818 ms
+2025-04-12 15:30:43.226 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-12 15:30:43.239 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-04-12 15:30:43.247 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.714 seconds (process running for 2.29)
+2025-04-12 15:30:46.695 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-12 15:30:46.695 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-12 15:30:46.696 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-12 15:30:46.763 [http-nio-8080-exec-3] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=zhaojinyu, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-12 15:30:46.781 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-12 15:30:46.999 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74c63490
+2025-04-12 15:30:47.000 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-12 15:30:47.075 [http-nio-8080-exec-3] INFO  com.sau.service.impl.EmpServiceImpl - 登录成功，员工信息: Emp(id=34, username=zhaojinyu, password=null, name=赵瑾瑜, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-12 15:32:13.007 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-04-12 15:32:13.022 [http-nio-8080-exec-4] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-04-12 15:32:13.611 [http-nio-8080-exec-7] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-04-12 15:32:13.619 [http-nio-8080-exec-8] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-04-12 15:32:28.654 [http-nio-8080-exec-5] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=zhaojinyu, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-12 15:32:28.659 [http-nio-8080-exec-5] INFO  com.sau.service.impl.EmpServiceImpl - 登录成功，员工信息: Emp(id=34, username=zhaojinyu, password=null, name=赵瑾瑜, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-12 15:32:54.980 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-04-12 15:32:54.981 [http-nio-8080-exec-9] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-04-12 15:32:55.471 [http-nio-8080-exec-3] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-04-12 15:32:55.471 [http-nio-8080-exec-1] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-04-12 15:48:04.528 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-12 15:48:04.859 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-12 15:48:04.862 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-12 15:48:04.868 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-12 15:48:07.765 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 2528 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-04-12 15:48:07.767 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-12 15:48:08.489 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-12 15:48:08.497 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-12 15:48:08.498 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-12 15:48:08.498 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-12 15:48:08.552 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-12 15:48:08.552 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 756 ms
+2025-04-12 15:48:08.583 [main] INFO  com.sau.filer.DemoFliter - 初始化
+2025-04-12 15:48:09.069 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-12 15:48:09.090 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-04-12 15:48:09.096 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.615 seconds (process running for 2.117)
+2025-04-12 15:48:32.781 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-12 15:48:32.782 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-12 15:48:32.782 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-04-12 15:48:32.786 [http-nio-8080-exec-1] INFO  com.sau.filer.DemoFliter - 拦截请求
+2025-04-12 15:48:32.786 [http-nio-8080-exec-3] INFO  com.sau.filer.DemoFliter - 拦截请求
+2025-04-12 15:48:39.468 [http-nio-8080-exec-2] INFO  com.sau.filer.DemoFliter - 拦截请求
+2025-04-12 15:48:39.468 [http-nio-8080-exec-4] INFO  com.sau.filer.DemoFliter - 拦截请求
+2025-04-12 15:48:39.982 [http-nio-8080-exec-5] INFO  com.sau.filer.DemoFliter - 拦截请求
+2025-04-12 15:48:40.005 [http-nio-8080-exec-6] INFO  com.sau.filer.DemoFliter - 拦截请求
+2025-04-12 15:48:41.146 [http-nio-8080-exec-7] INFO  com.sau.filer.DemoFliter - 拦截请求
+2025-04-12 15:48:41.697 [http-nio-8080-exec-8] INFO  com.sau.filer.DemoFliter - 拦截请求
+2025-04-12 15:48:41.724 [http-nio-8080-exec-9] INFO  com.sau.filer.DemoFliter - 拦截请求
+2025-04-12 15:51:04.626 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-12 15:51:05.010 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-12 15:51:05.015 [SpringApplicationShutdownHook] INFO  com.sau.filer.DemoFliter - 销毁
+2025-04-12 16:25:02.314 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 25188 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-04-12 16:25:02.315 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-12 16:25:02.993 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-12 16:25:03.000 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-12 16:25:03.001 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-12 16:25:03.002 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-12 16:25:03.053 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-12 16:25:03.053 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 712 ms
+2025-04-12 16:25:03.519 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-12 16:25:03.531 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-04-12 16:25:03.536 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.472 seconds (process running for 1.95)
+2025-04-12 16:25:09.456 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-12 16:25:09.456 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-12 16:25:09.457 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-12 16:25:09.475 [http-nio-8080-exec-4] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-12 16:25:09.485 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-12 16:25:09.488 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-12 16:25:09.662 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8635e04
+2025-04-12 16:25:09.663 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-12 16:25:11.838 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-04-12 16:25:11.840 [http-nio-8080-exec-2] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-04-12 16:25:12.306 [http-nio-8080-exec-6] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-04-12 16:25:12.307 [http-nio-8080-exec-3] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-04-12 16:25:19.303 [http-nio-8080-exec-10] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-04-12 16:25:19.316 [http-nio-8080-exec-8] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-04-12 16:25:29.193 [http-nio-8080-exec-5] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-04-12 16:25:29.195 [http-nio-8080-exec-9] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-04-12 16:25:36.596 [http-nio-8080-exec-1] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-04-12 16:25:36.597 [http-nio-8080-exec-4] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-04-12 16:26:13.074 [http-nio-8080-exec-7] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=zhaojinyu, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-12 16:26:13.087 [http-nio-8080-exec-7] INFO  com.sau.service.impl.EmpServiceImpl - 登录成功，员工信息: Emp(id=34, username=zhaojinyu, password=null, name=赵瑾瑜, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-12 16:26:14.946 [http-nio-8080-exec-6] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-04-12 16:26:14.946 [http-nio-8080-exec-2] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-04-12 16:26:21.531 [http-nio-8080-exec-10] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-04-12 16:26:21.537 [http-nio-8080-exec-3] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-04-12 16:26:25.975 [http-nio-8080-exec-8] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-04-12 16:26:25.975 [http-nio-8080-exec-9] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-04-12 16:26:44.492 [http-nio-8080-exec-1] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-04-12 16:26:44.492 [http-nio-8080-exec-5] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-04-12 16:27:58.327 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-12 16:27:58.698 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-12 16:27:58.701 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-12 16:27:58.706 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-12 16:28:01.510 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 14968 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-04-12 16:28:01.511 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-12 16:28:02.195 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-12 16:28:02.204 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-12 16:28:02.205 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-12 16:28:02.206 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-12 16:28:02.257 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-12 16:28:02.258 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 721 ms
+2025-04-12 16:28:02.722 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-12 16:28:02.737 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-04-12 16:28:02.742 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.493 seconds (process running for 2.021)
+2025-04-12 16:28:08.711 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-12 16:28:08.711 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-12 16:28:08.712 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-12 16:28:08.715 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token为空，请求被拒绝
+2025-04-12 16:28:08.715 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token为空，请求被拒绝
+2025-04-12 16:28:20.514 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 登录请求，放行
+2025-04-12 16:28:20.681 [http-nio-8080-exec-6] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=zhaojinyu, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-12 16:28:20.730 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-12 16:28:21.265 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@115c8787
+2025-04-12 16:28:21.271 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-12 16:28:21.366 [http-nio-8080-exec-6] INFO  com.sau.service.impl.EmpServiceImpl - 登录成功，员工信息: Emp(id=34, username=zhaojinyu, password=null, name=赵瑾瑜, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-12 16:28:25.409 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-04-12 16:28:25.409 [http-nio-8080-exec-3] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-12 16:28:25.426 [http-nio-8080-exec-3] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-12 16:28:26.261 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-04-12 16:28:26.261 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-04-12 16:28:26.262 [http-nio-8080-exec-4] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-12 16:28:26.275 [http-nio-8080-exec-4] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-12 16:28:26.281 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-12 16:28:26.428 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-12 16:28:27.466 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-04-12 16:28:27.466 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-04-12 16:28:27.467 [http-nio-8080-exec-9] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-04-12 16:28:27.469 [http-nio-8080-exec-7] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-04-12 16:28:27.476 [http-nio-8080-exec-9] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-04-12 16:28:27.503 [http-nio-8080-exec-7] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-04-12 16:28:28.009 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-04-12 16:28:28.009 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-04-12 16:28:28.009 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-04-12 16:28:28.011 [http-nio-8080-exec-8] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-04-12 16:28:28.023 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-04-12 16:28:28.040 [http-nio-8080-exec-8] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-04-12 16:28:29.077 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-04-12 16:28:29.077 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-04-12 16:28:29.077 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-04-12 16:28:29.078 [http-nio-8080-exec-1] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-04-12 16:28:29.092 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-04-12 16:28:29.092 [http-nio-8080-exec-1] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-04-12 16:28:30.250 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-04-12 16:28:30.250 [http-nio-8080-exec-6] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-12 16:28:30.250 [http-nio-8080-exec-6] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-12 16:28:31.583 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-04-12 16:28:31.584 [http-nio-8080-exec-3] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-12 16:28:31.589 [http-nio-8080-exec-3] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-12 16:28:46.729 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-04-12 16:28:46.729 [http-nio-8080-exec-4] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-12 16:28:46.732 [http-nio-8080-exec-4] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-12 16:28:48.153 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-04-12 16:28:48.154 [http-nio-8080-exec-5] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-04-12 16:28:48.160 [http-nio-8080-exec-5] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-04-12 16:28:48.172 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-04-12 16:28:48.172 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-04-12 16:28:48.174 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-04-12 16:32:23.439 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-12 16:32:23.767 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-12 16:32:23.769 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-12 16:32:23.774 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-12 16:32:26.361 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 16648 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-04-12 16:32:26.362 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-12 16:32:27.024 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-12 16:32:27.034 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-12 16:32:27.036 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-12 16:32:27.036 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-12 16:32:27.082 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-12 16:32:27.083 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 697 ms
+2025-04-12 16:32:27.546 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-12 16:32:27.558 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-04-12 16:32:27.565 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.463 seconds (process running for 1.934)
+2025-04-12 16:32:34.715 [http-nio-8080-exec-7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-12 16:32:34.715 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-12 16:32:34.715 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-04-12 16:32:34.753 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-04-12 16:32:34.753 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-04-12 16:32:34.767 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-04-12 16:32:34.777 [http-nio-8080-exec-7] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-04-12 16:32:34.780 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-12 16:32:34.940 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@347857a5
+2025-04-12 16:32:34.941 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-12 16:32:37.187 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-04-12 16:32:37.187 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-04-12 16:32:37.189 [http-nio-8080-exec-2] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-04-12 16:32:37.190 [http-nio-8080-exec-4] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-04-12 16:32:53.536 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token为空，请求被拒绝
+2025-04-12 16:32:53.536 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token为空，请求被拒绝
+2025-04-12 16:33:24.673 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 登录请求，放行
+2025-04-12 16:33:24.693 [http-nio-8080-exec-8] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=zhaojinyu, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-12 16:33:24.698 [http-nio-8080-exec-8] INFO  com.sau.service.impl.EmpServiceImpl - 登录成功，员工信息: Emp(id=34, username=zhaojinyu, password=null, name=赵瑾瑜, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-12 16:33:46.584 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-04-12 16:33:46.584 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-04-12 16:33:46.584 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-04-12 16:33:46.584 [http-nio-8080-exec-10] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-04-12 17:25:06.680 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-12 17:25:07.007 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-12 17:25:07.007 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-12 17:25:07.019 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-12 17:29:12.897 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 26504 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-04-12 17:29:12.899 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-12 17:29:13.551 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-12 17:29:13.565 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-12 17:29:13.566 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-12 17:29:13.566 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-12 17:29:13.624 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-12 17:29:13.627 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 699 ms
+2025-04-12 17:29:14.088 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-12 17:29:14.099 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-04-12 17:29:14.105 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.476 seconds (process running for 1.965)
+2025-04-12 17:29:20.716 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-12 17:29:20.716 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-12 17:29:20.717 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-12 17:29:20.768 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-04-12 17:29:20.777 [http-nio-8080-exec-1] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-04-12 17:29:20.781 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-12 17:29:20.949 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78cb9042
+2025-04-12 17:29:20.951 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-12 17:29:29.573 [http-nio-8080-exec-3] INFO  c.sau.interceptor.TokenInterceptor - 令牌为空，响应401
+2025-04-12 17:29:29.581 [http-nio-8080-exec-4] INFO  c.sau.interceptor.TokenInterceptor - 令牌为空，响应401
+2025-04-12 17:29:39.015 [http-nio-8080-exec-5] INFO  c.sau.interceptor.TokenInterceptor - 登录请求，放行
+2025-04-12 17:29:39.051 [http-nio-8080-exec-5] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=zhaojinyu, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-12 17:29:39.074 [http-nio-8080-exec-5] INFO  com.sau.service.impl.EmpServiceImpl - 登录成功，员工信息: Emp(id=34, username=zhaojinyu, password=null, name=赵瑾瑜, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-04-12 17:29:40.449 [http-nio-8080-exec-7] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-04-12 17:29:40.451 [http-nio-8080-exec-6] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-04-12 17:29:40.992 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-04-12 17:29:40.993 [http-nio-8080-exec-8] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-04-12 17:29:41.638 [http-nio-8080-exec-10] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-04-12 17:29:41.644 [http-nio-8080-exec-2] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-04-12 17:29:42.907 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-12 17:29:42.921 [http-nio-8080-exec-3] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-12 17:29:57.226 [http-nio-8080-exec-4] INFO  c.sau.interceptor.TokenInterceptor - 令牌为空，响应401
+2025-04-12 17:29:57.226 [http-nio-8080-exec-5] INFO  c.sau.interceptor.TokenInterceptor - 令牌为空，响应401
+2025-04-12 17:30:14.452 [http-nio-8080-exec-7] INFO  c.sau.interceptor.TokenInterceptor - 令牌为空，响应401
+2025-04-12 17:30:14.465 [http-nio-8080-exec-6] INFO  c.sau.interceptor.TokenInterceptor - 令牌为空，响应401
+2025-04-12 17:30:26.999 [http-nio-8080-exec-9] INFO  c.sau.interceptor.TokenInterceptor - 令牌为空，响应401
+2025-04-12 17:30:26.999 [http-nio-8080-exec-8] INFO  c.sau.interceptor.TokenInterceptor - 令牌为空，响应401
+2025-04-12 17:32:59.763 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-12 17:33:00.095 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-12 17:33:00.098 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-12 17:33:00.102 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-12 17:33:02.814 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 10524 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-04-12 17:33:02.815 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-12 17:33:03.515 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-12 17:33:03.527 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-12 17:33:03.528 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-12 17:33:03.528 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-12 17:33:03.579 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-12 17:33:03.579 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 736 ms
+2025-04-12 17:33:04.062 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-12 17:33:04.074 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-04-12 17:33:04.079 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.526 seconds (process running for 2.024)
+2025-04-12 17:33:14.190 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-12 17:33:14.190 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-12 17:33:14.190 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-04-12 17:33:14.215 [http-nio-8080-exec-2] INFO  c.sau.interceptor.TokenInterceptor - 令牌为空，响应401
+2025-04-12 17:33:14.215 [http-nio-8080-exec-1] INFO  c.sau.interceptor.TokenInterceptor - 令牌为空，响应401
+2025-04-12 17:33:23.947 [http-nio-8080-exec-3] INFO  c.sau.interceptor.TokenInterceptor - 令牌为空，响应401
+2025-04-12 17:33:23.947 [http-nio-8080-exec-7] INFO  c.sau.interceptor.TokenInterceptor - 令牌为空，响应401
+2025-04-12 17:44:53.064 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-12 17:44:53.392 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete

@@ -1,0 +1,257 @@
+2025-04-29 11:26:49.968 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 21704 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-04-29 11:26:49.970 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-29 11:26:51.241 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-29 11:26:51.252 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-29 11:26:51.254 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-29 11:26:51.254 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-29 11:26:51.322 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-29 11:26:51.322 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1314 ms
+2025-04-29 11:26:52.164 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-29 11:26:52.178 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-04-29 11:26:52.186 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 2.64 seconds (process running for 3.52)
+2025-04-29 11:47:35.336 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-29 11:47:35.336 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-29 11:47:35.343 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2025-04-29 11:47:35.378 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:47:35.448 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-29 11:47:35.676 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47a367a6
+2025-04-29 11:47:35.676 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-29 11:47:41.729 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:47:41.879 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:47:42.000 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:47:43.279 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:47:43.496 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:47:43.635 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:47:43.909 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:47:44.051 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:47:44.231 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:47:44.512 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:48:05.603 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:48:06.871 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:48:08.727 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:48:13.989 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:48:54.575 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:48:57.439 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:49:00.436 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:51:36.976 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:51:38.880 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:51:39.091 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:51:46.643 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=刘, gender=null, begin=null, end=null)
+2025-04-29 11:51:53.207 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=赵, gender=null, begin=null, end=null)
+2025-04-29 11:51:55.101 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:52:14.951 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:52:35.863 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:54:41.654 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:55:11.358 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=2, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:55:12.310 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=3, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:55:13.468 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=2, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:55:15.063 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:55:16.053 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=3, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:55:16.995 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:55:21.122 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=2, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:55:24.071 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=2, pageSize=20, name=, gender=null, begin=null, end=null)
+2025-04-29 11:55:25.632 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=20, name=, gender=null, begin=null, end=null)
+2025-04-29 11:55:39.470 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=2, pageSize=20, name=, gender=null, begin=null, end=null)
+2025-04-29 11:55:41.770 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=2, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:56:29.939 [http-nio-8080-exec-2] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 11:56:39.794 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:56:49.900 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=2, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:56:50.086 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=3, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:56:51.899 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=2, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:56:53.666 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:56:58.426 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=2, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:56:58.972 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=3, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:57:01.436 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=2, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:57:03.214 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:57:12.561 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=2, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:57:13.318 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 11:57:14.888 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=100, name=, gender=null, begin=null, end=null)
+2025-04-29 12:03:16.858 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:03:59.882 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:04:00.591 [http-nio-8080-exec-6] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:04:01.751 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:05:40.690 [http-nio-8080-exec-3] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:05:45.257 [http-nio-8080-exec-7] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:05:46.161 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:09:26.331 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=30, name=, gender=null, begin=null, end=null)
+2025-04-29 12:10:24.998 [http-nio-8080-exec-10] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:10:26.126 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:10:30.550 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=100, name=, gender=null, begin=null, end=null)
+2025-04-29 12:13:11.277 [http-nio-8080-exec-5] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:13:19.143 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:13:22.582 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:13:43.863 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:14:19.789 [http-nio-8080-exec-7] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:14:20.825 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:17:02.400 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:17:05.551 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:17:17.232 [http-nio-8080-exec-1] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:17:17.869 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:17:41.539 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:17:55.974 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:19:03.549 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:19:09.975 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:19:10.205 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:21:41.776 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:21:41.906 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:21:43.577 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=2, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:21:44.310 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:23:03.466 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:23:05.580 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:23:51.640 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:25:27.951 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:26:08.745 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:29:11.552 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:35:33.773 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:36:53.577 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:38:51.033 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:39:14.964 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:39:15.678 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:39:29.228 [http-nio-8080-exec-5] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:39:29.790 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:39:32.294 [http-nio-8080-exec-4] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:39:36.627 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:46:49.574 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:46:49.747 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:46:49.873 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:46:55.495 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:46:55.675 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:46:56.085 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:46:56.466 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:46:56.636 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:46:56.847 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:46:56.986 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:46:57.221 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:46:57.373 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:46:57.525 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:46:57.667 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:46:57.837 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:46:57.990 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:46:58.145 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:46:58.309 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:46:58.458 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:48:18.788 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:50:43.104 [http-nio-8080-exec-7] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:50:43.652 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:50:44.856 [http-nio-8080-exec-2] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:50:45.739 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:50:46.473 [http-nio-8080-exec-1] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:50:46.872 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:50:47.422 [http-nio-8080-exec-5] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:50:47.881 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:50:48.357 [http-nio-8080-exec-4] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:50:48.823 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:50:49.280 [http-nio-8080-exec-7] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:50:49.697 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:50:50.063 [http-nio-8080-exec-2] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:50:50.438 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:50:50.812 [http-nio-8080-exec-1] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:50:51.146 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:50:52.592 [http-nio-8080-exec-5] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:50:53.205 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:50:53.590 [http-nio-8080-exec-4] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:50:54.058 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:50:54.467 [http-nio-8080-exec-7] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:50:55.918 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:50:56.428 [http-nio-8080-exec-2] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:50:56.906 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:51:11.288 [http-nio-8080-exec-1] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:51:11.663 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:51:12.017 [http-nio-8080-exec-5] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:51:12.361 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:51:12.708 [http-nio-8080-exec-4] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:51:13.576 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:51:14.123 [http-nio-8080-exec-7] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:51:14.753 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:51:15.233 [http-nio-8080-exec-2] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:51:15.667 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:51:16.064 [http-nio-8080-exec-1] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 12:51:17.205 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 12:51:24.409 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-29 12:51:24.732 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-29 12:51:24.732 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-29 12:51:24.732 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-29 19:03:58.379 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 6596 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-04-29 19:03:58.380 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-29 19:03:59.349 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-29 19:03:59.359 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-29 19:03:59.361 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-29 19:03:59.361 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-29 19:03:59.415 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-29 19:03:59.415 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1005 ms
+2025-04-29 19:04:00.024 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-29 19:04:00.036 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-04-29 19:04:00.042 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.963 seconds (process running for 2.576)
+2025-04-29 19:04:45.664 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-29 19:04:45.667 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-29 19:04:45.667 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-04-29 19:04:45.714 [http-nio-8080-exec-1] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 19:04:45.734 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-29 19:04:46.059 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7da98ca0
+2025-04-29 19:04:46.062 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-29 19:04:46.285 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 19:04:47.178 [http-nio-8080-exec-3] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 19:04:48.431 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 19:04:53.758 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=2, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 19:04:54.584 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 19:04:58.937 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 19:05:04.224 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=赵, gender=null, begin=null, end=null)
+2025-04-29 19:05:05.699 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 19:05:06.995 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=2, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 19:05:07.370 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=3, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 19:05:09.894 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=3, pageSize=100, name=, gender=null, begin=null, end=null)
+2025-04-29 19:05:09.904 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=100, name=, gender=null, begin=null, end=null)
+2025-04-29 19:05:13.242 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 19:34:32.031 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 19:35:34.516 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=2, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 19:35:34.940 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 19:35:47.380 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 19:35:49.303 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=2, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 19:35:49.832 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 19:35:50.222 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=3, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 19:35:51.320 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 19:35:52.802 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=2, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 20:07:25.124 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 20:07:27.274 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 20:14:41.730 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 20:15:28.495 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 20:17:51.980 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 20:19:21.030 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 20:22:11.717 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 20:31:01.410 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 20:33:36.666 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 20:33:43.185 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 21:10:48.175 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 21:15:31.131 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 21:22:48.222 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 21:24:10.670 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 21:24:20.049 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 21:24:30.751 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 21:24:30.881 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 21:31:33.294 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 21:31:47.465 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 21:45:52.221 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 21:54:26.355 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 21:54:26.492 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 21:56:53.429 [http-nio-8080-exec-7] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-29 21:56:56.649 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 22:11:24.239 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 22:18:58.389 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 22:18:58.605 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 22:23:08.257 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 22:23:14.384 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 22:43:41.072 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 22:45:22.633 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 22:45:49.459 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 22:46:59.350 [http-nio-8080-exec-7] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 22:46:59.481 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 22:56:51.263 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 23:02:34.035 [http-nio-8080-exec-4] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 23:04:30.681 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 23:05:26.497 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 23:14:12.978 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 23:16:49.921 [http-nio-8080-exec-3] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-29 23:19:52.927 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-29 23:19:53.243 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-29 23:19:53.251 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-29 23:19:53.256 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

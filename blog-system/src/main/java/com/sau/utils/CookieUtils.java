@@ -6,7 +6,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Component;
 
 /**
- * Cookie 工具类。
+ * Cookie 工具类
  */
 @Component
 public class CookieUtils {
@@ -14,7 +14,7 @@ public class CookieUtils {
     private static final String REFRESH_TOKEN_COOKIE_NAME = "refreshToken";
 
     /**
-     * 从 Cookie 中获取 refreshToken。
+     * 从 Cookie 中获取 refreshToken
      */
     public String getRefreshTokenFromCookie(HttpServletRequest request) {
         Cookie[] cookies = request.getCookies();
@@ -30,7 +30,7 @@ public class CookieUtils {
     }
 
     /**
-     * 写入 refreshToken Cookie。
+     * 写入 refreshToken Cookie
      */
     public void setRefreshTokenCookie(HttpServletResponse response, String refreshToken, long maxAge) {
         Cookie refreshTokenCookie = new Cookie(REFRESH_TOKEN_COOKIE_NAME, refreshToken);
@@ -42,7 +42,7 @@ public class CookieUtils {
     }
 
     /**
-     * 清理 refreshToken Cookie。
+     * 清理 refreshToken Cookie
      */
     public void clearRefreshTokenCookie(HttpServletResponse response) {
         Cookie refreshTokenCookie = new Cookie(REFRESH_TOKEN_COOKIE_NAME, null);

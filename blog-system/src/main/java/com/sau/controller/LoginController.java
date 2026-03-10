@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 登录相关接口。
+ * 登录相关接口
  */
 @Slf4j
 @RequiredArgsConstructor
@@ -30,7 +30,7 @@ public class LoginController {
     private final CookieUtils cookieUtils;
 
     /**
-     * 登录。
+     * 登录
      */
     @Log
     @PostMapping("/login")
@@ -52,7 +52,7 @@ public class LoginController {
     }
 
     /**
-     * 刷新登录令牌。
+     * 刷新登录令牌
      */
     @GetMapping("/refresh-token")
     public Result refreshToken(HttpServletRequest request) {
@@ -71,7 +71,7 @@ public class LoginController {
     }
 
     /**
-     * 退出登录。
+     * 退出登录
      */
     @GetMapping("/logout")
     public Result logout(HttpServletRequest request, HttpServletResponse response) {

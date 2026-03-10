@@ -12,7 +12,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
 /**
- * 阿里云 OSS 客户端工厂。
+ * 阿里云 OSS 客户端工厂
  */
 @Component
 @RequiredArgsConstructor

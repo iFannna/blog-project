@@ -9,7 +9,7 @@ import java.util.Collection;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Redis 通用操作工具类。
+ * Redis 通用操作工具类
  */
 @Slf4j
 @Component

@@ -2,12 +2,17 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
       <profile name="Annotation profile for blog-system" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$PROJECT_DIR$/../../Maven/apache-maven-3.8.8/mvn_repo/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
+          <entry name="$PROJECT_DIR$/../../../ide/Maven/apache-maven-3.8.8/mvn_repo/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
         </processorPath>
         <module name="blog-system" />
       </profile>

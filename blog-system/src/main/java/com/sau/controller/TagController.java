@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
- * 标签相关接口。
+ * 标签相关接口
  */
 @Slf4j
 @RestController
@@ -30,7 +30,7 @@ public class TagController {
     private final TagService tagService;
 
     /**
-     * 查询全部标签。
+     * 查询全部标签
      */
     @Cacheable(cacheNames = "tagCache")
     @GetMapping
@@ -40,7 +40,7 @@ public class TagController {
     }
 
     /**
-     * 创建标签。
+     * 创建标签
      */
     @PreAuthorize("hasAuthority('tag:create')")
     @CacheEvict(cacheNames = "tagCache", allEntries = true)
@@ -52,7 +52,7 @@ public class TagController {
     }
 
     /**
-     * 删除标签。
+     * 删除标签
      */
     @PreAuthorize("hasAuthority('tag:delete')")
     @CacheEvict(cacheNames = "tagCache", allEntries = true)

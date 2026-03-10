@@ -1,0 +1,367 @@
+2025-05-17 18:55:46.122 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 26168 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-05-17 18:55:46.124 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-17 18:55:47.066 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-17 18:55:47.075 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-17 18:55:47.076 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-17 18:55:47.076 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-05-17 18:55:47.127 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-17 18:55:47.128 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 970 ms
+2025-05-17 18:55:47.742 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-17 18:55:47.753 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-17 18:55:47.759 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.965 seconds (process running for 2.653)
+2025-05-17 18:56:39.819 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-17 18:56:39.821 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-17 18:56:39.823 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-05-17 18:56:39.913 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析失败，请求被拒绝
+2025-05-17 18:56:39.913 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析失败，请求被拒绝
+2025-05-17 18:56:51.490 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 登录请求，放行
+2025-05-17 18:56:51.687 [http-nio-8080-exec-4] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=zhapjinyu, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-05-17 18:56:51.747 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-17 18:56:52.403 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ee40417
+2025-05-17 18:56:52.410 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-17 18:57:01.642 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 登录请求，放行
+2025-05-17 18:57:01.643 [http-nio-8080-exec-3] INFO  com.sau.controller.LoginController - 登录:Emp(id=null, username=zhaojinyu, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-05-17 18:57:01.650 [http-nio-8080-exec-3] INFO  com.sau.service.impl.EmpServiceImpl - 登录成功，员工信息: Emp(id=34, username=zhaojinyu, password=null, name=赵瑾瑜, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-05-17 18:57:02.865 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:02.865 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:02.867 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:02.867 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:02.869 [http-nio-8080-exec-6] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-17 18:57:02.880 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-05-17 18:57:03.525 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:03.525 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:03.525 [http-nio-8080-exec-7] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-17 18:57:03.929 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:03.929 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:03.930 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:03.930 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:03.931 [http-nio-8080-exec-9] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-17 18:57:03.931 [http-nio-8080-exec-8] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-05-17 18:57:04.876 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:04.877 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:04.877 [http-nio-8080-exec-10] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-17 18:57:06.271 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:06.271 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:06.271 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:06.271 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:06.271 [http-nio-8080-exec-2] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-05-17 18:57:06.273 [http-nio-8080-exec-1] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-05-17 18:57:06.660 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:06.660 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:06.660 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:06.661 [http-nio-8080-exec-3] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-17 18:57:06.661 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:06.663 [http-nio-8080-exec-4] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-17 18:57:17.245 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:17.245 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:17.246 [http-nio-8080-exec-6] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-17 18:57:17.792 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:17.792 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:17.792 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:17.792 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:17.793 [http-nio-8080-exec-7] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-17 18:57:17.794 [http-nio-8080-exec-5] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-05-17 18:57:18.510 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:18.510 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:18.511 [http-nio-8080-exec-9] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-17 18:57:19.195 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:19.195 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:19.195 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:19.195 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:19.195 [http-nio-8080-exec-10] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-17 18:57:19.196 [http-nio-8080-exec-8] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-17 18:57:19.700 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:19.700 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:19.701 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:19.701 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:19.701 [http-nio-8080-exec-1] INFO  com.sau.controller.EmpController - 查询全部员工
+2025-05-17 18:57:19.701 [http-nio-8080-exec-2] INFO  com.sau.controller.ClazzController - 分页查询,参数:ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-05-17 18:57:20.122 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:20.122 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:20.122 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:20.122 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:20.122 [http-nio-8080-exec-3] INFO  c.sau.controller.StudentController - 分页查询,参数:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-05-17 18:57:20.122 [http-nio-8080-exec-4] INFO  com.sau.controller.ClazzController - 查询所有班级
+2025-05-17 18:57:20.942 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 18:57:20.942 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 18:57:20.942 [http-nio-8080-exec-6] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-05-17 19:35:08.322 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:08.322 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:08.328 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:08.329 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:08.336 [http-nio-8080-exec-5] INFO  com.sau.controller.ReportController - 统计学员学历
+2025-05-17 19:35:08.336 [http-nio-8080-exec-7] INFO  com.sau.controller.ReportController - 统计班级人数
+2025-05-17 19:35:08.895 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:08.896 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:08.896 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:08.896 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:08.896 [http-nio-8080-exec-10] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:35:08.896 [http-nio-8080-exec-9] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:35:09.305 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:09.305 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:09.305 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:09.305 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:09.305 [http-nio-8080-exec-1] INFO  com.sau.controller.ReportController - 统计班级人数
+2025-05-17 19:35:09.305 [http-nio-8080-exec-8] INFO  com.sau.controller.ReportController - 统计学员学历
+2025-05-17 19:35:09.893 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:09.893 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:09.893 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:09.893 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:09.893 [http-nio-8080-exec-4] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:35:09.893 [http-nio-8080-exec-2] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:35:10.211 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:10.211 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:10.211 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:10.212 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:10.212 [http-nio-8080-exec-6] INFO  com.sau.controller.ReportController - 统计学员学历
+2025-05-17 19:35:10.212 [http-nio-8080-exec-3] INFO  com.sau.controller.ReportController - 统计班级人数
+2025-05-17 19:35:11.168 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:11.168 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:11.169 [http-nio-8080-exec-5] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:35:11.169 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:11.170 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:11.170 [http-nio-8080-exec-7] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:35:11.630 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:11.630 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:11.632 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:11.632 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:11.632 [http-nio-8080-exec-9] INFO  com.sau.controller.ReportController - 统计学员学历
+2025-05-17 19:35:11.633 [http-nio-8080-exec-10] INFO  com.sau.controller.ReportController - 统计班级人数
+2025-05-17 19:35:12.767 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:12.768 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:12.767 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:12.768 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:12.768 [http-nio-8080-exec-8] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:35:12.768 [http-nio-8080-exec-1] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:35:13.069 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:13.069 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:13.069 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:13.069 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:13.069 [http-nio-8080-exec-4] INFO  com.sau.controller.ReportController - 统计班级人数
+2025-05-17 19:35:13.070 [http-nio-8080-exec-2] INFO  com.sau.controller.ReportController - 统计学员学历
+2025-05-17 19:35:14.608 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:14.608 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:14.608 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:14.608 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:14.609 [http-nio-8080-exec-6] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:35:14.610 [http-nio-8080-exec-3] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:35:14.950 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:14.950 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:14.950 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:14.950 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:14.950 [http-nio-8080-exec-7] INFO  com.sau.controller.ReportController - 统计班级人数
+2025-05-17 19:35:14.950 [http-nio-8080-exec-5] INFO  com.sau.controller.ReportController - 统计学员学历
+2025-05-17 19:35:15.757 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:15.757 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:15.757 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:15.758 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:15.758 [http-nio-8080-exec-10] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:35:15.758 [http-nio-8080-exec-9] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:35:16.984 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:16.984 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:16.984 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:16.984 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:16.984 [http-nio-8080-exec-1] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:35:16.984 [http-nio-8080-exec-8] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:35:18.676 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:18.677 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:18.676 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:18.677 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:18.677 [http-nio-8080-exec-4] INFO  com.sau.controller.ReportController - 统计班级人数
+2025-05-17 19:35:18.678 [http-nio-8080-exec-2] INFO  com.sau.controller.ReportController - 统计学员学历
+2025-05-17 19:35:19.002 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:19.002 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:19.002 [http-nio-8080-exec-6] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:35:19.003 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:35:19.003 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:35:19.004 [http-nio-8080-exec-3] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:36:13.821 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:36:13.822 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:36:13.821 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:36:13.822 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:36:13.822 [http-nio-8080-exec-7] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:36:13.822 [http-nio-8080-exec-5] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:36:33.309 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:36:33.309 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:36:33.310 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:36:33.310 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:36:33.310 [http-nio-8080-exec-10] INFO  com.sau.controller.ReportController - 统计学员学历
+2025-05-17 19:36:33.310 [http-nio-8080-exec-9] INFO  com.sau.controller.ReportController - 统计班级人数
+2025-05-17 19:36:33.758 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:36:33.758 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:36:33.758 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:36:33.760 [http-nio-8080-exec-8] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:36:33.760 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:36:33.760 [http-nio-8080-exec-1] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:36:34.879 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:36:34.879 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:36:34.879 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:36:34.879 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:36:34.880 [http-nio-8080-exec-4] INFO  com.sau.controller.ReportController - 统计学员学历
+2025-05-17 19:36:34.880 [http-nio-8080-exec-2] INFO  com.sau.controller.ReportController - 统计班级人数
+2025-05-17 19:36:35.423 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:36:35.423 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:36:35.423 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:36:35.423 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:36:35.424 [http-nio-8080-exec-3] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:36:35.424 [http-nio-8080-exec-6] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:36:36.074 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:36:36.074 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:36:36.075 [http-nio-8080-exec-5] INFO  com.sau.controller.ReportController - 统计学员学历
+2025-05-17 19:36:36.076 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:36:36.076 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:36:36.076 [http-nio-8080-exec-7] INFO  com.sau.controller.ReportController - 统计班级人数
+2025-05-17 19:36:36.902 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:36:36.902 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:36:36.902 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:36:36.902 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:36:36.902 [http-nio-8080-exec-10] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:36:36.902 [http-nio-8080-exec-9] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:36:45.577 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:36:45.577 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:36:45.577 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:36:45.577 [http-nio-8080-exec-1] INFO  com.sau.controller.ReportController - 统计班级人数
+2025-05-17 19:36:45.577 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:36:45.579 [http-nio-8080-exec-8] INFO  com.sau.controller.ReportController - 统计学员学历
+2025-05-17 19:39:00.708 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:39:00.708 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:39:00.708 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:39:00.708 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:39:00.708 [http-nio-8080-exec-2] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:39:00.708 [http-nio-8080-exec-4] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:39:08.611 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:39:08.611 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:39:08.611 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:39:08.611 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:39:08.611 [http-nio-8080-exec-3] INFO  com.sau.controller.ReportController - 统计学员学历
+2025-05-17 19:39:08.611 [http-nio-8080-exec-6] INFO  com.sau.controller.ReportController - 统计班级人数
+2025-05-17 19:39:11.902 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:39:11.902 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:39:11.902 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:39:11.903 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:39:11.903 [http-nio-8080-exec-7] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:39:11.903 [http-nio-8080-exec-5] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:41:51.983 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:41:51.983 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:41:51.983 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:41:51.983 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:41:51.983 [http-nio-8080-exec-9] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:41:51.983 [http-nio-8080-exec-10] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:41:54.147 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:41:54.147 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:41:54.147 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:41:54.147 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:41:54.148 [http-nio-8080-exec-8] INFO  com.sau.controller.ReportController - 统计学员学历
+2025-05-17 19:41:54.148 [http-nio-8080-exec-1] INFO  com.sau.controller.ReportController - 统计班级人数
+2025-05-17 19:41:54.548 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:41:54.548 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:41:54.548 [http-nio-8080-exec-2] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:41:54.548 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:41:54.550 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:41:54.550 [http-nio-8080-exec-4] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:46:46.217 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:46:46.218 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:46:46.217 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:46:46.218 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:46:46.218 [http-nio-8080-exec-3] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:46:46.218 [http-nio-8080-exec-6] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:46:48.256 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:46:48.256 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:46:48.256 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:46:48.256 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:46:48.257 [http-nio-8080-exec-7] INFO  com.sau.controller.ReportController - 统计学员学历
+2025-05-17 19:46:48.257 [http-nio-8080-exec-5] INFO  com.sau.controller.ReportController - 统计班级人数
+2025-05-17 19:46:49.080 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:46:49.080 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:46:49.080 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:46:49.080 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:46:49.080 [http-nio-8080-exec-9] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:46:49.080 [http-nio-8080-exec-10] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:54:33.863 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:54:33.863 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:54:33.863 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:54:33.863 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:54:33.863 [http-nio-8080-exec-8] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:54:33.863 [http-nio-8080-exec-1] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:55:31.458 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:55:31.458 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:55:31.458 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:55:31.458 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:55:31.458 [http-nio-8080-exec-4] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:55:31.458 [http-nio-8080-exec-2] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:56:52.273 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:56:52.273 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:56:52.273 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:56:52.274 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:56:52.274 [http-nio-8080-exec-3] INFO  com.sau.controller.ReportController - 统计班级人数
+2025-05-17 19:56:52.274 [http-nio-8080-exec-6] INFO  com.sau.controller.ReportController - 统计学员学历
+2025-05-17 19:58:11.115 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:58:11.115 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:58:11.115 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:58:11.115 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:58:11.115 [http-nio-8080-exec-5] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:58:11.115 [http-nio-8080-exec-7] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:58:11.449 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:58:11.449 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:58:11.449 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:58:11.449 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:58:11.450 [http-nio-8080-exec-10] INFO  com.sau.controller.ReportController - 统计学员学历
+2025-05-17 19:58:11.450 [http-nio-8080-exec-9] INFO  com.sau.controller.ReportController - 统计班级人数
+2025-05-17 19:58:12.387 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:58:12.387 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:58:12.387 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:58:12.387 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:58:12.388 [http-nio-8080-exec-8] INFO  com.sau.controller.ReportController - 统计学员学历
+2025-05-17 19:58:12.388 [http-nio-8080-exec-1] INFO  com.sau.controller.ReportController - 统计班级人数
+2025-05-17 19:59:01.492 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:59:01.492 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:59:01.492 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:59:01.492 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:59:01.493 [http-nio-8080-exec-2] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:59:01.493 [http-nio-8080-exec-4] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:59:01.985 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:59:01.985 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:59:01.985 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:59:01.985 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:59:01.986 [http-nio-8080-exec-6] INFO  com.sau.controller.ReportController - 统计班级人数
+2025-05-17 19:59:01.986 [http-nio-8080-exec-3] INFO  com.sau.controller.ReportController - 统计学员学历
+2025-05-17 19:59:02.640 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:59:02.641 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:59:02.640 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:59:02.641 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:59:02.641 [http-nio-8080-exec-5] INFO  com.sau.controller.ReportController - 统计员工性别人数
+2025-05-17 19:59:02.641 [http-nio-8080-exec-7] INFO  com.sau.controller.ReportController - 统计员工职位人数
+2025-05-17 19:59:03.046 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:59:03.046 [http-nio-8080-exec-10] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:59:03.046 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 19:59:03.046 [http-nio-8080-exec-10] INFO  com.sau.controller.ReportController - 统计班级人数
+2025-05-17 19:59:03.046 [http-nio-8080-exec-9] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 19:59:03.048 [http-nio-8080-exec-9] INFO  com.sau.controller.ReportController - 统计学员学历
+2025-05-17 20:02:28.423 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 20:02:28.423 [http-nio-8080-exec-1] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 20:02:28.423 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 20:02:28.423 [http-nio-8080-exec-8] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 20:02:28.423 [http-nio-8080-exec-1] INFO  com.sau.controller.ReportController - 统计学员学历
+2025-05-17 20:02:28.423 [http-nio-8080-exec-8] INFO  com.sau.controller.ReportController - 统计班级人数
+2025-05-17 20:02:29.080 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 20:02:29.081 [http-nio-8080-exec-4] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 20:02:29.090 [http-nio-8080-exec-4] INFO  com.sau.controller.LogController - 分页查询,参数:LogQueryParam(page=1, pageSize=15)
+2025-05-17 20:02:38.314 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 20:02:38.314 [http-nio-8080-exec-2] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 20:02:38.315 [http-nio-8080-exec-2] INFO  com.sau.controller.LogController - 分页查询,参数:LogQueryParam(page=2, pageSize=15)
+2025-05-17 20:02:39.470 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 20:02:39.470 [http-nio-8080-exec-6] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 20:02:39.471 [http-nio-8080-exec-6] INFO  com.sau.controller.LogController - 分页查询,参数:LogQueryParam(page=3, pageSize=15)
+2025-05-17 20:02:41.640 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 20:02:41.640 [http-nio-8080-exec-3] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 20:02:41.641 [http-nio-8080-exec-3] INFO  com.sau.controller.LogController - 分页查询,参数:LogQueryParam(page=1, pageSize=15)
+2025-05-17 20:02:58.727 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 20:02:58.727 [http-nio-8080-exec-5] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 20:02:58.728 [http-nio-8080-exec-5] INFO  com.sau.controller.LogController - 分页查询,参数:LogQueryParam(page=2, pageSize=15)
+2025-05-17 20:02:59.767 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - 当前登录员工ID: 34, 将其存入ThreadLocal
+2025-05-17 20:02:59.767 [http-nio-8080-exec-7] INFO  com.sau.filer.TokenFilter - token解析成功，放行
+2025-05-17 20:02:59.767 [http-nio-8080-exec-7] INFO  com.sau.controller.LogController - 分页查询,参数:LogQueryParam(page=1, pageSize=15)
+2025-05-17 21:10:20.594 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-17 21:10:20.925 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-17 21:10:20.931 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-17 21:10:20.931 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

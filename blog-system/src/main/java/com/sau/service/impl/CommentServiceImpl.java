@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * 评论服务实现类。
+ * 评论服务实现类
  */
 @RequiredArgsConstructor
 @Service
@@ -26,10 +26,11 @@ public class CommentServiceImpl implements CommentService {
     private final DataPermissionService dataPermissionService;
 
     /**
-     * 分页查询评论。
+     * 分页查询评论
      */
     @Override
     public PageResult<Comment> pageQueryComments(CommentQueryDTO commentQueryDTO) {
+        // 开启分页并查询评论列表
         try (Page<Comment> page = PageHelper.startPage(commentQueryDTO.getPage(), commentQueryDTO.getPageSize())) {
             List<Comment> commentList = commentMapper.selectPageComments(commentQueryDTO);
             return new PageResult<>(page.getTotal(), commentList);
@@ -37,10 +38,11 @@ public class CommentServiceImpl implements CommentService {
     }
 
     /**
-     * 分页查询评论回复。
+     * 分页查询评论回复
      */
     @Override
     public PageResult<CommentReply> pageQueryCommentReplies(CommentReplyQueryDTO commentReplyQueryDTO) {
+        // 开启分页并查询评论回复列表
         try (Page<CommentReply> page = PageHelper.startPage(commentReplyQueryDTO.getPage(), commentReplyQueryDTO.getPageSize())) {
             List<CommentReply> commentReplyList = commentMapper.selectPageCommentReplies(commentReplyQueryDTO);
             return new PageResult<>(page.getTotal(), commentReplyList);
@@ -48,10 +50,11 @@ public class CommentServiceImpl implements CommentService {
     }
 
     /**
-     * 根据 ID 删除评论。
+     * 根据 ID 删除评论
      */
     @Override
     public void deleteById(Integer id) {
+        // 先校验评论归属权限，再执行删除
         dataPermissionService.assertAdminOrCommentOwner(id);
         commentMapper.deleteById(id);
     }

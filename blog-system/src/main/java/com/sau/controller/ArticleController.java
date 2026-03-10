@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
- * 文章相关接口。
+ * 文章相关接口
  */
 @Slf4j
 @RequiredArgsConstructor
@@ -33,7 +33,7 @@ public class ArticleController {
     private final ArticleService articleService;
 
     /**
-     * 分页查询文章。
+     * 分页查询文章
      */
     @Cacheable(cacheNames = "articlePageCache", key = "#articleQueryDTO")
     @GetMapping
@@ -44,7 +44,7 @@ public class ArticleController {
     }
 
     /**
-     * 根据 ID 查询文章详情。
+     * 根据 ID 查询文章详情
      */
     @Cacheable(cacheNames = "articleCache", key = "#id")
     @GetMapping("/{id}")
@@ -55,7 +55,7 @@ public class ArticleController {
     }
 
     /**
-     * 创建文章。
+     * 创建文章
      */
     @PreAuthorize("hasAuthority('article:create')")
     @CacheEvictByPrefix("article")
@@ -67,7 +67,7 @@ public class ArticleController {
     }
 
     /**
-     * 批量删除文章。
+     * 批量删除文章
      */
     @PreAuthorize("hasAuthority('article:delete')")
     @CacheEvictByPrefix("article")
@@ -79,7 +79,7 @@ public class ArticleController {
     }
 
     /**
-     * 查询热门文章。
+     * 查询热门文章
      */
     @Cacheable(cacheNames = "articleHotCache")
     @GetMapping("/hot")
@@ -88,7 +88,7 @@ public class ArticleController {
     }
 
     /**
-     * 查询最多点赞文章。
+     * 查询最多点赞文章
      */
     @Cacheable(cacheNames = "articleMostLikeCache")
     @GetMapping("/mostLike")
@@ -97,7 +97,7 @@ public class ArticleController {
     }
 
     /**
-     * 查询最多收藏文章。
+     * 查询最多收藏文章
      */
     @Cacheable(cacheNames = "articleMostStarCache")
     @GetMapping("/mostStar")
@@ -106,7 +106,7 @@ public class ArticleController {
     }
 
     /**
-     * 查询最多分享文章。
+     * 查询最多分享文章
      */
     @Cacheable(cacheNames = "articleMostShareCache")
     @GetMapping("/mostShare")

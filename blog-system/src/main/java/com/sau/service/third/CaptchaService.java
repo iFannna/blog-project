@@ -15,7 +15,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 /**
- * 阿里云行为验证码服务。
+ * 阿里云行为验证码服务
  */
 @Slf4j
 @Service
@@ -28,10 +28,12 @@ public class CaptchaService {
 
     public CaptchaVerifyVO verifyCaptcha(String captchaParam) {
         String captchaKey = RedisKeyConstants.captchaKey(captchaParam);
+        // 命中过期时间内的校验结果时直接复用
         if (redisUtils.exists(captchaKey)) {
             return new CaptchaVerifyVO(true, null, "验证码已校验通过");
         }
         try {
+            // 调用阿里云接口执行行为验证码校验
             Client client = aliyunCaptchaClient.createClient();
             VerifyIntelligentCaptchaRequest request = new VerifyIntelligentCaptchaRequest()
                     .setCaptchaVerifyParam(captchaParam)
@@ -41,6 +43,7 @@ public class CaptchaService {
             String verifyCode = response.getBody().getResult().getVerifyCode();
             if (Boolean.TRUE.equals(response.getBody().getResult().getVerifyResult())) {
                 log.info("阿里云安全验证成功, verifyCode={}", verifyCode);
+                // 校验成功后缓存结果，避免短时间内重复验证
                 redisUtils.set(captchaKey, captchaParam, EmailConstants.CODE_EXPIRE);
                 return new CaptchaVerifyVO(true, verifyCode, "安全验证成功");
             }

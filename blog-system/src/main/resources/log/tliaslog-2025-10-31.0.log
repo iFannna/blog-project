@@ -1,0 +1,661 @@
+2025-10-31 09:05:59.149 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-31 09:05:59.189 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 15576 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-31 09:05:59.190 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-31 09:05:59.806 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-31 09:05:59.808 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-31 09:05:59.833 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-10-31 09:06:00.503 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-31 09:06:00.513 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-31 09:06:00.514 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-31 09:06:00.515 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31 09:06:00.589 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-31 09:06:00.590 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1364 ms
+2025-10-31 09:06:01.709 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-31 09:06:01.722 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-31 09:06:01.729 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.871 seconds (process running for 3.526)
+2025-10-31 09:06:50.310 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-31 09:06:50.310 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-31 09:06:50.311 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-31 09:06:50.406 [http-nio-8080-exec-1] INFO  com.sau.controller.LoginController - 登录请求: 账号=ABCDEF, rememberMe=true
+2025-10-31 09:06:50.424 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-31 09:06:50.774 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@354498f9
+2025-10-31 09:06:50.775 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-31 09:06:51.108 [http-nio-8080-exec-1] INFO  c.sau.service.impl.UserServiceImpl - 登录成功，用户信息: User(id=10, name=ABCDEF, username=ABCDEF, account=null, password=$2a$12$N4OImRGSCw0792z3ughLk.kdCvSmE7J2xc.1dblfjMVNuQOi3BqZ6, email=776393086@qq.com, phone=null, image=null, status=1, userType=0, createTime=2025-10-27T21:43:53, updateTime=null)
+2025-10-31 09:06:51.640 [http-nio-8080-exec-1] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=10, operateTime=2025-10-31T09:06:51.640544300, className=com.sau.controller.LoginController, methodName=login, methodParams=[LoginDTO(account=ABCDEF, password=123456A, rememberMe=true), org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse@6ea35830], returnValue=Result(code=1, msg=success, data=LoginVO(username=ABCDEF, avatar=null, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoiQUJDREVGIiwiZXhwIjoxNzYxODczNzExfQ.H_EDSjKOMRkQa-0cmMbjWQPy8HSl7bBiW4Bolv2RTtU)), costTime=1234)
+2025-10-31 09:19:09.869 [http-nio-8080-exec-4] INFO  c.s.s.third.ImageGenerationService - 图片生成请求: 生成一副《我的世界》高山流水的画面
+2025-10-31 09:19:24.498 [http-nio-8080-exec-4] INFO  c.s.s.third.ImageGenerationService - 图片生成结果: ImagesResponse{model='doubao-seedream-4-0-250828'created=1761873563data=[Image{url=https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-seedream-4-0/021761873549625df9c8d45f179027be25a3367f0513a358da56d_0.jpeg?X-Tos-Algorithm=TOS4-HMAC-SHA256&X-Tos-Credential=AKLTYWJkZTExNjA1ZDUyNDc3YzhjNTM5OGIyNjBhNDcyOTQ%2F20251031%2Fcn-beijing%2Ftos%2Frequest&X-Tos-Date=20251031T011923Z&X-Tos-Expires=86400&X-Tos-Signature=93abeb2b769f51e2399083b79aaeb5c32a934755583cd7a714123572fbfd2db8&X-Tos-SignedHeaders=host&x-tos-process=image%2Fwatermark%2Cimage_YXNzZXRzL3dhdGVybWFyay5wbmc_eC10b3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF85b64Json=nullsize=5504x3040}]usage=Usage{generatedImages=1}error=null}
+2025-10-31 09:19:24.501 [http-nio-8080-exec-4] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=10, operateTime=2025-10-31T09:19:24.501043600, className=com.sau.controller.ImageGenerationController, methodName=generateImage, methodParams=[ImageGenerationDTO(prompt=生成一副《我的世界》高山流水的画面, referenceImages=null)], returnValue=Result(code=1, msg=success, data=ImageGenerationVO(model=doubao-seedream-4-0-250828, created=1761873563, data=[Image(url=https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-seedream-4-0/021761873549625df9c8d45f179027be25a3367f0513a358da56d_0.jpeg?X-Tos-Algorithm=TOS4-HMAC-SHA256&X-Tos-Credential=AKLTYWJkZTExNjA1ZDUyNDc3YzhjNTM5OGIyNjBhNDcyOTQ%2F20251031%2Fcn-beijing%2Ftos%2Frequest&X-Tos-Date=20251031T011923Z&X-Tos-Expires=86400&X-Tos-Signature=93abeb2b769f51e2399083b79aaeb5c32a934755583cd7a714123572fbfd2db8&X-Tos-SignedHeaders=host&x-tos-process=image%2Fwatermark%2Cimage_YXNzZXRzL3dhdGVybWFyay5wbmc_eC10b3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF85, size=5504x3040)], generatedImages=1)), costTime=14714)
+2025-10-31 09:25:24.168 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-31 09:25:24.489 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-31 09:25:24.509 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-31 09:25:24.513 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-31 09:25:27.885 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-31 09:25:27.918 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 17480 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-31 09:25:27.919 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-31 09:25:28.435 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-31 09:25:28.436 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-31 09:25:28.461 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2025-10-31 09:25:28.986 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-31 09:25:28.994 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-31 09:25:28.996 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-31 09:25:28.996 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31 09:25:29.075 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-31 09:25:29.075 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1129 ms
+2025-10-31 09:25:29.692 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry - One of the patterns in [/login, /register, /send-register-code, refresh-token] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-10-31 09:25:30.032 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-31 09:25:30.046 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-31 09:25:30.052 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.432 seconds (process running for 2.998)
+2025-10-31 09:26:44.006 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-31 09:26:44.006 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-31 09:26:44.006 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-10-31 09:30:38.613 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-31 09:30:38.978 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-31 09:30:42.469 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-31 09:30:42.492 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 548 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-31 09:30:42.493 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-31 09:30:42.991 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-31 09:30:42.994 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-31 09:30:43.021 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-10-31 09:30:43.552 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-31 09:30:43.560 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-31 09:30:43.561 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-31 09:30:43.561 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31 09:30:43.621 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-31 09:30:43.621 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1105 ms
+2025-10-31 09:30:44.222 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry - One of the patterns in [/login, /register, /send-register-code, refresh-token] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-10-31 09:30:44.539 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-31 09:30:44.551 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-31 09:30:44.557 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.33 seconds (process running for 2.862)
+2025-10-31 09:30:49.824 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-31 09:30:49.825 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-31 09:30:49.825 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-10-31 09:30:50.342 [http-nio-8080-exec-2] INFO  com.sau.controller.LoginController - refreshToken: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjIzNTM5OTN9.-c0UPs3k0nBU3fFRwtlsRldux8CMwyK52DoHJKWrNVM
+2025-10-31 09:30:50.342 [http-nio-8080-exec-2] INFO  com.sau.controller.LoginController - storedRefreshToken: null
+2025-10-31 09:41:10.281 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-31 09:41:10.587 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-31 09:41:13.821 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-31 09:41:13.855 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 23304 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-31 09:41:13.855 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-31 09:41:14.376 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-31 09:41:14.378 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-31 09:41:14.399 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-10-31 09:41:14.927 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-31 09:41:14.935 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-31 09:41:14.936 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-31 09:41:14.936 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31 09:41:15.005 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-31 09:41:15.005 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1125 ms
+2025-10-31 09:41:15.600 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry - One of the patterns in [/login, /register, /send-register-code, refresh-token] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-10-31 09:41:15.918 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-31 09:41:15.929 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-31 09:41:15.939 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.369 seconds (process running for 2.896)
+2025-10-31 09:41:23.122 [http-nio-8080-exec-7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-31 09:41:23.122 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-31 09:41:23.123 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-31 09:41:23.634 [http-nio-8080-exec-7] INFO  com.sau.controller.LoginController - refreshToken: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjIzNTM5OTN9.-c0UPs3k0nBU3fFRwtlsRldux8CMwyK52DoHJKWrNVM
+2025-10-31 09:41:23.634 [http-nio-8080-exec-7] INFO  com.sau.controller.LoginController - storedRefreshToken: null
+2025-10-31 09:49:32.722 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-31 09:49:33.045 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-31 09:49:36.457 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-31 09:49:36.489 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 19720 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-31 09:49:36.489 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-31 09:49:37.021 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-31 09:49:37.022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-31 09:49:37.044 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-10-31 09:49:37.578 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-31 09:49:37.588 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-31 09:49:37.589 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-31 09:49:37.589 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31 09:49:37.658 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-31 09:49:37.658 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1143 ms
+2025-10-31 09:49:38.263 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry - One of the patterns in [/login, /register, /send-register-code, refresh-token] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-10-31 09:49:38.595 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-31 09:49:38.608 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-31 09:49:38.615 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.403 seconds (process running for 2.958)
+2025-10-31 09:50:13.958 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-31 09:50:13.958 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-31 09:50:13.959 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-31 09:50:41.509 [http-nio-8080-exec-7] INFO  com.sau.controller.LoginController - 登录请求: 账号=ABCDEF, rememberMe=true
+2025-10-31 09:50:41.523 [http-nio-8080-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-31 09:50:41.710 [http-nio-8080-exec-7] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@654de8b1
+2025-10-31 09:50:41.711 [http-nio-8080-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-31 09:50:42.051 [http-nio-8080-exec-7] INFO  c.sau.service.impl.UserServiceImpl - 登录成功，用户信息: User(id=10, name=ABCDEF, username=ABCDEF, account=null, password=$2a$12$N4OImRGSCw0792z3ughLk.kdCvSmE7J2xc.1dblfjMVNuQOi3BqZ6, email=776393086@qq.com, phone=null, image=null, status=1, userType=0, createTime=2025-10-27T21:43:53, updateTime=null)
+2025-10-31 09:50:42.081 [http-nio-8080-exec-7] INFO  c.sau.service.impl.UserServiceImpl - 将refreshToken存入Redis: refresh_token:10,eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoiQUJDREVGIiwiZXhwIjoxNzYyNDgwMjQyfQ.CY5idrCSrPeGBOfllG17q8l-ldgXSdP9DJuOyaeQOJk
+2025-10-31 09:50:42.084 [http-nio-8080-exec-7] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=10, operateTime=2025-10-31T09:50:42.083704300, className=com.sau.controller.LoginController, methodName=login, methodParams=[LoginDTO(account=ABCDEF, password=123456A, rememberMe=true), org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse@37fcac69], returnValue=Result(code=1, msg=success, data=LoginVO(username=ABCDEF, avatar=null, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoiQUJDREVGIiwiZXhwIjoxNzYxODc2MzQyfQ.y5oHdr5HFv_GWBfWAuzRTPlkkqci6I4MNwOQdDTwJpE)), costTime=574)
+2025-10-31 09:51:54.414 [http-nio-8080-exec-5] INFO  com.sau.controller.LoginController - refreshToken-Key: refresh_token:1
+2025-10-31 09:51:54.416 [http-nio-8080-exec-5] INFO  com.sau.controller.LoginController - refreshToken-Value: null
+2025-10-31 09:56:28.244 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-31 09:56:28.581 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-31 09:56:28.592 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-31 09:56:28.596 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-31 09:56:32.296 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-31 09:56:32.327 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 9088 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-31 09:56:32.328 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-31 09:56:32.838 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-31 09:56:32.840 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-31 09:56:32.861 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-10-31 09:56:33.384 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-31 09:56:33.392 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-31 09:56:33.394 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-31 09:56:33.394 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31 09:56:33.460 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-31 09:56:33.461 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1105 ms
+2025-10-31 09:56:34.064 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry - One of the patterns in [/login, /register, /send-register-code, refresh-token] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-10-31 09:56:34.388 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-31 09:56:34.401 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-31 09:56:34.409 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.356 seconds (process running for 2.898)
+2025-10-31 09:56:43.995 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-31 09:56:43.995 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-31 09:56:43.996 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-31 09:56:44.074 [http-nio-8080-exec-1] INFO  com.sau.controller.LoginController - 登录请求: 账号=ABCDEF, rememberMe=true
+2025-10-31 09:56:44.089 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-31 09:56:44.293 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14d381a5
+2025-10-31 09:56:44.295 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-31 09:56:44.614 [http-nio-8080-exec-1] INFO  c.sau.service.impl.UserServiceImpl - 登录成功，用户信息: User(id=10, name=ABCDEF, username=ABCDEF, account=null, password=$2a$12$N4OImRGSCw0792z3ughLk.kdCvSmE7J2xc.1dblfjMVNuQOi3BqZ6, email=776393086@qq.com, phone=null, image=null, status=1, userType=0, createTime=2025-10-27T21:43:53, updateTime=null)
+2025-10-31 09:56:44.617 [http-nio-8080-exec-1] INFO  c.sau.service.impl.UserServiceImpl - Jwt令牌存入的用户id：10
+2025-10-31 09:56:45.085 [http-nio-8080-exec-1] INFO  c.sau.service.impl.UserServiceImpl - 将refreshToken存入Redis: refresh_token:10,eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoiQUJDREVGIiwiZXhwIjoxNzYyNDgwNjA0fQ.Bvg1zTr9fNr7MtQ0RV87Ib94SXVpbj2WE9umqWW2jOA
+2025-10-31 09:56:45.092 [http-nio-8080-exec-1] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=10, operateTime=2025-10-31T09:56:45.091352700, className=com.sau.controller.LoginController, methodName=login, methodParams=[LoginDTO(account=ABCDEF, password=123456A, rememberMe=true), org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse@541681f0], returnValue=Result(code=1, msg=success, data=LoginVO(username=ABCDEF, avatar=null, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoiQUJDREVGIiwiZXhwIjoxNzYxODc2NzA0fQ.Pg0QdLM-wWbxCcgidFklujZFfnFrCvFcSAHhflD3g2M)), costTime=1017)
+2025-10-31 09:58:33.162 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-31 09:58:33.493 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-31 09:58:33.508 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-31 09:58:33.512 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-31 09:58:36.828 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-31 09:58:36.856 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 26656 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-31 09:58:36.857 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-31 09:58:37.354 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-31 09:58:37.356 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-31 09:58:37.381 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-10-31 09:58:37.913 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-31 09:58:37.921 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-31 09:58:37.923 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-31 09:58:37.923 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31 09:58:37.984 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-31 09:58:37.984 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1103 ms
+2025-10-31 09:58:38.600 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry - One of the patterns in [/login, /register, /send-register-code, refresh-token] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-10-31 09:58:38.910 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-31 09:58:38.923 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-31 09:58:38.930 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.35 seconds (process running for 2.867)
+2025-10-31 09:58:45.721 [http-nio-8080-exec-6] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-31 09:58:45.721 [http-nio-8080-exec-6] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-31 09:58:45.722 [http-nio-8080-exec-6] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-31 09:58:45.941 [http-nio-8080-exec-6] INFO  com.sau.controller.LoginController - 从Jwt令牌中解析出来的用户id：1
+2025-10-31 09:58:45.941 [http-nio-8080-exec-6] INFO  com.sau.controller.LoginController - refreshToken-Key: refresh_token:1
+2025-10-31 09:58:46.242 [http-nio-8080-exec-6] INFO  com.sau.controller.LoginController - 根据Key查询出来的refreshToken-Value: null
+2025-10-31 09:59:45.523 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-31 09:59:45.887 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-31 09:59:49.203 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-31 09:59:49.236 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 16656 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-31 09:59:49.236 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-31 09:59:49.766 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-31 09:59:49.768 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-31 09:59:49.792 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-10-31 09:59:50.313 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-31 09:59:50.321 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-31 09:59:50.322 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-31 09:59:50.323 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31 09:59:50.387 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-31 09:59:50.388 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1118 ms
+2025-10-31 09:59:50.992 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry - One of the patterns in [/login, /register, /send-register-code, refresh-token] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-10-31 09:59:51.311 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-31 09:59:51.324 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-31 09:59:51.332 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.367 seconds (process running for 2.899)
+2025-10-31 09:59:59.948 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-31 09:59:59.948 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-31 09:59:59.949 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-31 10:00:00.030 [http-nio-8080-exec-1] INFO  com.sau.controller.LoginController - 登录请求: 账号=ABCDEF, rememberMe=true
+2025-10-31 10:00:00.044 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-31 10:00:00.244 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57510536
+2025-10-31 10:00:00.245 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-31 10:00:00.564 [http-nio-8080-exec-1] INFO  c.sau.service.impl.UserServiceImpl - 登录成功，用户信息: User(id=10, name=ABCDEF, username=ABCDEF, account=null, password=$2a$12$N4OImRGSCw0792z3ughLk.kdCvSmE7J2xc.1dblfjMVNuQOi3BqZ6, email=776393086@qq.com, phone=null, image=null, status=1, userType=0, createTime=2025-10-27T21:43:53, updateTime=null)
+2025-10-31 10:00:00.569 [http-nio-8080-exec-1] INFO  c.sau.service.impl.UserServiceImpl - Jwt令牌存入的用户id：10
+2025-10-31 10:00:01.028 [http-nio-8080-exec-1] INFO  c.sau.service.impl.UserServiceImpl - 将refreshToken存入Redis: refresh_token:10,eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoiQUJDREVGIiwiZXhwIjoxNzYyNDgwODAwfQ.lZSSf-brd4eVsAAvLYY0UAr_WvENKyy7ZSKaTKem7pg
+2025-10-31 10:00:01.031 [http-nio-8080-exec-1] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=10, operateTime=2025-10-31T10:00:01.030732200, className=com.sau.controller.LoginController, methodName=login, methodParams=[LoginDTO(account=ABCDEF, password=123456A, rememberMe=true), org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse@4d610e53], returnValue=Result(code=1, msg=success, data=LoginVO(username=ABCDEF, avatar=null, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoiQUJDREVGIiwiZXhwIjoxNzYxODc2OTAwfQ.ckveP1i_Jfe0H0XdLIimoUndLFqWfmQF1Ha6VDEahQ0)), costTime=1000)
+2025-10-31 10:00:38.538 [http-nio-8080-exec-4] INFO  com.sau.controller.LoginController - 从Jwt令牌中解析出来的用户id：1
+2025-10-31 10:00:38.538 [http-nio-8080-exec-4] INFO  com.sau.controller.LoginController - 需要查询的refreshToken-Key: refresh_token:1
+2025-10-31 10:00:38.539 [http-nio-8080-exec-4] INFO  com.sau.controller.LoginController - 根据Key查询出来的refreshToken-Value: null
+2025-10-31 10:06:53.548 [http-nio-8080-exec-6] INFO  com.sau.controller.LoginController - 登录请求: 账号=liubei, rememberMe=true
+2025-10-31 10:06:53.551 [http-nio-8080-exec-6] WARN  o.s.s.c.bcrypt.BCryptPasswordEncoder - Encoded password does not look like BCrypt
+2025-10-31 10:06:53.551 [http-nio-8080-exec-6] INFO  c.sau.service.impl.UserServiceImpl - 密码错误：liubei
+2025-10-31 10:06:53.551 [http-nio-8080-exec-6] WARN  com.sau.controller.LoginController - 用户名或密码错误: liubei
+2025-10-31 10:06:53.551 [http-nio-8080-exec-6] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=null, operateTime=2025-10-31T10:06:53.551690800, className=com.sau.controller.LoginController, methodName=login, methodParams=[LoginDTO(account=liubei, password=123456, rememberMe=true), org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse@4a93a52], returnValue=Result(code=0, msg=用户名或密码错误, data=null), costTime=3)
+2025-10-31 10:08:08.116 [http-nio-8080-exec-9] INFO  com.sau.controller.LoginController - 登录请求: 账号=ABCDEF, rememberMe=true
+2025-10-31 10:08:08.370 [http-nio-8080-exec-9] INFO  c.sau.service.impl.UserServiceImpl - 登录成功，用户信息: User(id=10, name=ABCDEF, username=ABCDEF, account=null, password=$2a$12$N4OImRGSCw0792z3ughLk.kdCvSmE7J2xc.1dblfjMVNuQOi3BqZ6, email=776393086@qq.com, phone=null, image=null, status=1, userType=0, createTime=2025-10-27T21:43:53, updateTime=null)
+2025-10-31 10:08:08.370 [http-nio-8080-exec-9] INFO  c.sau.service.impl.UserServiceImpl - Jwt令牌存入的用户id：10
+2025-10-31 10:08:08.372 [http-nio-8080-exec-9] INFO  c.sau.service.impl.UserServiceImpl - 将refreshToken存入Redis: refresh_token:10,eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoiQUJDREVGIiwiZXhwIjoxNzYyNDgxMjg4fQ.V4eMFZV56iT-kK1TgJQM_-K2rNJltO1bJZWdUdRsJ6s
+2025-10-31 10:08:08.372 [http-nio-8080-exec-9] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=10, operateTime=2025-10-31T10:08:08.372506400, className=com.sau.controller.LoginController, methodName=login, methodParams=[LoginDTO(account=ABCDEF, password=123456A, rememberMe=true), org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse@6faf2e2], returnValue=Result(code=1, msg=success, data=LoginVO(username=ABCDEF, avatar=null, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoiQUJDREVGIiwiZXhwIjoxNzYxODc3Mzg4fQ.RMutY9bbuuFqv7OOQFo_-tzELj0SeLu5VYmmzaoDLAE)), costTime=256)
+2025-10-31 10:08:56.318 [http-nio-8080-exec-10] INFO  com.sau.controller.LoginController - 从Jwt令牌中解析出来的用户id：10
+2025-10-31 10:08:56.318 [http-nio-8080-exec-10] INFO  com.sau.controller.LoginController - 需要查询的refreshToken-Key: refresh_token:10
+2025-10-31 10:08:56.319 [http-nio-8080-exec-10] INFO  com.sau.controller.LoginController - 根据Key查询出来的refreshToken-Value: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoiQUJDREVGIiwiZXhwIjoxNzYyNDgxMjg4fQ.V4eMFZV56iT-kK1TgJQM_-K2rNJltO1bJZWdUdRsJ6s
+2025-10-31 10:11:40.077 [http-nio-8080-exec-4] INFO  com.sau.controller.LoginController - 退出登录成功
+2025-10-31 10:12:08.672 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-31 10:12:09.017 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-31 10:12:09.029 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-31 10:12:09.033 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-31 11:57:05.773 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-31 11:57:05.803 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 26320 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-31 11:57:05.804 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-31 11:57:06.389 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-31 11:57:06.391 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-31 11:57:06.414 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2025-10-31 11:57:06.951 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-31 11:57:06.960 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-31 11:57:06.962 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-31 11:57:06.962 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31 11:57:07.038 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-31 11:57:07.038 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1206 ms
+2025-10-31 11:57:07.634 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry - One of the patterns in [/login, /register, /send-register-code, refresh-token] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-10-31 11:57:07.970 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-31 11:57:07.984 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-31 11:57:07.991 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.507 seconds (process running for 3.148)
+2025-10-31 11:57:40.584 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-31 11:57:40.584 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-31 11:57:40.586 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-10-31 11:57:40.688 [http-nio-8080-exec-2] INFO  com.sau.controller.LoginController - 登录请求: 账号=zhaojinyu, rememberMe=true
+2025-10-31 11:57:40.707 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-31 11:57:40.955 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@221b60c1
+2025-10-31 11:57:40.956 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-31 11:57:41.267 [http-nio-8080-exec-2] INFO  c.sau.service.impl.UserServiceImpl - 登录成功，用户信息: User(id=1, name=赵瑾瑜, username=zhaojinyu, account=null, password=$2a$12$kFEfURVVsiK7ulY7UvnreegZkQGJFSIzBIUno1dtEq9rHr3.LzREK, email=88888@qq.com, phone=18866668888, image=https://java-ai-sau.oss-cn-beijing.aliyuncs.com/2025/04/312b700a-e1c7-42bf-aa23-5db8dc7121a6.jpg, status=1, userType=0, createTime=null, updateTime=null)
+2025-10-31 11:57:41.271 [http-nio-8080-exec-2] INFO  c.sau.service.impl.UserServiceImpl - Jwt令牌存入的用户id：1
+2025-10-31 11:57:41.830 [http-nio-8080-exec-2] INFO  c.sau.service.impl.UserServiceImpl - 将refreshToken存入Redis: refresh_token:1=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjI0ODc4NjF9.2cioZn5rDGPGWVeQYN7F3UA7M8Id8nijJD3oWsYhfOw
+2025-10-31 11:57:41.834 [http-nio-8080-exec-2] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=1, operateTime=2025-10-31T11:57:41.834504200, className=com.sau.controller.LoginController, methodName=login, methodParams=[LoginDTO(account=zhaojinyu, password=123456, rememberMe=true), org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse@714057eb], returnValue=Result(code=1, msg=success, data=LoginVO(username=zhaojinyu, avatar=https://java-ai-sau.oss-cn-beijing.aliyuncs.com/2025/04/312b700a-e1c7-42bf-aa23-5db8dc7121a6.jpg, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjE4ODM5NjF9.PBQse7N0Golhkalytq-L5N3ufw8TzwDNgJ29lPyo2ek)), costTime=1146)
+2025-10-31 11:58:49.822 [http-nio-8080-exec-10] INFO  c.s.s.third.ImageGenerationService - 图片生成请求: 生成一副《我的世界》高山流水的画面（山要高一点，画面要开阔）
+2025-10-31 11:59:05.883 [http-nio-8080-exec-10] INFO  c.s.s.third.ImageGenerationService - 图片生成结果: ImagesResponse{model='doubao-seedream-4-0-250828'created=1761883145data=[Image{url=https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-seedream-4-0/0217618831295902b32231cd088c2e3859e1901c07ab920670c2d_0.jpeg?X-Tos-Algorithm=TOS4-HMAC-SHA256&X-Tos-Credential=AKLTYWJkZTExNjA1ZDUyNDc3YzhjNTM5OGIyNjBhNDcyOTQ%2F20251031%2Fcn-beijing%2Ftos%2Frequest&X-Tos-Date=20251031T035905Z&X-Tos-Expires=86400&X-Tos-Signature=d83e9ac909e0ea9e58eef3ee50ed4e02502aa5ac21d1dfc03add0f146761866a&X-Tos-SignedHeaders=host&x-tos-process=image%2Fwatermark%2Cimage_YXNzZXRzL3dhdGVybWFyay5wbmc_eC10b3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF83b64Json=nullsize=6240x2656}]usage=Usage{generatedImages=1}error=null}
+2025-10-31 11:59:05.885 [http-nio-8080-exec-10] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=1, operateTime=2025-10-31T11:59:05.885215900, className=com.sau.controller.ImageGenerationController, methodName=generateImage, methodParams=[ImageGenerationDTO(prompt=生成一副《我的世界》高山流水的画面（山要高一点，画面要开阔）, referenceImages=null)], returnValue=Result(code=1, msg=success, data=ImageGenerationVO(model=doubao-seedream-4-0-250828, created=1761883145, data=[Image(url=https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-seedream-4-0/0217618831295902b32231cd088c2e3859e1901c07ab920670c2d_0.jpeg?X-Tos-Algorithm=TOS4-HMAC-SHA256&X-Tos-Credential=AKLTYWJkZTExNjA1ZDUyNDc3YzhjNTM5OGIyNjBhNDcyOTQ%2F20251031%2Fcn-beijing%2Ftos%2Frequest&X-Tos-Date=20251031T035905Z&X-Tos-Expires=86400&X-Tos-Signature=d83e9ac909e0ea9e58eef3ee50ed4e02502aa5ac21d1dfc03add0f146761866a&X-Tos-SignedHeaders=host&x-tos-process=image%2Fwatermark%2Cimage_YXNzZXRzL3dhdGVybWFyay5wbmc_eC10b3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF83, size=6240x2656)], generatedImages=1)), costTime=16145)
+2025-10-31 12:15:17.458 [http-nio-8080-exec-5] INFO  c.s.s.third.ImageGenerationService - 图片生成请求: 生成一副《我的世界》高山流水的画面（山要高一点且山上有绿树，画面要开阔）
+2025-10-31 12:15:34.964 [http-nio-8080-exec-5] INFO  c.s.s.third.ImageGenerationService - 图片生成结果: ImagesResponse{model='doubao-seedream-4-0-250828'created=1761884134data=[Image{url=https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-seedream-4-0/02176188411731493eff14db3a86c2990bdf9fa32bef70e893cad_0.jpeg?X-Tos-Algorithm=TOS4-HMAC-SHA256&X-Tos-Credential=AKLTYWJkZTExNjA1ZDUyNDc3YzhjNTM5OGIyNjBhNDcyOTQ%2F20251031%2Fcn-beijing%2Ftos%2Frequest&X-Tos-Date=20251031T041534Z&X-Tos-Expires=86400&X-Tos-Signature=dde0185ef6ddf43a1aa4d1fbe2be1ccc5587314529922174978e0e2ca27a9804&X-Tos-SignedHeaders=host&x-tos-process=image%2Fwatermark%2Cimage_YXNzZXRzL3dhdGVybWFyay5wbmc_eC10b3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF83b64Json=nullsize=6240x2656}]usage=Usage{generatedImages=1}error=null}
+2025-10-31 12:15:34.964 [http-nio-8080-exec-5] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=1, operateTime=2025-10-31T12:15:34.964048800, className=com.sau.controller.ImageGenerationController, methodName=generateImage, methodParams=[ImageGenerationDTO(prompt=生成一副《我的世界》高山流水的画面（山要高一点且山上有绿树，画面要开阔）, referenceImages=null)], returnValue=Result(code=1, msg=success, data=ImageGenerationVO(model=doubao-seedream-4-0-250828, created=1761884134, data=[Image(url=https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-seedream-4-0/02176188411731493eff14db3a86c2990bdf9fa32bef70e893cad_0.jpeg?X-Tos-Algorithm=TOS4-HMAC-SHA256&X-Tos-Credential=AKLTYWJkZTExNjA1ZDUyNDc3YzhjNTM5OGIyNjBhNDcyOTQ%2F20251031%2Fcn-beijing%2Ftos%2Frequest&X-Tos-Date=20251031T041534Z&X-Tos-Expires=86400&X-Tos-Signature=dde0185ef6ddf43a1aa4d1fbe2be1ccc5587314529922174978e0e2ca27a9804&X-Tos-SignedHeaders=host&x-tos-process=image%2Fwatermark%2Cimage_YXNzZXRzL3dhdGVybWFyay5wbmc_eC10b3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF83, size=6240x2656)], generatedImages=1)), costTime=17507)
+2025-10-31 12:17:17.248 [http-nio-8080-exec-3] INFO  com.sau.controller.LoginController - 退出登录成功
+2025-10-31 12:18:35.332 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-31 12:18:35.636 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-31 12:18:35.647 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-31 12:18:35.651 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-31 20:11:46.281 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-31 20:11:46.325 [main] INFO  c.s.ECommerceImageSystemApplication - Starting ECommerceImageSystemApplication using Java 17.0.13 with PID 14968 (D:\Java\e-commerce-image-project\e-commerce-image-system\target\classes started by 77639 in D:\Java\e-commerce-image-project)
+2025-10-31 20:11:46.325 [main] INFO  c.s.ECommerceImageSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-31 20:11:46.970 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-31 20:11:46.972 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-31 20:11:46.996 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-10-31 20:11:47.649 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-31 20:11:47.659 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-31 20:11:47.660 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-31 20:11:47.660 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31 20:11:47.731 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-31 20:11:47.732 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1374 ms
+2025-10-31 20:11:48.421 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry - One of the patterns in [/login, /register, /send-register-code, refresh-token] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-10-31 20:11:48.808 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-31 20:11:48.821 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-31 20:11:48.827 [main] INFO  c.s.ECommerceImageSystemApplication - Started ECommerceImageSystemApplication in 2.866 seconds (process running for 3.625)
+2025-10-31 20:12:04.213 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-31 20:12:04.214 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-31 20:12:04.216 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-10-31 20:12:14.693 [http-nio-8080-exec-4] INFO  com.sau.controller.LoginController - 登录请求: 账号=zhaojinyu, rememberMe=false
+2025-10-31 20:12:14.711 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-31 20:12:14.986 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71f402d1
+2025-10-31 20:12:14.986 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-31 20:12:15.312 [http-nio-8080-exec-4] INFO  c.sau.service.impl.UserServiceImpl - 登录成功，用户信息: User(id=1, name=赵瑾瑜, username=zhaojinyu, account=null, password=$2a$12$kFEfURVVsiK7ulY7UvnreegZkQGJFSIzBIUno1dtEq9rHr3.LzREK, email=88888@qq.com, phone=18866668888, image=https://java-ai-sau.oss-cn-beijing.aliyuncs.com/2025/04/312b700a-e1c7-42bf-aa23-5db8dc7121a6.jpg, status=1, userType=0, createTime=null, updateTime=null)
+2025-10-31 20:12:15.315 [http-nio-8080-exec-4] INFO  c.sau.service.impl.UserServiceImpl - Jwt令牌存入的用户id：1
+2025-10-31 20:12:15.829 [http-nio-8080-exec-4] ERROR com.sau.utils.RedisUtils - Redis set error, key: refresh_token:1, value: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjE5OTkxMzV9.jGitHZs-9ZGsgvq-BxzjN--rSETf2qJ7DYiCnG27Oug
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1866)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1797)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1594)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.lambda$getConnection$0(LettuceConnectionFactory.java:1574)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.doInLock(LettuceConnectionFactory.java:1535)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1571)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:1257)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:1063)
+	at org.springframework.data.redis.core.RedisConnectionUtils.fetchConnection(RedisConnectionUtils.java:195)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:144)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:105)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:400)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:380)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:117)
+	at org.springframework.data.redis.core.DefaultValueOperations.set(DefaultValueOperations.java:209)
+	at com.sau.utils.RedisUtils.set(RedisUtils.java:31)
+	at com.sau.service.impl.UserServiceImpl.login(UserServiceImpl.java:79)
+	at com.sau.service.impl.AuthServiceImpl.login(AuthServiceImpl.java:35)
+	at com.sau.controller.LoginController.login(LoginController.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.sau.aop.OperationLogAspect.logOperation(OperationLogAspect.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.sau.controller.LoginController$$SpringCGLIB$$0.login(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.sau.filter.JwtTokenFilter.doFilterInternal(JwtTokenFilter.java:35)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to localhost/<unresolved>:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:63)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:41)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:354)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:220)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:112)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:112)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1795)
+	... 141 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: getsockopt: localhost/127.0.0.1:6379
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:336)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:784)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-10-31 20:12:15.833 [http-nio-8080-exec-4] INFO  c.sau.service.impl.UserServiceImpl - 将refreshToken存入Redis: refresh_token:1=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjE5OTkxMzV9.jGitHZs-9ZGsgvq-BxzjN--rSETf2qJ7DYiCnG27Oug
+2025-10-31 20:12:15.836 [http-nio-8080-exec-4] ERROR com.sau.utils.RedisUtils - Redis set error, key: refresh_token:1, value: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjE5OTkxMzV9.jGitHZs-9ZGsgvq-BxzjN--rSETf2qJ7DYiCnG27Oug
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1866)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1797)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1594)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.lambda$getConnection$0(LettuceConnectionFactory.java:1574)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.doInLock(LettuceConnectionFactory.java:1535)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1571)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:1257)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:1063)
+	at org.springframework.data.redis.core.RedisConnectionUtils.fetchConnection(RedisConnectionUtils.java:195)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:144)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:105)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:400)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:380)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:117)
+	at org.springframework.data.redis.core.DefaultValueOperations.set(DefaultValueOperations.java:209)
+	at com.sau.utils.RedisUtils.set(RedisUtils.java:31)
+	at com.sau.service.RedisTokenStorage.saveRefreshToken(RedisTokenStorage.java:19)
+	at com.sau.service.impl.AuthServiceImpl.login(AuthServiceImpl.java:46)
+	at com.sau.controller.LoginController.login(LoginController.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.sau.aop.OperationLogAspect.logOperation(OperationLogAspect.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.sau.controller.LoginController$$SpringCGLIB$$0.login(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.sau.filter.JwtTokenFilter.doFilterInternal(JwtTokenFilter.java:35)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to localhost/<unresolved>:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:63)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:41)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:354)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:220)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:112)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:112)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1795)
+	... 141 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: getsockopt: localhost/127.0.0.1:6379
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:336)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:784)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-10-31 20:12:15.841 [http-nio-8080-exec-4] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=1, operateTime=2025-10-31T20:12:15.840343900, className=com.sau.controller.LoginController, methodName=login, methodParams=[LoginDTO(account=zhaojinyu, password=123456, rememberMe=false), org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse@70c6e91c], returnValue=Result(code=1, msg=success, data=LoginVO(username=zhaojinyu, avatar=https://java-ai-sau.oss-cn-beijing.aliyuncs.com/2025/04/312b700a-e1c7-42bf-aa23-5db8dc7121a6.jpg, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjE5MTM2MzV9._JqVF0E55gSgrBU8lXeZx7gMby-5EV1b7liPEI2oEC4)), costTime=1147)
+2025-10-31 20:14:24.765 [http-nio-8080-exec-6] INFO  com.sau.controller.LoginController - 登录请求: 账号=ABCDEF, rememberMe=true
+2025-10-31 20:14:25.248 [http-nio-8080-exec-6] INFO  c.sau.service.impl.UserServiceImpl - 登录成功，用户信息: User(id=10, name=ABCDEF, username=ABCDEF, account=null, password=$2a$12$N4OImRGSCw0792z3ughLk.kdCvSmE7J2xc.1dblfjMVNuQOi3BqZ6, email=776393086@qq.com, phone=null, image=null, status=1, userType=0, createTime=2025-10-27T21:43:53, updateTime=null)
+2025-10-31 20:14:25.248 [http-nio-8080-exec-6] INFO  c.sau.service.impl.UserServiceImpl - Jwt令牌存入的用户id：10
+2025-10-31 20:14:25.266 [http-nio-8080-exec-6] INFO  c.sau.service.impl.UserServiceImpl - 将refreshToken存入Redis: refresh_token:10=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoiQUJDREVGIiwiZXhwIjoxNzYyNTE3NjY1fQ.qrZ6kpTAOYv02Ur-iDBUuFajbhoAADKJ7T_g0NYhuAo
+2025-10-31 20:14:25.269 [http-nio-8080-exec-6] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=10, operateTime=2025-10-31T20:14:25.269094200, className=com.sau.controller.LoginController, methodName=login, methodParams=[LoginDTO(account=ABCDEF, password=123456A, rememberMe=true), org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse@4bcb8d9a], returnValue=Result(code=1, msg=success, data=LoginVO(username=ABCDEF, avatar=null, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoiQUJDREVGIiwiZXhwIjoxNzYxOTEzNzY1fQ.MKaNE9ChrPU4B9HFb_5Xpl_NXT5BqrUHmGqaRYuJHsk)), costTime=504)
+2025-10-31 20:20:48.448 [http-nio-8080-exec-4] INFO  com.sau.controller.LoginController - 登录请求: 账号=zhaojinyu, rememberMe=false
+2025-10-31 20:20:48.938 [http-nio-8080-exec-4] INFO  c.sau.service.impl.UserServiceImpl - 登录成功，用户信息: User(id=1, name=赵瑾瑜, username=zhaojinyu, account=null, password=$2a$12$kFEfURVVsiK7ulY7UvnreegZkQGJFSIzBIUno1dtEq9rHr3.LzREK, email=88888@qq.com, phone=18866668888, image=https://java-ai-sau.oss-cn-beijing.aliyuncs.com/2025/04/312b700a-e1c7-42bf-aa23-5db8dc7121a6.jpg, status=1, userType=0, createTime=null, updateTime=null)
+2025-10-31 20:20:48.938 [http-nio-8080-exec-4] INFO  c.sau.service.impl.UserServiceImpl - Jwt令牌存入的用户id：1
+2025-10-31 20:20:48.938 [http-nio-8080-exec-4] INFO  c.sau.service.impl.UserServiceImpl - 将refreshToken存入Redis: refresh_token:1=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjE5OTk2NDh9.dfgrtlfZCCsgrw4-hGbeDDr89ulA88IlG7MESATZ0SI
+2025-10-31 20:20:48.943 [http-nio-8080-exec-4] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=1, operateTime=2025-10-31T20:20:48.943931, className=com.sau.controller.LoginController, methodName=login, methodParams=[LoginDTO(account=zhaojinyu, password=123456, rememberMe=false), org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse@d9ca1c8], returnValue=Result(code=1, msg=success, data=LoginVO(username=zhaojinyu, avatar=https://java-ai-sau.oss-cn-beijing.aliyuncs.com/2025/04/312b700a-e1c7-42bf-aa23-5db8dc7121a6.jpg, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjE5MTQxNDh9.Fq2ea_h4mWs5hww6wopV5mO4Lmx9KV2AskVr_mANxYE)), costTime=495)
+2025-10-31 20:21:27.253 [http-nio-8080-exec-5] INFO  com.sau.controller.LoginController - 登录请求: 账号=zhaojinyu, rememberMe=false
+2025-10-31 20:21:27.747 [http-nio-8080-exec-5] INFO  c.sau.service.impl.UserServiceImpl - 登录成功，用户信息: User(id=1, name=赵瑾瑜, username=zhaojinyu, account=null, password=$2a$12$kFEfURVVsiK7ulY7UvnreegZkQGJFSIzBIUno1dtEq9rHr3.LzREK, email=88888@qq.com, phone=18866668888, image=https://java-ai-sau.oss-cn-beijing.aliyuncs.com/2025/04/312b700a-e1c7-42bf-aa23-5db8dc7121a6.jpg, status=1, userType=0, createTime=null, updateTime=null)
+2025-10-31 20:21:27.747 [http-nio-8080-exec-5] INFO  c.sau.service.impl.UserServiceImpl - Jwt令牌存入的用户id：1
+2025-10-31 20:21:27.753 [http-nio-8080-exec-5] INFO  c.sau.service.impl.UserServiceImpl - 将refreshToken存入Redis: refresh_token:1=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjE5OTk2ODd9.3f0mfsIUq7S3c74FMbKFvl9YgWumOvBy2idXrGxPo8M
+2025-10-31 20:21:27.753 [http-nio-8080-exec-5] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=1, operateTime=2025-10-31T20:21:27.753034500, className=com.sau.controller.LoginController, methodName=login, methodParams=[LoginDTO(account=zhaojinyu, password=123456, rememberMe=false), org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse@2054fbe2], returnValue=Result(code=1, msg=success, data=LoginVO(username=zhaojinyu, avatar=https://java-ai-sau.oss-cn-beijing.aliyuncs.com/2025/04/312b700a-e1c7-42bf-aa23-5db8dc7121a6.jpg, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjE5MTQxODd9.-PqH9IEnD3m72eK5Py6GrEqlsB9TLjHpGrhuZtTEtdw)), costTime=500)
+2025-10-31 20:22:12.744 [http-nio-8080-exec-3] INFO  com.sau.controller.LoginController - 登录请求: 账号=zhaojinyu, rememberMe=true
+2025-10-31 20:22:13.145 [http-nio-8080-exec-3] INFO  c.sau.service.impl.UserServiceImpl - 登录成功，用户信息: User(id=1, name=赵瑾瑜, username=zhaojinyu, account=null, password=$2a$12$kFEfURVVsiK7ulY7UvnreegZkQGJFSIzBIUno1dtEq9rHr3.LzREK, email=88888@qq.com, phone=18866668888, image=https://java-ai-sau.oss-cn-beijing.aliyuncs.com/2025/04/312b700a-e1c7-42bf-aa23-5db8dc7121a6.jpg, status=1, userType=0, createTime=null, updateTime=null)
+2025-10-31 20:22:13.145 [http-nio-8080-exec-3] INFO  c.sau.service.impl.UserServiceImpl - Jwt令牌存入的用户id：1
+2025-10-31 20:22:13.145 [http-nio-8080-exec-3] INFO  c.sau.service.impl.UserServiceImpl - 将refreshToken存入Redis: refresh_token:1=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjI1MTgxMzN9.ydgjSOv3h-PCNcfdXhkf1omKq0pf3ASBcMkJ_mE98jw
+2025-10-31 20:22:13.145 [http-nio-8080-exec-3] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=1, operateTime=2025-10-31T20:22:13.145127, className=com.sau.controller.LoginController, methodName=login, methodParams=[LoginDTO(account=zhaojinyu, password=123456, rememberMe=true), org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse@2520e360], returnValue=Result(code=1, msg=success, data=LoginVO(username=zhaojinyu, avatar=https://java-ai-sau.oss-cn-beijing.aliyuncs.com/2025/04/312b700a-e1c7-42bf-aa23-5db8dc7121a6.jpg, token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFvamlueXUiLCJleHAiOjE3NjE5MTQyMzN9._OVU_zPBulwhlodUhaoUNskggP668o-6J_RqAR0D99w)), costTime=401)
+2025-10-31 20:22:56.891 [http-nio-8080-exec-8] INFO  c.s.s.third.ImageGenerationService - 图片生成请求: 生成一副《我的世界》画面（画面要开阔）
+2025-10-31 20:23:11.385 [http-nio-8080-exec-8] INFO  c.s.s.third.ImageGenerationService - 图片生成结果: ImagesResponse{model='doubao-seedream-4-0-250828'created=1761913391data=[Image{url=https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-seedream-4-0/0217619133773352c996c93649e3235fe6ceff16a4954f6d1c687_0.jpeg?X-Tos-Algorithm=TOS4-HMAC-SHA256&X-Tos-Credential=AKLTYWJkZTExNjA1ZDUyNDc3YzhjNTM5OGIyNjBhNDcyOTQ%2F20251031%2Fcn-beijing%2Ftos%2Frequest&X-Tos-Date=20251031T122311Z&X-Tos-Expires=86400&X-Tos-Signature=d44553dd02f546032914fd1b550c89496444b3d193d60ebddb4cabd1f8d53355&X-Tos-SignedHeaders=host&x-tos-process=image%2Fwatermark%2Cimage_YXNzZXRzL3dhdGVybWFyay5wbmc_eC10b3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF83b64Json=nullsize=6240x2656}]usage=Usage{generatedImages=1}error=null}
+2025-10-31 20:23:11.388 [http-nio-8080-exec-8] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=1, operateTime=2025-10-31T20:23:11.388001900, className=com.sau.controller.ImageGenerationController, methodName=generateImage, methodParams=[ImageGenerationDTO(prompt=生成一副《我的世界》画面（画面要开阔）, referenceImages=null)], returnValue=Result(code=1, msg=success, data=ImageGenerationVO(model=doubao-seedream-4-0-250828, created=1761913391, data=[Image(url=https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-seedream-4-0/0217619133773352c996c93649e3235fe6ceff16a4954f6d1c687_0.jpeg?X-Tos-Algorithm=TOS4-HMAC-SHA256&X-Tos-Credential=AKLTYWJkZTExNjA1ZDUyNDc3YzhjNTM5OGIyNjBhNDcyOTQ%2F20251031%2Fcn-beijing%2Ftos%2Frequest&X-Tos-Date=20251031T122311Z&X-Tos-Expires=86400&X-Tos-Signature=d44553dd02f546032914fd1b550c89496444b3d193d60ebddb4cabd1f8d53355&X-Tos-SignedHeaders=host&x-tos-process=image%2Fwatermark%2Cimage_YXNzZXRzL3dhdGVybWFyay5wbmc_eC10b3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF83, size=6240x2656)], generatedImages=1)), costTime=14600)

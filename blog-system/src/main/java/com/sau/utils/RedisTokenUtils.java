@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 /**
- * Token Redis 读写工具类。
+ * Token Redis 读写工具类
  */
 @Slf4j
 @Component

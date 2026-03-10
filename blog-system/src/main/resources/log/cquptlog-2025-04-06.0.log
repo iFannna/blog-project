@@ -1,0 +1,256 @@
+2025-04-06 22:06:15.863 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 7844 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-04-06 22:06:15.864 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-06 22:06:16.563 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-06 22:06:16.571 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-06 22:06:16.572 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-06 22:06:16.573 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-06 22:06:16.619 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-06 22:06:16.619 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 726 ms
+2025-04-06 22:06:17.064 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-06 22:06:17.076 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-04-06 22:06:17.082 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.504 seconds (process running for 2.065)
+2025-04-06 22:07:39.436 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-06 22:07:39.436 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-06 22:07:39.437 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-06 22:07:39.461 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.springframework.web.multipart.MultipartFile.getOriginalFilename()" because "file" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "org.springframework.web.multipart.MultipartFile.getOriginalFilename()" because "file" is null
+	at com.sau.controller.UploadController.upload(UploadController.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-04-06 22:08:58.960 [http-nio-8080-exec-4] INFO  com.sau.controller.UploadController - 文件上传: 2.jpg
+2025-04-06 22:08:59.575 [http-nio-8080-exec-4] INFO  com.sau.controller.UploadController - 文件上传OSS, url: https://java-ai-sau.oss-cn-beijing.aliyuncs.com/2025/04/72ab22d1-2a3a-4cad-a887-6058432aab25.jpg
+2025-04-06 22:12:44.306 [http-nio-8080-exec-6] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-06 22:12:44.334 [http-nio-8080-exec-8] INFO  com.sau.controller.DeptController - 展示全部部门数据
+2025-04-06 22:12:44.340 [http-nio-8080-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-06 22:12:44.533 [http-nio-8080-exec-8] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c2ffd09
+2025-04-06 22:12:44.534 [http-nio-8080-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-06 22:14:44.840 [http-nio-8080-exec-7] INFO  com.sau.controller.UploadController - 文件上传: 3.jpg
+2025-04-06 22:14:45.363 [http-nio-8080-exec-7] INFO  com.sau.controller.UploadController - 文件上传OSS, url: https://java-ai-sau.oss-cn-beijing.aliyuncs.com/2025/04/312b700a-e1c7-42bf-aa23-5db8dc7121a6.jpg
+2025-04-06 22:15:28.847 [http-nio-8080-exec-10] INFO  com.sau.controller.EmpController - 新增员工:Emp(id=null, username=zahojinyu, password=null, name=赵瑾瑜, gender=1, phone=13320000052, job=1, salary=20000, image=https://java-ai-sau.oss-cn-beijing.aliyuncs.com/2025/04/312b700a-e1c7-42bf-aa23-5db8dc7121a6.jpg, entryDate=2025-04-01, deptId=2, createTime=null, updateTime=null, deptName=null, exprList=[EmpExpr(id=null, empId=null, begin=2025-03-01, end=2025-04-01, company=sau, job=ceo)])
+2025-04-06 22:15:28.853 [http-nio-8080-exec-10] DEBUG o.s.j.support.JdbcTransactionManager - Creating new transaction with name [com.sau.service.impl.EmpServiceImpl.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-04-06 22:15:28.854 [http-nio-8080-exec-10] DEBUG o.s.j.support.JdbcTransactionManager - Acquired Connection [HikariProxyConnection@1038598828 wrapping com.mysql.cj.jdbc.ConnectionImpl@7c2ffd09] for JDBC transaction
+2025-04-06 22:15:28.854 [http-nio-8080-exec-10] DEBUG o.s.j.support.JdbcTransactionManager - Switching JDBC Connection [HikariProxyConnection@1038598828 wrapping com.mysql.cj.jdbc.ConnectionImpl@7c2ffd09] to manual commit
+2025-04-06 22:15:28.877 [http-nio-8080-exec-10] DEBUG o.s.j.support.JdbcTransactionManager - Suspending current transaction, creating new transaction with name [com.sau.service.impl.EmpLogServiceImpl.insertLog]
+2025-04-06 22:15:28.877 [http-nio-8080-exec-10] DEBUG o.s.j.support.JdbcTransactionManager - Acquired Connection [HikariProxyConnection@503816755 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ba3ea7] for JDBC transaction
+2025-04-06 22:15:28.877 [http-nio-8080-exec-10] DEBUG o.s.j.support.JdbcTransactionManager - Switching JDBC Connection [HikariProxyConnection@503816755 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ba3ea7] to manual commit
+2025-04-06 22:15:28.895 [http-nio-8080-exec-10] DEBUG o.s.j.support.JdbcTransactionManager - Initiating transaction commit
+2025-04-06 22:15:28.895 [http-nio-8080-exec-10] DEBUG o.s.j.support.JdbcTransactionManager - Committing JDBC transaction on Connection [HikariProxyConnection@503816755 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ba3ea7]
+2025-04-06 22:15:28.914 [http-nio-8080-exec-10] DEBUG o.s.j.support.JdbcTransactionManager - Releasing JDBC Connection [HikariProxyConnection@503816755 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ba3ea7] after transaction
+2025-04-06 22:15:28.914 [http-nio-8080-exec-10] DEBUG o.s.j.support.JdbcTransactionManager - Resuming suspended transaction after completion of inner transaction
+2025-04-06 22:15:28.914 [http-nio-8080-exec-10] DEBUG o.s.j.support.JdbcTransactionManager - Initiating transaction commit
+2025-04-06 22:15:28.914 [http-nio-8080-exec-10] DEBUG o.s.j.support.JdbcTransactionManager - Committing JDBC transaction on Connection [HikariProxyConnection@1038598828 wrapping com.mysql.cj.jdbc.ConnectionImpl@7c2ffd09]
+2025-04-06 22:15:28.936 [http-nio-8080-exec-10] DEBUG o.s.j.support.JdbcTransactionManager - Releasing JDBC Connection [HikariProxyConnection@1038598828 wrapping com.mysql.cj.jdbc.ConnectionImpl@7c2ffd09] after transaction
+2025-04-06 22:15:28.955 [http-nio-8080-exec-9] INFO  com.sau.controller.EmpController - 分页查询,参数:EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-04-06 22:37:17.542 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-06 22:37:17.933 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-06 22:37:17.936 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-06 22:37:17.943 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-06 22:37:21.011 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 24984 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-04-06 22:37:21.012 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-06 22:37:21.731 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-06 22:37:21.740 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-06 22:37:21.741 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-06 22:37:21.741 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-06 22:37:21.787 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-06 22:37:21.788 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 745 ms
+2025-04-06 22:37:22.207 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-06 22:37:22.227 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-04-06 22:37:22.235 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.536 seconds (process running for 2.044)
+2025-04-06 22:37:48.942 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-06 22:37:49.881 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-06 22:37:52.306 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 24016 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-04-06 22:37:52.309 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-06 22:37:52.965 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-06 22:37:52.972 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-06 22:37:52.974 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-06 22:37:52.974 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-06 22:37:53.025 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-06 22:37:53.025 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 689 ms
+2025-04-06 22:37:53.466 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-06 22:37:53.478 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-04-06 22:37:53.485 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.444 seconds (process running for 1.948)
+2025-04-06 22:39:01.066 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-06 22:39:01.066 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-06 22:39:01.066 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-04-06 22:39:01.103 [http-nio-8080-exec-3] INFO  com.sau.controller.UploadController - 文件上传: 4.png
+2025-04-06 22:39:01.748 [http-nio-8080-exec-3] WARN  com.aliyun.oss - [Server]Unable to execute HTTP request: You have no right to access this object because of bucket acl.
+[ErrorCode]: AccessDenied
+[RequestId]: 67F29205E48B2B3839F01D36
+[HostId]: java-ai.oss-cn-beijing.aliyuncs.com
+[EC]: 0003-00000001
+[ResponseError]:
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>AccessDenied</Code>
+  <Message>You have no right to access this object because of bucket acl.</Message>
+  <RequestId>67F29205E48B2B3839F01D36</RequestId>
+  <HostId>java-ai.oss-cn-beijing.aliyuncs.com</HostId>
+  <EC>0003-00000001</EC>
+  <RecommendDoc>https://api.aliyun.com/troubleshoot?q=0003-00000001</RecommendDoc>
+</Error>
+
+2025-04-06 22:39:01.754 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.aliyun.oss.OSSException: You have no right to access this object because of bucket acl.
+[ErrorCode]: AccessDenied
+[RequestId]: 67F29205E48B2B3839F01D36
+[HostId]: java-ai.oss-cn-beijing.aliyuncs.com
+[EC]: 0003-00000001
+[ResponseError]:
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>AccessDenied</Code>
+  <Message>You have no right to access this object because of bucket acl.</Message>
+  <RequestId>67F29205E48B2B3839F01D36</RequestId>
+  <HostId>java-ai.oss-cn-beijing.aliyuncs.com</HostId>
+  <EC>0003-00000001</EC>
+  <RecommendDoc>https://api.aliyun.com/troubleshoot?q=0003-00000001</RecommendDoc>
+</Error>
+] with root cause
+com.aliyun.oss.OSSException: You have no right to access this object because of bucket acl.
+[ErrorCode]: AccessDenied
+[RequestId]: 67F29205E48B2B3839F01D36
+[HostId]: java-ai.oss-cn-beijing.aliyuncs.com
+[EC]: 0003-00000001
+[ResponseError]:
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>AccessDenied</Code>
+  <Message>You have no right to access this object because of bucket acl.</Message>
+  <RequestId>67F29205E48B2B3839F01D36</RequestId>
+  <HostId>java-ai.oss-cn-beijing.aliyuncs.com</HostId>
+  <EC>0003-00000001</EC>
+  <RecommendDoc>https://api.aliyun.com/troubleshoot?q=0003-00000001</RecommendDoc>
+</Error>
+
+	at com.aliyun.oss.common.utils.ExceptionFactory.createOSSException(ExceptionFactory.java:103)
+	at com.aliyun.oss.internal.OSSErrorResponseHandler.handle(OSSErrorResponseHandler.java:92)
+	at com.aliyun.oss.common.comm.ServiceClient.handleResponse(ServiceClient.java:284)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequestImpl(ServiceClient.java:156)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequest(ServiceClient.java:85)
+	at com.aliyun.oss.internal.OSSOperation.send(OSSOperation.java:134)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:192)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:153)
+	at com.aliyun.oss.internal.OSSObjectOperation.writeObjectInternal(OSSObjectOperation.java:1173)
+	at com.aliyun.oss.internal.OSSObjectOperation.putObject(OSSObjectOperation.java:107)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:627)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:611)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:605)
+	at com.sau.utils.AliyunOSSOperator.upload(AliyunOSSOperator.java:61)
+	at com.sau.controller.UploadController.upload(UploadController.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-04-06 22:39:38.363 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-06 22:39:38.693 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-06 22:39:40.284 [main] INFO  c.sau.CquptWebManagementApplication - Starting CquptWebManagementApplication using Java 17.0.13 with PID 18168 (D:\Java\web-ai-practice\cqupt-web-management\target\classes started by 77639 in D:\Java\web-ai-practice)
+2025-04-06 22:39:40.286 [main] INFO  c.sau.CquptWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-06 22:39:40.936 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-06 22:39:40.943 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-06 22:39:40.945 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-06 22:39:40.945 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-06 22:39:40.993 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-06 22:39:40.993 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 684 ms
+2025-04-06 22:39:41.406 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-06 22:39:41.418 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-04-06 22:39:41.425 [main] INFO  c.sau.CquptWebManagementApplication - Started CquptWebManagementApplication in 1.401 seconds (process running for 1.924)
+2025-04-06 22:39:49.462 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-06 22:39:49.463 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-06 22:39:49.463 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-04-06 22:39:49.499 [http-nio-8080-exec-3] INFO  com.sau.controller.UploadController - 文件上传: 4.png
+2025-04-06 22:39:50.210 [http-nio-8080-exec-3] INFO  com.sau.controller.UploadController - 文件上传OSS, url: https://java-ai-sau.oss-cn-beijing.aliyuncs.com/2025/04/8dd9e963-328c-460c-8125-0629fe01362d.png
+2025-04-06 22:41:36.709 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-06 22:41:37.038 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete

@@ -7,13 +7,13 @@ import org.apache.ibatis.annotations.Select;
 import java.util.List;
 
 /**
- * 系统角色数据访问层。
+ * 系统角色数据访问层
  */
 @Mapper
 public interface SysRoleMapper {
 
     /**
-     * 根据用户 ID 查询启用状态下的角色编码列表。
+     * 根据用户 ID 查询启用状态下的角色编码列表
      */
     @Select("""
             select r.role_code
@@ -24,7 +24,7 @@ public interface SysRoleMapper {
     List<String> selectRoleCodesByUserId(Integer userId);
 
     /**
-     * 根据角色编码查询角色 ID。
+     * 根据角色编码查询角色 ID
      */
     @Select("select id from sys_role where role_code = #{roleCode} and status = 1 limit 1")
     Integer selectIdByRoleCode(@Param("roleCode") String roleCode);

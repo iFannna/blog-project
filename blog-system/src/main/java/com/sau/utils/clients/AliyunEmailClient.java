@@ -7,7 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
 /**
- * 阿里云邮件客户端工厂。
+ * 阿里云邮件客户端工厂
  */
 @Component
 @RequiredArgsConstructor

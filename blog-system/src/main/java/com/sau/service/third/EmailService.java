@@ -20,7 +20,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * 邮件验证码服务。
+ * 邮件验证码服务
  */
 @Slf4j
 @Service
@@ -37,17 +37,21 @@ public class EmailService {
     }
 
     public boolean sendEmailCode(String email) {
+        // 生成 Redis Key，并检查当前邮箱是否仍在发送冷却期
         String codeKey = RedisKeyConstants.emailCodeKey(email);
         String cooldownKey = RedisKeyConstants.emailCodeCooldownKey(email);
+        // 冷却时间内不允许重复发送验证码
         if (redisUtils.exists(cooldownKey)) {
             log.warn("邮箱验证码冷却中，请稍后再试");
             return false;
         }
         try {
+            // 生成验证码并写入 Redis
             String code = generateCode();
             redisUtils.set(codeKey, code, EmailConstants.CODE_EXPIRE);
             redisUtils.set(cooldownKey, email, EmailConstants.SEND_COOLDOWN);
 
+            // 组装邮件请求并调用阿里云发送
             Client client = emailClient.createClient();
             SingleSendMailRequest request = new SingleSendMailRequest()
                     .setAccountName(emailProperties.getAccountName())
@@ -72,6 +76,7 @@ public class EmailService {
             return false;
         }
 
+        // 读取 Redis 中的验证码并进行一次性校验
         String codeKey = RedisKeyConstants.emailCodeKey(email);
         Object storedCode = redisUtils.get(codeKey);
         if (code.equals(storedCode)) {
@@ -82,6 +87,7 @@ public class EmailService {
     }
 
     private String buildEmailContent(String code) throws IOException {
+        // 读取邮件模板并替换验证码占位符
         Resource resource = resourceLoader.getResource(EmailConstants.EMAIL_CODE_TEMPLATE_PATH);
         byte[] contentBytes = FileCopyUtils.copyToByteArray(resource.getInputStream());
         String templateContent = new String(contentBytes, StandardCharsets.UTF_8);

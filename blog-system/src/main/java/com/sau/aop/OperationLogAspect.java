@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 import java.util.Arrays;
 
 /**
- * 操作日志切面。
+ * 操作日志切面
  */
 @Slf4j
 @Aspect

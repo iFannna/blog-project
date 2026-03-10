@@ -1,0 +1,119 @@
+2025-12-17 00:01:29.161 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-17 00:01:29.196 [main] INFO  com.sau.BlogSystemApplication - Starting BlogSystemApplication using Java 17.0.13 with PID 26524 (D:\Java\blog-project\blog-system\target\classes started by 77639 in D:\Java\blog-project)
+2025-12-17 00:01:29.196 [main] INFO  com.sau.BlogSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-17 00:01:29.826 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-17 00:01:29.828 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-17 00:01:29.855 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-12-17 00:01:30.453 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-17 00:01:30.460 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-17 00:01:30.460 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-17 00:01:30.460 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-17 00:01:30.523 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-17 00:01:30.531 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1295 ms
+2025-12-17 00:01:31.681 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-17 00:01:31.694 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-17 00:01:31.696 [main] INFO  com.sau.BlogSystemApplication - Started BlogSystemApplication in 2.818 seconds (process running for 3.417)
+2025-12-17 00:01:57.048 [http-nio-8080-exec-7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-17 00:01:57.048 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-17 00:01:57.048 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-17 00:01:57.070 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/categories
+2025-12-17 00:01:57.070 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/tags
+2025-12-17 00:01:57.070 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/hot
+2025-12-17 00:01:57.070 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostLike
+2025-12-17 00:01:57.070 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostStar
+2025-12-17 00:01:57.070 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles
+2025-12-17 00:01:57.851 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostShare
+2025-12-17 00:07:45.054 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles
+2025-12-17 00:07:45.054 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/hot
+2025-12-17 00:07:45.120 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostStar
+2025-12-17 00:07:45.331 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostLike
+2025-12-17 00:07:45.331 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/tags
+2025-12-17 00:07:45.332 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/categories
+2025-12-17 00:07:45.332 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostShare
+2025-12-17 00:09:11.806 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostStar
+2025-12-17 00:09:11.806 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles
+2025-12-17 00:09:11.806 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/tags
+2025-12-17 00:09:11.806 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/categories
+2025-12-17 00:09:11.806 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostLike
+2025-12-17 00:09:11.806 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/hot
+2025-12-17 00:09:13.612 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostShare
+2025-12-17 00:12:56.006 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostLike
+2025-12-17 00:12:56.005 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles
+2025-12-17 00:12:56.022 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/categories
+2025-12-17 00:12:56.022 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/hot
+2025-12-17 00:12:56.022 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/tags
+2025-12-17 00:12:57.459 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostStar
+2025-12-17 00:13:08.785 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostShare
+2025-12-17 00:20:04.766 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostLike
+2025-12-17 00:20:04.767 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/hot
+2025-12-17 00:20:04.964 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles
+2025-12-17 00:20:05.147 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostStar
+2025-12-17 00:20:05.147 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/categories
+2025-12-17 00:20:05.147 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/tags
+2025-12-17 00:20:05.569 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostShare
+2025-12-17 00:20:52.132 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles
+2025-12-17 00:20:52.229 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/hot
+2025-12-17 00:20:52.229 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostStar
+2025-12-17 00:20:52.290 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostLike
+2025-12-17 00:20:52.340 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/tags
+2025-12-17 00:20:52.377 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/categories
+2025-12-17 00:20:52.377 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostShare
+2025-12-17 00:28:42.805 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles
+2025-12-17 00:28:42.844 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/categories
+2025-12-17 00:28:42.844 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostStar
+2025-12-17 00:28:42.925 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/tags
+2025-12-17 00:28:42.965 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/hot
+2025-12-17 00:28:43.001 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostLike
+2025-12-17 00:28:43.110 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostShare
+2025-12-17 00:31:33.665 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostLike
+2025-12-17 00:31:33.665 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/categories
+2025-12-17 00:31:33.666 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/hot
+2025-12-17 00:31:33.666 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles
+2025-12-17 00:31:33.774 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/tags
+2025-12-17 00:31:33.865 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostStar
+2025-12-17 00:31:34.065 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostShare
+2025-12-17 00:32:29.956 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/send-register-code
+2025-12-17 00:32:30.620 [http-nio-8080-exec-6] INFO  c.sau.service.third.CaptchaService - 阿里云安全验证成功,VerifyCode: T001
+2025-12-17 00:32:31.130 [http-nio-8080-exec-6] INFO  com.sau.service.third.EmailService - 邮件验证码发送成功，邮箱：2276071652@qq.com
+2025-12-17 00:32:31.131 [http-nio-8080-exec-6] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=null, operateTime=2025-12-17T00:32:31.130987300, className=com.sau.controller.RegisterController, methodName=sendRegisterCode, methodParams=[2276071652@qq.com, eyJjZXJ0aWZ5SWQiOiJwanRoNEFuTGZpIiwic2NlbmVJZCI6IjFoMjIybmthIiwiaXNTaWduIjp0cnVlLCJzZWN1cml0eVRva2VuIjoiNm9PbzdlNzJuQTYxdVZMaVpWS2lMWDNMcjVGaFNoK1RMRnRBWEhwZStxcCsxUko2R0tESnl6SVlPcWh3ak0zUUZNV29xMTd5Q2N6R1ZWbXBFZ1cwcmNXODFNbS9KSlhFc0Nqb3JPeE9sK2pBMDZRLzY5em5jQkkxSTlSQXBGY24ifQ==], returnValue=Result(code=1, msg=null, data=null), costTime=1164)
+2025-12-17 00:32:31.157 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-17 00:32:31.334 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@456cff40
+2025-12-17 00:32:31.334 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-17 00:32:52.127 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/register
+2025-12-17 00:32:52.178 [http-nio-8080-exec-5] INFO  c.sau.controller.RegisterController - 用户注册请求：RegisterDTO(username=songsong, password=wjs2276071652, email=2276071652@qq.com, emailVerificationCode=197554)
+2025-12-17 00:32:52.451 [http-nio-8080-exec-5] INFO  c.sau.service.impl.UserServiceImpl - 用户注册成功，账号：songsong
+2025-12-17 00:32:52.451 [http-nio-8080-exec-5] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=null, operateTime=2025-12-17T00:32:52.451966700, className=com.sau.controller.RegisterController, methodName=register, methodParams=[RegisterDTO(username=songsong, password=wjs2276071652, email=2276071652@qq.com, emailVerificationCode=197554)], returnValue=Result(code=1, msg=null, data=null), costTime=273)
+2025-12-17 00:33:08.391 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/login
+2025-12-17 00:33:08.393 [http-nio-8080-exec-7] INFO  com.sau.controller.LoginController - 登录请求: 账号=songsong, rememberMe=false
+2025-12-17 00:33:08.677 [http-nio-8080-exec-7] INFO  c.sau.service.impl.AuthServiceImpl - 登录成功，用户信息: User(id=8, name=songsong, username=songsong, account=null, password=$2a$12$.2lUxRDsTaghBSVa5p8O9OIIiKg1/gTA9ucI6M1ksdtO19/ZU3j3W, email=2276071652@qq.com, phone=null, image=null, status=1, userType=0, createTime=2025-12-17T00:32:52, updateTime=null)
+2025-12-17 00:33:08.793 [http-nio-8080-exec-7] INFO  c.sau.service.impl.AuthServiceImpl - 生成accessToken：eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjgsInVzZXJuYW1lIjoic29uZ3NvbmciLCJleHAiOjE3NjU5MDM2ODh9.QZHEykxKQRbRI35cF8N4cxaE0xdRO7ztfJnK3lKlv7Y
+2025-12-17 00:33:08.794 [http-nio-8080-exec-7] INFO  com.sau.utils.RedisTokenUtils - 保存accessToken到Redis: access_token:8=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjgsInVzZXJuYW1lIjoic29uZ3NvbmciLCJleHAiOjE3NjU5MDM2ODh9.QZHEykxKQRbRI35cF8N4cxaE0xdRO7ztfJnK3lKlv7Y
+2025-12-17 00:33:08.795 [http-nio-8080-exec-7] INFO  c.sau.service.impl.AuthServiceImpl - 生成refreshToken：eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjgsInVzZXJuYW1lIjoic29uZ3NvbmciLCJleHAiOjE3NjU5ODkxODh9.Oe_LgGMIDqRhCILGgKVdwx-1S2pBfbghIWNI21m81zo
+2025-12-17 00:33:08.796 [http-nio-8080-exec-7] INFO  com.sau.utils.RedisTokenUtils - 保存refreshToken到Redis: refresh_token:8=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjgsInVzZXJuYW1lIjoic29uZ3NvbmciLCJleHAiOjE3NjU5ODkxODh9.Oe_LgGMIDqRhCILGgKVdwx-1S2pBfbghIWNI21m81zo
+2025-12-17 00:33:08.796 [http-nio-8080-exec-7] INFO  com.sau.controller.LoginController - 设置refreshToken到Cookie: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjgsInVzZXJuYW1lIjoic29uZ3NvbmciLCJleHAiOjE3NjU5ODkxODh9.Oe_LgGMIDqRhCILGgKVdwx-1S2pBfbghIWNI21m81zo
+2025-12-17 00:33:08.797 [http-nio-8080-exec-7] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=null, operateTime=2025-12-17T00:33:08.797906100, className=com.sau.controller.LoginController, methodName=login, methodParams=[LoginDTO(account=songsong, password=wjs2276071652, rememberMe=false), org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse@4a9154ed], returnValue=Result(code=1, msg=null, data=LoginVO(name=songsong, username=songsong, avatar=null, token=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjgsInVzZXJuYW1lIjoic29uZ3NvbmciLCJleHAiOjE3NjU5MDM2ODh9.QZHEykxKQRbRI35cF8N4cxaE0xdRO7ztfJnK3lKlv7Y)), costTime=404)
+2025-12-17 00:33:09.090 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/hot
+2025-12-17 00:33:09.287 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles
+2025-12-17 00:33:09.325 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/tags
+2025-12-17 00:33:09.409 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostLike
+2025-12-17 00:33:09.409 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostStar
+2025-12-17 00:33:09.481 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/categories
+2025-12-17 00:33:09.589 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostShare
+2025-12-17 00:34:55.533 [http-nio-8080-exec-6] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles
+2025-12-17 00:34:55.533 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/hot
+2025-12-17 00:34:55.533 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostStar
+2025-12-17 00:34:55.533 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostLike
+2025-12-17 00:34:55.533 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/tags
+2025-12-17 00:34:55.533 [http-nio-8080-exec-1] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/categories
+2025-12-17 00:34:56.013 [http-nio-8080-exec-8] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostShare
+2025-12-17 00:37:37.777 [http-nio-8080-exec-10] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles
+2025-12-17 00:37:37.790 [http-nio-8080-exec-4] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostLike
+2025-12-17 00:37:37.790 [http-nio-8080-exec-9] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/categories
+2025-12-17 00:37:37.790 [http-nio-8080-exec-7] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/tags
+2025-12-17 00:37:37.791 [http-nio-8080-exec-2] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/hot
+2025-12-17 00:37:37.806 [http-nio-8080-exec-5] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostStar
+2025-12-17 00:37:37.966 [http-nio-8080-exec-3] INFO  com.sau.filter.JwtTokenFilter - 请求路径：/articles/mostShare
+2025-12-17 00:42:11.144 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-17 00:42:11.585 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-17 00:42:11.618 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-17 00:42:11.624 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

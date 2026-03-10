@@ -3,9 +3,9 @@ package com.sau.constants;
 import org.springframework.util.AntPathMatcher;
 
 /**
- * 安全白名单定义。
+ * 安全白名单定义
  * <p>
- * 统一维护匿名可访问接口，避免在过滤器与安全配置中重复维护。
+ * 统一维护匿名可访问接口，避免在过滤器与安全配置中重复维护
  */
 public final class SecurityWhitelist {
 
@@ -35,7 +35,7 @@ public final class SecurityWhitelist {
     }
 
     /**
-     * 判断当前请求是否属于白名单接口。
+     * 判断当前请求是否属于白名单接口
      */
     public static boolean isPublicEndpoint(String method, String uri, AntPathMatcher antPathMatcher) {
         return matches(method, uri, "POST", PUBLIC_POST_ENDPOINTS, antPathMatcher)

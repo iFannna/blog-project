@@ -1,7 +1,7 @@
 package com.sau.constants;
 
 /**
- * 响应相关常量。
+ * 响应相关常量
  */
 public final class ResponseConstants {
 

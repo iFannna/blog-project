@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 /**
- * 分类服务实现类。
+ * 分类服务实现类
  */
 @Service
 @RequiredArgsConstructor
@@ -21,27 +21,30 @@ public class CategoryServiceImpl implements CategoryService {
     private final ArticleCategoryMapper articleCategoryMapper;
 
     /**
-     * 查询全部分类。
+     * 查询全部分类
      */
     @Override
     public List<Category> list() {
+        // 查询并返回全部分类
         return categoryMapper.list();
     }
 
     /**
-     * 创建分类。
+     * 创建分类
      */
     @Override
     public void create(Category category) {
+        // 保存分类基础信息
         categoryMapper.insert(category);
     }
 
     /**
-     * 删除分类并清理文章分类关系。
+     * 删除分类并清理文章分类关系
      */
     @Transactional(rollbackFor = Exception.class)
     @Override
     public void deleteById(Integer id) {
+        // 先删除分类，再清理文章分类关联关系
         categoryMapper.deleteById(id);
         articleCategoryMapper.deleteByCategoryIds(List.of(id));
     }

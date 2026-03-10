@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 /**
- * 用户角色关联实体。
+ * 用户角色关联实体
  */
 @Data
 @NoArgsConstructor

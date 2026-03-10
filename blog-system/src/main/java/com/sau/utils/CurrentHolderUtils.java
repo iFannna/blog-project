@@ -3,7 +3,7 @@ package com.sau.utils;
 import com.sau.security.AuthUser;
 
 /**
- * 当前登录用户持有工具类。
+ * 当前登录用户持有工具类
  */
 public final class CurrentHolderUtils {
 

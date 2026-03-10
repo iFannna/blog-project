@@ -17,8 +17,8 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
- * 当前认证用户快照。
- * 保存登录用户的基础身份、角色码、权限码以及管理员标记。
+ * 当前认证用户快照
+ * 保存登录用户的基础身份、角色码、权限码以及管理员标记
  */
 @Data
 @Builder
@@ -39,7 +39,7 @@ public class AuthUser implements Serializable {
     private boolean admin;
 
     /**
-     * 将角色和权限统一转换成 Spring Security 可识别的授权集合。
+     * 将角色和权限统一转换成 Spring Security 可识别的授权集合
      */
     public Collection<? extends GrantedAuthority> getAuthorities() {
         Set<String> authorities = new LinkedHashSet<>();
@@ -51,7 +51,7 @@ public class AuthUser implements Serializable {
     }
 
     /**
-     * 仅根据用户 ID 构造一个最小身份对象。
+     * 仅根据用户 ID 构造一个最小身份对象
      */
     public static AuthUser of(Integer userId) {
         return AuthUser.builder()
@@ -63,7 +63,7 @@ public class AuthUser implements Serializable {
     }
 
     /**
-     * 根据用户、角色、权限构造完整身份对象。
+     * 根据用户、角色、权限构造完整身份对象
      */
     public static AuthUser of(Integer userId, String username, List<String> roleCodes, List<String> permissionCodes) {
         Set<String> safeRoles = roleCodes == null ? Collections.emptySet() : new LinkedHashSet<>(roleCodes);

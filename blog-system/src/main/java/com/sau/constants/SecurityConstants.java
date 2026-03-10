@@ -1,7 +1,7 @@
 package com.sau.constants;
 
 /**
- * Security 相关常量。
+ * Security 相关常量
  */
 public final class SecurityConstants {
 

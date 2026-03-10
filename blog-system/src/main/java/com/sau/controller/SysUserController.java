@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 用户相关接口。
+ * 用户相关接口
  */
 @Slf4j
 @RequiredArgsConstructor
@@ -36,7 +36,7 @@ public class SysUserController {
     private final CaptchaService captchaService;
 
     /**
-     * 修改个人资料。
+     * 修改个人资料
      */
     @PreAuthorize("hasAuthority('user:profile:update')")
     @PutMapping(value = "/profiles", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
@@ -46,7 +46,7 @@ public class SysUserController {
     }
 
     /**
-     * 修改密码。
+     * 修改密码
      */
     @PreAuthorize("hasAuthority('user:password:update')")
     @PutMapping("/password")
@@ -55,7 +55,7 @@ public class SysUserController {
     }
 
     /**
-     * 向旧邮箱发送验证码。
+     * 向旧邮箱发送验证码
      */
     @PreAuthorize("hasAuthority('user:email:update')")
     @PostMapping("/email/send-old-code")
@@ -73,7 +73,7 @@ public class SysUserController {
     }
 
     /**
-     * 校验旧邮箱验证码。
+     * 校验旧邮箱验证码
      */
     @PreAuthorize("hasAuthority('user:email:update')")
     @PostMapping("/email/verify-old-code")
@@ -86,7 +86,7 @@ public class SysUserController {
     }
 
     /**
-     * 向新邮箱发送验证码。
+     * 向新邮箱发送验证码
      */
     @PreAuthorize("hasAuthority('user:email:update')")
     @PostMapping("/email/send-new-code")
@@ -102,7 +102,7 @@ public class SysUserController {
     }
 
     /**
-     * 更新邮箱。
+     * 更新邮箱
      */
     @PreAuthorize("hasAuthority('user:email:update')")
     @PutMapping("/email/update")
