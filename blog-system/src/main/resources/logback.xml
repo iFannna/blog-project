@@ -17,7 +17,7 @@
         <!--配置文件属性-->
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
             <!--日志文件名格式-->
-            <fileNamePattern>D:/JavaWebLog/blog-log-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>src/main/resources/log/blog-log-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
             <!--日志文件保留天数-->
             <maxHistory>30</maxHistory>
             <!--日志文件最大大小-->

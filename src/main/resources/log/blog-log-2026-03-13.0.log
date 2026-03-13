@@ -1,0 +1,536 @@
+2026-03-13 01:03:09.426 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-13 01:03:09.517 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-13 01:03:09.565 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-13 01:03:09.569 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-13 01:27:29.756 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-03-13 01:27:29.789 [main] INFO  com.sau.BlogSystemApplication - Starting BlogSystemApplication using Java 17.0.13 with PID 11488 (D:\develop\code\java\blog-project\blog-system\target\classes started by 77639 in D:\develop\code\java\blog-project)
+2026-03-13 01:27:29.789 [main] INFO  com.sau.BlogSystemApplication - The following 1 profile is active: "dev"
+2026-03-13 01:27:30.340 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-13 01:27:30.342 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-13 01:27:30.368 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2026-03-13 01:27:30.949 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-13 01:27:30.960 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-13 01:27:30.961 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-13 01:27:30.961 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-13 01:27:31.027 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-13 01:27:31.028 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1210 ms
+2026-03-13 01:27:32.123 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-13 01:27:32.135 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-13 01:27:32.142 [main] INFO  com.sau.BlogSystemApplication - Started BlogSystemApplication in 2.619 seconds (process running for 3.208)
+2026-03-13 01:27:36.150 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-13 01:27:36.150 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-13 01:27:36.151 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-03-13 02:10:28.177 [http-nio-8080-exec-2] INFO  c.sau.controller.CategoryController - 查询全部分类
+2026-03-13 02:10:28.177 [http-nio-8080-exec-5] INFO  com.sau.controller.TagController - 查询全部标签
+2026-03-13 02:10:28.177 [http-nio-8080-exec-1] INFO  c.sau.controller.ArticleController - 分页查询文章, 参数:ArticleQueryDTO(page=1, pageSize=10, type=null, categoryId=null, tagId=null, authorName=null, title=null, begin=null, end=null, categoryIdSize=null, tagIdSize=null)
+2026-03-13 02:10:28.207 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-13 02:10:28.372 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@208b4d3d
+2026-03-13 02:10:28.373 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-13 02:10:28.378 [http-nio-8080-exec-5] DEBUG com.sau.mapper.TagMapper.list - ==>  Preparing: select id, name, create_time, update_time from tag
+2026-03-13 02:10:28.378 [http-nio-8080-exec-10] DEBUG c.sau.mapper.ArticleMapper.listHot - ==>  Preparing: SELECT id, title, summary, url, cover_image, author_id, author_name, author_avatar, view_count, like_count, star_count, share_count, comment_count, type, content, create_time, update_time FROM article ORDER BY view_count DESC, create_time DESC LIMIT 4
+2026-03-13 02:10:28.392 [http-nio-8080-exec-5] DEBUG com.sau.mapper.TagMapper.list - ==> Parameters: 
+2026-03-13 02:10:28.392 [http-nio-8080-exec-10] DEBUG c.sau.mapper.ArticleMapper.listHot - ==> Parameters: 
+2026-03-13 02:10:28.409 [http-nio-8080-exec-2] DEBUG com.sau.mapper.CategoryMapper.list - ==>  Preparing: select id, name, create_time, update_time from category
+2026-03-13 02:10:28.409 [http-nio-8080-exec-2] DEBUG com.sau.mapper.CategoryMapper.list - ==> Parameters: 
+2026-03-13 02:10:28.414 [http-nio-8080-exec-2] DEBUG com.sau.mapper.CategoryMapper.list - <==      Total: 5
+2026-03-13 02:10:28.415 [http-nio-8080-exec-5] DEBUG com.sau.mapper.TagMapper.list - <==      Total: 9
+2026-03-13 02:10:28.416 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.416 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 15(Long)
+2026-03-13 02:10:28.417 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectPageArticles_COUNT - ==>  Preparing: SELECT count(0) FROM article a
+2026-03-13 02:10:28.417 [http-nio-8080-exec-6] DEBUG c.s.m.ArticleMapper.listMostStar - ==>  Preparing: SELECT id, title, summary, url, cover_image, author_id, author_name, author_avatar, view_count, like_count, star_count, share_count, comment_count, type, content, create_time, update_time FROM article ORDER BY star_count DESC, create_time DESC LIMIT 3
+2026-03-13 02:10:28.417 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectPageArticles_COUNT - ==> Parameters: 
+2026-03-13 02:10:28.417 [http-nio-8080-exec-6] DEBUG c.s.m.ArticleMapper.listMostStar - ==> Parameters: 
+2026-03-13 02:10:28.419 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.419 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 15(Long)
+2026-03-13 02:10:28.425 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 0
+2026-03-13 02:10:28.425 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 0
+2026-03-13 02:10:28.426 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectPageArticles_COUNT - <==      Total: 1
+2026-03-13 02:10:28.426 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.426 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.426 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 15(Long)
+2026-03-13 02:10:28.426 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 15(Long)
+2026-03-13 02:10:28.428 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:10:28.428 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:10:28.428 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.428 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.428 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 19(Long)
+2026-03-13 02:10:28.428 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 10(Long)
+2026-03-13 02:10:28.429 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 0
+2026-03-13 02:10:28.429 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.429 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 19(Long)
+2026-03-13 02:10:28.429 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:10:28.429 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:10:28.429 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.429 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectPageArticles - ==>  Preparing: SELECT a.id, a.title, a.summary, a.url, a.cover_image, a.author_id, a.author_name, a.author_avatar, a.view_count, a.like_count, a.star_count, a.comment_count, a.type, a.content, a.create_time, a.update_time FROM article a ORDER BY a.create_time DESC LIMIT ?
+2026-03-13 02:10:28.429 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 10(Long)
+2026-03-13 02:10:28.430 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:10:28.430 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.430 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 11(Long)
+2026-03-13 02:10:28.430 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.430 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectPageArticles - ==> Parameters: 10(Integer)
+2026-03-13 02:10:28.430 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 0
+2026-03-13 02:10:28.431 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.431 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 11(Long)
+2026-03-13 02:10:28.431 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 6(Long)
+2026-03-13 02:10:28.431 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:10:28.431 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.431 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:10:28.431 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.431 [http-nio-8080-exec-6] DEBUG c.s.m.ArticleMapper.listMostStar - <==      Total: 3
+2026-03-13 02:10:28.431 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 20(Long)
+2026-03-13 02:10:28.431 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 6(Long)
+2026-03-13 02:10:28.431 [http-nio-8080-exec-7] DEBUG c.s.m.ArticleMapper.listMostLike - ==>  Preparing: SELECT id, title, summary, url, cover_image, author_id, author_name, author_avatar, view_count, like_count, star_count, share_count, comment_count, type, content, create_time, update_time FROM article ORDER BY like_count DESC, create_time DESC LIMIT 4
+2026-03-13 02:10:28.433 [http-nio-8080-exec-7] DEBUG c.s.m.ArticleMapper.listMostLike - ==> Parameters: 
+2026-03-13 02:10:28.433 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:10:28.433 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 0
+2026-03-13 02:10:28.434 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.434 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 15(Long)
+2026-03-13 02:10:28.434 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 0
+2026-03-13 02:10:28.434 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.434 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 17(Long)
+2026-03-13 02:10:28.434 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.435 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.435 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 20(Long)
+2026-03-13 02:10:28.435 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 0
+2026-03-13 02:10:28.435 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 15(Long)
+2026-03-13 02:10:28.435 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.435 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 17(Long)
+2026-03-13 02:10:28.435 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:10:28.435 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:10:28.435 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.435 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:10:28.435 [http-nio-8080-exec-10] DEBUG c.sau.mapper.ArticleMapper.listHot - <==      Total: 4
+2026-03-13 02:10:28.435 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 19(Long)
+2026-03-13 02:10:28.435 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.436 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 10(Long)
+2026-03-13 02:10:28.436 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 0
+2026-03-13 02:10:28.436 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.436 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 19(Long)
+2026-03-13 02:10:28.436 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:10:28.436 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.437 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 10(Long)
+2026-03-13 02:10:28.437 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:10:28.437 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.437 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 18(Long)
+2026-03-13 02:10:28.437 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:10:28.438 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 0
+2026-03-13 02:10:28.438 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.438 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.438 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 11(Long)
+2026-03-13 02:10:28.438 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 18(Long)
+2026-03-13 02:10:28.439 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:10:28.439 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 0
+2026-03-13 02:10:28.439 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.439 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 11(Long)
+2026-03-13 02:10:28.439 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.439 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:10:28.440 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 17(Long)
+2026-03-13 02:10:28.440 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 0
+2026-03-13 02:10:28.440 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.440 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.440 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 17(Long)
+2026-03-13 02:10:28.440 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 19(Long)
+2026-03-13 02:10:28.440 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:10:28.440 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 0
+2026-03-13 02:10:28.440 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.442 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.442 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 16(Long)
+2026-03-13 02:10:28.442 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 19(Long)
+2026-03-13 02:10:28.442 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 0
+2026-03-13 02:10:28.442 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:10:28.442 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.442 [http-nio-8080-exec-7] DEBUG c.s.m.ArticleMapper.listMostLike - <==      Total: 4
+2026-03-13 02:10:28.442 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 16(Long)
+2026-03-13 02:10:28.442 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:10:28.442 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.443 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 15(Long)
+2026-03-13 02:10:28.443 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 0
+2026-03-13 02:10:28.443 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.443 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 15(Long)
+2026-03-13 02:10:28.444 [http-nio-8080-exec-9] DEBUG c.s.m.ArticleMapper.listMostShare - ==>  Preparing: SELECT id, title, summary, url, cover_image, author_id, author_name, author_avatar, view_count, like_count, star_count, share_count, comment_count, type, content, create_time, update_time FROM article ORDER BY share_count DESC, create_time DESC LIMIT 3
+2026-03-13 02:10:28.444 [http-nio-8080-exec-9] DEBUG c.s.m.ArticleMapper.listMostShare - ==> Parameters: 
+2026-03-13 02:10:28.444 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:10:28.444 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.444 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 14(Long)
+2026-03-13 02:10:28.444 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 0
+2026-03-13 02:10:28.444 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.445 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.445 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 3(Long)
+2026-03-13 02:10:28.445 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 14(Long)
+2026-03-13 02:10:28.445 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:10:28.445 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:10:28.445 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.445 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.445 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 13(Long)
+2026-03-13 02:10:28.445 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 3(Long)
+2026-03-13 02:10:28.446 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 0
+2026-03-13 02:10:28.446 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:10:28.446 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.446 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.446 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 13(Long)
+2026-03-13 02:10:28.446 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 15(Long)
+2026-03-13 02:10:28.446 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:10:28.446 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 0
+2026-03-13 02:10:28.446 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.447 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.447 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 15(Long)
+2026-03-13 02:10:28.447 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 12(Long)
+2026-03-13 02:10:28.447 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:10:28.447 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 0
+2026-03-13 02:10:28.447 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.447 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.447 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 12(Long)
+2026-03-13 02:10:28.447 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 9(Long)
+2026-03-13 02:10:28.447 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:10:28.448 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:10:28.448 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:28.448 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.448 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 9(Long)
+2026-03-13 02:10:28.448 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 11(Long)
+2026-03-13 02:10:28.448 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 0
+2026-03-13 02:10:28.448 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:10:28.448 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:28.448 [http-nio-8080-exec-9] DEBUG c.s.m.ArticleMapper.listMostShare - <==      Total: 3
+2026-03-13 02:10:28.449 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 11(Long)
+2026-03-13 02:10:28.449 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:10:28.449 [http-nio-8080-exec-1] DEBUG c.s.m.A.selectPageArticles - <==      Total: 10
+2026-03-13 02:10:41.105 [http-nio-8080-exec-8] INFO  c.sau.controller.ArticleController - 分页查询文章, 参数:ArticleQueryDTO(page=2, pageSize=10, type=null, categoryId=null, tagId=null, authorName=null, title=null, begin=null, end=null, categoryIdSize=null, tagIdSize=null)
+2026-03-13 02:10:41.107 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectPageArticles_COUNT - ==>  Preparing: SELECT count(0) FROM article a
+2026-03-13 02:10:41.108 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectPageArticles_COUNT - ==> Parameters: 
+2026-03-13 02:10:41.109 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectPageArticles_COUNT - <==      Total: 1
+2026-03-13 02:10:41.109 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectPageArticles - ==>  Preparing: SELECT a.id, a.title, a.summary, a.url, a.cover_image, a.author_id, a.author_name, a.author_avatar, a.view_count, a.like_count, a.star_count, a.comment_count, a.type, a.content, a.create_time, a.update_time FROM article a ORDER BY a.create_time DESC LIMIT ?, ?
+2026-03-13 02:10:41.109 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectPageArticles - ==> Parameters: 10(Long), 10(Integer)
+2026-03-13 02:10:41.110 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:41.110 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 5(Long)
+2026-03-13 02:10:41.110 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:10:41.110 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:41.110 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 5(Long)
+2026-03-13 02:10:41.111 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:10:41.111 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:41.111 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 9(Long)
+2026-03-13 02:10:41.111 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:10:41.111 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:41.111 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 9(Long)
+2026-03-13 02:10:41.112 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:10:41.112 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:41.112 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 4(Long)
+2026-03-13 02:10:41.112 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:10:41.112 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:41.112 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 4(Long)
+2026-03-13 02:10:41.114 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:10:41.114 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:41.114 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 8(Long)
+2026-03-13 02:10:41.114 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:10:41.114 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:41.114 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 8(Long)
+2026-03-13 02:10:41.114 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:10:41.115 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:41.115 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 3(Long)
+2026-03-13 02:10:41.115 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:10:41.115 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:41.115 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 3(Long)
+2026-03-13 02:10:41.116 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:10:41.116 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:41.116 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 7(Long)
+2026-03-13 02:10:41.116 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:10:41.117 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:41.117 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 7(Long)
+2026-03-13 02:10:41.117 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:10:41.118 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:41.118 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 2(Long)
+2026-03-13 02:10:41.118 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 2
+2026-03-13 02:10:41.118 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:41.118 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 2(Long)
+2026-03-13 02:10:41.120 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:10:41.120 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:41.120 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 1(Long)
+2026-03-13 02:10:41.121 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 3
+2026-03-13 02:10:41.122 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:41.122 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 1(Long)
+2026-03-13 02:10:41.122 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 3
+2026-03-13 02:10:41.123 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:41.123 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 6(Long)
+2026-03-13 02:10:41.123 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:10:41.123 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:41.124 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 6(Long)
+2026-03-13 02:10:41.124 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:10:41.124 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:10:41.124 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 10(Long)
+2026-03-13 02:10:41.125 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:10:41.125 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:10:41.126 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 10(Long)
+2026-03-13 02:10:41.126 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:10:41.126 [http-nio-8080-exec-8] DEBUG c.s.m.A.selectPageArticles - <==      Total: 10
+2026-03-13 02:18:39.919 [http-nio-8080-exec-10] DEBUG c.s.m.ArticleMapper.listMostLike - ==>  Preparing: SELECT id, title, summary, url, cover_image, author_id, author_name, author_avatar, view_count, like_count, star_count, share_count, comment_count, type, content, create_time, update_time FROM article ORDER BY like_count DESC, create_time DESC LIMIT 4
+2026-03-13 02:18:39.919 [http-nio-8080-exec-7] DEBUG c.s.m.ArticleMapper.listMostStar - ==>  Preparing: SELECT id, title, summary, url, cover_image, author_id, author_name, author_avatar, view_count, like_count, star_count, share_count, comment_count, type, content, create_time, update_time FROM article ORDER BY star_count DESC, create_time DESC LIMIT 3
+2026-03-13 02:18:39.919 [http-nio-8080-exec-2] DEBUG c.sau.mapper.ArticleMapper.listHot - ==>  Preparing: SELECT id, title, summary, url, cover_image, author_id, author_name, author_avatar, view_count, like_count, star_count, share_count, comment_count, type, content, create_time, update_time FROM article ORDER BY view_count DESC, create_time DESC LIMIT 4
+2026-03-13 02:18:39.919 [http-nio-8080-exec-4] INFO  c.sau.controller.ArticleController - 分页查询文章, 参数:ArticleQueryDTO(page=1, pageSize=10, type=null, categoryId=null, tagId=null, authorName=null, title=null, begin=null, end=null, categoryIdSize=null, tagIdSize=null)
+2026-03-13 02:18:39.919 [http-nio-8080-exec-10] DEBUG c.s.m.ArticleMapper.listMostLike - ==> Parameters: 
+2026-03-13 02:18:39.919 [http-nio-8080-exec-7] DEBUG c.s.m.ArticleMapper.listMostStar - ==> Parameters: 
+2026-03-13 02:18:39.919 [http-nio-8080-exec-2] DEBUG c.sau.mapper.ArticleMapper.listHot - ==> Parameters: 
+2026-03-13 02:18:39.920 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.920 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.920 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.921 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 15(Long)
+2026-03-13 02:18:39.921 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 15(Long)
+2026-03-13 02:18:39.921 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 15(Long)
+2026-03-13 02:18:39.921 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.921 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.921 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.921 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.921 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.922 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.922 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 15(Long)
+2026-03-13 02:18:39.922 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 15(Long)
+2026-03-13 02:18:39.922 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 15(Long)
+2026-03-13 02:18:39.922 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectPageArticles_COUNT - ==>  Preparing: SELECT count(0) FROM article a
+2026-03-13 02:18:39.922 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:18:39.922 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectPageArticles_COUNT - ==> Parameters: 
+2026-03-13 02:18:39.922 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:18:39.922 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:18:39.923 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.923 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.923 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.923 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 19(Long)
+2026-03-13 02:18:39.923 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 10(Long)
+2026-03-13 02:18:39.923 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 10(Long)
+2026-03-13 02:18:39.924 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.924 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.924 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.924 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.924 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.924 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.924 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 10(Long)
+2026-03-13 02:18:39.924 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 10(Long)
+2026-03-13 02:18:39.924 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 19(Long)
+2026-03-13 02:18:39.924 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectPageArticles_COUNT - <==      Total: 1
+2026-03-13 02:18:39.925 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectPageArticles - ==>  Preparing: SELECT a.id, a.title, a.summary, a.url, a.cover_image, a.author_id, a.author_name, a.author_avatar, a.view_count, a.like_count, a.star_count, a.comment_count, a.type, a.content, a.create_time, a.update_time FROM article a ORDER BY a.create_time DESC LIMIT ?
+2026-03-13 02:18:39.925 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:18:39.925 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:18:39.925 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:18:39.925 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectPageArticles - ==> Parameters: 10(Integer)
+2026-03-13 02:18:39.925 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.925 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 6(Long)
+2026-03-13 02:18:39.925 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.925 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.925 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 11(Long)
+2026-03-13 02:18:39.925 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 11(Long)
+2026-03-13 02:18:39.925 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.925 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.925 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.925 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.925 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.925 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 20(Long)
+2026-03-13 02:18:39.925 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.927 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 11(Long)
+2026-03-13 02:18:39.927 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 6(Long)
+2026-03-13 02:18:39.927 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.927 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 11(Long)
+2026-03-13 02:18:39.927 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:18:39.927 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:18:39.927 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.927 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.927 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.927 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 19(Long)
+2026-03-13 02:18:39.927 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 20(Long)
+2026-03-13 02:18:39.927 [http-nio-8080-exec-7] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:18:39.927 [http-nio-8080-exec-7] DEBUG c.s.m.ArticleMapper.listMostStar - <==      Total: 3
+2026-03-13 02:18:39.927 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.928 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 17(Long)
+2026-03-13 02:18:39.928 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.928 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:18:39.928 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.928 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 19(Long)
+2026-03-13 02:18:39.928 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.928 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.928 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.928 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 19(Long)
+2026-03-13 02:18:39.928 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 17(Long)
+2026-03-13 02:18:39.928 [http-nio-8080-exec-10] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:18:39.928 [http-nio-8080-exec-2] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:18:39.928 [http-nio-8080-exec-10] DEBUG c.s.m.ArticleMapper.listMostLike - <==      Total: 4
+2026-03-13 02:18:39.928 [http-nio-8080-exec-2] DEBUG c.sau.mapper.ArticleMapper.listHot - <==      Total: 4
+2026-03-13 02:18:39.928 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.929 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.929 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 19(Long)
+2026-03-13 02:18:39.929 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:18:39.930 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.930 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 18(Long)
+2026-03-13 02:18:39.930 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.930 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.930 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 18(Long)
+2026-03-13 02:18:39.931 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:18:39.931 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.931 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 17(Long)
+2026-03-13 02:18:39.931 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.931 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.932 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 17(Long)
+2026-03-13 02:18:39.932 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:18:39.932 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.932 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 16(Long)
+2026-03-13 02:18:39.933 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.933 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.933 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 16(Long)
+2026-03-13 02:18:39.933 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:18:39.933 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.933 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 15(Long)
+2026-03-13 02:18:39.934 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.934 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.934 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 15(Long)
+2026-03-13 02:18:39.934 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:18:39.934 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.934 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 14(Long)
+2026-03-13 02:18:39.935 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.935 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.935 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 14(Long)
+2026-03-13 02:18:39.936 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:18:39.936 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.936 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 13(Long)
+2026-03-13 02:18:39.937 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.937 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.937 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 13(Long)
+2026-03-13 02:18:39.937 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:18:39.938 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.938 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 12(Long)
+2026-03-13 02:18:39.938 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.938 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.939 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 12(Long)
+2026-03-13 02:18:39.939 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:18:39.939 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.939 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 11(Long)
+2026-03-13 02:18:39.939 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.941 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.941 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 11(Long)
+2026-03-13 02:18:39.941 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:18:39.941 [http-nio-8080-exec-4] DEBUG c.s.m.A.selectPageArticles - <==      Total: 10
+2026-03-13 02:18:39.942 [http-nio-8080-exec-9] DEBUG c.s.m.ArticleMapper.listMostShare - ==>  Preparing: SELECT id, title, summary, url, cover_image, author_id, author_name, author_avatar, view_count, like_count, star_count, share_count, comment_count, type, content, create_time, update_time FROM article ORDER BY share_count DESC, create_time DESC LIMIT 3
+2026-03-13 02:18:39.943 [http-nio-8080-exec-9] DEBUG c.s.m.ArticleMapper.listMostShare - ==> Parameters: 
+2026-03-13 02:18:39.944 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.944 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 3(Long)
+2026-03-13 02:18:39.945 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.945 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.945 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 3(Long)
+2026-03-13 02:18:39.946 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:18:39.947 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.947 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 15(Long)
+2026-03-13 02:18:39.948 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.948 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.948 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 15(Long)
+2026-03-13 02:18:39.949 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 0
+2026-03-13 02:18:39.949 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:18:39.949 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 9(Long)
+2026-03-13 02:18:39.950 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:18:39.950 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:18:39.950 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 9(Long)
+2026-03-13 02:18:39.950 [http-nio-8080-exec-9] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:18:39.950 [http-nio-8080-exec-9] DEBUG c.s.m.ArticleMapper.listMostShare - <==      Total: 3
+2026-03-13 02:40:09.434 [http-nio-8080-exec-6] INFO  c.sau.controller.ArticleController - 分页查询文章, 参数:ArticleQueryDTO(page=2, pageSize=10, type=null, categoryId=null, tagId=null, authorName=null, title=null, begin=null, end=null, categoryIdSize=null, tagIdSize=null)
+2026-03-13 02:40:09.436 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectPageArticles_COUNT - ==>  Preparing: SELECT count(0) FROM article a
+2026-03-13 02:40:09.437 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectPageArticles_COUNT - ==> Parameters: 
+2026-03-13 02:40:09.439 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectPageArticles_COUNT - <==      Total: 1
+2026-03-13 02:40:09.439 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectPageArticles - ==>  Preparing: SELECT a.id, a.title, a.summary, a.url, a.cover_image, a.author_id, a.author_name, a.author_avatar, a.view_count, a.like_count, a.star_count, a.comment_count, a.type, a.content, a.create_time, a.update_time FROM article a ORDER BY a.create_time DESC LIMIT ?, ?
+2026-03-13 02:40:09.440 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectPageArticles - ==> Parameters: 10(Long), 10(Integer)
+2026-03-13 02:40:09.440 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:40:09.440 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 5(Long)
+2026-03-13 02:40:09.441 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:40:09.441 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:40:09.441 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 5(Long)
+2026-03-13 02:40:09.442 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:40:09.442 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:40:09.442 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 9(Long)
+2026-03-13 02:40:09.442 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:40:09.443 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:40:09.443 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 9(Long)
+2026-03-13 02:40:09.443 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:40:09.444 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:40:09.444 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 4(Long)
+2026-03-13 02:40:09.444 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:40:09.444 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:40:09.444 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 4(Long)
+2026-03-13 02:40:09.445 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:40:09.445 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:40:09.445 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 8(Long)
+2026-03-13 02:40:09.445 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:40:09.445 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:40:09.445 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 8(Long)
+2026-03-13 02:40:09.446 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:40:09.446 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:40:09.446 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 3(Long)
+2026-03-13 02:40:09.447 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:40:09.447 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:40:09.447 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 3(Long)
+2026-03-13 02:40:09.447 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:40:09.447 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:40:09.447 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 7(Long)
+2026-03-13 02:40:09.448 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:40:09.448 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:40:09.448 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 7(Long)
+2026-03-13 02:40:09.448 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:40:09.448 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:40:09.448 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 2(Long)
+2026-03-13 02:40:09.448 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 2
+2026-03-13 02:40:09.448 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:40:09.449 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 2(Long)
+2026-03-13 02:40:09.449 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:40:09.450 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:40:09.450 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 1(Long)
+2026-03-13 02:40:09.450 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 3
+2026-03-13 02:40:09.450 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:40:09.451 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 1(Long)
+2026-03-13 02:40:09.451 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 3
+2026-03-13 02:40:09.451 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:40:09.451 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 6(Long)
+2026-03-13 02:40:09.451 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:40:09.451 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:40:09.452 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 6(Long)
+2026-03-13 02:40:09.452 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:40:09.452 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====>  Preparing: SELECT c.id, c.name FROM article_category ac INNER JOIN category c ON ac.category_id = c.id WHERE ac.article_id = ?
+2026-03-13 02:40:09.452 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - ====> Parameters: 10(Long)
+2026-03-13 02:40:09.452 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectCategoriesByArticleId - <====      Total: 1
+2026-03-13 02:40:09.452 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====>  Preparing: SELECT t.id, t.name FROM article_tag atag INNER JOIN tag t ON atag.tag_id = t.id WHERE atag.article_id = ?
+2026-03-13 02:40:09.452 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - ====> Parameters: 10(Long)
+2026-03-13 02:40:09.453 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectTagsByArticleId - <====      Total: 1
+2026-03-13 02:40:09.453 [http-nio-8080-exec-6] DEBUG c.s.m.A.selectPageArticles - <==      Total: 10
+2026-03-13 02:40:28.365 [http-nio-8080-exec-7] INFO  com.sau.controller.LoginController - 登录请求: 账号=zhaojinyu, rememberMe=true
+2026-03-13 02:40:28.367 [http-nio-8080-exec-7] DEBUG c.s.m.SysUserMapper.selectByAccount - ==>  Preparing: select * from sys_user where username = ? or email = ?
+2026-03-13 02:40:28.368 [http-nio-8080-exec-7] DEBUG c.s.m.SysUserMapper.selectByAccount - ==> Parameters: zhaojinyu(String), zhaojinyu(String)
+2026-03-13 02:40:28.374 [http-nio-8080-exec-7] DEBUG c.s.m.SysUserMapper.selectByAccount - <==      Total: 1
+2026-03-13 02:40:28.672 [http-nio-8080-exec-7] DEBUG c.s.mapper.SysUserMapper.selectById - ==>  Preparing: select * from sys_user where id = ?
+2026-03-13 02:40:28.672 [http-nio-8080-exec-7] DEBUG c.s.mapper.SysUserMapper.selectById - ==> Parameters: 1(Integer)
+2026-03-13 02:40:28.681 [http-nio-8080-exec-7] DEBUG c.s.mapper.SysUserMapper.selectById - <==      Total: 1
+2026-03-13 02:40:28.681 [http-nio-8080-exec-7] DEBUG c.s.m.S.selectRoleCodesByUserId - ==>  Preparing: select r.role_code from sys_role r inner join sys_user_role ur on ur.role_id = r.id where ur.user_id = ? and r.status = 1
+2026-03-13 02:40:28.683 [http-nio-8080-exec-7] DEBUG c.s.m.S.selectRoleCodesByUserId - ==> Parameters: 1(Integer)
+2026-03-13 02:40:28.686 [http-nio-8080-exec-7] DEBUG c.s.m.S.selectRoleCodesByUserId - <==      Total: 1
+2026-03-13 02:40:28.686 [http-nio-8080-exec-7] DEBUG c.s.m.S.selectPermissionCodesByUserId - ==>  Preparing: select distinct p.perm_code from sys_permission p inner join sys_role_permission rp on rp.perm_id = p.id inner join sys_user_role ur on ur.role_id = rp.role_id inner join sys_role r on r.id = ur.role_id where ur.user_id = ? and p.status = 1 and r.status = 1
+2026-03-13 02:40:28.686 [http-nio-8080-exec-7] DEBUG c.s.m.S.selectPermissionCodesByUserId - ==> Parameters: 1(Integer)
+2026-03-13 02:40:28.688 [http-nio-8080-exec-7] DEBUG c.s.m.S.selectPermissionCodesByUserId - <==      Total: 10
+2026-03-13 02:40:28.922 [http-nio-8080-exec-7] INFO  com.sau.utils.RedisTokenUtils - 保存 accessToken 到 Redis: access_token:1
+2026-03-13 02:40:28.923 [http-nio-8080-exec-7] INFO  com.sau.utils.RedisTokenUtils - 保存 refreshToken 到 Redis: refresh_token:1
+2026-03-13 02:40:28.960 [http-nio-8080-exec-7] INFO  com.sau.aop.OperationLogAspect - 记录操作日志: OperateLog(id=null, operateUserId=null, operateTime=2026-03-13T02:40:28.959887200, className=com.sau.controller.LoginController, methodName=login, methodParams=[LoginDTO(account=zhaojinyu, password=123456, rememberMe=true), org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse@22dd6de6], returnValue=Result(code=1, msg=null, data=LoginVO(name=赵瑾瑜, username=zhaojinyu, avatar=https://java-ai-sau.oss-cn-beijing.aliyuncs.com/2025/04/312b700a-e1c7-42bf-aa23-5db8dc7121a6.jpg, token=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiemhhb2ppbnl1IiwiZXhwIjoxNzczMzQxNzI4fQ.T7Raqx96x0SWaIOqSNurO872VUxfh2690mrbaEDqMhA)), costTime=594)
+2026-03-13 02:40:28.962 [http-nio-8080-exec-7] DEBUG c.sau.mapper.OperateLogMapper.insert - ==>  Preparing: insert into operate_log(operate_user_id, operate_time, class_name, method_name, method_params, return_value, cost_time) value (?, ?, ?, ?, ?, ?, ?)
+2026-03-13 02:40:28.963 [http-nio-8080-exec-7] DEBUG c.sau.mapper.OperateLogMapper.insert - ==> Parameters: null, 2026-03-13T02:40:28.959887200(LocalDateTime), com.sau.controller.LoginController(String), login(String), [LoginDTO(account=zhaojinyu, password=123456, rememberMe=true), org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse@22dd6de6](String), Result(code=1, msg=null, data=LoginVO(name=赵瑾瑜, username=zhaojinyu, avatar=https://java-ai-sau.oss-cn-beijing.aliyuncs.com/2025/04/312b700a-e1c7-42bf-aa23-5db8dc7121a6.jpg, token=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiemhhb2ppbnl1IiwiZXhwIjoxNzczMzQxNzI4fQ.T7Raqx96x0SWaIOqSNurO872VUxfh2690mrbaEDqMhA))(String), 594(Long)
+2026-03-13 02:40:28.972 [http-nio-8080-exec-7] DEBUG c.sau.mapper.OperateLogMapper.insert - <==    Updates: 1
+2026-03-13 03:22:41.947 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-13 03:22:42.011 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-13 03:22:42.027 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-13 03:22:42.029 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-13 10:34:11.308 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-03-13 10:34:11.346 [main] INFO  com.sau.BlogSystemApplication - Starting BlogSystemApplication using Java 17.0.13 with PID 19824 (D:\develop\code\java\blog-project\blog-system\target\classes started by 77639 in D:\develop\code\java\blog-project)
+2026-03-13 10:34:11.346 [main] INFO  com.sau.BlogSystemApplication - The following 1 profile is active: "dev"
+2026-03-13 10:34:12.026 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-13 10:34:12.028 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-13 10:34:12.058 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2026-03-13 10:34:12.716 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-13 10:34:12.725 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-13 10:34:12.727 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-13 10:34:12.727 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-13 10:34:12.790 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-13 10:34:12.791 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1412 ms
+2026-03-13 10:34:14.023 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-13 10:34:14.035 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-13 10:34:14.042 [main] INFO  com.sau.BlogSystemApplication - Started BlogSystemApplication in 3.057 seconds (process running for 3.795)
+2026-03-13 10:34:43.678 [http-nio-8080-exec-6] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-13 10:34:43.678 [http-nio-8080-exec-6] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-13 10:34:43.679 [http-nio-8080-exec-6] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-03-13 12:42:24.184 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-13 12:42:24.258 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
