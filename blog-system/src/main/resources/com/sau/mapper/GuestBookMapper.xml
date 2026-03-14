@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sau.mapper.GuestBookMapper">
+
+    <select id="selectPageGuestBooks" resultType="com.sau.pojo.entity.GuestBook">
+        SELECT
+            gb.id,
+            gb.user_id,
+            gb.content,
+            gb.status,
+            gb.is_anonymous,
+            gb.is_featured,
+            COALESCE(NULLIF(u.nickname, ''), u.username) AS nickname,
+            u.avatar,
+            0 AS can_delete,
+            gb.create_time,
+            gb.update_time
+        FROM guest_book gb
+        LEFT JOIN sys_user u ON u.id = gb.user_id
+        WHERE gb.status IN (0, 1)
+        ORDER BY gb.create_time DESC, gb.id DESC
+    </select>
+
+    <select id="selectFeaturedGuestBooks" resultType="com.sau.pojo.entity.GuestBook">
+        SELECT
+            gb.id,
+            gb.user_id,
+            gb.content,
+            gb.status,
+            gb.is_anonymous,
+            gb.is_featured,
+            COALESCE(NULLIF(u.nickname, ''), u.username) AS nickname,
+            u.avatar,
+            gb.create_time,
+            gb.update_time
+        FROM guest_book gb
+        LEFT JOIN sys_user u ON u.id = gb.user_id
+        WHERE gb.status IN (0, 1)
+          AND gb.is_featured = 1
+        ORDER BY gb.create_time DESC, gb.id DESC
+        LIMIT #{limit}
+    </select>
+
+    <insert id="insertGuestBook" parameterType="com.sau.pojo.entity.GuestBook" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO guest_book (user_id, content, status, is_anonymous)
+        VALUES (#{userId}, #{content}, #{status}, #{isAnonymous})
+    </insert>
+
+</mapper>

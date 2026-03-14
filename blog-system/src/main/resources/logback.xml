@@ -16,7 +16,7 @@
     <!--系统文件输出日志-->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
 
-        <file>${LOG_HOME}/blog-log.log</file>
+        <file>${LOG_HOME}/blog-log-latset.log</file>
 
         <!--配置文件属性-->
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">

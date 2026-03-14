@@ -15,6 +15,7 @@ public class UserPasswordUpdateDTO {
     /**
      * 旧密码
      */
+    @NotBlank
     private String oldPassword;
 
     /**

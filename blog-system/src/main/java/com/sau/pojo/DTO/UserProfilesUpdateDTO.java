@@ -11,21 +11,15 @@ import org.springframework.web.multipart.MultipartFile;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserProfilesUpdateDTO {
-    /**
-     * 昵称
-     */
     @NotBlank
     @Size(min = 1, max = 20)
     private String nickname;
 
-    /**
-     * 简介
-     */
     @Size(max = 255)
     private String introduction;
 
-    /**
-     * 头像
-     */
+    @Size(max = 20)
+    private String phone;
+
     private MultipartFile avatar;
 }

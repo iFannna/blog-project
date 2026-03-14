@@ -26,7 +26,7 @@ public interface SysUserMapper {
     @Select("select * from sys_user where username = #{username}")
     SysUser selectByUsername(String username);
 
-    @Update("update sys_user set nickname = #{nickname}, introduction = #{introduction}, avatar = #{avatar} where id = #{id}")
+    @Update("update sys_user set nickname = #{nickname}, introduction = #{introduction}, phone = #{phone}, avatar = #{avatar} where id = #{id}")
     void updateProfileById(SysUser sysUser);
 
     @Update("update sys_user set password = #{password} where id = #{id}")

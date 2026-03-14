@@ -25,6 +25,8 @@ public final class SecurityWhitelist {
             "/article/mostLike",
             "/article/mostStar",
             "/article/mostShare",
+            "/guestbook",
+            "/guestbook/featured",
             "/tag",
             "/category",
             "/comment",
